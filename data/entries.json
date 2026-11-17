@@ -1,0 +1,611 @@
+{
+  "last_updated": "2026-11-17",
+  "timezone": "America/Los_Angeles",
+  "entries": [
+    {
+      "date": "2026-11-17",
+      "datetime_pt": "2026-11-17 06:39 AM PT",
+      "source": "Shipwreckedcrew",
+      "handle": "shipwreckedcrew",
+      "type": "X post",
+      "followers": 182728,
+      "theme": "Iran / forever wars",
+      "summary": "Former JD Vance supporter says Vance\u2019s \u201cforever wars\u201d talking points on Iran are getting tiring; argues Vance is talking in campaign phrases rather than as a serious thinker, and contrasts him with Marco Rubio.",
+      "engagement": {
+        "likes": 1421,
+        "reposts": 233,
+        "replies": 255,
+        "quotes": 24,
+        "views": 34416,
+        "interactions": 1933,
+        "engagement_ex_replies": 1678,
+        "followers": 182728,
+        "engagement_rate_vs_followers_pct": 1.06,
+        "reply_to_like_pct": 17.9,
+        "engagement_rate_vs_views_pct": 5.62
+      },
+      "url": "https://x.com/shipwreckedcrew/status/2122701235132481646",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Seed post from a long-standing verified account (created 2008, 183K followers). Engagement rate 1.06% of followers and 5.6% of views is in line for a mid-size political account, not an out-of-range spike. A sample of 11 original quote-posts showed a mix of agreement and pushback (roughly half supportive of the criticism), from mostly older accounts with custom avatars and modest followings. One newer digit-suffix account appeared in the sample. No copy-paste flood observed in the quotes opened."
+      },
+      "audience_sample": "Of 11 original quotes opened, about half agreed with the criticism; several pushed back that the public does not want a prolonged Middle East war. Reply-to-like ratio 18%."
+    },
+    {
+      "date": "2026-11-16",
+      "datetime_pt": "2026-11-16 12:38 PM PT",
+      "source": "Josh Hammer",
+      "handle": "josh_hammer",
+      "type": "X post",
+      "followers": 170016,
+      "theme": "Israel / midterm blame",
+      "summary": "Writes that Vance, whom he once held in high esteem, surveyed the midterm \u201celectoral massacre\u201d and found \u201ca scapegoat many others have found for millennia: the Jews,\u201d calling it \u201crank cowardice.\u201d Links his FrontPage Magazine column.",
+      "engagement": {
+        "likes": 2432,
+        "reposts": 379,
+        "replies": 670,
+        "quotes": 74,
+        "views": 255369,
+        "interactions": 3555,
+        "engagement_ex_replies": 2885,
+        "followers": 170016,
+        "engagement_rate_vs_followers_pct": 2.09,
+        "reply_to_like_pct": 27.5,
+        "engagement_rate_vs_views_pct": 1.39
+      },
+      "url": "https://x.com/josh_hammer/status/2122429137411600586",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Mixed",
+        "evidence": "Heuristic only, not proof. Verified pundit account (created 2009, 170K followers). 255K views and a 2.1% engagement rate vs. followers are high but plausible for a controversy post, not an inexplicable spike. A 25-reposter sample included many issue-aligned (pro-Israel) accounts, a mix of older and newer profiles, about 5 default avatars, several name-plus-digits handles, and at least one very new 2026 account with few followers and high posting volume. No identical copy-paste replies were documented in the sample opened. High reply-to-like ratio (28%) and a large opposing quote (Auron MacIntyre, 3,615 likes) indicate substantial pushback, not one-sided amplification."
+      },
+      "audience_sample": "Quotes and replies are mixed. Notable pushback includes Auron MacIntyre\u2019s quote-post (251K followers, 3,615 likes) rejecting the \u2018Nazi\u2019/scapegoat framing. Some quotes agreed with Hammer. Reposters leaned pro-Israel in bios."
+    },
+    {
+      "date": "2026-11-16",
+      "datetime_pt": "2026-11-16 06:56 PM PT",
+      "source": "Auron MacIntyre",
+      "handle": "AuronMacintyre",
+      "type": "X post",
+      "followers": 251010,
+      "theme": "Israel / midterm blame",
+      "summary": "Quotes Josh Hammer and says it \u201ctakes a very particular type of unhinged lunatic to publicly call the VP a Nazi because he acknowledged the Iran war was unpopular and responsible for the midterm loss.\u201d",
+      "engagement": {
+        "likes": 3615,
+        "reposts": 216,
+        "replies": 55,
+        "quotes": 6,
+        "views": 59747,
+        "interactions": 3892,
+        "engagement_ex_replies": 3837,
+        "followers": 251010,
+        "engagement_rate_vs_followers_pct": 1.55,
+        "reply_to_like_pct": 1.5,
+        "engagement_rate_vs_views_pct": 6.51
+      },
+      "url": "https://x.com/AuronMacintyre/status/2122524125671600320",
+      "added_on": "2026-11-17",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Verified Blaze host/columnist account (created 2020, 251K followers). 1.4% engagement vs. followers and a low reply-to-like ratio (1.5%) are consistent with an aligned audience. No bot-like spike or copy-paste pattern was observed in the item opened."
+      },
+      "audience_sample": "Low reply ratio (55 replies on 3,615 likes) suggests more agreement than argument in the sample of metrics, unlike the Hammer post it quotes."
+    },
+    {
+      "date": "2026-11-16",
+      "datetime_pt": "2026-11-16 12:56 PM PT",
+      "source": "FactPost",
+      "handle": "factpostnews",
+      "type": "X post",
+      "followers": 235327,
+      "theme": "Iran / forever wars",
+      "summary": "Posts Vance\u2019s line that \u201cwe told the American people we\u2019d do no more forever wars,\u201d then notes in parentheses that the Iran war has been going on for nearly nine months with no end in sight.",
+      "engagement": {
+        "likes": 247,
+        "reposts": 40,
+        "replies": 29,
+        "quotes": 5,
+        "views": 17637,
+        "interactions": 321,
+        "engagement_ex_replies": 292,
+        "followers": 235327,
+        "engagement_rate_vs_followers_pct": 0.14,
+        "reply_to_like_pct": 11.7,
+        "engagement_rate_vs_views_pct": 1.82
+      },
+      "url": "https://x.com/factpostnews/status/2122433547956797604",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Established news-style account, 235K followers. Engagement is modest (0.14% of followers) and not out of line with a mid-size media account. No inauthentic-amplification signals were observed in the item opened."
+      },
+      "audience_sample": "Reply-to-like ratio 12%; sample of replies/quotes not pulled for this item."
+    },
+    {
+      "date": "2026-11-16",
+      "datetime_pt": "2026-11-16 10:47 PM PT",
+      "source": "Mario Nawfal",
+      "handle": "MarioNawfal",
+      "type": "X post",
+      "followers": 3990614,
+      "theme": "Iran / forever wars",
+      "summary": "Amplifies Vance\u2019s Fox interview comments that Trump will not let the Iran conflict become a \u201cforever war,\u201d quoting Vance that critics who want it to last \u201ccan attack me all they want.\u201d",
+      "engagement": {
+        "likes": 509,
+        "reposts": 75,
+        "replies": 76,
+        "quotes": 8,
+        "views": 75989,
+        "interactions": 668,
+        "engagement_ex_replies": 592,
+        "followers": 3990614,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 14.9,
+        "engagement_rate_vs_views_pct": 0.88
+      },
+      "url": "https://x.com/MarioNawfal/status/2122582256287907843",
+      "added_on": "2026-11-17",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Very large established account (4.0M followers). Engagement rate vs. followers is low (0.02%), typical for mega-accounts and not a suspicious spike. No bot-like pattern was observed in the item opened."
+      },
+      "audience_sample": "Reply-to-like ratio 15%; replies not sampled in depth."
+    },
+    {
+      "date": "2026-11-15",
+      "datetime_pt": "2026-11-15 04:44 AM PT",
+      "source": "Mark R. Levin",
+      "handle": "marklevinshow",
+      "type": "X post",
+      "followers": 5049363,
+      "theme": "Iran / forever wars",
+      "summary": "Calls an Iran-related agreement \u201ca disaster,\u201d saying it was \u201cnegotiated by VP Vance, promoted by VP Vance,\u201d and adding \u201cNotice you don\u2019t defend it.\u201d",
+      "engagement": {
+        "likes": 5192,
+        "reposts": 637,
+        "replies": 373,
+        "quotes": 29,
+        "views": 164964,
+        "interactions": 6231,
+        "engagement_ex_replies": 5858,
+        "followers": 5049363,
+        "engagement_rate_vs_followers_pct": 0.12,
+        "reply_to_like_pct": 7.2,
+        "engagement_rate_vs_views_pct": 3.78
+      },
+      "url": "https://x.com/marklevinshow/status/2121947552010412084",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Long-standing official show account with 5.0M followers. Engagement rate vs. followers is low (0.12%), typical for a large account, not a spike. Reply-to-like ratio is only 7%, consistent with a relatively sympathetic audience. No inauthentic-amplification signals observed in the item opened."
+      },
+      "audience_sample": "Relatively low reply-to-like ratio (7%) compared with more contested posts in this tracker."
+    },
+    {
+      "date": "2026-11-12",
+      "datetime_pt": "2026-11-12 03:52 AM PT",
+      "source": "Mark R. Levin",
+      "handle": "marklevinshow",
+      "type": "X post",
+      "followers": 5049363,
+      "theme": "2028 / loyalty",
+      "summary": "Says the 2028 Republican primary is likely to be more crowded and competitive than some think, and that Tucker Carlson \u201cwill undoubtedly be a toxic and controversial issue tied to Vance.\u201d",
+      "engagement": {
+        "likes": 410,
+        "reposts": 50,
+        "replies": 54,
+        "quotes": 5,
+        "views": 61912,
+        "interactions": 519,
+        "engagement_ex_replies": 465,
+        "followers": 5049363,
+        "engagement_rate_vs_followers_pct": 0.01,
+        "reply_to_like_pct": 13.2,
+        "engagement_rate_vs_views_pct": 0.84
+      },
+      "url": "https://x.com/marklevinshow/status/2120847166054797332",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Same official Levin account. Modest engagement for a 5M-follower account (0.01% of followers). No inauthentic-amplification signals observed."
+      },
+      "audience_sample": "Reply-to-like ratio 13%; replies not sampled in depth."
+    },
+    {
+      "date": "2026-11-08",
+      "datetime_pt": "2026-11-08 12:18 PM PT",
+      "source": "Ryan Schmelz (Fox)",
+      "handle": "RyanSchmelzFOX",
+      "type": "X post",
+      "followers": 5593,
+      "theme": "Israel / midterm blame",
+      "summary": "Reports Rep. Randy Fine (R-Fla.) saying he will not back Vance in 2028. Quotes Fine that Vance\u2019s post-election message was \u201cabhorrent,\u201d \u201csmacked of the kind of thing you would read in 1932 Germany,\u201d and that \u201cHe blamed the Jews for losing the election.\u201d",
+      "engagement": {
+        "likes": 648,
+        "reposts": 98,
+        "replies": 275,
+        "quotes": 56,
+        "views": 188107,
+        "interactions": 1077,
+        "engagement_ex_replies": 802,
+        "followers": 5593,
+        "engagement_rate_vs_followers_pct": 19.26,
+        "reply_to_like_pct": 42.4,
+        "engagement_rate_vs_views_pct": 0.57
+      },
+      "url": "https://x.com/RyanSchmelzFOX/status/2119525102760906971",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Small official-style reporter account (5.6K followers) but very high views (188K) and a 19.3% engagement rate vs. followers, which is high relative to the account size\u2014plausible for a viral congressman quote, but the ratio is elevated. High reply-to-like ratio (42%) indicates heavy argument, not quiet amplification. Included because it reports a notable elected official, even though the reporter is under the 50K-follower guideline."
+      },
+      "audience_sample": "Very high reply-to-like ratio (42%) indicates substantial pushback or debate. Replies were not fully coded."
+    },
+    {
+      "date": "2026-11-08",
+      "datetime_pt": "2026-11-08 03:35 PM PT",
+      "source": "Voice of Rabbis",
+      "handle": "voiceofrabbis",
+      "type": "X post",
+      "followers": 316440,
+      "theme": "Israel / midterm blame",
+      "summary": "Defends Vance against Rep. Fine\u2019s antisemitism charge, saying Vance never mentioned Jews and cited pollster data on voters wanting to \u201cchange our relationship to Israel\u201d\u2014a country and foreign-policy question.",
+      "engagement": {
+        "likes": 60,
+        "reposts": 4,
+        "replies": 1,
+        "quotes": 0,
+        "views": 5198,
+        "interactions": 65,
+        "engagement_ex_replies": 64,
+        "followers": 316440,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 1.7,
+        "engagement_rate_vs_views_pct": 1.25
+      },
+      "url": "https://x.com/voiceofrabbis/status/2119574614321803401",
+      "added_on": "2026-11-17",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Large account (316K followers) posting similar defensive text in several replies the same afternoon\u2014consistent with coordinated advocacy by one account, not a bot network. Engagement is low for the follower count (0.02%). Two smaller accounts posted nearly identical wording later; that copy-paste cluster is noted but those accounts were not added as entries (under the size cutoff)."
+      },
+      "audience_sample": "Very little discussion under this post (1 reply)."
+    },
+    {
+      "date": "2026-11-05",
+      "datetime_pt": "2026-11-05 10:32 AM PT",
+      "source": "Marc Thiessen",
+      "handle": "marcthiessen",
+      "type": "X post",
+      "followers": 105972,
+      "theme": "2028 / loyalty",
+      "summary": "Argues that if Vance cannot say Trump made the right decision to disarm Iran, he has no business seeking the 2028 GOP nomination, and that if Vance can\u2019t endorse Trump\u2019s national security policy, Trump should not endorse him. Links his Washington Post op-ed.",
+      "engagement": {
+        "likes": 3497,
+        "reposts": 658,
+        "replies": 1560,
+        "quotes": 171,
+        "views": 466327,
+        "interactions": 5886,
+        "engagement_ex_replies": 4326,
+        "followers": 105972,
+        "engagement_rate_vs_followers_pct": 5.55,
+        "reply_to_like_pct": 44.6,
+        "engagement_rate_vs_views_pct": 1.26
+      },
+      "url": "https://x.com/marcthiessen/status/2118411211196813712",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Verified columnist account (106K followers, created 2009). High engagement (5.6% of followers, 466K views) is large but consistent with a viral WaPo op-ed post. Reply-to-like ratio is very high (45%), which points to debate and pushback rather than one-sided inauthentic amplification."
+      },
+      "audience_sample": "1,560 replies on 3,497 likes (45%) is one of the most contested ratios in this set. Donald Trump Jr. replied with a screenshot of an earlier Thiessen column arguing there was \u201cno U.S. downside to striking the Iranian regime.\u201d"
+    },
+    {
+      "date": "2026-11-05",
+      "datetime_pt": "2026-11-05 12:39 PM PT",
+      "source": "Donald Trump Jr.",
+      "handle": "DonaldJTrumpJr",
+      "type": "X post",
+      "followers": 16149315,
+      "theme": "2028 / loyalty",
+      "summary": "Replies to Marc Thiessen\u2019s criticism of Vance with a screenshot of Thiessen\u2019s earlier Washington Post opinion headline: \u201cThere is no U.S. downside to striking the Iranian regime.\u201d",
+      "engagement": {
+        "likes": 4956,
+        "reposts": 292,
+        "replies": 616,
+        "quotes": 116,
+        "views": 605484,
+        "interactions": 5980,
+        "engagement_ex_replies": 5364,
+        "followers": 16149315,
+        "engagement_rate_vs_followers_pct": 0.04,
+        "reply_to_like_pct": 12.4,
+        "engagement_rate_vs_views_pct": 0.99
+      },
+      "url": "https://x.com/DonaldJTrumpJr/status/2118443052326846646",
+      "added_on": "2026-11-17",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. One of the largest political accounts on X (16.1M followers). Engagement rate vs. followers is low (0.04%), typical for a mega-account reply, not a suspicious spike. Image content was opened and is a WaPo headline screenshot."
+      },
+      "audience_sample": "Reply-to-like ratio 12%; replies not fully coded."
+    },
+    {
+      "date": "2026-11-04",
+      "datetime_pt": "2026-11-04 08:31 AM PT",
+      "source": "Donald Trump Jr.",
+      "handle": "DonaldJTrumpJr",
+      "type": "X post",
+      "followers": 16149315,
+      "theme": "Midterm postmortem",
+      "summary": "Quotes Vance\u2019s midterm postmortem and writes, \u201cEvery word of this is \ud83d\udcaf\ud83d\udcaf\ud83d\udcaf.\u201d",
+      "engagement": {
+        "likes": 28330,
+        "reposts": 1957,
+        "replies": 9787,
+        "quotes": 1179,
+        "views": 6569700,
+        "interactions": 41253,
+        "engagement_ex_replies": 31466,
+        "followers": 16149315,
+        "engagement_rate_vs_followers_pct": 0.26,
+        "reply_to_like_pct": 34.5,
+        "engagement_rate_vs_views_pct": 0.63
+      },
+      "url": "https://x.com/DonaldJTrumpJr/status/2118018423221608480",
+      "added_on": "2026-11-17",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Mega-account endorsement of the vice president\u2019s own post. 6.57M views and 28,330 likes are large in absolute terms but a low rate vs. 16.1M followers (0.26%). A high reply-to-like ratio (35%) shows substantial argument under the endorsement, not only applause."
+      },
+      "audience_sample": "9,787 replies on 28,330 likes (35%) \u2014 heavy debate even on a supportive endorsement. Replies were not fully coded."
+    },
+    {
+      "date": "2026-11-04",
+      "datetime_pt": "2026-11-04 10:10 AM PT",
+      "source": "Josh Hammer",
+      "handle": "josh_hammer",
+      "type": "X post",
+      "followers": 170016,
+      "theme": "2028 / loyalty",
+      "summary": "Writes that \u201cthe single biggest loser from last night\u2019s massacre is JD Vance,\u201d and that what followed is \u201cthe predictable repercussion of that new political reality.\u201d",
+      "engagement": {
+        "likes": 1771,
+        "reposts": 207,
+        "replies": 145,
+        "quotes": 18,
+        "views": 54820,
+        "interactions": 2141,
+        "engagement_ex_replies": 1996,
+        "followers": 170016,
+        "engagement_rate_vs_followers_pct": 1.26,
+        "reply_to_like_pct": 8.2,
+        "engagement_rate_vs_views_pct": 3.91
+      },
+      "url": "https://x.com/josh_hammer/status/2118043218306805911",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Same verified pundit account. Engagement (1.3% of followers) is solid and not out of line. Replies/quotes were not sampled in depth for this earlier post."
+      },
+      "audience_sample": "Reply-to-like ratio 8%; replies not sampled in depth."
+    },
+    {
+      "date": "2026-11-04",
+      "datetime_pt": "2026-11-04 07:38 AM PT",
+      "source": "JD Vance",
+      "handle": "JDVance",
+      "type": "X post",
+      "followers": 5576844,
+      "theme": "Midterm postmortem",
+      "summary": "Originating post. Vance says 2024 Trump/Vance voters showed up but many voted Democratic in 2026. Citing an unnamed pollster, he lists four reasons those voters gave for coming back: end the war; focus on cost of living/inflation; put America First; \u201cChange our relationship to Israel.\u201d He adds, \u201cThe reason we lost is the war. The president himself said so last night.\u201d",
+      "engagement": {
+        "likes": 284816,
+        "reposts": 30795,
+        "replies": 69387,
+        "quotes": 21254,
+        "views": 73549276,
+        "interactions": 406252,
+        "engagement_ex_replies": 336865,
+        "followers": 5576844,
+        "engagement_rate_vs_followers_pct": 7.28,
+        "reply_to_like_pct": 24.4,
+        "engagement_rate_vs_views_pct": 0.55
+      },
+      "url": "https://x.com/JDVance/status/2118004988433641835",
+      "added_on": "2026-11-17",
+      "stance": "originating",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Official vice-presidential account. Extraordinary absolute reach (73.5M views, 285K likes) with a high 7.3% engagement rate vs. 5.6M followers, consistent with a major post-election statement from a sitting VP, not a mid-tier account suddenly going viral. 69K replies and 21K quotes indicate a very large mixed conversation; those replies were not fully coded."
+      },
+      "audience_sample": "Not coded in full (69,387 replies, 21,254 quotes). High absolute discussion volume. Donald Trump Jr. publicly endorsed the post."
+    },
+    {
+      "date": "2026-11-16",
+      "datetime_pt": null,
+      "source": "FrontPage Magazine",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "Josh Hammer column, \u201cJD Vance Scapegoats the Jews.\u201d Argues Vance\u2019s post-election claim that the Iran war and a changed U.S.-Israel relationship helped cause Republican losses amounted to blaming Jews or Israel. Hammer writes there is \u201czero intellectually honest case\u201d that Israel specifically\u2014as opposed to the Iran war generally\u2014was a meaningful electoral factor.",
+      "engagement": null,
+      "url": "https://www.frontpagemag.com/jd-vance-scapegoats-the-jews/",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Outlet article. The frontpage URL was confirmed via the t.co redirect on Hammer\u2019s post; the live page returned 403 to the fetch tool. Title and thesis were confirmed from that post and a Whatfinger reprint opened in search results."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-17",
+      "datetime_pt": null,
+      "source": "Arthuriana (Arthur Bloom)",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "Substack essay criticizing Josh Hammer\u2019s \u201cscapegoats the Jews\u201d column and defending the idea that the Iran war and U.S.-Israel relationship were legitimately part of the midterm debate. Quotes Hammer\u2019s claim that there is no honest case Israel was a factor, and disputes it.",
+      "engagement": null,
+      "url": "https://arthuriana.substack.com/p/josh-hammer-to-young-americans-drop",
+      "added_on": "2026-11-17",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Independent Substack essay; page opened."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-11",
+      "datetime_pt": null,
+      "source": "Fox News",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "Leo Briceno reports that Rep. Randy Fine (R-Fla.) will not support Vance in 2028, saying the midterm postmortem \u201csmacked of the kind of thing you\u2019d read in 1932 Germany\u201d and \u201cHe blamed the Jews for losing the election.\u201d Notes Vance did not mention Jews specifically; Fine argues Israel and the Jewish people are inseparable and that three of Vance\u2019s four points tacitly blamed \u201cthe Jews.\u201d Vance\u2019s office declined to respond.",
+      "engagement": null,
+      "url": "https://www.foxnews.com/politics/he-blamed-jews-gop-congressman-levels-explosive-accusation-against-jd-vance-election-postmortem",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "National outlet article; page opened."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-11",
+      "datetime_pt": null,
+      "source": "Jewish Insider",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "GOP senators react skeptically to Vance\u2019s midterm analysis. Sen. John Cornyn called the Israel/Iran explanation \u201cridiculous\u201d and pointed to the economy. Sens. John Kennedy, Ron Johnson, and Thom Tillis also emphasized affordability, turnout, or tariffs. Ted Cruz said his view differs from Vance\u2019s; Ted Budd asked what \u201cchange our relationship to Israel\u201d means; Josh Hawley said the Iran war was \u201can issue\u201d but not the only one.",
+      "engagement": null,
+      "url": "https://jewishinsider.com/2026/11/gop-senators-skeptical-vance-midterms-iran-israel/",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Trade-press article; page opened."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-08",
+      "datetime_pt": null,
+      "source": "Hudson Institute (Michael Doran)",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "Doran argues Vance turned Trump\u2019s Middle East strategy into a coalition liability by listing \u201cchange our relationship to Israel\u201d separately from ending the Iran war, a phrase that can appeal both to mainstream restrainers and to the Groyper fringe. He asks whether Trump agrees, notes Trump Jr. endorsed Vance\u2019s post, and says the movement may inherit a policy that treats the alliance as suspect.",
+      "engagement": null,
+      "url": "https://www.hudson.org/foreign-policy/jd-vance-wants-change-our-relationship-israel-does-his-boss-agree-michael-doran",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Think-tank essay; page opened."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-06",
+      "datetime_pt": null,
+      "source": "The Jerusalem Post",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "Editorial says Vance must explain what he wants to change in U.S.-Israel relations and accept that the administration, not Israel, is responsible for U.S. war decisions. Notes an AP voter poll found about one-third said the Iran war was crucial to their vote, versus roughly half citing cost of living or corruption, so the war mattered but was not a complete explanation.",
+      "engagement": null,
+      "url": "https://www.jpost.com/opinion/article-913999",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Newspaper editorial; page opened."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-06",
+      "datetime_pt": null,
+      "source": "Jewish Telegraphic Agency",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "Pro-Israel conservatives criticize Vance. CUFI Action Fund called him \u201cclearly, demonstrably and unambiguously wrong\u201d and said \u201cthe Jews were effectively blamed twice\u201d via Israel and the Iran war, a \u201cdog whistle.\u201d Sid Rosenberg, quoted from X, called Vance \u201ca disloyal, agenda driven problem\u201d and urged replacing him as Iran negotiator with Marco Rubio. RJC board member Eric Levine said he did not recall exit polls identifying Israel as a voting factor. (Rosenberg\u2019s original X post was not independently located in this pass.)",
+      "engagement": null,
+      "url": "https://www.jta.org/2026/11/06/politics/pro-israel-conservatives-blast-jd-vance-for-blaming-israel-after-gop-midterm-losses",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Wire-service article; page opened."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-05",
+      "datetime_pt": null,
+      "source": "The Washington Post (Marc Thiessen)",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "2028 / loyalty",
+      "summary": "Op-ed titled \u201cJD Vance\u2019s stunning act of disloyalty.\u201d Argues Republicans lost in part because the Iran war dragged on and that \u201cthe vice president owns that.\u201d Thiessen\u2019s accompanying X post said Vance should not seek the 2028 nomination if he cannot say Trump made the right decision to disarm Iran.",
+      "engagement": null,
+      "url": "https://www.washingtonpost.com/opinions/2026/11/05/vances-post-midterms-disloyalty-trump-is-disqualifying/",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "National newspaper op-ed; page opened (lead of the article)."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-04",
+      "datetime_pt": null,
+      "source": "Jewish Telegraphic Agency",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "Israel / midterm blame",
+      "summary": "News report on Vance\u2019s midterm post. Notes Trump told reporters Vance\u2019s war-and-gas-prices point was \u201clargely true\u201d but that he \u201cwould do it again\u201d because Iran cannot have a nuclear weapon. Quotes Jonathan Greenberg calling Vance\u2019s comments \u201cnonsense,\u201d and notes Donald Trump Jr. backed the post with \u201cEvery word of this is 100 100 100.\u201d",
+      "engagement": null,
+      "url": "https://www.jta.org/2026/11/04/politics/jd-vance-blames-israel-and-iran-war-for-gops-crushing-defeats",
+      "added_on": "2026-11-17",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Wire-service article; page opened."
+      },
+      "audience_sample": null
+    }
+  ]
+}

@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JD Vance Tracker</title>
+  <meta name="description" content="Independent tracker of public sentiment and polling on JD Vance, including favorability, 2028 Republican nomination polls, and large-account coverage.">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>:root {
+  --bg: #ffffff;
+  --ink: #1a1a1a;
+  --muted: #5a5a5a;
+  --rule: #e6e6e6;
+  --soft: #f6f7f8;
+  --accent: #1c3d5a;
+  --accent-soft: #e8eef3;
+  --crit: #8b3a32;
+  --supp: #2c5f4e;
+  --orig: #5a5348;
+  --max: 1080px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+header.site {
+  padding: 36px 0 20px;
+  border-bottom: 2px solid var(--accent);
+}
+.kicker {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(2.1rem, 5vw, 3.1rem);
+  line-height: 1.1;
+  margin: 0 0 10px;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+.dek { margin: 0 0 10px; max-width: 40rem; color: #333; }
+.updated { color: var(--muted); font-size: 0.92rem; margin: 0; }
+nav.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.96);
+  z-index: 5;
+  backdrop-filter: blur(8px);
+}
+nav.toc a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.92rem; }
+nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 28px 0 8px;
+}
+.metric {
+  border-top: 3px solid var(--accent);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  padding: 14px 16px 16px;
+  background: var(--bg);
+}
+.metric .val {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.15;
+}
+.metric .lbl {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 6px;
+}
+.metric .det { font-size: 0.85rem; color: #444; margin-top: 4px; }
+section { padding: 36px 0 8px; }
+h2 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--ink);
+}
+.lede { margin: 0 0 18px; color: #333; max-width: 48rem; }
+.note, .fine { font-size: 0.9rem; color: var(--muted); }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin: 8px 0 16px;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 2px solid var(--ink);
+  padding: 8px 10px 8px 0;
+  white-space: nowrap;
+}
+td {
+  border-bottom: 1px solid var(--rule);
+  padding: 8px 10px 8px 0;
+  vertical-align: top;
+}
+td.num, th.num { text-align: right; padding-right: 0; }
+tr.avg { background: var(--soft); font-weight: 600; }
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.bars { margin: 8px 0 18px; }
+.bar-row { display: grid; grid-template-columns: 92px 1fr 64px; gap: 10px; align-items: center; margin: 8px 0; }
+.bar-name { font-weight: 600; }
+.track { background: var(--soft); height: 18px; border-radius: 2px; overflow: hidden; }
+.fill { height: 100%; background: var(--accent); }
+.fill.crit { background: var(--crit); }
+.fill.supp { background: var(--supp); }
+.bar-pct { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; }
+.cmp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 8px 0 18px;
+}
+.stack { display: flex; height: 18px; background: var(--soft); overflow: hidden; border-radius: 2px; }
+.seg.fav { background: var(--accent); color: #fff; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+.seg.unfav { background: var(--crit); color: #fff; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+.chart-row { display: grid; grid-template-columns: 150px 1fr; gap: 12px; margin: 12px 0; align-items: start; }
+.chart-line { display: grid; grid-template-columns: 10px 1fr 64px; gap: 8px; align-items: center; margin: 4px 0; }
+.swatch { width: 10px; height: 10px; border-radius: 1px; display: inline-block; }
+.swatch.crit { background: var(--crit); }
+.swatch.supp { background: var(--supp); }
+.legend { display: flex; gap: 16px; font-size: 0.9rem; margin: 0 0 10px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.two { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 32px; align-items: start; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; }
+.filter {
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.filter[aria-pressed="true"], .filter.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.cards { display: flex; flex-direction: column; gap: 12px; }
+.card {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--rule);
+  padding: 14px 16px 16px;
+  background: #fff;
+}
+.card.critical { border-left-color: var(--crit); }
+.card.supportive { border-left-color: var(--supp); }
+.card.originating { border-left-color: var(--orig); }
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.badge.critical { color: var(--crit); }
+.badge.supportive { color: var(--supp); }
+.badge.originating { color: var(--orig); }
+.card h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 650; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.handle { font-weight: 500; color: var(--muted); }
+.summary { margin: 0 0 8px; }
+.eng { font-size: 0.88rem; color: #333; }
+.auth { font-size: 0.86rem; color: var(--muted); }
+.empty { display: none; padding: 24px; color: var(--muted); text-align: center; }
+footer.site {
+  margin-top: 40px;
+  padding: 28px 0 48px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+@media (max-width: 860px) {
+  .metrics, .cmp, .two, .chart-row, .bar-row { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 1fr auto; }
+  .bar-name { grid-column: 1 / -1; }
+  nav.toc { position: static; }
+}
+@media (max-width: 600px) {
+  .metrics { grid-template-columns: 1fr 1fr; }
+  body { font-size: 16px; }
+  .wrap { padding: 0 16px; }
+}</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <p class="kicker">Independent polling &amp; coverage tracker</p>
+      <h1>JD Vance Tracker</h1>
+      <p class="dek">A snapshot of public polls, large-account posts, and outlet coverage after the Nov. 3, 2026 midterms. Not affiliated with any campaign, political party, or government office.</p>
+      <p class="updated">Last updated November 17, 2026, Pacific Time</p>
+    </header>
+    <nav class="toc" aria-label="Sections">
+      <a href="#favorability">Favorability</a>
+      <a href="#primary">2028 GOP primary</a>
+      <a href="#sentiment">Sentiment</a>
+      <a href="#feed">Posts &amp; articles</a>
+      <a href="#methodology">Methodology</a>
+    </nav>
+    <div class="metrics">
+      <div class="metric"><div class="val">40.2 / 51.3</div><div class="lbl">Favorability (RCP avg)</div><div class="det">Net -11.1 · Sep 29–Nov 16, 2026</div></div>
+      <div class="metric"><div class="val">34.3%</div><div class="lbl">2028 GOP simple average</div><div class="det">Vance · Rubio 31.3% · DeSantis 13.7%</div></div>
+      <div class="metric"><div class="val">23</div><div class="lbl">Tracker items</div><div class="det">16 critical · 6 supportive · 1 originating</div></div>
+      <div class="metric"><div class="val">6.57M</div><div class="lbl">Biggest supportive reach</div><div class="det">Donald Trump Jr. endorsing the postmortem</div></div>
+    </div>
+    
+    <section id="favorability">
+      <h2>Favorability</h2>
+      <p class="lede">National favorable / unfavorable. Only polls from pages opened for this update are listed. A simple unweighted average of the 10 polls in the RCP table matches RCP’s published average: 40.2% favorable, 51.3% unfavorable (net -11.1). The Hill/DDHQ estimate (37.5 / 54.3, net -16.8, as of Nov 17) is more unfavorable because it folds in adult-universe splits.</p>
+      <div class="scroll">
+        <table>
+          <thead><tr>
+            <th>Poll</th><th>Dates</th><th>Sample</th>
+            <th class="num">Fav</th><th class="num">Unfav</th><th class="num">Net</th><th>Source</th>
+          </tr></thead>
+          <tbody>
+            <tr class="avg">
+          <td>RCP average</td>
+          <td>Sep 29–Nov 16, 2026</td>
+          <td>10 polls</td>
+          <td class="num">40.2%</td>
+          <td class="num">51.3%</td>
+          <td class="num">-11.1</td>
+          <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+        </tr><tr>
+              <td>Economist/YouGov</td>
+              <td>Nov 13–16</td>
+              <td>1,386 RV</td>
+              <td class="num">38%</td>
+              <td class="num">56%</td>
+              <td class="num">-18</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>Reuters/Ipsos</td>
+              <td>Nov 13–16</td>
+              <td>1,199 RV</td>
+              <td class="num">39%</td>
+              <td class="num">55%</td>
+              <td class="num">-16</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>Ipsos / Reuters</td>
+              <td>Nov 14–17</td>
+              <td>1,521 Adults</td>
+              <td class="num">35%</td>
+              <td class="num">53%</td>
+              <td class="num">-18</td>
+              <td><a href="https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/">Hill/DDHQ</a></td>
+            </tr><tr>
+              <td>YouGov / The Economist</td>
+              <td>Nov 14–17</td>
+              <td>1,628 Adults</td>
+              <td class="num">35%</td>
+              <td class="num">52%</td>
+              <td class="num">-17</td>
+              <td><a href="https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/">Hill/DDHQ</a></td>
+            </tr><tr>
+              <td>Cygnal</td>
+              <td>Nov 4–5</td>
+              <td>3,000 LV</td>
+              <td class="num">39%</td>
+              <td class="num">57%</td>
+              <td class="num">-18</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>Financial Times</td>
+              <td>Oct 30–Nov 1</td>
+              <td>2,090 LV</td>
+              <td class="num">40%</td>
+              <td class="num">51%</td>
+              <td class="num">-11</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>Morning Consult</td>
+              <td>Oct 30–Nov 1</td>
+              <td>2,203 RV</td>
+              <td class="num">41%</td>
+              <td class="num">48%</td>
+              <td class="num">-7</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>Atlas Intel</td>
+              <td>Oct 28–Nov 1</td>
+              <td>3,566 Adults</td>
+              <td class="num">38%</td>
+              <td class="num">58%</td>
+              <td class="num">-20</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>Harvard-Harris</td>
+              <td>Oct 24–26</td>
+              <td>2,700 RV</td>
+              <td class="num">39%</td>
+              <td class="num">47%</td>
+              <td class="num">-8</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>NewsNation</td>
+              <td>Oct 5–9</td>
+              <td>974 LV</td>
+              <td class="num">44%</td>
+              <td class="num">52%</td>
+              <td class="num">-8</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>RMG Research</td>
+              <td>Oct 5–6</td>
+              <td>1,000 RV</td>
+              <td class="num">43%</td>
+              <td class="num">48%</td>
+              <td class="num">-5</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+              <td>I&amp;I/TIPP</td>
+              <td>Sep 29–Oct 1</td>
+              <td>1,488 Adults</td>
+              <td class="num">41%</td>
+              <td class="num">41%</td>
+              <td class="num">Tie</td>
+              <td><a href="https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html">RCP</a></td>
+            </tr><tr>
+          <td>Civiqs (tracker)</td>
+          <td>as of Nov 11</td>
+          <td>not stated</td>
+          <td class="num">36%</td>
+          <td class="num">57%</td>
+          <td class="num">-21</td>
+          <td><a href="https://civiqs.com/results/favorable_jd_vance?annotations=true&amp;uncertainty=true&amp;zoomIn=true">Civiqs</a></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">Approval is a different question. Politix+ (page opened) shows a 3-poll average as of Nov 17 of 41.1% approve and 57.6% disapprove (net -16.5). The latest individual approval poll on that page is Ipsos on Oct 12 (41/57, n=2,032). <a href="https://politixplus.com/race/jd-vance-approval">Politix+</a></p>
+      <h3 style="font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px;">Vance vs. Rubio favorability</h3>
+      <p class="lede">Ipsos/Reuters Nov 14–17, 2026, 1,521 adults, from The Hill/DDHQ pages opened for each candidate. A current national DeSantis favorability series was not confirmed from a page opened this update, so DeSantis is omitted here.</p>
+      <div class="cmp">
+        <div>
+          <div class="fine" style="margin-bottom:8px;">Ipsos/Reuters, Nov 14–17, 1,521 adults</div>
+          <div class="bar-row">
+          <div class="bar-name">Vance</div>
+          <div class="stack">
+            <div class="seg fav" style="width:35%">35%</div>
+            <div class="seg unfav" style="width:53%">53%</div>
+          </div>
+          <div></div>
+        </div>
+          <div class="bar-row">
+          <div class="bar-name">Rubio</div>
+          <div class="stack">
+            <div class="seg fav" style="width:33%">33%</div>
+            <div class="seg unfav" style="width:44%">44%</div>
+          </div>
+          <div></div>
+        </div>
+        </div>
+        <div>
+          <div class="fine" style="margin-bottom:8px;">Hill/DDHQ averages, Nov 17</div>
+          <div class="bar-row">
+          <div class="bar-name">Vance</div>
+          <div class="stack">
+            <div class="seg fav" style="width:37.5%">37.5%</div>
+            <div class="seg unfav" style="width:54.3%">54.3%</div>
+          </div>
+          <div></div>
+        </div>
+          <div class="bar-row">
+          <div class="bar-name">Rubio</div>
+          <div class="stack">
+            <div class="seg fav" style="width:36.0%">36.0%</div>
+            <div class="seg unfav" style="width:43.0%">43.0%</div>
+          </div>
+          <div></div>
+        </div>
+        </div>
+      </div>
+      <p class="fine">Sources: <a href="https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/">Vance, Hill/DDHQ</a> · <a href="https://elections2026.thehill.com/polls/candidate-favorability/marco-rubio-4/national/lv-rv-adults/">Rubio, Hill/DDHQ</a></p>
+    </section>
+    
+    
+    <section id="primary">
+      <h2>2028 GOP primary</h2>
+      <p class="lede">National Republican nomination polls opened for this update. The simple average is an unweighted mean of each candidate’s reported share. These three polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Other candidates are shown only where a poll reported them; they are not averaged.</p>
+      <div class="bars"><div class="bar-row">
+              <div class="bar-name">Vance</div>
+              <div class="track"><div class="fill" style="width:100.00%"></div></div>
+              <div class="bar-pct">34.3%</div>
+            </div><div class="bar-row">
+              <div class="bar-name">Rubio</div>
+              <div class="track"><div class="fill" style="width:91.25%"></div></div>
+              <div class="bar-pct">31.3%</div>
+            </div><div class="bar-row">
+              <div class="bar-name">DeSantis</div>
+              <div class="track"><div class="fill" style="width:39.94%"></div></div>
+              <div class="bar-pct">13.7%</div>
+            </div></div>
+      <div class="metrics" style="grid-template-columns:repeat(3,1fr);">
+        <div class="metric"><div class="val">34.3%</div><div class="lbl">Vance</div><div class="det">3 polls</div></div>
+        <div class="metric"><div class="val">31.3%</div><div class="lbl">Rubio</div><div class="det">Cygnal has Rubio +3</div></div>
+        <div class="metric"><div class="val">13.7%</div><div class="lbl">DeSantis</div><div class="det">Distant third in all three</div></div>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead><tr>
+            <th>Poll</th><th>Dates</th><th>Universe</th>
+            <th class="num">Vance</th><th class="num">Rubio</th><th class="num">DeSantis</th>
+            <th>Others reported</th>
+          </tr></thead>
+          <tbody><tr>
+              <td><a href="https://yougov.com/en-us/articles/55977-jd-vance-kamala-harris-top-lists-preferred-2028-presidential-candidates-november-9-11-2026-economist-yougov-poll">Economist/YouGov</a></td>
+              <td>Nov 9–11</td>
+              <td>Intended GOP primary voters (open-ended)</td>
+              <td class="num">40%</td>
+              <td class="num">33%</td>
+              <td class="num">14%</td>
+              <td>Donald Trump 9%; Nikki Haley 1%; Thomas Massie 1%</td>
+            </tr><tr>
+              <td><a href="https://www.rasmussenreports.com/public_content/politics/general_politics/republican_2028_nomination_contest_more_competitive_now">Rasmussen Reports</a></td>
+              <td>Nov 5–9</td>
+              <td>Likely Republican primary voters</td>
+              <td class="num">32%</td>
+              <td class="num">27%</td>
+              <td class="num">13%</td>
+              <td>—</td>
+            </tr><tr>
+              <td><a href="https://www.cygn.al/news/post-mortem-poll-turnout-dips-and-trump-defectors-each-drove-half-of-democrats-win-as-rubio-edges-vance-for-2028/">Cygnal</a></td>
+              <td>Nov 4–5</td>
+              <td>Midterm voters, GOP 2028 question</td>
+              <td class="num">31%</td>
+              <td class="num">34%</td>
+              <td class="num">14%</td>
+              <td>—</td>
+            </tr><tr class="avg">
+          <td>Simple unweighted average</td>
+          <td>—</td>
+          <td>3 opened polls; mixed universes</td>
+          <td class="num">34.3%</td>
+          <td class="num">31.3%</td>
+          <td class="num">13.7%</td>
+          <td>—</td>
+        </tr></tbody>
+        </table>
+      </div>
+      <p class="fine">Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate. These three polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used.</p>
+    </section>
+    
+    
+    <section id="sentiment">
+      <h2>Sentiment overview</h2>
+      <p class="lede">Donald Trump Jr.’s endorsement of Vance’s midterm postmortem (6.57M views, 28,330 likes) outweighs every critical item combined. The chart below therefore uses likes + reposts + quotes and excludes both Vance’s own post and that endorsement, so the theme-by-theme debate is visible. Replies are omitted because they mix support and pushback.</p>
+      <div class="legend"><span><span class="swatch crit"></span> Critical</span><span><span class="swatch supp"></span> Supportive (ex-Trump Jr. postmortem)</span><span>Units: likes + reposts + quotes</span></div>
+      <div class="two">
+        <div><div class="chart-row">
+              <div class="bar-name">Israel / midterm blame</div>
+              <div>
+                <div class="chart-line"><span class="swatch crit"></span><div class="track"><div class="fill crit" style="width:47.10%"></div></div><span class="bar-pct">3,687</span></div>
+                <div class="chart-line"><span class="swatch supp"></span><div class="track"><div class="fill supp" style="width:49.83%"></div></div><span class="bar-pct">3,901</span></div>
+              </div>
+            </div><div class="chart-row">
+              <div class="bar-name">Iran / forever wars</div>
+              <div>
+                <div class="chart-line"><span class="swatch crit"></span><div class="track"><div class="fill crit" style="width:100.00%"></div></div><span class="bar-pct">7,828</span></div>
+                <div class="chart-line"><span class="swatch supp"></span><div class="track"><div class="fill supp" style="width:7.56%"></div></div><span class="bar-pct">592</span></div>
+              </div>
+            </div><div class="chart-row">
+              <div class="bar-name">2028 / loyalty</div>
+              <div>
+                <div class="chart-line"><span class="swatch crit"></span><div class="track"><div class="fill crit" style="width:86.70%"></div></div><span class="bar-pct">6,787</span></div>
+                <div class="chart-line"><span class="swatch supp"></span><div class="track"><div class="fill supp" style="width:68.52%"></div></div><span class="bar-pct">5,364</span></div>
+              </div>
+            </div></div>
+        <div>
+          <p>Without Trump Jr.’s endorsement, critical posts lead 18,302 to 9,857 in likes+reposts+quotes, and 1.24M to 746K in views. With it, supportive views rise to 7.32M — mostly one 16.1M-follower account.</p>
+          <p>The Israel fight is the closest: Hammer’s post (255K views, 2,432 likes, 28% reply-to-like) is roughly matched by Auron MacIntyre (3,615 likes). High reply ratios on Hammer, Thiessen, and Fine coverage show debate, not a one-sided pile-on.</p>
+          <p class="note">Authenticity ratings are heuristics, not proof. Almost all large-account posts look likely organic. The one “Mixed” rating is Hammer’s scapegoat post. No specific person is labeled a bot.</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="feed">
+      <h2>Latest posts &amp; articles</h2>
+      <p class="lede">Items actually opened or returned by tools this update. Every source name is a live link. Followers and engagement are as returned; blank where unknown. Summaries are factual, not editorial endorsements. ER is (likes + reposts + replies + quotes) / followers. <span id="feed-count"></span></p>
+      <div class="filters" role="group" aria-label="Filter by stance">
+        <button class="filter active" type="button" data-filter-stance="all" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-filter-stance="critical" aria-pressed="false">Critical</button>
+        <button class="filter" type="button" data-filter-stance="supportive" aria-pressed="false">Supportive</button>
+        <button class="filter" type="button" data-filter-stance="originating" aria-pressed="false">Originating</button>
+      </div>
+      <div class="filters" role="group" aria-label="Filter by theme">
+        <button class="filter active" type="button" data-filter-theme="all" aria-pressed="true">All themes</button><button class="filter" type="button" data-filter-theme="Iran / forever wars" aria-pressed="false">Iran / forever wars</button><button class="filter" type="button" data-filter-theme="Israel / midterm blame" aria-pressed="false">Israel / midterm blame</button><button class="filter" type="button" data-filter-theme="2028 / loyalty" aria-pressed="false">2028 / loyalty</button><button class="filter" type="button" data-filter-theme="Midterm postmortem" aria-pressed="false">Midterm postmortem</button>
+      </div>
+      <div class="cards">
+        <article class="card critical" data-card data-stance="critical" data-theme="Iran / forever wars">
+              <div class="card-meta">
+                <time>Nov 17, 6:39 AM PT</time>
+                <span>X post</span>
+                <span>183K followers</span>
+                <span>Iran / forever wars</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/shipwreckedcrew/status/2122701235132481646">Shipwreckedcrew</a> <span class="handle">@shipwreckedcrew</span></h3>
+              <p class="summary">Former JD Vance supporter says Vance’s “forever wars” talking points on Iran are getting tiring; argues Vance is talking in campaign phrases rather than as a serious thinker, and contrasts him with Marco Rubio.</p>
+              <div class="eng">1,421 likes · 233 RTs · 255 replies · 24 quotes · 34K views · ER 1.1%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card supportive" data-card data-stance="supportive" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 17</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge supportive">Supportive</span>
+              </div>
+              <h3><a href="https://arthuriana.substack.com/p/josh-hammer-to-young-americans-drop">Arthuriana (Arthur Bloom)</a></h3>
+              <p class="summary">Substack essay criticizing Josh Hammer’s “scapegoats the Jews” column and defending the idea that the Iran war and U.S.-Israel relationship were legitimately part of the midterm debate. Quotes Hammer’s claim that there is no honest case Israel was a factor, and disputes it.</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card supportive" data-card data-stance="supportive" data-theme="Iran / forever wars">
+              <div class="card-meta">
+                <time>Nov 16, 10:47 PM PT</time>
+                <span>X post</span>
+                <span>4.0M followers</span>
+                <span>Iran / forever wars</span>
+                <span class="badge supportive">Supportive</span>
+              </div>
+              <h3><a href="https://x.com/MarioNawfal/status/2122582256287907843">Mario Nawfal</a> <span class="handle">@MarioNawfal</span></h3>
+              <p class="summary">Amplifies Vance’s Fox interview comments that Trump will not let the Iran conflict become a “forever war,” quoting Vance that critics who want it to last “can attack me all they want.”</p>
+              <div class="eng">509 likes · 75 RTs · 76 replies · 8 quotes · 76K views · ER 0.02%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card supportive" data-card data-stance="supportive" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 16, 6:56 PM PT</time>
+                <span>X post</span>
+                <span>251K followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge supportive">Supportive</span>
+              </div>
+              <h3><a href="https://x.com/AuronMacintyre/status/2122524125671600320">Auron MacIntyre</a> <span class="handle">@AuronMacintyre</span></h3>
+              <p class="summary">Quotes Josh Hammer and says it “takes a very particular type of unhinged lunatic to publicly call the VP a Nazi because he acknowledged the Iran war was unpopular and responsible for the midterm loss.”</p>
+              <div class="eng">3,615 likes · 216 RTs · 55 replies · 6 quotes · 60K views · ER 1.6%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Iran / forever wars">
+              <div class="card-meta">
+                <time>Nov 16, 12:56 PM PT</time>
+                <span>X post</span>
+                <span>235K followers</span>
+                <span>Iran / forever wars</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/factpostnews/status/2122433547956797604">FactPost</a> <span class="handle">@factpostnews</span></h3>
+              <p class="summary">Posts Vance’s line that “we told the American people we’d do no more forever wars,” then notes in parentheses that the Iran war has been going on for nearly nine months with no end in sight.</p>
+              <div class="eng">247 likes · 40 RTs · 29 replies · 5 quotes · 18K views · ER 0.1%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 16, 12:38 PM PT</time>
+                <span>X post</span>
+                <span>170K followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/josh_hammer/status/2122429137411600586">Josh Hammer</a> <span class="handle">@josh_hammer</span></h3>
+              <p class="summary">Writes that Vance, whom he once held in high esteem, surveyed the midterm “electoral massacre” and found “a scapegoat many others have found for millennia: the Jews,” calling it “rank cowardice.” Links his FrontPage Magazine column.</p>
+              <div class="eng">2,432 likes · 379 RTs · 670 replies · 74 quotes · 255K views · ER 2.1%</div>
+              <div class="auth">Authenticity: Mixed</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 16</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://www.frontpagemag.com/jd-vance-scapegoats-the-jews/">FrontPage Magazine</a></h3>
+              <p class="summary">Josh Hammer column, “JD Vance Scapegoats the Jews.” Argues Vance’s post-election claim that the Iran war and a changed U.S.-Israel relationship helped cause Republican losses amounted to blaming Jews or Israel. Hammer writes there is “zero intellectually honest case” that Israel specifically—as opposed to the Iran war generally—was a meaningful electoral factor.</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Iran / forever wars">
+              <div class="card-meta">
+                <time>Nov 15, 4:44 AM PT</time>
+                <span>X post</span>
+                <span>5.0M followers</span>
+                <span>Iran / forever wars</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/marklevinshow/status/2121947552010412084">Mark R. Levin</a> <span class="handle">@marklevinshow</span></h3>
+              <p class="summary">Calls an Iran-related agreement “a disaster,” saying it was “negotiated by VP Vance, promoted by VP Vance,” and adding “Notice you don’t defend it.”</p>
+              <div class="eng">5,192 likes · 637 RTs · 373 replies · 29 quotes · 165K views · ER 0.1%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="2028 / loyalty">
+              <div class="card-meta">
+                <time>Nov 12, 3:52 AM PT</time>
+                <span>X post</span>
+                <span>5.0M followers</span>
+                <span>2028 / loyalty</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/marklevinshow/status/2120847166054797332">Mark R. Levin</a> <span class="handle">@marklevinshow</span></h3>
+              <p class="summary">Says the 2028 Republican primary is likely to be more crowded and competitive than some think, and that Tucker Carlson “will undoubtedly be a toxic and controversial issue tied to Vance.”</p>
+              <div class="eng">410 likes · 50 RTs · 54 replies · 5 quotes · 62K views · ER 0.01%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 11</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://www.foxnews.com/politics/he-blamed-jews-gop-congressman-levels-explosive-accusation-against-jd-vance-election-postmortem">Fox News</a></h3>
+              <p class="summary">Leo Briceno reports that Rep. Randy Fine (R-Fla.) will not support Vance in 2028, saying the midterm postmortem “smacked of the kind of thing you’d read in 1932 Germany” and “He blamed the Jews for losing the election.” Notes Vance did not mention Jews specifically; Fine argues Israel and the Jewish people are inseparable and that three of Vance’s four points tacitly blamed “the Jews.” Vance’s office declined to respond.</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 11</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://jewishinsider.com/2026/11/gop-senators-skeptical-vance-midterms-iran-israel/">Jewish Insider</a></h3>
+              <p class="summary">GOP senators react skeptically to Vance’s midterm analysis. Sen. John Cornyn called the Israel/Iran explanation “ridiculous” and pointed to the economy. Sens. John Kennedy, Ron Johnson, and Thom Tillis also emphasized affordability, turnout, or tariffs. Ted Cruz said his view differs from Vance’s; Ted Budd asked what “change our relationship to Israel” means; Josh Hawley said the Iran war was “an issue” but not the only one.</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card supportive" data-card data-stance="supportive" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 8, 3:35 PM PT</time>
+                <span>X post</span>
+                <span>316K followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge supportive">Supportive</span>
+              </div>
+              <h3><a href="https://x.com/voiceofrabbis/status/2119574614321803401">Voice of Rabbis</a> <span class="handle">@voiceofrabbis</span></h3>
+              <p class="summary">Defends Vance against Rep. Fine’s antisemitism charge, saying Vance never mentioned Jews and cited pollster data on voters wanting to “change our relationship to Israel”—a country and foreign-policy question.</p>
+              <div class="eng">60 likes · 4 RTs · 1 replies · 5.2K views · ER 0.02%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 8, 12:18 PM PT</time>
+                <span>X post</span>
+                <span>5.6K followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/RyanSchmelzFOX/status/2119525102760906971">Ryan Schmelz (Fox)</a> <span class="handle">@RyanSchmelzFOX</span></h3>
+              <p class="summary">Reports Rep. Randy Fine (R-Fla.) saying he will not back Vance in 2028. Quotes Fine that Vance’s post-election message was “abhorrent,” “smacked of the kind of thing you would read in 1932 Germany,” and that “He blamed the Jews for losing the election.”</p>
+              <div class="eng">648 likes · 98 RTs · 275 replies · 56 quotes · 188K views · ER 19.3%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 8</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://www.hudson.org/foreign-policy/jd-vance-wants-change-our-relationship-israel-does-his-boss-agree-michael-doran">Hudson Institute (Michael Doran)</a></h3>
+              <p class="summary">Doran argues Vance turned Trump’s Middle East strategy into a coalition liability by listing “change our relationship to Israel” separately from ending the Iran war, a phrase that can appeal both to mainstream restrainers and to the Groyper fringe. He asks whether Trump agrees, notes Trump Jr. endorsed Vance’s post, and says the movement may inherit a policy that treats the alliance as suspect.</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 6</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://www.jpost.com/opinion/article-913999">The Jerusalem Post</a></h3>
+              <p class="summary">Editorial says Vance must explain what he wants to change in U.S.-Israel relations and accept that the administration, not Israel, is responsible for U.S. war decisions. Notes an AP voter poll found about one-third said the Iran war was crucial to their vote, versus roughly half citing cost of living or corruption, so the war mattered but was not a complete explanation.</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 6</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://www.jta.org/2026/11/06/politics/pro-israel-conservatives-blast-jd-vance-for-blaming-israel-after-gop-midterm-losses">Jewish Telegraphic Agency</a></h3>
+              <p class="summary">Pro-Israel conservatives criticize Vance. CUFI Action Fund called him “clearly, demonstrably and unambiguously wrong” and said “the Jews were effectively blamed twice” via Israel and the Iran war, a “dog whistle.” Sid Rosenberg, quoted from X, called Vance “a disloyal, agenda driven problem” and urged replacing him as Iran negotiator with Marco Rubio. RJC board member Eric Levine said he did not recall exit polls identifying Israel as a voting factor. (Rosenberg’s original X post was not independently located in this pass.)</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card supportive" data-card data-stance="supportive" data-theme="2028 / loyalty">
+              <div class="card-meta">
+                <time>Nov 5, 12:39 PM PT</time>
+                <span>X post</span>
+                <span>16.1M followers</span>
+                <span>2028 / loyalty</span>
+                <span class="badge supportive">Supportive</span>
+              </div>
+              <h3><a href="https://x.com/DonaldJTrumpJr/status/2118443052326846646">Donald Trump Jr.</a> <span class="handle">@DonaldJTrumpJr</span></h3>
+              <p class="summary">Replies to Marc Thiessen’s criticism of Vance with a screenshot of Thiessen’s earlier Washington Post opinion headline: “There is no U.S. downside to striking the Iranian regime.”</p>
+              <div class="eng">4,956 likes · 292 RTs · 616 replies · 116 quotes · 605K views · ER 0.04%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="2028 / loyalty">
+              <div class="card-meta">
+                <time>Nov 5, 10:32 AM PT</time>
+                <span>X post</span>
+                <span>106K followers</span>
+                <span>2028 / loyalty</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/marcthiessen/status/2118411211196813712">Marc Thiessen</a> <span class="handle">@marcthiessen</span></h3>
+              <p class="summary">Argues that if Vance cannot say Trump made the right decision to disarm Iran, he has no business seeking the 2028 GOP nomination, and that if Vance can’t endorse Trump’s national security policy, Trump should not endorse him. Links his Washington Post op-ed.</p>
+              <div class="eng">3,497 likes · 658 RTs · 1,560 replies · 171 quotes · 466K views · ER 5.5%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="2028 / loyalty">
+              <div class="card-meta">
+                <time>Nov 5</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>2028 / loyalty</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://www.washingtonpost.com/opinions/2026/11/05/vances-post-midterms-disloyalty-trump-is-disqualifying/">The Washington Post (Marc Thiessen)</a></h3>
+              <p class="summary">Op-ed titled “JD Vance’s stunning act of disloyalty.” Argues Republicans lost in part because the Iran war dragged on and that “the vice president owns that.” Thiessen’s accompanying X post said Vance should not seek the 2028 nomination if he cannot say Trump made the right decision to disarm Iran.</p>
+              <div class="eng">—</div>
+              
+            </article><article class="card critical" data-card data-stance="critical" data-theme="2028 / loyalty">
+              <div class="card-meta">
+                <time>Nov 4, 10:10 AM PT</time>
+                <span>X post</span>
+                <span>170K followers</span>
+                <span>2028 / loyalty</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://x.com/josh_hammer/status/2118043218306805911">Josh Hammer</a> <span class="handle">@josh_hammer</span></h3>
+              <p class="summary">Writes that “the single biggest loser from last night’s massacre is JD Vance,” and that what followed is “the predictable repercussion of that new political reality.”</p>
+              <div class="eng">1,771 likes · 207 RTs · 145 replies · 18 quotes · 55K views · ER 1.3%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card supportive" data-card data-stance="supportive" data-theme="Midterm postmortem">
+              <div class="card-meta">
+                <time>Nov 4, 8:31 AM PT</time>
+                <span>X post</span>
+                <span>16.1M followers</span>
+                <span>Midterm postmortem</span>
+                <span class="badge supportive">Supportive</span>
+              </div>
+              <h3><a href="https://x.com/DonaldJTrumpJr/status/2118018423221608480">Donald Trump Jr.</a> <span class="handle">@DonaldJTrumpJr</span></h3>
+              <p class="summary">Quotes Vance’s midterm postmortem and writes, “Every word of this is 100 100 100.”</p>
+              <div class="eng">28,330 likes · 1,957 RTs · 9,787 replies · 1,179 quotes · 6.57M views · ER 0.3%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card originating" data-card data-stance="originating" data-theme="Midterm postmortem">
+              <div class="card-meta">
+                <time>Nov 4, 7:38 AM PT</time>
+                <span>X post</span>
+                <span>5.6M followers</span>
+                <span>Midterm postmortem</span>
+                <span class="badge originating">Originating</span>
+              </div>
+              <h3><a href="https://x.com/JDVance/status/2118004988433641835">JD Vance</a> <span class="handle">@JDVance</span></h3>
+              <p class="summary">Originating post. Vance says 2024 Trump/Vance voters showed up but many voted Democratic in 2026. Citing an unnamed pollster, he lists four reasons those voters gave for coming back: end the war; focus on cost of living/inflation; put America First; “Change our relationship to Israel.” He adds, “The reason we lost is the war. The president himself said so last night.”</p>
+              <div class="eng">284,816 likes · 30,795 RTs · 69,387 replies · 21,254 quotes · 73.55M views · ER 7.3%</div>
+              <div class="auth">Authenticity: Likely organic</div>
+            </article><article class="card critical" data-card data-stance="critical" data-theme="Israel / midterm blame">
+              <div class="card-meta">
+                <time>Nov 4</time>
+                <span>article</span>
+                <span>— followers</span>
+                <span>Israel / midterm blame</span>
+                <span class="badge critical">Critical</span>
+              </div>
+              <h3><a href="https://www.jta.org/2026/11/04/politics/jd-vance-blames-israel-and-iran-war-for-gops-crushing-defeats">Jewish Telegraphic Agency</a></h3>
+              <p class="summary">News report on Vance’s midterm post. Notes Trump told reporters Vance’s war-and-gas-prices point was “largely true” but that he “would do it again” because Iran cannot have a nuclear weapon. Quotes Jonathan Greenberg calling Vance’s comments “nonsense,” and notes Donald Trump Jr. backed the post with “Every word of this is 100 100 100.”</p>
+              <div class="eng">—</div>
+              
+            </article>
+      </div>
+      <div class="empty" id="feed-empty">No items match these filters.</div>
+    </section>
+    
+    
+    <section id="methodology">
+      <h2>Methodology</h2>
+      <p>This is an independent tracker of public polling and of large-account posts and outlet coverage concerning Vice President JD Vance. It is not affiliated with any campaign, political party, or government office, and it is not a scientific sample of all public opinion.</p>
+      <p>Items are included only when a source page or post was opened for this update. Every item has a source link. Follower counts and engagement figures are as returned by the source; they are left blank when unknown. Summaries are factual descriptions, not endorsements.</p>
+      <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
+      <p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>
+      <p>Favorability averages cite the published RealClearPolitics average where a page was opened, and a simple unweighted mean of listed polls. The 2028 Republican nomination average is an unweighted mean of each candidate’s share in the national polls opened for this update. Those polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used.</p>
+      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–17, 2026.</p>
+    </section>
+    
+    <footer class="site">
+      <p>Independent tracker. Not affiliated with any campaign, political party, or government office. Authenticity ratings are heuristics, not proof.</p>
+    </footer>
+  </div>
+  <script>(function () {
+  const cards = Array.from(document.querySelectorAll("[data-card]"));
+  const empty = document.getElementById("feed-empty");
+  const count = document.getElementById("feed-count");
+  let stance = "all";
+  let theme = "all";
+
+  function apply() {
+    let shown = 0;
+    cards.forEach((card) => {
+      const okStance = stance === "all" || card.dataset.stance === stance;
+      const okTheme = theme === "all" || card.dataset.theme === theme;
+      const on = okStance && okTheme;
+      card.hidden = !on;
+      if (on) shown += 1;
+    });
+    if (empty) empty.style.display = shown ? "none" : "block";
+    if (count) count.textContent = shown + " of " + cards.length;
+  }
+
+  function wire(group, setter) {
+    document.querySelectorAll("[data-filter-" + group + "]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setter(btn.getAttribute("data-filter-" + group));
+        document.querySelectorAll("[data-filter-" + group + "]").forEach((b) => {
+          const on = b === btn;
+          b.setAttribute("aria-pressed", on ? "true" : "false");
+          b.classList.toggle("active", on);
+        });
+        apply();
+      });
+    });
+  }
+
+  wire("stance", (v) => { stance = v; });
+  wire("theme", (v) => { theme = v; });
+  apply();
+})();</script>
+</body>
+</html>
