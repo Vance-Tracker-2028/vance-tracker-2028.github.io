@@ -40,7 +40,7 @@ python3 "$ROOT/build.py"
 # Pattern is assembled so this script does not contain those strings.
 BLOCK_PAT="$(printf '%s|%s' ar''jun bu''xi)"
 if command -v rg >/dev/null 2>&1; then
-  if rg -i "$BLOCK_PAT" "$ROOT/index.html" "$ROOT/README.md" "$ROOT/data"; then
+  if rg -i "$BLOCK_PAT" "$ROOT/index.html" "$ROOT/bio.html" "$ROOT/myths.html" "$ROOT/README.md" "$ROOT/styles.css" "$ROOT/data" "$ROOT/images"; then
     echo "Refusing to publish: found a forbidden name in the site or data." >&2
     exit 1
   fi

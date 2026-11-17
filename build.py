@@ -12,6 +12,8 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+import extra_pages
+
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json")
@@ -595,7 +597,7 @@ def fav_section(polls) -> str:
         </div>"""
 
     return f"""
-    <section id="favorability">
+    <section class="block" id="favorability">
       <h2>Favorability</h2>
       <p class="lede">National favorable / unfavorable. Only polls from pages opened for this update are listed. A simple unweighted average of the 10 polls in the RCP table matches RCP’s published average: {avg['favorable']}% favorable, {avg['unfavorable']}% unfavorable (net {net_label(avg['net'])}). The Hill/DDHQ estimate ({hill['favorable']} / {hill['unfavorable']}, net {net_label(hill['net'])}, as of {fmt_md(hill['as_of'])}) is more unfavorable because it folds in adult-universe splits.</p>
       <div class="scroll">
@@ -683,7 +685,7 @@ def primary_section(polls_2028) -> str:
         </tr>"""
     )
     return f"""
-    <section id="primary">
+    <section class="block" id="primary">
       <h2>2028 GOP primary</h2>
       <p class="lede">National Republican nomination polls opened for this update. The simple average is an unweighted mean of each candidate’s reported share. These three polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Other candidates are shown only where a poll reported them; they are not averaged.</p>
       <div class="bars">{''.join(bars)}</div>
@@ -727,7 +729,7 @@ def sentiment_section(entries, s) -> str:
     don_views = fmt_views(views_of(don)) if don else "—"
     don_likes = fmt_num((don.get("engagement") or {}).get("likes")) if don else "—"
     return f"""
-    <section id="sentiment">
+    <section class="block" id="sentiment">
       <h2>Sentiment overview</h2>
       <p class="lede">Donald Trump Jr.’s endorsement of Vance’s midterm postmortem ({don_views} views, {don_likes} likes) outweighs every critical item combined. The chart below therefore uses likes + reposts + quotes and excludes both Vance’s own post and that endorsement, so the theme-by-theme debate is visible. Replies are omitted because they mix support and pushback.</p>
       <div class="legend"><span><span class="swatch crit"></span> Critical</span><span><span class="swatch supp"></span> Supportive (ex-Trump Jr. postmortem)</span><span>Units: likes + reposts + quotes</span></div>
@@ -787,7 +789,7 @@ def feed_section(entries) -> str:
             </article>"""
         )
     return f"""
-    <section id="feed">
+    <section class="block" id="feed">
       <h2>Latest posts &amp; articles</h2>
       <p class="lede">Items actually opened or returned by tools this update. Every source name is a live link. Followers and engagement are as returned; blank where unknown. Summaries are factual, not editorial endorsements. ER is (likes + reposts + replies + quotes) / followers. <span id="feed-count"></span></p>
       <div class="filters" role="group" aria-label="Filter by stance">
@@ -809,9 +811,9 @@ def feed_section(entries) -> str:
 
 def methodology_section() -> str:
     return """
-    <section id="methodology">
+    <section class="block" id="methodology">
       <h2>Methodology</h2>
-      <p>This is an independent tracker of public polling and of large-account posts and outlet coverage concerning Vice President JD Vance. It is not affiliated with any campaign, political party, or government office, and it is not a scientific sample of all public opinion.</p>
+      <p>This is an independent tracker of public polling and of large-account posts and outlet coverage concerning Vice President JD Vance. It is not affiliated with JD Vance or any campaign, political party, or government office, and it is not a scientific sample of all public opinion.</p>
       <p>Items are included only when a source page or post was opened for this update. Every item has a source link. Follower counts and engagement figures are as returned by the source; they are left blank when unknown. Summaries are factual descriptions, not endorsements.</p>
       <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
       <p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>
@@ -846,26 +848,28 @@ def build_html(entries_doc, polls, polls_2028) -> str:
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   <meta name="robots" content="index,follow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <style>{css()}</style>
+  {extra_pages.FONTS}
 </head>
 <body>
-  <div class="wrap">
-    <header class="site">
+{extra_pages.nav("tracker")}
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-copy">
       <p class="kicker">Independent polling &amp; coverage tracker</p>
       <h1>JD Vance Tracker</h1>
-      <p class="dek">A snapshot of public polls, large-account posts, and outlet coverage after the Nov. 3, 2026 midterms. Not affiliated with any campaign, political party, or government office.</p>
+      <p class="dek">Polls, large-account posts, and a sourced biography — after the Nov. 3, 2026 midterms. Not affiliated with JD Vance or any campaign.</p>
       <p class="updated">Last updated {esc(updated)}</p>
-    </header>
-    <nav class="toc" aria-label="Sections">
-      <a href="#favorability">Favorability</a>
-      <a href="#primary">2028 GOP primary</a>
-      <a href="#sentiment">Sentiment</a>
-      <a href="#feed">Posts &amp; articles</a>
-      <a href="#methodology">Methodology</a>
-    </nav>
+      <div class="hero-actions">
+        <a class="btn solid" href="#favorability">See the polls</a>
+        <a class="btn" href="bio.html">Read the biography</a>
+        <a class="btn" href="myths.html">Myths vs. facts</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/vance-vp-portrait.jpg" alt="Official 2025 vice-presidential portrait of JD Vance" width="960" height="1244">
+      <div class="cap">Official portrait, Jan. 15, 2025 · Daniel Torok, The White House · Public domain</div>
+    </div>
+  </section>
+  <div class="wrap">
     <div class="metrics">
       {metric_card(f"{avg['favorable']} / {avg['unfavorable']}", "Favorability (RCP avg)", f"Net {net_label(avg['net'])} · {avg['window']}")}
       {metric_card(f"{a2028['JD Vance']['pct']}%", "2028 GOP simple average", f"Vance · Rubio {a2028['Marco Rubio']['pct']}% · DeSantis {a2028['Ron DeSantis']['pct']}%")}
@@ -877,10 +881,8 @@ def build_html(entries_doc, polls, polls_2028) -> str:
     {sentiment_section(entries, s)}
     {feed_section(entries)}
     {methodology_section()}
-    <footer class="site">
-      <p>Independent tracker. Not affiliated with any campaign, political party, or government office. Authenticity ratings are heuristics, not proof.</p>
-    </footer>
   </div>
+{extra_pages.footer()}
   <script>{js()}</script>
 </body>
 </html>
@@ -892,7 +894,16 @@ def main() -> None:
     html_out = build_html(entries_doc, polls, polls_2028)
     out = ROOT / "index.html"
     out.write_text(html_out, encoding="utf-8")
-    check = [DATA / n for n in SOURCE_JSON] + [out, ROOT / "README.md"]
+    updated = fmt_updated(entries_doc.get("last_updated") or polls.get("last_updated") or "")
+    extra_pages.write_pages(updated)
+    check = [DATA / n for n in SOURCE_JSON] + [
+        out,
+        ROOT / "bio.html",
+        ROOT / "myths.html",
+        ROOT / "README.md",
+        ROOT / "styles.css",
+        ROOT / "images" / "CREDITS.md",
+    ]
     assert_no_forbidden(check)
     print(f"Wrote {out}")
 

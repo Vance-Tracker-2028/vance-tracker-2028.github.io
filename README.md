@@ -10,6 +10,9 @@ This is not affiliated with any campaign, political party, or government office.
 - A 2028 Republican nomination comparison (Vance, Rubio, DeSantis, and others as reported)
 - A sentiment overview of critical vs. supportive engagement by theme
 - A filterable feed of posts and articles, with source links, engagement, and authenticity heuristics
+- A sourced biography, including Vance’s 2016 criticism of Donald Trump, his later explanations, and the 2024 vice-presidential selection
+- A myths-vs-facts page limited to claims examined by major fact-checkers
+- Official government portraits (U.S. public domain), stored in `images/` with credits
 
 The live site is the GitHub Pages root for the Vance-Tracker-2028 organization:
 
