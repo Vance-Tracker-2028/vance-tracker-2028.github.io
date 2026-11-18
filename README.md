@@ -1,8 +1,8 @@
 # JD Vance Tracker
 
-An independent, static tracker of public polling and of large-account posts and outlet coverage concerning Vice President JD Vance.
+An unofficial supporter site that tracks public polling and large-account posts and outlet coverage concerning Vice President JD Vance.
 
-This is not affiliated with any campaign, political party, or government office.
+Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted.
 
 ## What’s on the page
 

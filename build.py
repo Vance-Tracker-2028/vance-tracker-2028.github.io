@@ -816,7 +816,7 @@ def methodology_section() -> str:
     return """
     <section class="block" id="methodology">
       <h2>Methodology</h2>
-      <p>This is an independent tracker of public polling and of large-account posts and outlet coverage concerning Vice President JD Vance. It is not affiliated with JD Vance or any campaign, political party, or government office, and it is not a scientific sample of all public opinion.</p>
+      <p>This is an unofficial supporter site that tracks public polling and large-account posts and outlet coverage concerning Vice President JD Vance. It was independently created by supporters of JD Vance. It is not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House, and it is not a scientific sample of all public opinion. No funds are solicited or accepted.</p>
       <p>Items are included only when a source page or post was opened for this update. Every item has a source link. Follower counts and engagement figures are as returned by the source; they are left blank when unknown. Summaries are factual descriptions, not endorsements.</p>
       <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
       <p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>
@@ -841,7 +841,7 @@ def build_html(entries_doc, polls, polls_2028) -> str:
     updated = (entries_doc.get("last_updated_pt") or fmt_updated(entries_doc.get("last_updated") or polls.get("last_updated") or ""))
     title = "JD Vance Tracker"
     desc = (
-        "Independent tracker of public sentiment and polling on JD Vance, "
+        "Unofficial supporter site tracking public sentiment and polling on JD Vance, "
         "including favorability, 2028 Republican nomination polls, and large-account coverage."
     )
     return f"""<!DOCTYPE html>
@@ -858,9 +858,9 @@ def build_html(entries_doc, polls, polls_2028) -> str:
 {extra_pages.nav("tracker")}
   <section class="hero" aria-label="Introduction">
     <div class="hero-copy">
-      <p class="kicker">Independent polling &amp; coverage tracker</p>
+      <p class="kicker">Unofficial polling &amp; coverage tracker</p>
       <h1>JD Vance Tracker</h1>
-      <p class="dek">Polls, large-account posts, and a sourced biography — after the Nov. 3, 2026 midterms. Not affiliated with JD Vance or any campaign.</p>
+      <p class="dek">Polls, large-account posts, and a sourced biography — after the Nov. 3, 2026 midterms.</p>
       <p class="updated">Last updated {esc(updated)}</p>
       <div class="hero-actions">
         <a class="btn solid" href="#favorability">See the polls</a>
@@ -874,6 +874,11 @@ def build_html(entries_doc, polls, polls_2028) -> str:
       <div class="cap">Official portrait, Jan. 15, 2025 · Daniel Torok, The White House · Public domain</div>
     </div>
   </section>
+  <div class="hero-disclaimer">
+    <div class="wrap">
+      <p>Unofficial supporter site. Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted.</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="metrics">
       {metric_card(f"{avg['favorable']} / {avg['unfavorable']}", "Favorability (RCP avg)", f"Net {net_label(avg['net'])} · {avg['window']}")}
