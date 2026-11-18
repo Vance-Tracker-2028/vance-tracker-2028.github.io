@@ -797,6 +797,7 @@ def feed_section(entries) -> str:
         <button class="filter" type="button" data-filter-stance="critical" aria-pressed="false">Critical</button>
         <button class="filter" type="button" data-filter-stance="supportive" aria-pressed="false">Supportive</button>
         <button class="filter" type="button" data-filter-stance="originating" aria-pressed="false">Originating</button>
+        <button class="filter" type="button" data-filter-stance="mixed" aria-pressed="false">Mixed</button>
       </div>
       <div class="filters" role="group" aria-label="Filter by theme">
         {''.join(theme_btns)}
@@ -830,6 +831,7 @@ def build_html(entries_doc, polls, polls_2028) -> str:
     n_crit = sum(1 for e in entries if e.get("stance") == "critical")
     n_supp = sum(1 for e in entries if e.get("stance") == "supportive")
     n_orig = sum(1 for e in entries if e.get("stance") == "originating")
+    n_mixed = sum(1 for e in entries if e.get("stance") == "mixed")
     avg = polls["averages"]["rcp_published"]
     a2028 = polls_2028["simple_unweighted_average"]
     don = s["donjr"]
@@ -873,7 +875,7 @@ def build_html(entries_doc, polls, polls_2028) -> str:
     <div class="metrics">
       {metric_card(f"{avg['favorable']} / {avg['unfavorable']}", "Favorability (RCP avg)", f"Net {net_label(avg['net'])} · {avg['window']}")}
       {metric_card(f"{a2028['JD Vance']['pct']}%", "2028 GOP simple average", f"Vance · Rubio {a2028['Marco Rubio']['pct']}% · DeSantis {a2028['Ron DeSantis']['pct']}%")}
-      {metric_card(str(n), "Tracker items", f"{n_crit} critical · {n_supp} supportive · {n_orig} originating")}
+      {metric_card(str(n), "Tracker items", f"{n_crit} critical · {n_supp} supportive · {n_orig} originating · {n_mixed} mixed")}
       {metric_card(don_views, "Biggest supportive reach", "Donald Trump Jr. endorsing the postmortem")}
     </div>
     {fav_section(polls)}
