@@ -162,39 +162,92 @@ def myths_page(updated: str) -> str:
     <header class="page-hero">
       <p class="kicker">Fact checks</p>
       <h1>Myths vs. facts</h1>
-      <p>Viral claims about JD Vance that independent fact-checkers have examined. This page includes only items for which a rating or investigation by a major fact-checking organization was opened for this update. It is not a catalog of political arguments, and it does not treat a disagreement about policy as a “myth.”</p>
-      <p class="fine">Last updated {esc(updated)}.</p>
+      <p>Viral smears about JD Vance, set out as they were told and as the record stands. Each card has two columns: <strong>What they said</strong> and <strong>What is true</strong>. We cite at least two independent fact-checkers or a fact-checker plus a major news organization for every item, and we link the primary evidence those checks used — the book, the interview, or the official record — whenever we opened it.</p>
+      <p class="fine">Last updated {esc(updated)}. This page includes only claims that fact-checkers examined as stories about Vance, not fact-checks of statements he made about policy or other people. Snopes appears only where it debunks a smear against him, never as the sole source and never as the referee of a criticism of his record.</p>
     </header>
 
     <section class="block">
-      <div class="myth">
-        <div class="tag">The claim</div>
-        <h3>That Vance wrote in <cite>Hillbilly Elegy</cite> about a sexual encounter with a couch</h3>
-        <p>In July 2024, after Vance was named as Trump’s running mate, a social-media post claimed that pages of his 2016 memoir described a sexual encounter involving an inside-out latex glove and couch cushions. The post spread widely and was repeated as if it were in the book.</p>
-        <div class="tag fact-tag">The fact</div>
-        <p>The passage does not exist. Snopes rated the rumor false: the memoir “contained no such passage, including in the first edition,” and the original poster “signaled that he was joking” in a follow-up. <a href="https://www.snopes.com/fact-check/jd-vance-couch-cushions/">Snopes, July 23, 2024 (updated July 26, 2024)</a>. PolitiFact, reviewing a later repetition of the claim by Illinois Gov. J.B. Pritzker, rated it Pants on Fire and noted that the claim “surfaced on social media in a satirical post.” <a href="https://www.politifact.com/factchecks/2024/jul/31/jb-pritzker/pritzker-repeats-a-baseless-claim-about-jd-vance-a/">PolitiFact, July 31, 2024</a></p>
-        <p class="sources">Fact-checks: <a href="https://www.snopes.com/fact-check/jd-vance-couch-cushions/">Snopes</a> · <a href="https://www.politifact.com/factchecks/2024/jul/31/jb-pritzker/pritzker-repeats-a-baseless-claim-about-jd-vance-a/">PolitiFact</a> · related: <a href="https://www.snopes.com/fact-check/jd-vance-hillbilly-elegy-first-edition-couch-erotica/">Snopes on the first edition</a></p>
-      </div>
+      <article class="myth-card">
+        <header class="myth-card-top">
+          <p class="kicker">Myth 1</p>
+          <h2>That <cite>Hillbilly Elegy</cite> describes a sexual encounter with a couch</h2>
+        </header>
+        <div class="myth-grid">
+          <div class="myth-col said">
+            <h3>What they said</h3>
+            <blockquote>On July 15, 2024 — the day Donald Trump named Vance as his running mate — an X user, @rickrudescalves, claimed that Vance’s 2016 memoir admitted, on pages 179–181, to a sexual act involving “an inside-out latex glove shoved between two couch cushions.”</blockquote>
+            <p class="who">Who spread it: the original X post, then other users who repeated it as if it were in the book. Illinois Gov. JB Pritzker amplified it on television, telling ABC’s <cite>This Week</cite> on July 28, 2024, that Trump’s running mate was “getting known for his obsession with couches.” He also joked about a “Couches Against Trump” Zoom at a July 29 fundraiser. A later variant circulated a fake page said to be from a first edition or galley proof.</p>
+          </div>
+          <div class="myth-col true">
+            <h3>What is true</h3>
+            <p>The passage does not exist, in the 2016 edition or in the first edition. Snopes rated the original rumor false. PolitiFact, reviewing Pritzker’s repetition, rated it Pants on Fire and said the claim “surfaced on social media in a satirical post.”</p>
+            <p>PolitiFact searched a digital copy of the 2016 book and found ten uses of the word “couch,” none in the sense of the rumor, and no uses of “sofa,” “lounge,” “settee,” or “love seat.” It then read pages 179–181 in a 2016 paperback. Those pages describe Vance’s arrival at Ohio State, orientation, Columbus’s proximity to Middletown, roommates, financial-aid forms, an interest in law school, and a job at the Ohio Statehouse — and they do not mention a couch.</p>
+            <p>The original poster later followed the claim with the “Just Go On the Internet and Tell Lies” meme, which Snopes, citing Know Your Meme, treated as a signal that he was joking. NewsGuard, cited by PolitiFact, also traced the claim to a satirical post.</p>
+            <p>A later image, passed off as a first-edition or galley page about the “eroticism” of couch cushions, was fake. Snopes reported that an X user who circulated scans later described them as “a simple edit of an e-book copy.” The book still contains no such passage.</p>
+            <p>The Associated Press published a fact-check of the rumor on July 24, 2024, then removed it. The notice on the page, as reported by Snopes, said the story “did not go through our standard editing process and has been removed.” That withdrawal was about AP’s editing process, not a finding that the rumor was true.</p>
+          </div>
+        </div>
+        <div class="myth-foot">
+          <p class="sources">Fact-checks: <a href="https://www.snopes.com/fact-check/jd-vance-couch-cushions/">Snopes, July 23, 2024 (updated July 26)</a> · <a href="https://www.politifact.com/factchecks/2024/jul/31/jb-pritzker/pritzker-repeats-a-baseless-claim-about-jd-vance-a/">PolitiFact, July 31, 2024 (Pants on Fire)</a> · related: <a href="https://www.snopes.com/fact-check/jd-vance-hillbilly-elegy-first-edition-couch-erotica/">Snopes on the fake first-edition page, July 26, 2024</a>. Primary evidence: PolitiFact’s reading of the 2016 paperback, pages 179–181, and its search of the digital edition. Pritzker’s remarks are quoted from PolitiFact’s review of ABC’s <cite>This Week</cite>, July 28, 2024.</p>
+        </div>
+      </article>
 
-      <div class="myth">
-        <div class="tag">The claim</div>
-        <h3>That he has changed his name three times, as if to hide who he is</h3>
-        <p>A 2024 social-media meme claimed Vance was born James Donald Bowman and had since changed his name three times, sometimes tying the last change to his marriage and asking, “What is JD Vance hiding?”</p>
-        <div class="tag fact-tag">The fact</div>
-        <p>Snopes rated the meme a mixture. It is true that he was born James Donald Bowman, named in part for his biological father. It is not true that he has officially changed his name three times, or that the final change came “when he married.” Snopes found two official changes: the first when he was adopted by a stepfather, and the second a change he requested around the time he was graduating from Yale Law School, a year before he got married, becoming James David Vance. <a href="https://www.snopes.com/fact-check/jd-vance-born-james-donald-bowman/">Snopes, Aug. 16, 2024</a></p>
-        <p class="sources">Fact-check: <a href="https://www.snopes.com/fact-check/jd-vance-born-james-donald-bowman/">Snopes</a></p>
-      </div>
+      <article class="myth-card">
+        <header class="myth-card-top">
+          <p class="kicker">Myth 2</p>
+          <h2>That he changed his name three times to hide who he is</h2>
+        </header>
+        <div class="myth-grid">
+          <div class="myth-col said">
+            <h3>What they said</h3>
+            <blockquote>A 2024 social-media meme said Vance was “born as James Donald Bowman,” then “changed middle name to David,” “changed name again to Jimmy Hamel,” and “changed name to JD Vance 10 years ago when he married his wife.” One version was titled “WHO ARE YOU?” and asked whether he was “hiding” something.</blockquote>
+            <p class="who">Who spread it: widely shared image macros on X and similar posts in the summer of 2024, after Vance became the Republican vice-presidential nominee. Snopes examined a post that had more than 51,000 views when it was reviewed, and readers sent in close variants of the same meme.</p>
+          </div>
+          <div class="myth-col true">
+            <h3>What is true</h3>
+            <p>He was born James Donald Bowman, in Middletown, Ohio, on Aug. 2, 1984, named in part for his biological father. That much of the meme is true. The rest mixes up the legal record and invents a motive.</p>
+            <p>There were two official name changes, not three, and neither was a disguise. The first came when his stepfather, Robert Hamel, adopted him. His mother changed his name to James David Hamel — keeping the initials “J.D.,” which were already his nickname. Middletown City Schools, his hometown district, says that change happened in 1990, the year he started kindergarten, and that James David Hamel is the name he used throughout school. He graduated from Middletown High School in 2003. The Associated Press, which reviewed documentation and Ohio vital records, reported that the only birth certificate on file for him at the state’s vital-statistics office reads James David Hamel, because the adoption removed the Bowman name from the public record.</p>
+            <p>The meme’s “Jimmy Hamel” is not a name in that record. The second official change, to Vance — his grandmother Bonnie Blanton Vance’s family name — became legal in April 2013, as he was about to graduate from Yale Law School, a year before he married. His spokesperson, Taylor Van Kirk, told the AP that it “didn’t happen on his wedding day in 2014, as the book implies.” Dropping the periods in “J.D.” later on was a stylistic preference, not a third legal change. His legal name is James David Vance.</p>
+            <p>Snopes rated the meme a mixture: true that he was born James Donald Bowman; false that he officially changed his name three times, or that the last change came “when he married.” The AP’s reporting, built on state records and documents from his school, the Marine Corps, Ohio State, and Yale, matches that timeline.</p>
+          </div>
+        </div>
+        <div class="myth-foot">
+          <p class="sources">Fact-check and reporting: <a href="https://www.snopes.com/fact-check/jd-vance-born-james-donald-bowman/">Snopes, Aug. 16, 2024</a> · <a href="https://apnews.com/article/election-2024-republicans-vice-president-vance-name-359c3d1361c94f5d2d1e9798b7854477">Associated Press, July 26, 2024</a> (opened via a <a href="https://web.archive.org/web/20240727041018/https://apnews.com/article/election-2024-republicans-vice-president-vance-name-359c3d1361c94f5d2d1e9798b7854477">July 27, 2024 archived copy</a>). Primary evidence: Ohio vital-records finding and campaign confirmation reported by the AP; Vance’s own account in <cite>Hillbilly Elegy</cite>, as quoted by Snopes and the AP; and <a href="https://www.middletowncityschools.com/middletown-high-school-news/entry/jd-vance-middletown-high-school-graduate-elected-vice-president/">Middletown City Schools</a>, Nov. 6, 2024. Additional reporting: <a href="https://www.nytimes.com/2024/07/15/us/politics/jd-vance-name.html">The New York Times, July 15, 2024</a> (opened via a <a href="https://web.archive.org/web/20240719203813/https://www.nytimes.com/2024/07/15/us/politics/jd-vance-name.html">July 19, 2024 archived copy</a>).</p>
+        </div>
+      </article>
+
+      <article class="myth-card">
+        <header class="myth-card-top">
+          <p class="kicker">Myth 3</p>
+          <h2>That he admitted his dog Atlas was a campaign “rent-a-dog”</h2>
+        </header>
+        <div class="myth-grid">
+          <div class="myth-col said">
+            <h3>What they said</h3>
+            <blockquote>In mid-September 2024, short clips of Vance’s interview with Tucker Carlson were posted as if Vance had admitted that his German shepherd, Atlas, was “a rent-a-dog that was given to me by the campaign to make me seem like I’m a dog fan.”</blockquote>
+            <p class="who">Who spread it: videos and captions on TikTok, Threads, and X around Sept. 21, 2024, cut from a Sept. 18 interview on Carlson’s Rumble show. One Threads caption said, “The campaign got JD a dog to make him appear more human.” Another said, “JD Vance admits he has a ‘rent-a-dog.’”</p>
+          </div>
+          <div class="myth-col true">
+            <h3>What is true</h3>
+            <p>The clips were cut in a way that hid the setup. In the full interview, Vance was mocking an online rumor, not confessing to it. He introduced the dog by saying, “this is Atlas, which I found out on the internet a few weeks ago that he’s actually a rent-a-dog that was given to me by the campaign to make me seem like I’m a dog fan.” He then said, “Of course, we got him when he was an 8-week-old puppy,” and that it was “shocking” anyone would think otherwise.</p>
+            <p>PolitiFact rated the claim False and wrote that “the video was deceptively edited.” FactCheck.org reached the same conclusion: the posts “misrepresent” the comments. A Vance spokesman told PolitiFact the family got Atlas as an 8-week-old puppy in January 2024 — before Vance became the vice-presidential nominee.</p>
+          </div>
+        </div>
+        <div class="myth-foot">
+          <p class="sources">Fact-checks: <a href="https://www.politifact.com/factchecks/2024/sep/22/social-media/jd-vances-german-shepherd-atlas-is-his-actual-dog/">PolitiFact, Sept. 22, 2024 (False)</a> · <a href="https://www.factcheck.org/2024/09/posts-misrepresent-vances-comments-about-his-pet-dog/">FactCheck.org, Sept. 24, 2024</a>. Primary evidence: the Sept. 18, 2024 Carlson interview, as quoted in full by both fact-checks. This item does not rely on Snopes.</p>
+        </div>
+      </article>
     </section>
 
     <section class="block">
       <h2>What this page does not do</h2>
-      <p>It does not collect every harsh joke, policy dispute, or campaign attack. It also does not use fact-checks of <em>Vance’s own claims</em> (for example, statements he made about the 2024 campaign) as “myths about him.” Those are a different question, and they belong in political reporting, not on a list of fabrications about his life.</p>
+      <p>It does not collect every harsh joke, policy dispute, or campaign attack. It also does not use fact-checks of <em>Vance’s own claims</em> — for example, statements he made about the 2024 campaign, or claims he repeated about Springfield, Ohio — as “myths about him.” Those are a different question, and they belong in political reporting, not on a list of fabrications about his life.</p>
     </section>
   </article>
 """
     return page_shell(
         "Myths vs. facts — JD Vance Tracker",
-        "Fact-checks of viral claims about JD Vance, including the fabricated couch rumor and claims about his name, with links to Snopes and PolitiFact.",
+        "Side-by-side fact-checks of viral claims about JD Vance, including the fabricated couch rumor, claims about his name, and the rent-a-dog hoax, with links to Snopes, PolitiFact, the Associated Press, and FactCheck.org.",
         "myths",
         body,
     )

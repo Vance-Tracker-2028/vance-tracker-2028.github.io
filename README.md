@@ -11,7 +11,7 @@ This is not affiliated with any campaign, political party, or government office.
 - A sentiment overview of critical vs. supportive engagement by theme
 - A filterable feed of posts and articles, with source links, engagement, and authenticity heuristics
 - A sourced biography, including Vance’s 2016 criticism of Donald Trump, his later explanations, and the 2024 vice-presidential selection
-- A myths-vs-facts page limited to claims examined by major fact-checkers
+- A myths-vs-facts page of side-by-side “What they said” / “What is true” cards, limited to smears about Vance that major fact-checkers have examined, each with more than one source
 - A top-opposition page of high-reach critics (50,000+ X followers, or ties to a major organization or elected office), ranked by reach and frequency, with side labels and links to opened posts and articles
 - Official government portraits (U.S. public domain), stored in `images/` with credits
 
