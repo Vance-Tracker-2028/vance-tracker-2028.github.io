@@ -104,6 +104,8 @@ a:hover { color: var(--accent-2); text-decoration-thickness: 2px; }
   letter-spacing: 0.02em;
   margin: 0 0 20px;
   color: #fff;
+  overflow: visible;
+  padding-left: 0.04em;
 }
 .hero .dek { font-size: 1.1rem; max-width: 36rem; color: rgba(255,255,255,0.9); margin: 0 0 18px; }
 .hero .updated { color: rgba(255,255,255,0.66); font-size: 0.95rem; margin: 0 0 24px; }
@@ -190,6 +192,12 @@ h3 {
   letter-spacing: 0.04em;
   margin: 1.6rem 0 0.5rem;
   color: var(--accent-2);
+}
+h1 cite, h2 cite, h3 cite, .hero h1 cite, .myth-card-top h2 cite, .page-hero h1 cite, .page-hero h2 cite {
+  font-style: normal;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 .lede { margin: 0 0 18px; color: var(--ink); max-width: 48rem; }
 .note, .fine { font-size: 0.9rem; color: var(--muted); }
