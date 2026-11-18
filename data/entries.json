@@ -151,30 +151,67 @@
       "source": "Matt Walsh",
       "handle": "MattWalshBlog",
       "type": "X post",
-      "followers": 4078016,
+      "followers": 4077912,
       "theme": "2028 / political talent",
-      "summary": "In a thread asking which elected Republican besides Trump has the most “raw political talent” (charisma and “vibes,” not policy agreement), Walsh surveyed replies and posted a 24-hour poll of the four names that came up most: Vance, Rubio, Gill, and DeSantis. A later reply in the comments identified Gill as Rep. Brandon Gill. As of this update the poll was still open (scheduled to close Nov 18, 11:13 AM PT); votes then were Rubio 27,823, DeSantis 17,209, Gill 7,665, and Vance last at 6,565. Walsh does not endorse or attack Vance in the thread; he includes him as one of the names mentioned. The original question post (8:21 AM PT the same day) had 5,982 likes and 2,645,786 views.",
+      "summary": "In a thread asking which elected Republican besides Trump has the most “raw political talent” (charisma and “vibes,” not policy agreement), Walsh surveyed replies and posted a 24-hour poll of the four names that came up most: Vance, Rubio, Gill, and DeSantis. A later reply in the comments identified Gill as Rep. Brandon Gill. Final result (poll closed Nov 18, 2026, 11:13 AM PT; 67,220 votes): Rubio 31,794 (47.3%), DeSantis 19,338 (28.8%), Gill 8,635 (12.8%), Vance 7,453 (11.1%). Vance finished last. Walsh does not endorse or attack Vance in the thread; he includes him as one of the names mentioned. The original question post (8:21 AM PT, Nov 17) had 6,486 likes, 208 reposts, 228 quotes, 5,627 replies, 566 bookmarks and 3,021,996 views at close.",
       "engagement": {
-        "likes": 849,
-        "reposts": 170,
-        "replies": 1030,
-        "quotes": 57,
-        "views": 242276,
-        "interactions": 2106,
-        "engagement_ex_replies": 1076,
-        "followers": 4078016,
-        "engagement_rate_vs_followers_pct": 0.05,
-        "reply_to_like_pct": 121.3,
-        "engagement_rate_vs_views_pct": 0.87
+        "likes": 981,
+        "reposts": 203,
+        "replies": 1146,
+        "quotes": 64,
+        "bookmarks": 90,
+        "views": 282068,
+        "interactions": 2394,
+        "engagement_ex_replies": 1248,
+        "followers": 4077912,
+        "engagement_rate_vs_followers_pct": 0.06,
+        "reply_to_like_pct": 116.8,
+        "engagement_rate_vs_views_pct": 0.85,
+        "poll_final": {
+          "closed_pt": "November 18, 2026, 11:13 AM PT",
+          "voting_status": "closed",
+          "total_votes": 67220,
+          "options": [
+            {
+              "label": "Rubio",
+              "votes": 31794,
+              "pct": 47.3
+            },
+            {
+              "label": "DeSantis",
+              "votes": 19338,
+              "pct": 28.77
+            },
+            {
+              "label": "Gill",
+              "votes": 8635,
+              "pct": 12.85
+            },
+            {
+              "label": "Vance",
+              "votes": 7453,
+              "pct": 11.09
+            }
+          ]
+        },
+        "root_post": {
+          "url": "https://x.com/MattWalshBlog/status/2122726787700379939",
+          "likes": 6486,
+          "reposts": 208,
+          "quotes": 228,
+          "replies": 5627,
+          "bookmarks": 566,
+          "views": 3021996
+        }
       },
       "url": "https://x.com/MattWalshBlog/status/2122770064369721782",
       "added_on": "2026-11-18",
       "stance": "mixed",
       "authenticity": {
         "rating": "Likely organic",
-        "evidence": "Heuristic only, not proof. Long-standing public-figure account (created June 11, 2013; 4,078,016 followers and 609 following at the time of this update; 72,911 posts). Engagement on the poll post (849 likes, 1,030 replies, 242,276 views; 0.05% engagement rate vs. followers) is modest for a 4M-follower account and in line with a mid-thread poll, not an out-of-range spike. The root question post (5,982 likes, 2.65M views) is likewise in range. A sample of quote-posts included amplification by established accounts as well as some very new or low-follower profiles; no copy-paste flood was observed in the original quotes opened."
+        "evidence": "Heuristic only, not proof; X poll votes are anonymous, so votes are judged only indirectly. (1) Vote shares were stable to the end: from the earlier snapshot (59,262 votes) to the close (67,220), the late 7,958 votes split Rubio 49.9%, DeSantis 26.8%, Gill 12.2%, Vance 11.2%, versus 46.9 / 29.0 / 12.9 / 11.1% before; no late surge for any name. The final order also matches a public count of names in the replies (Rubio 1,293, DeSantis 861, Gill 656, Vance 347, from @frontrunnershow, a 2-week-old 435-follower account, so treat as rough). (2) Sampled commenters look like real accounts: 106 unique authors across 101 replies and 23 quote-posts; median account age about 4.7 years for repliers; 3 of 83 repliers had under 10 followers, 2 had default avatars, 2 had digit-string handles, 10 were created in 2026; no copy-paste flood (the most repeated reply was just “Marco Rubio,” 4 times). (3) Traffic toward Rubio was driven by big quote-posts rather than anonymous accounts: Laura Loomer’s quote (“Marco Rubio… not even a contest”) reached 143,535 views, 8,930 likes and 814 reposts, and Pino Americano’s poll quote reached 23,610 views and 121 reposts. Caveat: among 62 sampled reposters of the Pino quote, 16 (26%) average more than 100 posts a day and 7 use default avatars, a pattern typical of high-volume retweet accounts; that is amplification, not evidence of vote stuffing."
       },
-      "audience_sample": "Quotes and replies opened leaned toward Rubio or DeSantis rather than Vance. Notable quote of the original question: Laura Loomer (1,935,861 followers; account created 2012) wrote “Marco Rubio. And it’s not even a contest.” (7,733 likes, 678 reposts, 506 replies, 130,651 views). Pino Americano (117,278 followers) quoted the poll: “JD Vance is nearly off the stage. Let’s go Rubio!” (906 likes, 90 reposts, 16,865 views). koshercockney (183,707 followers) quoted the original, “Wow. Nobody likes Vance.” (136 likes, 10 reposts). Tomi Lahren’s reply to the original question (2,093 likes, 165,001 views) said she wanted someone who “stays true to the values,” naming DeSantis; Walsh replied, “Yeah but that wasn’t my question.” Reply-to-like ratio on the poll post is 121%."
+      "audience_sample": "Quotes and replies opened leaned toward Rubio or DeSantis rather than Vance; in the sample, Rubio was named in 21 replies, DeSantis 14, Gill 9, Vance 4. Prominent commenters (50K+ followers or major-org tie), as fetched at close: Laura Loomer (@LauraLoomer, 1,935,729 followers; LOOMERED founder) replied “Marco Rubio” (2,403 likes, 39,175 views) and quoted the question: “Marco Rubio. And it’s not even a contest.” (8,930 likes, 814 reposts, 560 replies, 143,535 views) — pro-Rubio over Vance. Tomi Lahren (@TomiLahren, 2,865,491; OutKick/Fox News host) replied she wants someone who “stays true to the values and gets shit done,” naming DeSantis (2,245 likes, 180,478 views) — a preference, not a Vance critique; Walsh replied, “Yeah but that wasn’t my question.” Three Year Letterman (@3YearLetterman, 486,915; satire account) joked “Gerald Ford” (99 likes) — no stance. Kosher (@koshercockney, 183,833) quoted: “Wow. Nobody likes Vance.” (248 likes, 4,007 views) — critical. Pino Americano (@PinoAmericano, 117,273) quoted the poll: “JD Vance is nearly off the stage. Let’s go Rubio!” (1,187 likes, 121 reposts, 23,610 views) — critical. Walsh also posted a follow-up asking for non-politicians who could run in 2028 (1,737 likes, 682,381 views). Reply-to-like ratio on the poll post is 117%."
     },
     {
       "date": "2026-11-17",
@@ -782,5 +819,5 @@
       "audience_sample": null
     }
   ],
-  "last_updated_pt": "November 18, 2026, 8:13 AM PT"
+  "last_updated_pt": "November 18, 2026, 11:45 AM PT"
 }

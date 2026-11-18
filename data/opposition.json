@@ -1,8 +1,8 @@
 {
   "title": "JD Vance top opposition",
   "last_updated": "2026-11-18",
-  "last_updated_pt": "November 18, 2026, 8:13 AM PT",
-  "follower_snapshot_pt": "November 18, 2026, Pacific Time, from X public metrics on accounts that were opened (Levin, Hammer, Shipwreckedcrew and the three new entries refreshed this morning)",
+  "last_updated_pt": "November 18, 2026, 11:45 AM PT",
+  "follower_snapshot_pt": "November 18, 2026, Pacific Time, from X public metrics on accounts that were opened (Levin, Hammer, Shipwreckedcrew and the three new entries refreshed this morning); Loomer, koshercockney and Pino Americano refreshed again at the Walsh poll close (about 11:35 AM PT)",
   "criteria": {
     "min_followers": 50000,
     "or_major_organization_or_office": true,
@@ -231,8 +231,8 @@
     {
       "handle": "LauraLoomer",
       "name": "Laura Loomer",
-      "followers": 1935867,
-      "rank_reach": 1935867,
+      "followers": 1935729,
+      "rank_reach": 1935729,
       "affiliation": "Investigative journalist; founder of LOOMERED; host of Loomer Unleashed; former Project Veritas operative (from her X bio).",
       "side": "right",
       "main_criticisms": [
@@ -240,7 +240,7 @@
       ],
       "critical_items": 2,
       "appearances": 2,
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "last_seen_pt": "November 17, 2026, 10:57 AM PT",
       "links": [
         {
@@ -252,9 +252,9 @@
           "url": "https://x.com/LauraLoomer/status/2122766170302333213"
         }
       ],
-      "source_notes": "Prominent commenter in the Walsh thread (source b). The longer follow-up had 7,762 likes and 131,028 views when opened on November 18, 2026. These posts rank Rubio over Vance; they do not discuss Israel or Iran.",
+      "source_notes": "Prominent commenter in the Walsh thread (source b). The longer follow-up had 7,762 likes and 131,028 views when opened on November 18, 2026. These posts rank Rubio over Vance; they do not discuss Israel or Iran. Nov 18 final-results update: follower count refreshed at poll close (1,935,729). Her quote of the Walsh question finished with 8,930 likes, 814 reposts, 560 replies and 143,535 views; her 'Marco Rubio' reply had 2,403 likes and 39,175 views.",
       "in_walsh_thread": true,
-      "rank_score": 2419833.8,
+      "rank_score": 2419661.2,
       "rank": 7
     },
     {
@@ -558,8 +558,8 @@
     {
       "handle": "koshercockney",
       "name": "Kosher",
-      "followers": 183709,
-      "rank_reach": 183709,
+      "followers": 183833,
+      "rank_reach": 183833,
       "affiliation": "None stated. X bio: 'Israel. Just opinions of a Jewish dude.'",
       "side": "right",
       "main_criticisms": [
@@ -567,7 +567,7 @@
       ],
       "critical_items": 1,
       "appearances": 1,
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "last_seen_pt": "November 17, 2026, 2:45 PM PT",
       "links": [
         {
@@ -575,9 +575,9 @@
           "url": "https://x.com/koshercockney/status/2122823464448929873"
         }
       ],
-      "source_notes": "Prominent commenter in the Walsh thread (source b). The quote-post had 137 likes and 2,652 views when opened. A separate November 16 post asking whether readers would vote for Marco Rubio is not by itself a critique of Vance and is not counted.",
+      "source_notes": "Prominent commenter in the Walsh thread (source b). The quote-post had 137 likes and 2,652 views when opened. A separate November 16 post asking whether readers would vote for Marco Rubio is not by itself a critique of Vance and is not counted. Nov 18 final-results update: follower count refreshed at poll close (183,833); the quote-post had 248 likes and 4,007 views.",
       "in_walsh_thread": true,
-      "rank_score": 183709.0,
+      "rank_score": 183833.0,
       "rank": 19
     },
     {
@@ -631,8 +631,8 @@
     {
       "handle": "PinoAmericano",
       "name": "Pino Americano",
-      "followers": 117277,
-      "rank_reach": 117277,
+      "followers": 117273,
+      "rank_reach": 117273,
       "affiliation": "None stated beyond the X bio 'MAGA.'",
       "side": "right",
       "main_criticisms": [
@@ -642,7 +642,7 @@
       ],
       "critical_items": 3,
       "appearances": 3,
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "last_seen_pt": "November 17, 2026, 4:08 PM PT",
       "links": [
         {
@@ -658,9 +658,9 @@
           "url": "https://x.com/PinoAmericano/status/2122526861511274755"
         }
       ],
-      "source_notes": "Prominent commenter in the Walsh thread (source b), plus two earlier critical posts opened in the same search. The poll quote-post had 913 likes and 16,976 views when opened.",
+      "source_notes": "Prominent commenter in the Walsh thread (source b), plus two earlier critical posts opened in the same search. The poll quote-post had 913 likes and 16,976 views when opened. Nov 18 final-results update: follower count refreshed at poll close (117,273); the poll quote-post finished with 1,187 likes, 121 reposts and 23,610 views.",
       "in_walsh_thread": true,
-      "rank_score": 175915.5,
+      "rank_score": 175909.5,
       "rank": 22
     },
     {
