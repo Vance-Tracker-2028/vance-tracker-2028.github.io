@@ -632,6 +632,8 @@ def fav_section(polls) -> str:
 
 
 def primary_section(polls_2028) -> str:
+    _n2028 = len(polls_2028.get("polls") or [])
+    _n2028_word = {2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine"}.get(_n2028, str(_n2028))
     avg = polls_2028["simple_unweighted_average"]
     items = [
         ("Vance", avg["JD Vance"]["pct"]),
@@ -677,7 +679,7 @@ def primary_section(polls_2028) -> str:
         f"""<tr class="avg">
           <td>Simple unweighted average</td>
           <td>—</td>
-          <td>3 opened polls; mixed universes</td>
+          <td>{_n2028} opened polls; mixed universes</td>
           <td class="num">{v}%</td>
           <td class="num">{r}%</td>
           <td class="num">{d}%</td>
@@ -687,12 +689,12 @@ def primary_section(polls_2028) -> str:
     return f"""
     <section class="block" id="primary">
       <h2>2028 GOP primary</h2>
-      <p class="lede">National Republican nomination polls opened for this update. The simple average is an unweighted mean of each candidate’s reported share. These three polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Other candidates are shown only where a poll reported them; they are not averaged.</p>
+      <p class="lede">National Republican nomination polls opened for this update. The simple average is an unweighted mean of each candidate’s reported share. These {_n2028_word} polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Other candidates are shown only where a poll reported them; they are not averaged.</p>
       <div class="bars">{''.join(bars)}</div>
       <div class="metrics" style="grid-template-columns:repeat(3,1fr);">
-        {metric_card(f"{v}%", "Vance", "3 polls")}
+        {metric_card(f"{v}%", "Vance", f"{_n2028} polls")}
         {metric_card(f"{r}%", "Rubio", "Cygnal has Rubio +3")}
-        {metric_card(f"{d}%", "DeSantis", "Distant third in all three")}
+        {metric_card(f"{d}%", "DeSantis", f"Third in all {_n2028_word}")}
       </div>
       <div class="scroll">
         <table>
@@ -819,7 +821,7 @@ def methodology_section() -> str:
       <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
       <p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>
       <p>Favorability averages cite the published RealClearPolitics average where a page was opened, and a simple unweighted mean of listed polls. The 2028 Republican nomination average is an unweighted mean of each candidate’s share in the national polls opened for this update. Those polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used.</p>
-      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–17, 2026.</p>
+      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–18, 2026.</p>
     </section>
     """
 
@@ -836,7 +838,7 @@ def build_html(entries_doc, polls, polls_2028) -> str:
     a2028 = polls_2028["simple_unweighted_average"]
     don = s["donjr"]
     don_views = fmt_views(views_of(don)) if don else "—"
-    updated = fmt_updated(entries_doc.get("last_updated") or polls.get("last_updated") or "")
+    updated = (entries_doc.get("last_updated_pt") or fmt_updated(entries_doc.get("last_updated") or polls.get("last_updated") or ""))
     title = "JD Vance Tracker"
     desc = (
         "Independent tracker of public sentiment and polling on JD Vance, "
@@ -897,7 +899,7 @@ def main() -> None:
     html_out = build_html(entries_doc, polls, polls_2028)
     out = ROOT / "index.html"
     out.write_text(html_out, encoding="utf-8")
-    updated = fmt_updated(entries_doc.get("last_updated") or polls.get("last_updated") or "")
+    updated = (entries_doc.get("last_updated_pt") or fmt_updated(entries_doc.get("last_updated") or polls.get("last_updated") or ""))
     extra_pages.write_pages(updated)
     check = [DATA / n for n in SOURCE_JSON] + [
         out,

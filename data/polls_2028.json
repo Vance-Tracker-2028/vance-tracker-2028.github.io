@@ -1,22 +1,66 @@
 {
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "timezone": "America/Los_Angeles",
-  "methodology": "Unweighted simple average of the candidate\u2019s share in each opened national 2028 GOP primary poll that reported that candidate. These three polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used.",
+  "methodology": "Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate (5 polls). These polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey; likely voters; self-selected GOP-primary RVs) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used, except that the Echelon Insights result was read from a Polling Desk poll page that cites the NYT/PollResults feed.",
   "simple_unweighted_average": {
     "JD Vance": {
-      "pct": 34.3,
-      "n_polls": 3
+      "pct": 37.2,
+      "n_polls": 5
     },
     "Marco Rubio": {
-      "pct": 31.3,
-      "n_polls": 3
+      "pct": 28.8,
+      "n_polls": 5
     },
     "Ron DeSantis": {
-      "pct": 13.7,
-      "n_polls": 3
+      "pct": 13.0,
+      "n_polls": 5
     }
   },
   "polls": [
+    {
+      "pollster": "Echelon Insights",
+      "sponsor": null,
+      "start_date": "2026-11-12",
+      "end_date": "2026-11-16",
+      "sample": "397 likely voters (GOP primary question)",
+      "sample_size": 397,
+      "universe": "Likely GOP primary voters",
+      "moe": "About ±4.9 points (per the Polling Desk page).",
+      "results": {
+        "JD Vance": 40,
+        "Marco Rubio": 26,
+        "Ron DeSantis": 12,
+        "Robert F. Kennedy Jr.": 4,
+        "Sarah Huckabee Sanders": 2,
+        "Rand Paul": 1,
+        "John Kennedy": 1,
+        "Tucker Carlson": 1,
+        "Marjorie Taylor Greene": 1,
+        "Ted Cruz": 1,
+        "Glenn Youngkin": 1
+      },
+      "note": "Published Nov 17, 2026. Echelon's previous poll (ended Oct 19) had Vance +18 over Rubio; this one is Vance +14. Read from the Polling Desk poll page (data feed: The New York Times via PollResults.org); the Echelon release itself was not opened.",
+      "source_url": "https://polling-desk.com/poll/nyt-1eb7b2ba6a23",
+      "added_on": "2026-11-18"
+    },
+    {
+      "pollster": "On Point Polling",
+      "sponsor": null,
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "sample": "Republican-primary voters within an online survey of 920 registered voters (39% chose the GOP primary); subsample size not stated.",
+      "sample_size": null,
+      "universe": "Self-selected GOP primary voters (all RVs asked which primary)",
+      "moe": "±4.2 points on the 920 RVs; larger for the primary sample (not stated).",
+      "results": {
+        "JD Vance": 43,
+        "Marco Rubio": 24,
+        "Ron DeSantis": 12
+      },
+      "note": "Online via Cint, weighted with an MRP frame. Without Vance: Rubio 42, DeSantis 18, Cruz 8, Carlson 7. Same poll: Ossoff and Newsom each lead Vance by 13 in general-election matchups. A newer, small pollster whose questions were crowdsourced from X followers; treat with caution.",
+      "source_url": "https://onpointpolitics.substack.com/p/you-wrote-this-poll-here-is-what",
+      "added_on": "2026-11-18"
+    },
     {
       "pollster": "Economist/YouGov",
       "sponsor": "The Economist",
@@ -25,7 +69,7 @@
       "sample": "Intended 2028 Republican primary voters, within a survey of 1,685 U.S. adult citizens. GOP subsample size was not stated on the article page.",
       "sample_size": null,
       "universe": "Intended GOP primary voters (open-ended)",
-      "moe": "Parent poll ~\u00b13 percentage points (1,685 adults); subsample MoE not stated.",
+      "moe": "Parent poll ~±3 percentage points (1,685 adults); subsample MoE not stated.",
       "results": {
         "JD Vance": 40,
         "Marco Rubio": 33,
@@ -44,10 +88,10 @@
       "sponsor": null,
       "start_date": "2026-11-05",
       "end_date": "2026-11-09",
-      "sample": "Likely Republican primary voters, from a survey of 1,090 U.S. likely voters conducted Nov 5 and 8\u20139, 2026. GOP subsample size was not stated on the public (non-paywalled) page.",
+      "sample": "Likely Republican primary voters, from a survey of 1,090 U.S. likely voters conducted Nov 5 and 8–9, 2026. GOP subsample size was not stated on the public (non-paywalled) page.",
       "sample_size": null,
       "universe": "Likely Republican primary voters",
-      "moe": "\u00b13 percentage points on the 1,090 likely-voter survey; subsample MoE not stated on the public page.",
+      "moe": "±3 percentage points on the 1,090 likely-voter survey; subsample MoE not stated on the public page.",
       "results": {
         "JD Vance": 32,
         "Marco Rubio": 27,
@@ -71,7 +115,7 @@
         "JD Vance": 31,
         "Ron DeSantis": 14
       },
-      "note": "Cygnal says \u201con the GOP side\u201d Rubio leads Vance 34\u201331, with DeSantis third at 14%. Traditional Republicans prefer Rubio 36% to Vance 30%. Other candidates were not listed in this write-up.",
+      "note": "Cygnal says “on the GOP side” Rubio leads Vance 34–31, with DeSantis third at 14%. Traditional Republicans prefer Rubio 36% to Vance 30%. Other candidates were not listed in this write-up.",
       "source_url": "https://www.cygn.al/news/post-mortem-poll-turnout-dips-and-trump-defectors-each-drove-half-of-democrats-win-as-rubio-edges-vance-for-2028/",
       "added_on": "2026-11-17"
     }

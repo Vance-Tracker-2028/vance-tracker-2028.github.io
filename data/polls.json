@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "timezone": "America/Los_Angeles",
   "averages": {
     "rcp_published": {
       "favorable": 40.2,
       "unfavorable": 51.3,
       "net": -11.1,
-      "window": "Sep 29\u2013Nov 16, 2026",
+      "window": "Sep 29–Nov 16, 2026",
       "n_polls": 10,
       "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-      "note": "Published RCP average on the page opened Nov 17, 2026."
+      "note": "Published RCP average on the page opened Nov 18, 2026 (unchanged from Nov 17; no new Vance favorability polls in the table)."
     },
     "simple_unweighted_rcp_table": {
       "favorable": 40.2,
@@ -22,9 +22,9 @@
       "favorable": 37.5,
       "unfavorable": 54.3,
       "net": -16.8,
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-      "note": "The Hill / Decision Desk HQ estimate as of Nov 17, 2026. Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
+      "note": "The Hill / Decision Desk HQ estimate as of Nov 18, 2026 (unchanged from Nov 17). Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
     },
     "civiqs_tracker": {
       "favorable": 36,
@@ -38,7 +38,7 @@
     }
   },
   "comparison_same_poll": {
-    "note": "Ipsos/Reuters Nov 14\u201317, 2026, 1,521 adults, from The Hill/DDHQ pages opened for each candidate. A current national DeSantis favorability series was not confirmed from a page opened this update, so DeSantis is omitted here.",
+    "note": "Ipsos/Reuters Nov 14–17, 2026, 1,521 adults, from The Hill/DDHQ pages opened for each candidate. A current national DeSantis favorability series was not confirmed from a page opened this update, so DeSantis is omitted here.",
     "pollster": "Ipsos / Reuters",
     "dates": "2026-11-14 to 2026-11-17",
     "sample": "1,521 Adults",

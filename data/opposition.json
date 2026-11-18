@@ -1,8 +1,8 @@
 {
   "title": "JD Vance top opposition",
   "last_updated": "2026-11-18",
-  "last_updated_pt": "November 18, 2026, 1:00 AM PT",
-  "follower_snapshot_pt": "November 18, 2026, Pacific Time, from X public metrics on accounts that were opened",
+  "last_updated_pt": "November 18, 2026, 8:13 AM PT",
+  "follower_snapshot_pt": "November 18, 2026, Pacific Time, from X public metrics on accounts that were opened (Levin, Hammer, Shipwreckedcrew and the three new entries refreshed this morning)",
   "criteria": {
     "min_followers": 50000,
     "or_major_organization_or_office": true,
@@ -22,11 +22,11 @@
     "right": "Conservative or Republican-aligned officials, commentators, and outlets",
     "left": "Democratic or liberal-aligned officials and commentators",
     "institutional": "Organizations or newspapers that are not primarily a U.S. party office (used here for ADL and The Jerusalem Post)",
-    "unspecified": "Used only when the account bio and opened posts do not state a partisan identity (FactPost)"
+    "unspecified": "Used only when the account bio and opened posts do not state a partisan identity (FactPost; Deborah Lipstadt)"
   },
   "sources": {
     "a": "Authors of critical items already in entries.json",
-    "b": "Prominent accounts in replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026",
+    "b": "Prominent accounts in replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026, and the Brian Kilmeade clip of November 18, 2026",
     "c": "A fresh X and web search for high-reach Vance critics on the right and the left"
   },
   "exclusions": [
@@ -35,22 +35,25 @@
     "Sen. Tom Cotton was described in Jewish Insider as taking a 'veiled swipe' at Vance over Iran policy without naming him. Because the opened reporting says he did not name Vance, he is not listed.",
     "Ryan Schmelz of Fox News reported Fine's comments; he is a correspondent, not a critic, and his account is under the follower threshold.",
     "News outlets that only reported criticism (Fox News news article, JTA news reports, Jewish Insider news reports) are not listed as critics. Signed editorials, signed columns, and organizational statements are.",
+    "Jeremy Barr (@jeremymbarr, 29,080 followers), media reporter for The Guardian, quoted the Kilmeade clip calling it 'one of the strongest critiques I've seen in a while.' That is a reporter's observation, not a critique, so he is not listed.",
+    "John Daniel Davidson (@johnddavidson, 39,716; senior editor at The Federalist) and Douglass Mackey (@douglassmackey, 79,635) quoted the Kilmeade clip to push back on Kilmeade, not Vance; they are not critics of Vance.",
+    "Steve Cortes (@SteveCortes, 536,581) posted a supportive counter to Kilmeade; he is in the tracker as supportive, not on this list.",
     "This list is not exhaustive. A missing name is not a finding that the person is not a critic."
   ],
   "counts": {
-    "listed": 24,
-    "right": 17,
+    "listed": 27,
+    "right": 19,
     "left": 4,
     "institutional": 2,
-    "unspecified": 1,
+    "unspecified": 2,
     "walsh_thread_commenters": 3
   },
   "opponents": [
     {
       "handle": "marklevinshow",
       "name": "Mark R. Levin",
-      "followers": 5049045,
-      "rank_reach": 5049045,
+      "followers": 5049065,
+      "rank_reach": 5049065,
       "affiliation": "Host of The Mark Levin Show; Liberty's Voice (from his X bio).",
       "side": "right",
       "main_criticisms": [
@@ -58,9 +61,9 @@
         "Said the 2028 Republican primary is likely to be more competitive than some think, and that Tucker Carlson 'will undoubtedly be a toxic and controversial issue tied to Vance.'"
       ],
       "critical_items": 2,
-      "appearances": 2,
-      "last_seen": "2026-11-15",
-      "last_seen_pt": "November 15, 2026 (date of the later opened X post; time not re-fetched this update)",
+      "appearances": 3,
+      "last_seen": "2026-11-17",
+      "last_seen_pt": "November 17, 2026, 2:20 PM PT (“Vancette isolationists” post)",
       "links": [
         {
           "label": "X post on the Iran agreement",
@@ -69,10 +72,14 @@
         {
           "label": "X post on 2028 and Carlson",
           "url": "https://x.com/marklevinshow/status/2120847166054797332"
+        },
+        {
+          "label": "X post on 'Vancette isolationists' (logged as mixed)",
+          "url": "https://x.com/marklevinshow/status/2122817082639479069"
         }
       ],
-      "source_notes": "Author of two critical items already in the tracker. Follower count from X public metrics on November 18, 2026.",
-      "rank_score": 6311306.2,
+      "source_notes": "Author of two critical items already in the tracker. Follower count from X public metrics on November 18, 2026. Nov 18 update: added one appearance for his Nov 17 post attacking 'Vancette isolationists'; it targets Vance's supporters, so it is not counted as a critical item. Follower count refreshed Nov 18.",
+      "rank_score": 6311331.2,
       "rank": 1
     },
     {
@@ -275,6 +282,35 @@
       "rank": 8
     },
     {
+      "handle": "kilmeade",
+      "name": "Brian Kilmeade",
+      "followers": 929232,
+      "rank_reach": 929232,
+      "affiliation": "Fox & Friends co-anchor; host of The Brian Kilmeade Radio Show and One Nation on Fox News (from his X bio).",
+      "side": "right",
+      "main_criticisms": [
+        "On his Nov 17 radio show, called Vance's claim that some people want the Iran war to go on indefinitely 'another straw man argument' and said Vance 'never should have been vice president.'",
+        "Objected to Vance's post-midterm line that any honest conversation about the GOP losses 'has to start with the Iran war': 'So you're telling me how I have to argue something?'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-17",
+      "last_seen_pt": "November 17, 2026 (radio show; reported by Mediaite at 6:40 PM PT)",
+      "links": [
+        {
+          "label": "Mediaite report with clip",
+          "url": "https://www.mediaite.com/media/news/foxs-brian-kilmeade-goes-scorched-earth-on-jd-vance-never-should-have-been-vice-president/"
+        },
+        {
+          "label": "The Hill report",
+          "url": "https://thehill.com/homenews/media/6227589-kilmeade-slams-vance-iran-war/"
+        }
+      ],
+      "source_notes": "Author of a critical item added Nov 18, 2026. Remarks were on radio, not on his X account; follower count is from @kilmeade X public metrics on Nov 18, 2026.",
+      "rank_score": 929232.0,
+      "rank": 9
+    },
+    {
       "handle": "Jerusalem_Post",
       "name": "The Jerusalem Post",
       "followers": 902894,
@@ -296,7 +332,7 @@
       ],
       "source_notes": "Author of a critical article already in the tracker. Side is labeled institutional because this is a foreign newspaper, not a U.S. partisan office.",
       "rank_score": 902894.0,
-      "rank": 9
+      "rank": 10
     },
     {
       "handle": "AbdulElSayed",
@@ -325,7 +361,7 @@
       ],
       "source_notes": "A November 17, 2026 post saying 'I look forward to the conversation, @VP' was opened and is civil, so it is not counted as a critical item. The October 16 post had 9,735 likes and 270,564 views when opened.",
       "rank_score": 897082.5,
-      "rank": 10
+      "rank": 11
     },
     {
       "handle": "JohnCornyn",
@@ -349,7 +385,7 @@
       ],
       "source_notes": "Elected official quoted in a tracker article. No X post from Cornyn about this was opened in this update.",
       "rank_score": 414522.0,
-      "rank": 11
+      "rank": 12
     },
     {
       "handle": "ADL",
@@ -373,13 +409,13 @@
       ],
       "source_notes": "The same statement was quoted in a Jewish Insider report opened for this update. Side is labeled institutional because ADL is an advocacy group, not a party office.",
       "rank_score": 330552.0,
-      "rank": 12
+      "rank": 13
     },
     {
       "handle": "josh_hammer",
       "name": "Josh Hammer",
-      "followers": 170000,
-      "rank_reach": 170000,
+      "followers": 170005,
+      "rank_reach": 170005,
       "affiliation": "Senior counsel at the Article III Project; Shillman Fellow at the Horowitz Center; syndicated columnist and author (from his X bio). The November 16 column ran in FrontPage Magazine.",
       "side": "right",
       "main_criticisms": [
@@ -406,8 +442,8 @@
         }
       ],
       "source_notes": "Author of two critical X posts and one column already in the tracker. Follower count from X public metrics on November 18, 2026.",
-      "rank_score": 255000.0,
-      "rank": 13
+      "rank_score": 255007.5,
+      "rank": 14
     },
     {
       "handle": "factpostnews",
@@ -431,7 +467,7 @@
       ],
       "source_notes": "Author of a critical tracker item. No partisan affiliation is stated in the bio, so side is left unspecified rather than invented.",
       "rank_score": 235335.0,
-      "rank": 14
+      "rank": 15
     },
     {
       "handle": "RepFine",
@@ -464,7 +500,7 @@
       ],
       "source_notes": "A search of @RepFine and @VoteRandyFine from November 1 through this update returned no posts about Vance. The criticism is from interviews that were opened, including one already in the tracker.",
       "rank_score": 209082.5,
-      "rank": 15
+      "rank": 16
     },
     {
       "handle": "SenThomTillis",
@@ -488,7 +524,7 @@
       ],
       "source_notes": "Elected official quoted in a tracker article. His personal account @ThomTillis (41,023 followers) was also opened; the official account is used here.",
       "rank_score": 200351.0,
-      "rank": 16
+      "rank": 17
     },
     {
       "handle": "WSJopinion",
@@ -517,7 +553,7 @@
       ],
       "source_notes": "The full editorial text was opened in a Hindustan Times reprint under the title \"JD Vance's Theory of Election Defeat.\" Iran International independently attributed the same quotations to the Journal's editorial board. A direct wsj.com fetch timed out, so the Journal URL is not listed.",
       "rank_score": 188785.0,
-      "rank": 17
+      "rank": 18
     },
     {
       "handle": "koshercockney",
@@ -542,7 +578,7 @@
       "source_notes": "Prominent commenter in the Walsh thread (source b). The quote-post had 137 likes and 2,652 views when opened. A separate November 16 post asking whether readers would vote for Marco Rubio is not by itself a critique of Vance and is not counted.",
       "in_walsh_thread": true,
       "rank_score": 183709.0,
-      "rank": 18
+      "rank": 19
     },
     {
       "handle": "Doranimated",
@@ -566,13 +602,13 @@
       ],
       "source_notes": "Author of a critical tracker article. On October 15, 2026, Doran wrote on X that 'Yoram claims that I am against JD Vance. This is simply false' and that he intends to decide about 2028 in 2028. That post is not a retraction of the essay, but it is noted here so the record is not overstated.",
       "rank_score": 183340.0,
-      "rank": 19
+      "rank": 20
     },
     {
       "handle": "shipwreckedcrew",
       "name": "Shipwreckedcrew",
-      "followers": 182726,
-      "rank_reach": 182726,
+      "followers": 182718,
+      "rank_reach": 182718,
       "affiliation": "Former U.S. Department of Justice prosecutor (22 years, from his X bio). No current organizational affiliation is stated.",
       "side": "right",
       "main_criticisms": [
@@ -589,8 +625,8 @@
         }
       ],
       "source_notes": "Author of a critical tracker item, one of the original examples used to start the tracker.",
-      "rank_score": 182726.0,
-      "rank": 20
+      "rank_score": 182718.0,
+      "rank": 21
     },
     {
       "handle": "PinoAmericano",
@@ -625,7 +661,7 @@
       "source_notes": "Prominent commenter in the Walsh thread (source b), plus two earlier critical posts opened in the same search. The poll quote-post had 913 likes and 16,976 views when opened.",
       "in_walsh_thread": true,
       "rank_score": 175915.5,
-      "rank": 21
+      "rank": 22
     },
     {
       "handle": "marcthiessen",
@@ -659,7 +695,7 @@
       ],
       "source_notes": "Author of a critical tracker post and op-ed. The Fox appearance was opened via Mediaite.",
       "rank_score": 158959.5,
-      "rank": 22
+      "rank": 23
     },
     {
       "handle": "sidrosenberg19",
@@ -701,7 +737,7 @@
       ],
       "source_notes": "Quoted in the November 6 JTA article already in the tracker; his own X posts were then opened. The November 4 post had 5,219 likes and 1,122,697 views when opened. An October 22 post mentioning Vance among officials who have 'done a great job exposing fraud' is not a critique and is not counted. Included under the organization/office exception (77 WABC and the Holocaust Memorial Council).",
       "rank_score": 79966.2,
-      "rank": 23
+      "rank": 24
     },
     {
       "handle": "CUFIActionFund",
@@ -735,7 +771,60 @@
       ],
       "source_notes": "Included under the organization exception. A search of @CUFI and @CUFIActionFund from November 1 through this update did not return a post that stated this memo; the public record used here is the reporting that quotes it. Ranking uses the parent @CUFI follower count (56,979), which is disclosed, because the Action Fund account itself has 521 followers.",
       "rank_score": 56979.0,
-      "rank": 24
+      "rank": 25
+    },
+    {
+      "handle": "BarbaraComstock",
+      "name": "Barbara Comstock",
+      "followers": 39422,
+      "rank_reach": 39422,
+      "affiliation": "Former U.S. Representative (VA-10) and former Virginia delegate; Baker Donelson (from her X bio).",
+      "side": "right",
+      "main_criticisms": [
+        "Called Vance 'an inexperienced child from a dysfunctional family with no expertise' who 'spends most of his time on podcasts, Fox, and vacations,' citing the wave of tech outages and saying the administration has 'no adults.'",
+        "Quoted the Kilmeade clip: 'So @JDVance bogus straw men arguments annoy everyone?'"
+      ],
+      "critical_items": 2,
+      "appearances": 2,
+      "last_seen": "2026-11-18",
+      "last_seen_pt": "November 18, 2026, 6:18 AM PT (quote of the Kilmeade clip)",
+      "links": [
+        {
+          "label": "X post on outages and 'no adults'",
+          "url": "https://x.com/BarbaraComstock/status/2122740792322101497"
+        },
+        {
+          "label": "X quote of the Kilmeade clip",
+          "url": "https://x.com/BarbaraComstock/status/2123058384425631934"
+        }
+      ],
+      "source_notes": "Below 50K followers; included under the elected-office criterion as a former member of Congress (Republican). Author of a critical item added Nov 18 and a prominent quoter of the Kilmeade clip. Follower count from X public metrics on Nov 18, 2026.",
+      "rank_score": 49277.5,
+      "rank": 26
+    },
+    {
+      "handle": "deborahlipstadt",
+      "name": "Deborah E. Lipstadt",
+      "followers": 26721,
+      "rank_reach": 26721,
+      "affiliation": "Former U.S. Special Envoy to Monitor and Combat Antisemitism, ambassador rank (retired), and Emory professor (from her X bio).",
+      "side": "unspecified",
+      "main_criticisms": [
+        "Wrote that when Vance says 'neoconservatives' are seeking a 'forever war' in Iran, 'he means Jews who support Israel.'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-18",
+      "last_seen_pt": "November 18, 2026, 5:01 AM PT",
+      "links": [
+        {
+          "label": "X post on 'neoconservatives'",
+          "url": "https://x.com/deborahlipstadt/status/2123038802264617321"
+        }
+      ],
+      "source_notes": "Below 50K followers; included under the major-office criterion as a former U.S. special envoy. Her bio and the opened post do not state a party, so side is unspecified. Follower count from X public metrics on Nov 18, 2026.",
+      "rank_score": 26721.0,
+      "rank": 27
     }
   ]
 }
