@@ -910,6 +910,7 @@ def main() -> None:
         ROOT / "styles.css",
         ROOT / "images" / "CREDITS.md",
     ]
+    check.extend(sorted((ROOT / "myths").glob("*.html")))
     assert_no_forbidden(check)
     print(f"Wrote {out}")
 
