@@ -358,3 +358,31 @@ footer.site p { max-width: 46rem; }
   .wrap { padding: 0 16px; }
   .pull { font-size: 1.28rem; }
 }
+
+.card.right { border-left-color: var(--accent); }
+.card.left { border-left-color: #3a4a8b; }
+.card.institutional { border-left-color: var(--orig); }
+.card.unspecified { border-left-color: var(--muted); }
+.badge.right { color: var(--accent); }
+.badge.left { color: #3a4a8b; }
+.badge.institutional { color: var(--orig); }
+.badge.unspecified { color: var(--muted); }
+.opp-head { display: flex; gap: 16px; align-items: flex-start; }
+.opp-rank {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 650;
+  font-size: 1.45rem;
+  line-height: 1;
+  color: var(--accent);
+  min-width: 2rem;
+  padding-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.followers { font-variant-numeric: tabular-nums; }
+.critiques { margin: 0.35rem 0 0.6rem; padding-left: 1.15rem; }
+.critiques li { margin: 0 0 0.35rem; }
+.opp-links { font-size: 0.88rem; margin: 0 0 8px; }
+@media (max-width: 600px) {
+  .opp-head { gap: 10px; }
+  .opp-rank { font-size: 1.15rem; min-width: 1.6rem; }
+}

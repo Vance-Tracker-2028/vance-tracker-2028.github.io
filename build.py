@@ -16,7 +16,7 @@ import extra_pages
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json")
+SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json", "opposition.json")
 def _blocked_re():
     # Assembled so this source file does not contain the blocked strings.
     return re.compile("|".join(("".join(("ar", "jun")), "".join(("bu", "xi")), "".join(("sv", "gop")))), re.I)
@@ -863,6 +863,7 @@ def build_html(entries_doc, polls, polls_2028) -> str:
       <div class="hero-actions">
         <a class="btn solid" href="#favorability">See the polls</a>
         <a class="btn" href="bio.html">Read the biography</a>
+        <a class="btn" href="opposition.html">Top opposition</a>
         <a class="btn" href="myths.html">Myths vs. facts</a>
       </div>
     </div>
@@ -902,6 +903,7 @@ def main() -> None:
         out,
         ROOT / "bio.html",
         ROOT / "myths.html",
+        ROOT / "opposition.html",
         ROOT / "README.md",
         ROOT / "styles.css",
         ROOT / "images" / "CREDITS.md",

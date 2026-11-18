@@ -1,0 +1,741 @@
+{
+  "title": "JD Vance top opposition",
+  "last_updated": "2026-11-18",
+  "last_updated_pt": "November 18, 2026, 1:00 AM PT",
+  "follower_snapshot_pt": "November 18, 2026, Pacific Time, from X public metrics on accounts that were opened",
+  "criteria": {
+    "min_followers": 50000,
+    "or_major_organization_or_office": true,
+    "organization_types": [
+      "media outlet",
+      "think tank",
+      "campaign",
+      "PAC",
+      "party body",
+      "elected office",
+      "advocacy organization"
+    ],
+    "opened_sources_only": true
+  },
+  "ranking_method": "Ranked by reach and frequency. Score = rank_reach × (1 + 0.25 × (critical_items − 1)). rank_reach is the opened X follower count, except for CUFI Action Fund, where rank_reach is the parent @CUFI follower count (56,979), which is disclosed in that entry. Ties break by raw followers, then name.",
+  "side_labels": {
+    "right": "Conservative or Republican-aligned officials, commentators, and outlets",
+    "left": "Democratic or liberal-aligned officials and commentators",
+    "institutional": "Organizations or newspapers that are not primarily a U.S. party office (used here for ADL and The Jerusalem Post)",
+    "unspecified": "Used only when the account bio and opened posts do not state a partisan identity (FactPost)"
+  },
+  "sources": {
+    "a": "Authors of critical items already in entries.json",
+    "b": "Prominent accounts in replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026",
+    "c": "A fresh X and web search for high-reach Vance critics on the right and the left"
+  },
+  "exclusions": [
+    "Matt Walsh is not listed. His November 17 thread asked about 'raw political talent' and included Vance in a poll; he did not attack Vance. The thread is in the tracker as mixed.",
+    "Tomi Lahren (@TomiLahren, 2,865,615 followers) commented in the Walsh thread that she wanted someone who 'stays true to the values' and named Ron DeSantis. That is a preference, not a critique of Vance, so she is not listed.",
+    "Sen. Tom Cotton was described in Jewish Insider as taking a 'veiled swipe' at Vance over Iran policy without naming him. Because the opened reporting says he did not name Vance, he is not listed.",
+    "Ryan Schmelz of Fox News reported Fine's comments; he is a correspondent, not a critic, and his account is under the follower threshold.",
+    "News outlets that only reported criticism (Fox News news article, JTA news reports, Jewish Insider news reports) are not listed as critics. Signed editorials, signed columns, and organizational statements are.",
+    "This list is not exhaustive. A missing name is not a finding that the person is not a critic."
+  ],
+  "counts": {
+    "listed": 24,
+    "right": 17,
+    "left": 4,
+    "institutional": 2,
+    "unspecified": 1,
+    "walsh_thread_commenters": 3
+  },
+  "opponents": [
+    {
+      "handle": "marklevinshow",
+      "name": "Mark R. Levin",
+      "followers": 5049045,
+      "rank_reach": 5049045,
+      "affiliation": "Host of The Mark Levin Show; Liberty's Voice (from his X bio).",
+      "side": "right",
+      "main_criticisms": [
+        "Called an Iran-related agreement 'a disaster,' saying it was 'negotiated by VP Vance, promoted by VP Vance,' and adding 'Notice you don't defend it.'",
+        "Said the 2028 Republican primary is likely to be more competitive than some think, and that Tucker Carlson 'will undoubtedly be a toxic and controversial issue tied to Vance.'"
+      ],
+      "critical_items": 2,
+      "appearances": 2,
+      "last_seen": "2026-11-15",
+      "last_seen_pt": "November 15, 2026 (date of the later opened X post; time not re-fetched this update)",
+      "links": [
+        {
+          "label": "X post on the Iran agreement",
+          "url": "https://x.com/marklevinshow/status/2121947552010412084"
+        },
+        {
+          "label": "X post on 2028 and Carlson",
+          "url": "https://x.com/marklevinshow/status/2120847166054797332"
+        }
+      ],
+      "source_notes": "Author of two critical items already in the tracker. Follower count from X public metrics on November 18, 2026.",
+      "rank_score": 6311306.2,
+      "rank": 1
+    },
+    {
+      "handle": "PeteButtigieg",
+      "name": "Pete Buttigieg",
+      "followers": 3755095,
+      "rank_reach": 3755095,
+      "affiliation": "Former U.S. Secretary of Transportation and former mayor of South Bend (from his X bio).",
+      "side": "left",
+      "main_criticisms": [
+        "Wrote that Vance is 'sizing up a $9 million Virginia estate while preaching to the rest of us that housing is more affordable than ever. No one believes him.'",
+        "Wrote, 'JD Vance has asked for another chance. We literally can't afford it.'",
+        "Wrote that Vance 'knows better than to sell yet another false promise to the millions of Americans hurting in this unaffordable Trump economy.'"
+      ],
+      "critical_items": 3,
+      "appearances": 3,
+      "last_seen": "2026-10-07",
+      "last_seen_pt": "October 7, 2026, 1:10 PM PT",
+      "links": [
+        {
+          "label": "X post on housing",
+          "url": "https://x.com/PeteButtigieg/status/2107926626717593826"
+        },
+        {
+          "label": "X post on 'another chance'",
+          "url": "https://x.com/PeteButtigieg/status/2102415148816490893"
+        },
+        {
+          "label": "X post on a 'false promise'",
+          "url": "https://x.com/PeteButtigieg/status/2098201356523716677"
+        }
+      ],
+      "source_notes": "Found in a fresh search of high-reach Democratic officials. Engagement on the housing post when opened: 18,078 likes and 218,412 views.",
+      "rank_score": 5632642.5,
+      "rank": 2
+    },
+    {
+      "handle": "SenSchumer",
+      "name": "Chuck Schumer",
+      "followers": 3689828,
+      "rank_reach": 3689828,
+      "affiliation": "U.S. Senator (D-New York); Senate Democratic Leader (from his X bio).",
+      "side": "left",
+      "main_criticisms": [
+        "Quoted a clip of Vance saying gas prices are too high and called it 'the truest thing @JDVance has said in a long, long time.'",
+        "Said the administration's health-care solution is to 'kick hundreds of thousands more people off their health insurance,' naming Vance and Trump.",
+        "Wrote that a record diesel price is something 'Donald Trump and JD Vance own,' and that 'instead of taking responsibility, they want you to be grateful for it.'"
+      ],
+      "critical_items": 3,
+      "appearances": 3,
+      "last_seen": "2026-10-26",
+      "last_seen_pt": "October 26, 2026, 2:04 PM PT",
+      "links": [
+        {
+          "label": "X post quoting the gas-price clip",
+          "url": "https://x.com/SenSchumer/status/2114825470000652539"
+        },
+        {
+          "label": "X post on health insurance",
+          "url": "https://x.com/SenSchumer/status/2102434238276436286"
+        },
+        {
+          "label": "X post on diesel prices",
+          "url": "https://x.com/SenSchumer/status/2095901158011244605"
+        }
+      ],
+      "source_notes": "Found in a fresh search of high-reach Democratic officials. The October 26 post quotes a clip posted by Aaron Rupar of Vance saying gas prices are too high.",
+      "rank_score": 5534742.0,
+      "rank": 3
+    },
+    {
+      "handle": "SenTedCruz",
+      "name": "Ted Cruz",
+      "followers": 4163163,
+      "rank_reach": 4163163,
+      "affiliation": "U.S. Senator (R-Texas). Official Senate account, government-verified on X.",
+      "side": "right",
+      "main_criticisms": [
+        "At the Tikvah Fund's Jewish Leadership Conference in Manhattan, rejected the idea that the midterms were 'a mandate to abandon Israel,' saying that is something he 'certainly' does not see or agree with.",
+        "Told Jewish Insider that Vance 'is welcome to have his own opinion. Mine on this question is quite different, and I have made it public for a long, long time.'"
+      ],
+      "critical_items": 2,
+      "appearances": 2,
+      "last_seen": "2026-11-16",
+      "last_seen_pt": "November 16, 2026 (conference remarks reported that day)",
+      "links": [
+        {
+          "label": "The Forward / JTA report on the Tikvah conference",
+          "url": "https://forward.com/fast-forward/863002/ted-cruz-rejects-jd-vances-suggestion-that-israel-hurt-republicans-in-the-midterms/"
+        },
+        {
+          "label": "Jewish Insider interview",
+          "url": "https://jewishinsider.com/2026/11/gop-senators-skeptical-vance-midterms-iran-israel/"
+        }
+      ],
+      "source_notes": "A search of @SenTedCruz posts from October 1 through this update did not return a post about Vance. These entries rest on conference remarks and an interview that were opened in the reporting.",
+      "rank_score": 5203953.8,
+      "rank": 4
+    },
+    {
+      "handle": "BillOReilly",
+      "name": "Bill O'Reilly",
+      "followers": 3309235,
+      "rank_reach": 3309235,
+      "affiliation": "Host associated with No Spin News (from his X bio). The comments below were made as a guest on Sid & Friends in the Morning on 77 WABC.",
+      "side": "right",
+      "main_criticisms": [
+        "On the November 7, 2026 episode of Sid & Friends in the Morning, said he saw 'a bit of opportunism' in Vance's midterm postmortem and that Vance was starting to signal he would run and 'I'm not the same guy Trump is, because you guys don't like Trump anymore.' O'Reilly said he did not like 'that aspect of politics' and 'would never do it myself.'",
+        "After co-host Sid Rosenberg called Vance 'so disloyal,' O'Reilly added, 'That's what they call a character deficit,' and said every politician has one."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-07",
+      "last_seen_pt": "November 7, 2026 (radio appearance reported by Mediaite that day)",
+      "links": [
+        {
+          "label": "Mediaite report of the 77 WABC appearance",
+          "url": "https://www.mediaite.com/media/so-disloyal-bill-oreilly-and-pro-trump-radio-host-call-out-jd-vance-for-blaming-election-wipeout-on-iran-war/"
+        }
+      ],
+      "source_notes": "A November 5 X post from O'Reilly asked whether Trump agreed that the Iran conflict drove the election; that post is a question, not a critique, and is not counted as a critical item. The word 'disloyal' in the Mediaite headline was Rosenberg's, not O'Reilly's.",
+      "rank_score": 3309235.0,
+      "rank": 5
+    },
+    {
+      "handle": "GavinNewsom",
+      "name": "Gavin Newsom",
+      "followers": 3149792,
+      "rank_reach": 3149792,
+      "affiliation": "Governor of California (from his X bio).",
+      "side": "left",
+      "main_criticisms": [
+        "Posted: 'The SILENCE from JD Vance and Marco Rubio today is deafening.' The post does not name the event he was referring to."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-10-06",
+      "last_seen_pt": "October 6, 2026, 7:54 AM PT",
+      "links": [
+        {
+          "label": "X post",
+          "url": "https://x.com/GavinNewsom/status/2107484622376653162"
+        }
+      ],
+      "source_notes": "Found in a fresh search of high-reach Democratic officials. Engagement when opened: 61,310 likes and 2,872,010 views. The underlying news event is not stated in the post, so it is not inferred here.",
+      "rank_score": 3149792.0,
+      "rank": 6
+    },
+    {
+      "handle": "LauraLoomer",
+      "name": "Laura Loomer",
+      "followers": 1935867,
+      "rank_reach": 1935867,
+      "affiliation": "Investigative journalist; founder of LOOMERED; host of Loomer Unleashed; former Project Veritas operative (from her X bio).",
+      "side": "right",
+      "main_criticisms": [
+        "In the Matt Walsh 'raw political talent' thread, replied 'Marco Rubio' and, in a follow-up, 'Marco Rubio. And it's not even a contest.'"
+      ],
+      "critical_items": 2,
+      "appearances": 2,
+      "last_seen": "2026-11-17",
+      "last_seen_pt": "November 17, 2026, 10:57 AM PT",
+      "links": [
+        {
+          "label": "X reply naming Rubio",
+          "url": "https://x.com/LauraLoomer/status/2122766058503156036"
+        },
+        {
+          "label": "X follow-up, 'not even a contest'",
+          "url": "https://x.com/LauraLoomer/status/2122766170302333213"
+        }
+      ],
+      "source_notes": "Prominent commenter in the Walsh thread (source b). The longer follow-up had 7,762 likes and 131,028 views when opened on November 18, 2026. These posts rank Rubio over Vance; they do not discuss Israel or Iran.",
+      "in_walsh_thread": true,
+      "rank_score": 2419833.8,
+      "rank": 7
+    },
+    {
+      "handle": "SarahHuckabee",
+      "name": "Sarah Huckabee Sanders",
+      "followers": 2147890,
+      "rank_reach": 2147890,
+      "affiliation": "Governor of Arkansas; former White House press secretary (from her X bio).",
+      "side": "right",
+      "main_criticisms": [
+        "In a Jewish Insider interview, rejected Vance's argument that midterm losses showed voters wanted the party to end the Iran war and rethink the U.S.-Israel relationship. She said President Trump 'was right and made a really courageous move to protect American interests' and that 'we have to remember who our enemy is... It's Iran. It's not Israel.'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-10",
+      "last_seen_pt": "November 10, 2026 (interview published that day)",
+      "links": [
+        {
+          "label": "Jewish Insider interview",
+          "url": "https://jewishinsider.com/2026/11/arkansas-gov-sarah-huckabee-sanders-iran-war-israel-vance/"
+        }
+      ],
+      "source_notes": "Elected official. The comments are from an interview opened on Jewish Insider, not from an X post found in this update.",
+      "rank_score": 2147890.0,
+      "rank": 8
+    },
+    {
+      "handle": "Jerusalem_Post",
+      "name": "The Jerusalem Post",
+      "followers": 902894,
+      "rank_reach": 902894,
+      "affiliation": "Israel's English-language newspaper, published since 1932 (from its X bio). Entry is for the paper's editorial, not a news report.",
+      "side": "institutional",
+      "main_criticisms": [
+        "An editorial said Vance must explain what he wants to change in U.S.-Israel relations and accept that the administration, not Israel, is responsible for U.S. war decisions."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-06",
+      "last_seen_pt": "November 6, 2026 (editorial already in the tracker)",
+      "links": [
+        {
+          "label": "Jerusalem Post editorial",
+          "url": "https://www.jpost.com/opinion/article-913999"
+        }
+      ],
+      "source_notes": "Author of a critical article already in the tracker. Side is labeled institutional because this is a foreign newspaper, not a U.S. partisan office.",
+      "rank_score": 902894.0,
+      "rank": 9
+    },
+    {
+      "handle": "AbdulElSayed",
+      "name": "Dr. Abdul El-Sayed",
+      "followers": 717666,
+      "rank_reach": 717666,
+      "affiliation": "U.S. Senator-elect for Michigan (from his X bio).",
+      "side": "left",
+      "main_criticisms": [
+        "Wrote: 'So, JD Vance, don't you dare come from Ohio to lecture me. You don't know a damn thing about America.'",
+        "Wrote: 'The last time JD Vance said something that made any sense was Hillbilly Elegy.'"
+      ],
+      "critical_items": 2,
+      "appearances": 2,
+      "last_seen": "2026-10-16",
+      "last_seen_pt": "October 16, 2026, 9:53 AM PT",
+      "links": [
+        {
+          "label": "X post, 'don't you dare... lecture me'",
+          "url": "https://x.com/AbdulElSayed/status/2111138353102094774"
+        },
+        {
+          "label": "X post on Hillbilly Elegy",
+          "url": "https://x.com/AbdulElSayed/status/2089804075663610148"
+        }
+      ],
+      "source_notes": "A November 17, 2026 post saying 'I look forward to the conversation, @VP' was opened and is civil, so it is not counted as a critical item. The October 16 post had 9,735 likes and 270,564 views when opened.",
+      "rank_score": 897082.5,
+      "rank": 10
+    },
+    {
+      "handle": "JohnCornyn",
+      "name": "John Cornyn",
+      "followers": 414522,
+      "rank_reach": 414522,
+      "affiliation": "U.S. Senator (R-Texas). Official government-verified Senate account. Jewish Insider noted that he had lost a primary to a Trump-backed challenger who then lost the general election.",
+      "side": "right",
+      "main_criticisms": [
+        "Called Vance's midterm explanation 'ridiculous.' He said voters focus on 'what's happening at their own kitchen table,' and that 'this narrative that it was all about Israel and we shouldn't have gone into Iran to stop the nuclear weapons, I just think is misguided.'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-11",
+      "last_seen_pt": "November 11, 2026 (remarks in a Jewish Insider article opened that day in the tracker and re-opened for this update)",
+      "links": [
+        {
+          "label": "Jewish Insider report",
+          "url": "https://jewishinsider.com/2026/11/gop-senators-skeptical-vance-midterms-iran-israel/"
+        }
+      ],
+      "source_notes": "Elected official quoted in a tracker article. No X post from Cornyn about this was opened in this update.",
+      "rank_score": 414522.0,
+      "rank": 11
+    },
+    {
+      "handle": "ADL",
+      "name": "Anti-Defamation League (ADL)",
+      "followers": 330552,
+      "rank_reach": 330552,
+      "affiliation": "Advocacy organization whose X bio states its purpose is 'to stop the defamation of the Jewish people, and secure justice and fair treatment to all.'",
+      "side": "institutional",
+      "main_criticisms": [
+        "Posted that debate over foreign policy and the midterms is 'entirely legitimate,' but that only 4% of voters rated foreign policy as their primary concern. 'When leaders like Vice President JD Vance and commentators ignore the data and instead choose to assert that voter behavior was about Israel, it's not just a deeply flawed analysis but can be weaponized to assign collective blame to Jewish Americans for policy decisions or political outcomes.'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-05",
+      "last_seen_pt": "November 5, 2026, 2:04 PM PT",
+      "links": [
+        {
+          "label": "ADL X post",
+          "url": "https://x.com/ADL/status/2118464514945396874"
+        }
+      ],
+      "source_notes": "The same statement was quoted in a Jewish Insider report opened for this update. Side is labeled institutional because ADL is an advocacy group, not a party office.",
+      "rank_score": 330552.0,
+      "rank": 12
+    },
+    {
+      "handle": "josh_hammer",
+      "name": "Josh Hammer",
+      "followers": 170000,
+      "rank_reach": 170000,
+      "affiliation": "Senior counsel at the Article III Project; Shillman Fellow at the Horowitz Center; syndicated columnist and author (from his X bio). The November 16 column ran in FrontPage Magazine.",
+      "side": "right",
+      "main_criticisms": [
+        "Wrote that Vance, whom he once held in high esteem, surveyed the midterm 'electoral massacre' and found 'a scapegoat many others have found for millennia: the Jews,' calling it 'rank cowardice.'",
+        "His FrontPage Magazine column, 'JD Vance Scapegoats the Jews,' argued that Vance's post-election claims about the Iran war and the U.S.-Israel relationship amounted to blaming Jews or Israel.",
+        "On November 4 he wrote that 'the single biggest loser from last night's massacre is JD Vance.'"
+      ],
+      "critical_items": 3,
+      "appearances": 3,
+      "last_seen": "2026-11-16",
+      "last_seen_pt": "November 16, 2026, 12:38 PM PT (from the tracker entry)",
+      "links": [
+        {
+          "label": "X post on 'rank cowardice'",
+          "url": "https://x.com/josh_hammer/status/2122429137411600586"
+        },
+        {
+          "label": "FrontPage Magazine column",
+          "url": "https://www.frontpagemag.com/jd-vance-scapegoats-the-jews/"
+        },
+        {
+          "label": "X post, 'biggest loser'",
+          "url": "https://x.com/josh_hammer/status/2118043218306805911"
+        }
+      ],
+      "source_notes": "Author of two critical X posts and one column already in the tracker. Follower count from X public metrics on November 18, 2026.",
+      "rank_score": 255000.0,
+      "rank": 13
+    },
+    {
+      "handle": "factpostnews",
+      "name": "FactPost",
+      "followers": 235335,
+      "rank_reach": 235335,
+      "affiliation": "None stated beyond the X bio line 'Posting facts.'",
+      "side": "unspecified",
+      "main_criticisms": [
+        "Posted Vance's line that 'we told the American people we'd do no more forever wars,' then noted in parentheses that the Iran war has been going on for nearly nine months with no end in sight."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-16",
+      "last_seen_pt": "November 16, 2026, 12:56 PM PT (from the tracker entry)",
+      "links": [
+        {
+          "label": "X post",
+          "url": "https://x.com/factpostnews/status/2122433547956797604"
+        }
+      ],
+      "source_notes": "Author of a critical tracker item. No partisan affiliation is stated in the bio, so side is left unspecified rather than invented.",
+      "rank_score": 235335.0,
+      "rank": 14
+    },
+    {
+      "handle": "RepFine",
+      "name": "Randy Fine",
+      "followers": 167266,
+      "rank_reach": 167266,
+      "affiliation": "U.S. Representative (R-Florida, 6th District); member of the House Freedom Caucus (from his official X bio). Personal campaign account @VoteRandyFine (42,974 followers) was also opened; the official account is used here.",
+      "side": "right",
+      "main_criticisms": [
+        "Said he will not endorse Vance in the 2028 primary. In comments reported by Fox News and in a Jerusalem Post interview, he called Vance's post-election message 'abhorrent,' said it 'smacked of the kind of thing you would read in 1932 Germany,' and said 'He blamed the Jews for losing the election.'",
+        "Told the Jerusalem Post that 'JD Vance is the reason that the war in Iran is not over because he led us astray in claiming that we could do a peace deal,' and that he found Vance's comments 'a betrayal of the president.'"
+      ],
+      "critical_items": 2,
+      "appearances": 2,
+      "last_seen": "2026-11-11",
+      "last_seen_pt": "November 11, 2026 (Fox News report already in the tracker; the Jerusalem Post interview was also opened)",
+      "links": [
+        {
+          "label": "Fox News report",
+          "url": "https://www.foxnews.com/politics/he-blamed-jews-gop-congressman-levels-explosive-accusation-against-jd-vance-election-postmortem"
+        },
+        {
+          "label": "Jerusalem Post interview",
+          "url": "https://www.jpost.com/international/article-914278"
+        },
+        {
+          "label": "Ryan Schmelz X post quoting Fine",
+          "url": "https://x.com/RyanSchmelzFOX/status/2119525102760906971"
+        }
+      ],
+      "source_notes": "A search of @RepFine and @VoteRandyFine from November 1 through this update returned no posts about Vance. The criticism is from interviews that were opened, including one already in the tracker.",
+      "rank_score": 209082.5,
+      "rank": 15
+    },
+    {
+      "handle": "SenThomTillis",
+      "name": "Thom Tillis",
+      "followers": 200351,
+      "rank_reach": 200351,
+      "affiliation": "U.S. Senator (R-North Carolina). Official government-verified Senate account. Jewish Insider noted that he declined to run for reelection.",
+      "side": "right",
+      "main_criticisms": [
+        "Said 'I don't buy it' about Vance's midterm explanation. He pointed to low Republican turnout and high independent turnout in North Carolina, and said that reading anything else into the result is 'demonstrating tone deafness before you even start the next election cycle.' He also said 'the American people are pro-Israel.'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-11",
+      "last_seen_pt": "November 11, 2026 (remarks in the Jewish Insider article)",
+      "links": [
+        {
+          "label": "Jewish Insider report",
+          "url": "https://jewishinsider.com/2026/11/gop-senators-skeptical-vance-midterms-iran-israel/"
+        }
+      ],
+      "source_notes": "Elected official quoted in a tracker article. His personal account @ThomTillis (41,023 followers) was also opened; the official account is used here.",
+      "rank_score": 200351.0,
+      "rank": 16
+    },
+    {
+      "handle": "WSJopinion",
+      "name": "The Wall Street Journal Editorial Board",
+      "followers": 188785,
+      "rank_reach": 188785,
+      "affiliation": "Opinion and commentary from The Wall Street Journal (from the @WSJopinion bio). The critic is the editorial board, not a single signed columnist.",
+      "side": "right",
+      "main_criticisms": [
+        "An editorial titled \"JD Vance's Theory of Election Defeat\" said that by blaming the midterm loss on the Iran war in public, 'Mr. Vance signals desperation to Iran's regime, undermining his boss at a critical moment in the war.'",
+        "It said 'it's hard to see how Mr. Vance can credibly continue as America's lead negotiator with the Iranians,' and criticized his call to 'change our relationship to Israel' and his association with Tucker Carlson."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-05",
+      "last_seen_pt": "November 5, 2026 (editorial date in the opened reprints)",
+      "links": [
+        {
+          "label": "Hindustan Times reprint of the editorial",
+          "url": "https://www.hindustantimes.com/world-news/us-news/jd-vance-s-theory-of-election-defeat-101793849442385.html"
+        },
+        {
+          "label": "Iran International report attributing the editorial to the Journal",
+          "url": "https://www.iranintl.com/en/202611051745"
+        }
+      ],
+      "source_notes": "The full editorial text was opened in a Hindustan Times reprint under the title \"JD Vance's Theory of Election Defeat.\" Iran International independently attributed the same quotations to the Journal's editorial board. A direct wsj.com fetch timed out, so the Journal URL is not listed.",
+      "rank_score": 188785.0,
+      "rank": 17
+    },
+    {
+      "handle": "koshercockney",
+      "name": "Kosher",
+      "followers": 183709,
+      "rank_reach": 183709,
+      "affiliation": "None stated. X bio: 'Israel. Just opinions of a Jewish dude.'",
+      "side": "right",
+      "main_criticisms": [
+        "Quote-posted the Matt Walsh poll with the line 'Wow. Nobody likes Vance.'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-17",
+      "last_seen_pt": "November 17, 2026, 2:45 PM PT",
+      "links": [
+        {
+          "label": "Quote-post of the Walsh poll",
+          "url": "https://x.com/koshercockney/status/2122823464448929873"
+        }
+      ],
+      "source_notes": "Prominent commenter in the Walsh thread (source b). The quote-post had 137 likes and 2,652 views when opened. A separate November 16 post asking whether readers would vote for Marco Rubio is not by itself a critique of Vance and is not counted.",
+      "in_walsh_thread": true,
+      "rank_score": 183709.0,
+      "rank": 18
+    },
+    {
+      "handle": "Doranimated",
+      "name": "Michael Doran",
+      "followers": 183340,
+      "rank_reach": 183340,
+      "affiliation": "Senior fellow and director of the Center for Peace and Security in the Middle East at Hudson Institute (from the Hudson Institute biography page opened for this update). His X display name is 'Mike'; the bio itself does not state the affiliation.",
+      "side": "right",
+      "main_criticisms": [
+        "In a Hudson Institute essay, argued that Vance turned Trump's Middle East strategy into a coalition liability by listing 'change our relationship to Israel' separately from ending the Iran war, a phrase that can appeal both to mainstream restrainers and to the Groyper right, and discussed Vance's friendship with Tucker Carlson."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-08",
+      "last_seen_pt": "November 8, 2026 (Hudson essay already in the tracker)",
+      "links": [
+        {
+          "label": "Hudson Institute essay",
+          "url": "https://www.hudson.org/foreign-policy/jd-vance-wants-change-our-relationship-israel-does-his-boss-agree-michael-doran"
+        }
+      ],
+      "source_notes": "Author of a critical tracker article. On October 15, 2026, Doran wrote on X that 'Yoram claims that I am against JD Vance. This is simply false' and that he intends to decide about 2028 in 2028. That post is not a retraction of the essay, but it is noted here so the record is not overstated.",
+      "rank_score": 183340.0,
+      "rank": 19
+    },
+    {
+      "handle": "shipwreckedcrew",
+      "name": "Shipwreckedcrew",
+      "followers": 182726,
+      "rank_reach": 182726,
+      "affiliation": "Former U.S. Department of Justice prosecutor (22 years, from his X bio). No current organizational affiliation is stated.",
+      "side": "right",
+      "main_criticisms": [
+        "A former Vance supporter, he wrote that Vance's 'forever wars' talking points on Iran are getting tiring, argued Vance is talking in campaign phrases rather than as a serious thinker, and contrasted him with Marco Rubio."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-17",
+      "last_seen_pt": "November 17, 2026, 6:39 AM PT (from the tracker entry)",
+      "links": [
+        {
+          "label": "X post",
+          "url": "https://x.com/shipwreckedcrew/status/2122701235132481646"
+        }
+      ],
+      "source_notes": "Author of a critical tracker item, one of the original examples used to start the tracker.",
+      "rank_score": 182726.0,
+      "rank": 20
+    },
+    {
+      "handle": "PinoAmericano",
+      "name": "Pino Americano",
+      "followers": 117277,
+      "rank_reach": 117277,
+      "affiliation": "None stated beyond the X bio 'MAGA.'",
+      "side": "right",
+      "main_criticisms": [
+        "Quote-posted the Matt Walsh poll: 'I don't think this poll is going the way he thought it would. JD Vance is nearly off the stage. Let's go Rubio!'",
+        "Wrote that he sees people 'who want to finish the job, swiftly, and I see people like JD Vance who want to run from the problem like four decades of politicians before him.'",
+        "Wrote that 'JD Vance did the least to help pass legislation in the Senate,' 'did the bare minimum to help republicans get elected,' and that 'the more he talks, and blames, the dumber he looks.'"
+      ],
+      "critical_items": 3,
+      "appearances": 3,
+      "last_seen": "2026-11-17",
+      "last_seen_pt": "November 17, 2026, 4:08 PM PT",
+      "links": [
+        {
+          "label": "Quote-post of the Walsh poll",
+          "url": "https://x.com/PinoAmericano/status/2122844448040357932"
+        },
+        {
+          "label": "X post on 'run from the problem'",
+          "url": "https://x.com/PinoAmericano/status/2122534620822745483"
+        },
+        {
+          "label": "X post on Senate record and blame",
+          "url": "https://x.com/PinoAmericano/status/2122526861511274755"
+        }
+      ],
+      "source_notes": "Prominent commenter in the Walsh thread (source b), plus two earlier critical posts opened in the same search. The poll quote-post had 913 likes and 16,976 views when opened.",
+      "in_walsh_thread": true,
+      "rank_score": 175915.5,
+      "rank": 21
+    },
+    {
+      "handle": "marcthiessen",
+      "name": "Marc Thiessen",
+      "followers": 105973,
+      "rank_reach": 105973,
+      "affiliation": "American Enterprise Institute; Fox News; The Washington Post; host of the 'What The Hell Is Going On?' podcast (from his X bio).",
+      "side": "right",
+      "main_criticisms": [
+        "In a Washington Post op-ed titled \"JD Vance's stunning act of disloyalty,\" argued Republicans lost in part because the Iran war dragged on and that 'the vice president owns that.'",
+        "On X, wrote that if Vance cannot say Trump made the right decision to disarm Iran, he has no business seeking the 2028 nomination, and that if Vance can't endorse Trump's national security policy, Trump should not endorse him.",
+        "On Fox News's Special Report, told Bret Baier he was 'shocked' by Vance's statement and that it was 'quite frankly, disloyal to the president of the United States.'"
+      ],
+      "critical_items": 3,
+      "appearances": 3,
+      "last_seen": "2026-11-05",
+      "last_seen_pt": "November 5, 2026 (op-ed, X post, and Fox appearance reported that day)",
+      "links": [
+        {
+          "label": "X post",
+          "url": "https://x.com/marcthiessen/status/2118411211196813712"
+        },
+        {
+          "label": "Washington Post op-ed",
+          "url": "https://www.washingtonpost.com/opinions/2026/11/05/vances-post-midterms-disloyalty-trump-is-disqualifying/"
+        },
+        {
+          "label": "Mediaite report of the Fox appearance",
+          "url": "https://www.mediaite.com/media/tv/fox-news-contributor-accuses-jd-vance-of-being-disloyal-to-trump/"
+        }
+      ],
+      "source_notes": "Author of a critical tracker post and op-ed. The Fox appearance was opened via Mediaite.",
+      "rank_score": 158959.5,
+      "rank": 22
+    },
+    {
+      "handle": "sidrosenberg19",
+      "name": "Sid Rosenberg",
+      "followers": 45695,
+      "rank_reach": 45695,
+      "affiliation": "Host of Sid & Friends in the Morning on 77 WABC; member of the U.S. Holocaust Memorial Council (from his X bio). Included because of the radio affiliation and council post, even though he is under the 50,000-follower threshold. An older account, @sidrosenberg (39,925 followers, unverified), was also opened and is not counted separately.",
+      "side": "right",
+      "main_criticisms": [
+        "On November 4 wrote that he 'could never vote for this guy for President,' after Vance listed the war and Israel among reasons for the midterm loss, and said he never thought he would see the day Trump would 'allow anyone in his administration to undermine him.'",
+        "On November 5 told Vance, 'YOU are the reason why the Iran War is still an issue,' called him a 'Tucker Carlson loving jackass,' urged that Rubio take over the Iran file, and wrote: 'Vance is a disloyal, agenda driven problem for our party moving forward!'",
+        "On 77 WABC with Bill O'Reilly, said 'JD Vance calling out Trump is funny because, it was his MOU that has this war going on an extra three months,' and later, 'That's so disloyal!'"
+      ],
+      "critical_items": 4,
+      "appearances": 4,
+      "last_seen": "2026-11-07",
+      "last_seen_pt": "November 7, 2026 (77 WABC appearance reported by Mediaite); latest opened X post is November 5, 2026, 7:20 AM PT",
+      "links": [
+        {
+          "label": "X post, 'could never vote for this guy'",
+          "url": "https://x.com/sidrosenberg19/status/2118025009662665192"
+        },
+        {
+          "label": "X post, 'disloyal, agenda driven problem'",
+          "url": "https://x.com/sidrosenberg19/status/2118362945100861821"
+        },
+        {
+          "label": "X post agreeing with a criticism",
+          "url": "https://x.com/sidrosenberg19/status/2118334821177110815"
+        },
+        {
+          "label": "Earlier X post, #Rubio2028",
+          "url": "https://x.com/sidrosenberg19/status/2112459676247810482"
+        },
+        {
+          "label": "Mediaite report of the 77 WABC appearance",
+          "url": "https://www.mediaite.com/media/so-disloyal-bill-oreilly-and-pro-trump-radio-host-call-out-jd-vance-for-blaming-election-wipeout-on-iran-war/"
+        }
+      ],
+      "source_notes": "Quoted in the November 6 JTA article already in the tracker; his own X posts were then opened. The November 4 post had 5,219 likes and 1,122,697 views when opened. An October 22 post mentioning Vance among officials who have 'done a great job exposing fraud' is not a critique and is not counted. Included under the organization/office exception (77 WABC and the Holocaust Memorial Council).",
+      "rank_score": 79966.2,
+      "rank": 23
+    },
+    {
+      "handle": "CUFIActionFund",
+      "name": "CUFI Action Fund",
+      "followers": 521,
+      "rank_reach": 56979,
+      "related_handle": {
+        "handle": "CUFI",
+        "name": "Christians United for Israel",
+        "followers": 56979
+      },
+      "affiliation": "The 501(c)(4) political arm of Christians United for Israel, which describes itself as 'the largest pro-Israel organization in America' (from the @CUFI and @CUFIActionFund bios, and from the Jewish Insider report).",
+      "side": "right",
+      "main_criticisms": [
+        "In a memo reported by Jewish Insider and JTA, said Vance was 'clearly, demonstrably, and unambiguously wrong,' and that 'in a list of the top four reasons the Republicans lost, the Jews were effectively blamed twice if you can hear that pitch of dog whistle.'",
+        "Said 'this war should've been over months ago, and if the vice president wants someone to blame for that, he needs only look in the mirror,' and called the 'Vance-Carlson movement' 'woke rightism' that is 'as loud as their candidates are weak.'"
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-06",
+      "last_seen_pt": "November 6, 2026 (memo reported by Jewish Insider and in the JTA article already in the tracker)",
+      "links": [
+        {
+          "label": "Jewish Insider report of the memo",
+          "url": "https://jewishinsider.com/2026/11/christians-united-for-israel-vance-rebuke-israel-iran-midterms/"
+        },
+        {
+          "label": "JTA report already in the tracker",
+          "url": "https://www.jta.org/2026/11/06/politics/pro-israel-conservatives-blast-jd-vance-for-blaming-israel-after-gop-midterm-losses"
+        }
+      ],
+      "source_notes": "Included under the organization exception. A search of @CUFI and @CUFIActionFund from November 1 through this update did not return a post that stated this memo; the public record used here is the reporting that quotes it. Ranking uses the parent @CUFI follower count (56,979), which is disclosed, because the Action Fund account itself has 521 followers.",
+      "rank_score": 56979.0,
+      "rank": 24
+    }
+  ]
+}

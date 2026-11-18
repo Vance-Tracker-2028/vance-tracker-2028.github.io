@@ -1,4 +1,4 @@
-"""Shared chrome plus biography and myths pages."""
+"""Shared chrome plus biography, myths, and opposition pages."""
 
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ def nav(current: str) -> str:
         ("bio.html", "bio", "Biography"),
         ("bio.html#critic-to-ally", "critic", "Critic to ally"),
         ("myths.html", "myths", "Myths vs. facts"),
+        ("opposition.html", "opposition", "Top opposition"),
         ("index.html#favorability", "polls", "Polls"),
     ]
     items = []
@@ -44,7 +45,7 @@ def footer() -> str:
   <footer class="site">
     <div class="wrap">
       <p>Independent tracker. Not affiliated with JD Vance or any campaign, political party, or government office. Polling and sentiment figures are recorded as published; authenticity ratings are heuristics, not proof.</p>
-      <p><a href="index.html">Tracker</a> · <a href="bio.html">Biography</a> · <a href="myths.html">Myths vs. facts</a> · <a href="images/CREDITS.md">Photo credits</a></p>
+      <p><a href="index.html">Tracker</a> · <a href="bio.html">Biography</a> · <a href="myths.html">Myths vs. facts</a> · <a href="opposition.html">Top opposition</a> · <a href="images/CREDITS.md">Photo credits</a></p>
     </div>
   </footer>"""
 
@@ -199,7 +200,178 @@ def myths_page(updated: str) -> str:
     )
 
 
+
+def _fmt_followers(n) -> str:
+    try:
+        n = int(n)
+    except (TypeError, ValueError):
+        return ""
+    if n >= 1_000_000:
+        s = f"{n / 1_000_000:.2f}".rstrip("0").rstrip(".")
+        return f"{s}M"
+    if n >= 10_000:
+        s = f"{n / 1_000:.1f}".rstrip("0").rstrip(".")
+        return f"{s}K"
+    return f"{n:,}"
+
+
+def _side_label(side: str) -> str:
+    return {
+        "right": "Right",
+        "left": "Left",
+        "institutional": "Institutional",
+        "unspecified": "Unspecified",
+    }.get(side or "", esc(side or ""))
+
+
+def opposition_page(updated: str) -> str:
+    import json
+
+    data_path = ROOT / "data" / "opposition.json"
+    doc = json.loads(data_path.read_text(encoding="utf-8"))
+    opponents = doc.get("opponents") or []
+    counts = doc.get("counts") or {}
+    cards = []
+    for o in opponents:
+        side = o.get("side") or "unspecified"
+        handle = o.get("handle") or ""
+        name = o.get("name") or handle
+        fol = _fmt_followers(o.get("followers"))
+        items = o.get("critical_items") or 0
+        item_label = "1 critical item" if items == 1 else f"{items} critical items"
+        criticisms = o.get("main_criticisms") or []
+        lis = "".join("<li>%s</li>" % esc(c) for c in criticisms)
+        links = o.get("links") or []
+        parts = []
+        for l in links:
+            if l.get("url"):
+                parts.append('<a href="%s">%s</a>' % (esc(l.get("url")), esc(l.get("label") or "Link")))
+        link_html = " · ".join(parts)
+        title = esc(name)
+        if handle:
+            title += ' <a class="handle" href="https://x.com/%s">@%s</a>' % (esc(handle), esc(handle))
+        related = o.get("related_handle") or {}
+        related_html = ""
+        if related.get("handle"):
+            related_html = (
+                'Parent account: <a href="https://x.com/%s">@%s</a> (%s followers)'
+                % (esc(related["handle"]), esc(related["handle"]), esc(_fmt_followers(related.get("followers"))))
+            )
+        notes = esc(o.get("source_notes") or "")
+        if related_html:
+            notes = (notes + " " + related_html).strip()
+        last = esc(o.get("last_seen_pt") or o.get("last_seen") or "")
+        rank = esc(o.get("rank"))
+        cards.append(
+            '<article class="card %s" data-side="%s" data-rank="%s">'
+            '<div class="opp-head">'
+            '<div class="opp-rank">%s</div>'
+            '<div>'
+            '<p class="card-meta">'
+            '<span class="badge %s">%s</span>'
+            '<span class="followers">%s followers</span>'
+            '<span>%s</span>'
+            '<span>Last seen %s</span>'
+            '</p>'
+            '<h3>%s</h3>'
+            '<p class="summary">%s</p>'
+            '<ul class="critiques">%s</ul>'
+            '<p class="opp-links">%s</p>'
+            '<p class="auth">%s</p>'
+            '</div></div></article>'
+            % (
+                esc(side), esc(side), rank, rank, esc(side), _side_label(side),
+                esc(fol), esc(item_label), last, title, esc(o.get("affiliation") or ""),
+                lis, link_html, notes,
+            )
+        )
+
+    n = counts.get("listed", len(opponents))
+    n_right = counts.get("right", 0)
+    n_left = counts.get("left", 0)
+    n_inst = counts.get("institutional", 0)
+    n_uns = counts.get("unspecified", 0)
+    uns_det = (" · %s unspecified" % n_uns) if n_uns else ""
+    snap = esc(doc.get("follower_snapshot_pt") or updated)
+    script = """
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll(".filter");
+      var cards = document.querySelectorAll("#opp-cards article.card");
+      var empty = document.getElementById("opp-empty");
+      function apply(side) {
+        var shown = 0;
+        cards.forEach(function (c) {
+          var on = (side === "all" || c.getAttribute("data-side") === side);
+          c.style.display = on ? "" : "none";
+          if (on) shown++;
+        });
+        if (empty) empty.style.display = shown ? "none" : "block";
+      }
+      buttons.forEach(function (b) {
+        b.addEventListener("click", function () {
+          buttons.forEach(function (x) {
+            x.classList.toggle("active", x === b);
+            x.setAttribute("aria-pressed", x === b ? "true" : "false");
+          });
+          apply(b.getAttribute("data-side"));
+        });
+      });
+    })();
+  </script>
+"""
+    body = """
+  <article class="wrap">
+    <header class="page-hero">
+      <p class="kicker">Top opposition</p>
+      <h1>Who is criticizing JD Vance</h1>
+      <p>A running list of high-reach critics — accounts with 50,000 or more X followers, or people and groups tied to a major organization or elected office — drawn from the tracker, from prominent replies and quote-posts under those items (including the Matt Walsh poll thread), and from a fresh search on the right and the left.</p>
+      <p class="fine">Last updated %s. Follower counts are X public metrics from %s. Only accounts and items that were actually opened are listed. Affiliations are taken from bios, official pages, or the reporting cited below; none are invented.</p>
+    </header>
+
+    <div class="metrics">
+      <div class="metric"><div class="num">%s</div><div class="label">Listed critics</div><div class="det">Opened this update</div></div>
+      <div class="metric"><div class="num">%s</div><div class="label">Right</div><div class="det">Conservative or Republican-aligned</div></div>
+      <div class="metric"><div class="num">%s</div><div class="label">Left</div><div class="det">Democratic or liberal-aligned</div></div>
+      <div class="metric"><div class="num">%s</div><div class="label">Institutional</div><div class="det">Advocacy groups or foreign newspapers%s</div></div>
+    </div>
+
+    <section class="block">
+      <h2>Ranked list</h2>
+      <p>Ranked by reach and frequency: follower count times a modest bump for repeat critical items. The formula and exceptions are in the methodology below.</p>
+      <div class="filters" role="group" aria-label="Filter by side">
+        <button class="filter active" type="button" data-side="all" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-side="right" aria-pressed="false">Right</button>
+        <button class="filter" type="button" data-side="left" aria-pressed="false">Left</button>
+        <button class="filter" type="button" data-side="institutional" aria-pressed="false">Institutional</button>
+        <button class="filter" type="button" data-side="unspecified" aria-pressed="false">Unspecified</button>
+      </div>
+      <div class="cards" id="opp-cards">
+        %s
+        <p class="empty" id="opp-empty">No critics in this category.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Methodology</h2>
+      <p>A critic is listed only if we opened a post, interview, editorial, or official statement, and if the account has at least 50,000 X followers or is tied to a major media outlet, think tank, campaign, PAC, party body, elected office, or advocacy organization.</p>
+      <p>The list is assembled from three sources: (a) authors of critical items already in the tracker; (b) prominent accounts in the replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026; and (c) a fresh X and web search for high-reach critics on the right and the left. Ranking score equals rank reach times (1 + 0.25 × (critical items − 1)). For CUFI Action Fund, rank reach is the parent @CUFI follower count, which is disclosed on that card, because the Action Fund account itself is small.</p>
+      <p>“Right” and “left” describe public office, stated affiliation, or an outlet’s obvious editorial identity. “Institutional” is used for organizations that are not primarily a U.S. party office — here, the Anti-Defamation League and The Jerusalem Post. “Unspecified” is used only when the bio and opened posts do not state a partisan identity.</p>
+      <p>This is not a complete census. A missing name is not a finding that someone is not a critic. Matt Walsh is not listed; his talent poll included Vance and did not attack him. Tomi Lahren commented in that thread with a preference for Ron DeSantis, which is not treated as a critique of Vance. Sen. Tom Cotton was described in Jewish Insider as taking a “veiled swipe” without naming Vance, so he is not listed. News outlets that only reported criticism are not listed as critics; signed editorials, signed columns, and organizational statements are. Michael Doran’s Hudson Institute essay is listed; a later X post in which he said it is “simply false” that he is “against JD Vance” is noted on his card.</p>
+    </section>
+  </article>
+%s
+""" % (esc(updated), snap, n, n_right, n_left, n_inst, uns_det, "".join(cards), script)
+    return page_shell(
+        "Top opposition — JD Vance Tracker",
+        "High-reach critics of JD Vance, including officials and commentators on the right and the left, with follower counts, affiliations, and links to opened posts and articles.",
+        "opposition",
+        body,
+    )
+
+
 def write_pages(updated: str) -> None:
     (ROOT / "bio.html").write_text(bio_page(updated), encoding="utf-8")
     (ROOT / "myths.html").write_text(myths_page(updated), encoding="utf-8")
-    print("Wrote bio.html and myths.html")
+    (ROOT / "opposition.html").write_text(opposition_page(updated), encoding="utf-8")
+    print("Wrote bio.html, myths.html, and opposition.html")
