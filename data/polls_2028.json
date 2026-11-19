@@ -1,22 +1,48 @@
 {
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "timezone": "America/Los_Angeles",
-  "methodology": "Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate (5 polls). These polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey; likely voters; self-selected GOP-primary RVs) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used, except that the Echelon Insights result was read from a Polling Desk poll page that cites the NYT/PollResults feed.",
+  "methodology": "Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate (6 polls). These polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey; likely voters; self-selected GOP-primary RVs; Emerson closed-ended list of GOP-primary RVs) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used, except that the Echelon Insights result was read from a Polling Desk poll page that cites the NYT/PollResults feed.",
   "simple_unweighted_average": {
     "JD Vance": {
-      "pct": 37.2,
-      "n_polls": 5
+      "pct": 35.0,
+      "n_polls": 6
     },
     "Marco Rubio": {
-      "pct": 28.8,
-      "n_polls": 5
+      "pct": 31.3,
+      "n_polls": 6
     },
     "Ron DeSantis": {
-      "pct": 13.0,
-      "n_polls": 5
+      "pct": 12.3,
+      "n_polls": 6
     }
   },
   "polls": [
+    {
+      "pollster": "Emerson College Polling",
+      "sponsor": null,
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-16",
+      "sample": "418 Republican primary voters within a national survey of 1,000 registered voters",
+      "sample_size": 418,
+      "universe": "Registered voters planning to vote in the GOP primary (closed-ended list)",
+      "moe": "±3 points on the 1,000 voters; subsample MoE not stated.",
+      "results": {
+        "Marco Rubio": 44,
+        "JD Vance": 24,
+        "Ron DeSantis": 9,
+        "Donald Trump Jr.": 6
+      },
+      "results_open_ended": {
+        "Marco Rubio": 36,
+        "JD Vance": 20,
+        "Ron DeSantis": 7,
+        "Donald Trump": 7,
+        "Thomas Massie": 7
+      },
+      "note": "Released Nov 19, 2026. The closed-ended list question (44 / 24 / 9) is used in the average because the other polls here mostly read from candidate lists; the open-ended question had Rubio 36, Vance 20, DeSantis 7, Trump 7, Massie 7. USA Today notes the same pollster had Vance ahead of Rubio 54%–6% a year earlier. Subsample size (418) from USA Today.",
+      "source_url": "https://emersoncollegepolling.com/national-poll-rubio-leads-2028-gop-nomination-contest-ossoff-rises-among-democrats/",
+      "added_on": "2026-11-19"
+    },
     {
       "pollster": "Echelon Insights",
       "sponsor": null,

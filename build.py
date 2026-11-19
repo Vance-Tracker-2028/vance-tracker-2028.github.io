@@ -740,6 +740,7 @@ def sentiment_section(entries, s) -> str:
         <div>
           <p>Without Trump Jr.’s endorsement, critical posts lead {fmt_num(s['crit_int'])} to {fmt_num(s['supp_int_ex'])} in likes+reposts+quotes, and {fmt_views(s['crit_views'])} to {fmt_views(s['supp_views_ex'])} in views. With it, supportive views rise to {fmt_views(s['supp_views'])} — mostly one 16.1M-follower account.</p>
           <p>The Israel fight is the closest: Hammer’s post (255K views, 2,432 likes, 28% reply-to-like) is roughly matched by Auron MacIntyre (3,615 likes). High reply ratios on Hammer, Thiessen, and Fine coverage show debate, not a one-sided pile-on.</p>
+          <p>Nov 18–19: the New York Times report that Trump is frustrated with Vance over his Iran-war critique drove a new wave of critical relays (ThePatrioticBlonde 1,689 likes; MeidasTouch 1,385 likes, 271K views; Ryan Fournier 554 likes). Mollie Hemingway (1.5M followers) pushed back, calling a viral caption about Trump’s MOU remarks “a lie,” and many replies under the relays defended Vance.</p>
           <p class="note">Authenticity ratings are heuristics, not proof. Almost all large-account posts look likely organic. The one “Mixed” rating is Hammer’s scapegoat post. No specific person is labeled a bot.</p>
         </div>
       </div>

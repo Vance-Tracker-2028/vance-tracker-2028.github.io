@@ -1,7 +1,243 @@
 {
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "timezone": "America/Los_Angeles",
   "entries": [
+    {
+      "date": "2026-11-18",
+      "datetime_pt": "2026-11-18 10:59 AM PT",
+      "source": "The New York Times (Tyler Pager), syndicated by The Seattle Times",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "2028 / loyalty",
+      "summary": "News report. Says Trump first called Vance's post-midterm analysis 'largely true' but has since complained to aides and allies that Vance should have said the decision to go to war with Iran was right, while praising Marco Rubio in private as a possible 2028 candidate (anonymous sources). Notes Trump pulled Vance from Iran peace talks to focus on a fraud investigation, that Vance says there is 'no daylight' with the president and will decide on 2028 'sometime next year,' and that allies say he is genuinely undecided. Quotes Alyssa Farah Griffin, Rob Flaherty and Chris Christie. Widely picked up on X (e.g., @DeItaone, @MarioNawfal, @RpsAgainstTrump, @LeadingReport).",
+      "engagement": null,
+      "url": "https://www.seattletimes.com/nation-world/nation-politics/trump-grows-frustrated-with-vance-over-iran-war-critique/",
+      "added_on": "2026-11-19",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Newspaper report (NYT, syndicated text opened on The Seattle Times). Relies on anonymous sources; Vance's office declined to comment."
+      },
+      "audience_sample": "Reaction under the most-shared X relays was split. Under @LeadingReport's post (1,010,690 followers; 989 likes, 53,524 views) most replies opened defended Vance ('Vance is 100% correct'; 'Trump reportedly frustrated with JD Vance for telling the truth'). Under @RyanAFournier's relay (separate entry) replies leaned against Vance. Ed Morrissey of Hot Air (@EdMorrissey, 65,144) questioned whether 'the New York Times' sources [are] spinning their own interests.'"
+    },
+    {
+      "date": "2026-11-18",
+      "datetime_pt": "2026-11-18 11:53 AM PT",
+      "source": "ThePatrioticBlonde (Breck Worsham)",
+      "handle": "ImBreckWorsham",
+      "type": "X post",
+      "followers": 201016,
+      "theme": "2028 / loyalty",
+      "summary": "Relaying the NYT report, wrote that 'Trump is having a meltdown behind closed doors' over Vance blaming the midterm loss on the Iran war, and that per the NYT 'Trump views Vance as a traitor for refusing to defend his decision to attack Iran' and has 'frozen Vance out.' The opened NYT text does not use the word 'traitor'; it says Trump complained Vance should have defended the decision and that Trump pulled Vance from Iran peace talks.",
+      "engagement": {
+        "likes": 1689,
+        "reposts": 266,
+        "replies": 179,
+        "quotes": 14,
+        "views": 31941,
+        "interactions": 2148,
+        "engagement_ex_replies": 1969,
+        "followers": 201016,
+        "engagement_rate_vs_followers_pct": 1.07,
+        "reply_to_like_pct": 10.6,
+        "engagement_rate_vs_views_pct": 6.72
+      },
+      "url": "https://x.com/ImBreckWorsham/status/2123142648823161257",
+      "added_on": "2026-11-19",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic, with caveats",
+        "evidence": "Heuristic only, not proof. Blue-check account created April 2023 (bio: 'Constitutional Conservative. Journalist.'). 1,689 likes on 31,941 views is a high like-to-view ratio (about 5.3%), which can reflect a loyal follower base or coordinated liking; reply sample did not show duplicated text."
+      },
+      "audience_sample": "Replies opened were mixed and mostly low-reach. Some attacked Vance ('Vance is a Palantir product'; 'willing to lie, back stab'), some doubted the NYT ('i don't trust anything the NYT says'), and some saw the distance helping Vance ('Ironically, that distance might help Vance'). Several replies contained antisemitic remarks. No 50K+ or major-organization accounts in the replies or quotes opened; the largest quoter was @Snowball1776 (44,612): 'Vance is the new Pence !!!'"
+    },
+    {
+      "date": "2026-11-18",
+      "datetime_pt": "2026-11-18 9:54 AM PT",
+      "source": "Ryan Fournier",
+      "handle": "RyanAFournier",
+      "type": "X post",
+      "followers": 1280313,
+      "theme": "2028 / loyalty",
+      "summary": "Founder of Students for Trump (per bio) relayed the NYT report: Trump is 'reportedly growing frustrated' with Vance over blaming the Iran war for midterm losses, wanted Vance to defend the strike, and is 'reportedly sidelining Vance.' Relay without added commentary in the opened text.",
+      "engagement": {
+        "likes": 554,
+        "reposts": 91,
+        "replies": 152,
+        "quotes": 6,
+        "views": 27293,
+        "interactions": 803,
+        "engagement_ex_replies": 651,
+        "followers": 1280313,
+        "engagement_rate_vs_followers_pct": 0.06,
+        "reply_to_like_pct": 27.4,
+        "engagement_rate_vs_views_pct": 2.94
+      },
+      "url": "https://x.com/RyanAFournier/status/2123112684816044500",
+      "added_on": "2026-11-19",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Account created July 2010. Engagement 0.06% of followers, low rather than inflated; high reply share (27% of likes) indicates real argument in the thread."
+      },
+      "audience_sample": "Replies opened leaned against Vance ('Vance is not ready'; 'Rubio is definitely more Presidential'; 'Vance is a weak fraud'), with a minority pushing back on the NYT or Fournier ('You quote NY Slime like it is a reputable source'; 'JD IS CORRECT'). No 50K+ or major-organization accounts in the replies opened."
+    },
+    {
+      "date": "2026-11-18",
+      "datetime_pt": "2026-11-18 5:01 PM PT",
+      "source": "MeidasTouch",
+      "handle": "MeidasTouch",
+      "type": "X post",
+      "followers": 1356299,
+      "theme": "2028 / loyalty",
+      "summary": "Quoted an @Acyn clip (800,179 followers; 1,857 likes, 839,201 views) of Trump saying of the Iran MOU 'It was a waste of time. I didn't like doing it. I listened to people. It delayed things,' captioned with the reporter question 'Is that why Vance was pulled off negotiations?' MeidasTouch added: 'You certainly don't want to be JD Vance right now.'",
+      "engagement": {
+        "likes": 1385,
+        "reposts": 141,
+        "replies": 26,
+        "quotes": 2,
+        "views": 270885,
+        "interactions": 1554,
+        "engagement_ex_replies": 1528,
+        "followers": 1356299,
+        "engagement_rate_vs_followers_pct": 0.11,
+        "reply_to_like_pct": 1.9,
+        "engagement_rate_vs_views_pct": 0.57
+      },
+      "url": "https://x.com/MeidasTouch/status/2123220068352037118",
+      "added_on": "2026-11-19",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Network account created March 2020. 270,885 views with 224 bookmarks and few replies (26) is consistent with a large passive audience; no sign of reply flooding."
+      },
+      "audience_sample": "Few replies (26). Under the quoted @Acyn clip, replies opened were mixed: some called Vance 'a traitor' or said Vance 'fed him' a bad deal; others defended the clip's context ('He said none of what the title claims he says'). No 50K+ or major-organization accounts in the replies opened."
+    },
+    {
+      "date": "2026-11-19",
+      "datetime_pt": "2026-11-19 4:23 AM PT",
+      "source": "Marc Thiessen",
+      "handle": "marcthiessen",
+      "type": "X post",
+      "followers": 105939,
+      "theme": "2028 / loyalty",
+      "summary": "Quoting a post on Trump's MOU remarks, the AEI fellow and Washington Post columnist (per bio) wrote that Trump said Vance 'left one thing out. If we had to do it again absolutely,' adding: 'Vance STILL has not said this.' In a follow-up (7:06 AM PT) answering Mollie Hemingway, he said 'This is the third time he's said Vance' left that out.",
+      "engagement": {
+        "likes": 254,
+        "reposts": 28,
+        "replies": 51,
+        "quotes": 2,
+        "views": 9890,
+        "interactions": 335,
+        "engagement_ex_replies": 284,
+        "followers": 105939,
+        "engagement_rate_vs_followers_pct": 0.32,
+        "reply_to_like_pct": 20.1,
+        "engagement_rate_vs_views_pct": 3.39
+      },
+      "url": "https://x.com/marcthiessen/status/2123391769815683361",
+      "added_on": "2026-11-19",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Account created March 2009; engagement 0.32% of followers and 2.9% of views, normal range; replies are threaded arguments, not duplicates."
+      },
+      "audience_sample": "Replies mostly pushed back on Thiessen, i.e., defended Vance or disputed the framing ('Marc \"all gums\" Thiessen is doing everything he can to promote the establishment for 2028'; 'Have you asked him?'), with some agreeing ('That's because JD Vance stands with Tucker Carlson and Peter Thiel'). Prominent reply: Mollie Hemingway (@MZHemingway, 1,504,229; editor-in-chief of The Federalist) said the caption he shared was 'a lie' (separate supportive entry)."
+    },
+    {
+      "date": "2026-11-19",
+      "datetime_pt": "2026-11-19 7:00 AM PT",
+      "source": "Josh Hammer on The Mark Reardon Show, posted by 97.1 FM Talk (St. Louis)",
+      "handle": "971FMTalk",
+      "type": "X post",
+      "followers": 10625,
+      "theme": "2028 / loyalty",
+      "summary": "Radio clip. Josh Hammer (@josh_hammer, 169,978 followers; Article III Project senior counsel and columnist per bio) told host Mark Reardon that Vance 'is in over his head, he's too green... he is in many ways betraying his boss,' explaining why he has soured on Vance since the midterms.",
+      "engagement": {
+        "likes": 5,
+        "reposts": 1,
+        "replies": 0,
+        "quotes": 0,
+        "views": 541,
+        "interactions": 6,
+        "engagement_ex_replies": 6,
+        "followers": 10625,
+        "engagement_rate_vs_followers_pct": 0.06,
+        "reply_to_like_pct": 0.0,
+        "engagement_rate_vs_views_pct": 1.11
+      },
+      "url": "https://x.com/971FMTalk/status/2123431099481071703",
+      "added_on": "2026-11-19",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Station account (Fox News affiliate, created 2009) posting its own show clip; very low engagement, nothing inflated."
+      },
+      "audience_sample": "No replies at time of update."
+    },
+    {
+      "date": "2026-11-19",
+      "datetime_pt": "2026-11-19 6:22 AM PT",
+      "source": "Mollie Hemingway",
+      "handle": "MZHemingway",
+      "type": "X post",
+      "followers": 1504229,
+      "theme": "2028 / loyalty",
+      "summary": "Editor-in-chief of The Federalist and Fox News contributor (per bio) replied to Marc Thiessen that the caption he reshared (that Trump called the MOU 'a big mistake') 'is a lie. He said it was NOT a mistake,' urged people to check 'propaganda slop accounts' before retweeting, and said Trump 'also defended the VP, contrary to the info op being run regarding that.'",
+      "engagement": {
+        "likes": 397,
+        "reposts": 46,
+        "replies": 31,
+        "quotes": 1,
+        "views": 12163,
+        "interactions": 475,
+        "engagement_ex_replies": 444,
+        "followers": 1504229,
+        "engagement_rate_vs_followers_pct": 0.03,
+        "reply_to_like_pct": 7.8,
+        "engagement_rate_vs_views_pct": 3.91
+      },
+      "url": "https://x.com/MZHemingway/status/2123421783282090436",
+      "added_on": "2026-11-19",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Long-standing journalist account; engagement 0.03% of followers, low for a reply, no inflation pattern."
+      },
+      "audience_sample": "Replies split. Some thanked her ('Thanks for calling that out Mollie'), others pushed back ('\"Waste of time\" isn't a mistake?'; 'Stop carrying water for them'). No other 50K+ accounts in the replies opened. The caption she disputed came from @EYakoby (317,472; 3,709 likes, 91,943 views)."
+    },
+    {
+      "date": "2026-11-19",
+      "datetime_pt": "2026-11-19 7:29 AM PT",
+      "source": "Steve Cortes",
+      "handle": "SteveCortes",
+      "type": "X post",
+      "followers": 536405,
+      "theme": "Immigration / amnesty; defense of Vance",
+      "summary": "Replying to a Vance post on immigration reform, former Trump and Vance adviser Steve Cortes (per bio) wrote that 'since Election Day, there has been one unequivocal voice inside the Administration speaking out against amnesty in any form... Vice President Vance,' and that this is 'why the corporate media and neocons are attacking' him.",
+      "engagement": {
+        "likes": 52,
+        "reposts": 5,
+        "replies": 5,
+        "quotes": 1,
+        "views": 1707,
+        "interactions": 63,
+        "engagement_ex_replies": 58,
+        "followers": 536405,
+        "engagement_rate_vs_followers_pct": 0.01,
+        "reply_to_like_pct": 9.6,
+        "engagement_rate_vs_views_pct": 3.69
+      },
+      "url": "https://x.com/SteveCortes/status/2123438509679575044",
+      "added_on": "2026-11-19",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only. Account created December 2010; very low engagement relative to followers (0.01%), the opposite of an inflated pattern."
+      },
+      "audience_sample": "Five replies at time of update; not enough to characterize. No prominent accounts."
+    },
     {
       "date": "2026-11-17",
       "datetime_pt": "2026-11-17 6:40 PM PT",
@@ -819,5 +1055,5 @@
       "audience_sample": null
     }
   ],
-  "last_updated_pt": "November 18, 2026, 11:45 AM PT"
+  "last_updated_pt": "November 19, 2026, 8:20 AM PT"
 }

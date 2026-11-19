@@ -1,8 +1,8 @@
 {
   "title": "JD Vance top opposition",
-  "last_updated": "2026-11-18",
-  "last_updated_pt": "November 18, 2026, 11:45 AM PT",
-  "follower_snapshot_pt": "November 18, 2026, Pacific Time, from X public metrics on accounts that were opened (Levin, Hammer, Shipwreckedcrew and the three new entries refreshed this morning); Loomer, koshercockney and Pino Americano refreshed again at the Walsh poll close (about 11:35 AM PT)",
+  "last_updated": "2026-11-19",
+  "last_updated_pt": "November 19, 2026, 8:20 AM PT",
+  "follower_snapshot_pt": "November 18, 2026, Pacific Time, from X public metrics on accounts that were opened (Levin, Hammer, Shipwreckedcrew and the three new entries refreshed this morning); Loomer, koshercockney and Pino Americano refreshed again at the Walsh poll close (about 11:35 AM PT); Nov 19, 2026: Thiessen, Hammer, and the two new entries (MeidasTouch, ImBreckWorsham) refreshed from X public metrics",
   "criteria": {
     "min_followers": 50000,
     "or_major_organization_or_office": true,
@@ -26,7 +26,7 @@
   },
   "sources": {
     "a": "Authors of critical items already in entries.json",
-    "b": "Prominent accounts in replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026, and the Brian Kilmeade clip of November 18, 2026",
+    "b": "Prominent accounts in replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026, and the Brian Kilmeade clip of November 18, 2026; the Nov 18–19 NYT-report relays and the Thiessen/Hemingway thread",
     "c": "A fresh X and web search for high-reach Vance critics on the right and the left"
   },
   "exclusions": [
@@ -38,12 +38,15 @@
     "Jeremy Barr (@jeremymbarr, 29,080 followers), media reporter for The Guardian, quoted the Kilmeade clip calling it 'one of the strongest critiques I've seen in a while.' That is a reporter's observation, not a critique, so he is not listed.",
     "John Daniel Davidson (@johnddavidson, 39,716; senior editor at The Federalist) and Douglass Mackey (@douglassmackey, 79,635) quoted the Kilmeade clip to push back on Kilmeade, not Vance; they are not critics of Vance.",
     "Steve Cortes (@SteveCortes, 536,581) posted a supportive counter to Kilmeade; he is in the tracker as supportive, not on this list.",
+    "Ryan Fournier (@RyanAFournier, 1,280,313; founder of Students for Trump) and Walter Bloomberg (@DeItaone, 1,979,031) relayed the Nov 18 NYT report without their own critique in the opened text, so they are not listed. Fournier's relay is in the tracker as an item.",
+    "Acyn (@Acyn, 800,179) posted the Trump MOU clip with a reporter's question about Vance; that is a clip caption, not a critique, so Acyn is not listed. Eyal Yakoby (@EYakoby, 317,472) posted the MOU clip without naming Vance; not listed.",
+    "Mollie Hemingway (@MZHemingway, 1,504,229) defended Vance on Nov 19; she is in the tracker as supportive, not on this list.",
     "This list is not exhaustive. A missing name is not a finding that the person is not a critic."
   ],
   "counts": {
-    "listed": 27,
-    "right": 19,
-    "left": 4,
+    "listed": 29,
+    "right": 20,
+    "left": 5,
     "institutional": 2,
     "unspecified": 2,
     "walsh_thread_commenters": 3
@@ -282,6 +285,39 @@
       "rank": 8
     },
     {
+      "handle": "MeidasTouch",
+      "name": "MeidasTouch",
+      "followers": 1356299,
+      "rank_reach": 1356299,
+      "affiliation": "MeidasTouch Network, a progressive media outlet ('Unapologetically pro-democracy,' per its X bio).",
+      "side": "left",
+      "main_criticisms": [
+        "Quoting Trump calling the Iran MOU 'a waste of time' and a reporter asking whether that is 'why Vance was pulled off negotiations,' wrote: 'You certainly don't want to be JD Vance right now.'",
+        "Also amplified the Kilmeade 'never should have been vice president' clip (Nov 18) and a Nov 19 clip saying Vance turned an FAA funding question into an attack over transgender athletes."
+      ],
+      "critical_items": 1,
+      "appearances": 3,
+      "last_seen": "2026-11-19",
+      "last_seen_pt": "November 19, 2026, 8:00 AM PT (FAA/transgender-athletes clip)",
+      "links": [
+        {
+          "label": "X post, 'You certainly don't want to be JD Vance'",
+          "url": "https://x.com/MeidasTouch/status/2123220068352037118"
+        },
+        {
+          "label": "X post on the Kilmeade clip",
+          "url": "https://x.com/MeidasTouch/status/2123144494912770171"
+        },
+        {
+          "label": "X post on FAA / transgender athletes",
+          "url": "https://x.com/MeidasTouch/status/2123446217967595809"
+        }
+      ],
+      "source_notes": "Added Nov 19, 2026. One critical item in the tracker; the other two posts are counted as appearances. Follower count from X public metrics on Nov 19, 2026.",
+      "rank_score": 1356299.0,
+      "rank": 9
+    },
+    {
       "handle": "kilmeade",
       "name": "Brian Kilmeade",
       "followers": 929232,
@@ -308,7 +344,7 @@
       ],
       "source_notes": "Author of a critical item added Nov 18, 2026. Remarks were on radio, not on his X account; follower count is from @kilmeade X public metrics on Nov 18, 2026.",
       "rank_score": 929232.0,
-      "rank": 9
+      "rank": 10
     },
     {
       "handle": "Jerusalem_Post",
@@ -332,7 +368,7 @@
       ],
       "source_notes": "Author of a critical article already in the tracker. Side is labeled institutional because this is a foreign newspaper, not a U.S. partisan office.",
       "rank_score": 902894.0,
-      "rank": 10
+      "rank": 11
     },
     {
       "handle": "AbdulElSayed",
@@ -361,7 +397,7 @@
       ],
       "source_notes": "A November 17, 2026 post saying 'I look forward to the conversation, @VP' was opened and is civil, so it is not counted as a critical item. The October 16 post had 9,735 likes and 270,564 views when opened.",
       "rank_score": 897082.5,
-      "rank": 11
+      "rank": 12
     },
     {
       "handle": "JohnCornyn",
@@ -385,7 +421,7 @@
       ],
       "source_notes": "Elected official quoted in a tracker article. No X post from Cornyn about this was opened in this update.",
       "rank_score": 414522.0,
-      "rank": 12
+      "rank": 13
     },
     {
       "handle": "ADL",
@@ -409,24 +445,25 @@
       ],
       "source_notes": "The same statement was quoted in a Jewish Insider report opened for this update. Side is labeled institutional because ADL is an advocacy group, not a party office.",
       "rank_score": 330552.0,
-      "rank": 13
+      "rank": 14
     },
     {
       "handle": "josh_hammer",
       "name": "Josh Hammer",
-      "followers": 170005,
-      "rank_reach": 170005,
+      "followers": 169978,
+      "rank_reach": 169978,
       "affiliation": "Senior counsel at the Article III Project; Shillman Fellow at the Horowitz Center; syndicated columnist and author (from his X bio). The November 16 column ran in FrontPage Magazine.",
       "side": "right",
       "main_criticisms": [
         "Wrote that Vance, whom he once held in high esteem, surveyed the midterm 'electoral massacre' and found 'a scapegoat many others have found for millennia: the Jews,' calling it 'rank cowardice.'",
         "His FrontPage Magazine column, 'JD Vance Scapegoats the Jews,' argued that Vance's post-election claims about the Iran war and the U.S.-Israel relationship amounted to blaming Jews or Israel.",
-        "On November 4 he wrote that 'the single biggest loser from last night's massacre is JD Vance.'"
+        "On November 4 he wrote that 'the single biggest loser from last night's massacre is JD Vance.'",
+        "On The Mark Reardon Show (clip posted Nov 19, 2026 by 97.1 FM Talk), said Vance 'is in over his head, he's too green... he is in many ways betraying his boss.'"
       ],
-      "critical_items": 3,
-      "appearances": 3,
-      "last_seen": "2026-11-16",
-      "last_seen_pt": "November 16, 2026, 12:38 PM PT (from the tracker entry)",
+      "critical_items": 4,
+      "appearances": 4,
+      "last_seen": "2026-11-19",
+      "last_seen_pt": "November 19, 2026, 7:00 AM PT (radio clip posted by 97.1 FM Talk)",
       "links": [
         {
           "label": "X post on 'rank cowardice'",
@@ -439,11 +476,15 @@
         {
           "label": "X post, 'biggest loser'",
           "url": "https://x.com/josh_hammer/status/2118043218306805911"
+        },
+        {
+          "label": "Radio clip (97.1 FM Talk)",
+          "url": "https://x.com/971FMTalk/status/2123431099481071703"
         }
       ],
-      "source_notes": "Author of two critical X posts and one column already in the tracker. Follower count from X public metrics on November 18, 2026.",
-      "rank_score": 255007.5,
-      "rank": 14
+      "source_notes": "Author of two critical X posts and one column already in the tracker. Follower count from X public metrics on November 18, 2026. Nov 19 update: one new critical item (radio clip); follower count refreshed Nov 19.",
+      "rank_score": 297461.5,
+      "rank": 15
     },
     {
       "handle": "factpostnews",
@@ -467,7 +508,7 @@
       ],
       "source_notes": "Author of a critical tracker item. No partisan affiliation is stated in the bio, so side is left unspecified rather than invented.",
       "rank_score": 235335.0,
-      "rank": 15
+      "rank": 16
     },
     {
       "handle": "RepFine",
@@ -500,7 +541,31 @@
       ],
       "source_notes": "A search of @RepFine and @VoteRandyFine from November 1 through this update returned no posts about Vance. The criticism is from interviews that were opened, including one already in the tracker.",
       "rank_score": 209082.5,
-      "rank": 16
+      "rank": 17
+    },
+    {
+      "handle": "ImBreckWorsham",
+      "name": "ThePatrioticBlonde (Breck Worsham)",
+      "followers": 201016,
+      "rank_reach": 201016,
+      "affiliation": "Conservative commentator; bio reads 'Constitutional Conservative. Journalist. Legal Diva' (no outlet named).",
+      "side": "right",
+      "main_criticisms": [
+        "Relaying the NYT report, wrote that Trump is 'having a meltdown' over Vance blaming the midterm loss on the Iran war and that Trump 'views Vance as a traitor' (the opened NYT text does not use that word)."
+      ],
+      "critical_items": 1,
+      "appearances": 1,
+      "last_seen": "2026-11-18",
+      "last_seen_pt": "November 18, 2026, 11:53 AM PT",
+      "links": [
+        {
+          "label": "X post on the NYT report",
+          "url": "https://x.com/ImBreckWorsham/status/2123142648823161257"
+        }
+      ],
+      "source_notes": "Added Nov 19, 2026. Follower count from X public metrics on Nov 19, 2026.",
+      "rank_score": 201016.0,
+      "rank": 18
     },
     {
       "handle": "SenThomTillis",
@@ -524,7 +589,7 @@
       ],
       "source_notes": "Elected official quoted in a tracker article. His personal account @ThomTillis (41,023 followers) was also opened; the official account is used here.",
       "rank_score": 200351.0,
-      "rank": 17
+      "rank": 19
     },
     {
       "handle": "WSJopinion",
@@ -553,7 +618,50 @@
       ],
       "source_notes": "The full editorial text was opened in a Hindustan Times reprint under the title \"JD Vance's Theory of Election Defeat.\" Iran International independently attributed the same quotations to the Journal's editorial board. A direct wsj.com fetch timed out, so the Journal URL is not listed.",
       "rank_score": 188785.0,
-      "rank": 18
+      "rank": 20
+    },
+    {
+      "handle": "marcthiessen",
+      "name": "Marc Thiessen",
+      "followers": 105939,
+      "rank_reach": 105939,
+      "affiliation": "American Enterprise Institute; Fox News; The Washington Post; host of the 'What The Hell Is Going On?' podcast (from his X bio).",
+      "side": "right",
+      "main_criticisms": [
+        "In a Washington Post op-ed titled \"JD Vance's stunning act of disloyalty,\" argued Republicans lost in part because the Iran war dragged on and that 'the vice president owns that.'",
+        "On X, wrote that if Vance cannot say Trump made the right decision to disarm Iran, he has no business seeking the 2028 nomination, and that if Vance can't endorse Trump's national security policy, Trump should not endorse him.",
+        "On Fox News's Special Report, told Bret Baier he was 'shocked' by Vance's statement and that it was 'quite frankly, disloyal to the president of the United States.'",
+        "On Nov 19, 2026, citing Trump's remark that Vance 'left one thing out' (that he would go to war with Iran again), wrote 'Vance STILL has not said this,' and later that it was 'the third time' Trump had said so."
+      ],
+      "critical_items": 4,
+      "appearances": 5,
+      "last_seen": "2026-11-19",
+      "last_seen_pt": "November 19, 2026, 7:06 AM PT (reply to Mollie Hemingway)",
+      "links": [
+        {
+          "label": "X post",
+          "url": "https://x.com/marcthiessen/status/2118411211196813712"
+        },
+        {
+          "label": "Washington Post op-ed",
+          "url": "https://www.washingtonpost.com/opinions/2026/11/05/vances-post-midterms-disloyalty-trump-is-disqualifying/"
+        },
+        {
+          "label": "Mediaite report of the Fox appearance",
+          "url": "https://www.mediaite.com/media/tv/fox-news-contributor-accuses-jd-vance-of-being-disloyal-to-trump/"
+        },
+        {
+          "label": "X post, 'Vance STILL has not said this'",
+          "url": "https://x.com/marcthiessen/status/2123391769815683361"
+        },
+        {
+          "label": "X post, reply to Mollie Hemingway",
+          "url": "https://x.com/marcthiessen/status/2123432627470246129"
+        }
+      ],
+      "source_notes": "Author of a critical tracker post and op-ed. The Fox appearance was opened via Mediaite. Nov 19 update: one new critical item and a follow-up reply (two appearances); follower count refreshed Nov 19.",
+      "rank_score": 185393.2,
+      "rank": 21
     },
     {
       "handle": "koshercockney",
@@ -578,7 +686,7 @@
       "source_notes": "Prominent commenter in the Walsh thread (source b). The quote-post had 137 likes and 2,652 views when opened. A separate November 16 post asking whether readers would vote for Marco Rubio is not by itself a critique of Vance and is not counted. Nov 18 final-results update: follower count refreshed at poll close (183,833); the quote-post had 248 likes and 4,007 views.",
       "in_walsh_thread": true,
       "rank_score": 183833.0,
-      "rank": 19
+      "rank": 22
     },
     {
       "handle": "Doranimated",
@@ -602,7 +710,7 @@
       ],
       "source_notes": "Author of a critical tracker article. On October 15, 2026, Doran wrote on X that 'Yoram claims that I am against JD Vance. This is simply false' and that he intends to decide about 2028 in 2028. That post is not a retraction of the essay, but it is noted here so the record is not overstated.",
       "rank_score": 183340.0,
-      "rank": 20
+      "rank": 23
     },
     {
       "handle": "shipwreckedcrew",
@@ -626,7 +734,7 @@
       ],
       "source_notes": "Author of a critical tracker item, one of the original examples used to start the tracker.",
       "rank_score": 182718.0,
-      "rank": 21
+      "rank": 24
     },
     {
       "handle": "PinoAmericano",
@@ -661,41 +769,7 @@
       "source_notes": "Prominent commenter in the Walsh thread (source b), plus two earlier critical posts opened in the same search. The poll quote-post had 913 likes and 16,976 views when opened. Nov 18 final-results update: follower count refreshed at poll close (117,273); the poll quote-post finished with 1,187 likes, 121 reposts and 23,610 views.",
       "in_walsh_thread": true,
       "rank_score": 175909.5,
-      "rank": 22
-    },
-    {
-      "handle": "marcthiessen",
-      "name": "Marc Thiessen",
-      "followers": 105973,
-      "rank_reach": 105973,
-      "affiliation": "American Enterprise Institute; Fox News; The Washington Post; host of the 'What The Hell Is Going On?' podcast (from his X bio).",
-      "side": "right",
-      "main_criticisms": [
-        "In a Washington Post op-ed titled \"JD Vance's stunning act of disloyalty,\" argued Republicans lost in part because the Iran war dragged on and that 'the vice president owns that.'",
-        "On X, wrote that if Vance cannot say Trump made the right decision to disarm Iran, he has no business seeking the 2028 nomination, and that if Vance can't endorse Trump's national security policy, Trump should not endorse him.",
-        "On Fox News's Special Report, told Bret Baier he was 'shocked' by Vance's statement and that it was 'quite frankly, disloyal to the president of the United States.'"
-      ],
-      "critical_items": 3,
-      "appearances": 3,
-      "last_seen": "2026-11-05",
-      "last_seen_pt": "November 5, 2026 (op-ed, X post, and Fox appearance reported that day)",
-      "links": [
-        {
-          "label": "X post",
-          "url": "https://x.com/marcthiessen/status/2118411211196813712"
-        },
-        {
-          "label": "Washington Post op-ed",
-          "url": "https://www.washingtonpost.com/opinions/2026/11/05/vances-post-midterms-disloyalty-trump-is-disqualifying/"
-        },
-        {
-          "label": "Mediaite report of the Fox appearance",
-          "url": "https://www.mediaite.com/media/tv/fox-news-contributor-accuses-jd-vance-of-being-disloyal-to-trump/"
-        }
-      ],
-      "source_notes": "Author of a critical tracker post and op-ed. The Fox appearance was opened via Mediaite.",
-      "rank_score": 158959.5,
-      "rank": 23
+      "rank": 25
     },
     {
       "handle": "sidrosenberg19",
@@ -737,7 +811,7 @@
       ],
       "source_notes": "Quoted in the November 6 JTA article already in the tracker; his own X posts were then opened. The November 4 post had 5,219 likes and 1,122,697 views when opened. An October 22 post mentioning Vance among officials who have 'done a great job exposing fraud' is not a critique and is not counted. Included under the organization/office exception (77 WABC and the Holocaust Memorial Council).",
       "rank_score": 79966.2,
-      "rank": 24
+      "rank": 26
     },
     {
       "handle": "CUFIActionFund",
@@ -771,7 +845,7 @@
       ],
       "source_notes": "Included under the organization exception. A search of @CUFI and @CUFIActionFund from November 1 through this update did not return a post that stated this memo; the public record used here is the reporting that quotes it. Ranking uses the parent @CUFI follower count (56,979), which is disclosed, because the Action Fund account itself has 521 followers.",
       "rank_score": 56979.0,
-      "rank": 25
+      "rank": 27
     },
     {
       "handle": "BarbaraComstock",
@@ -800,7 +874,7 @@
       ],
       "source_notes": "Below 50K followers; included under the elected-office criterion as a former member of Congress (Republican). Author of a critical item added Nov 18 and a prominent quoter of the Kilmeade clip. Follower count from X public metrics on Nov 18, 2026.",
       "rank_score": 49277.5,
-      "rank": 26
+      "rank": 28
     },
     {
       "handle": "deborahlipstadt",
@@ -824,7 +898,7 @@
       ],
       "source_notes": "Below 50K followers; included under the major-office criterion as a former U.S. special envoy. Her bio and the opened post do not state a party, so side is unspecified. Follower count from X public metrics on Nov 18, 2026.",
       "rank_score": 26721.0,
-      "rank": 27
+      "rank": 29
     }
   ]
 }
