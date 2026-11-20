@@ -3,6 +3,38 @@
   "timezone": "America/Los_Angeles",
   "entries": [
     {
+      "date": "2026-11-19",
+      "datetime_pt": "2026-11-19 4:14 PM PT",
+      "source": "Greg Price",
+      "handle": "greg_price11",
+      "type": "X post",
+      "followers": 526350,
+      "theme": "2028 / Israel / GOP primary voters",
+      "summary": "Quoting Axios's report on a new OnMessage Inc. poll (commissioned by the Combat Antisemitism Movement's political arm) of 1,000 Republican voters in Iowa, New Hampshire, Nevada, and South Carolina, Price wrote, “You’re never going to believe this but it turns out that Vice President Vance and his foreign policy views are very popular with Republican Primary voters.” He attached a screenshot of Axios’s write-up, which this update also opened, stating that Vance was viewed 80% favorably and 19% unfavorably (net +61) among those voters, ahead of President Trump at 75/23 (net +52), and that 59% agreed with a statement Axios said “generally reflects the vice president's position”: “Israel has a right to exist, and America should remain its ally, however criticism of its government is legitimate, but when it turns into antisemitism that is unacceptable.” The poll was conducted Nov. 7–10, 2026 (margin of error ±3.1%). Axios noted that the survey was conducted for an advocacy group and that some of its questions are leading.",
+      "engagement": {
+        "likes": 227,
+        "reposts": 54,
+        "replies": 27,
+        "quotes": 8,
+        "bookmarks": 15,
+        "views": 16355,
+        "interactions": 316,
+        "engagement_ex_replies": 289,
+        "followers": 526350,
+        "engagement_rate_vs_followers_pct": 0.06,
+        "reply_to_like_pct": 11.9,
+        "engagement_rate_vs_views_pct": 1.93
+      },
+      "url": "https://x.com/greg_price11/status/2123570736094744793",
+      "added_on": "2026-11-19",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created August 2017 (526,350 followers, 3,280 following, 61,532 posts, blue verified). Engagement is modest relative to follower count (0.06%) and like-to-view ratio is about 1.4% (227 likes on 16,355 views), not an inflated pattern. The 27 replies opened were mostly unique text, with a mix of agreement and pushback and no copy-paste flood. A few very new, low-follower accounts appeared in the replies, but they were a small minority and did not drive the engagement."
+      },
+      "audience_sample": "Replies opened were mixed and leaned toward skepticism of Price or the poll wording, with a minority backing Vance (e.g., “Vance is wise beyond his 42 years. We hit the jackpot with him”). Several challenged the claim or Vance (“When you strip out all detail from any statement it will poll as unobjectionable”; “The gop voters support Israel.  Vance does not”; “JD has been a big disappointment”; “He could NEVER win the general”). Prominent accounts (50,000+ followers or a major-org tie): Steve Cortes (@SteveCortes, 536,446), already in the tracker as a Vance supporter, quoted the post: “JD Vance’s America First foreign policy of realism and restraint is correct and very popular.” Douglass Mackey (@douglassmackey, 79,629) quoted it to say the surveyed statement was “crafted … as unobjectionable as possible.” Max Abrahms (@MaxAbrahms, 93,122), who describes himself in his bio as an international security professor, replied that Price “sound[ed] exactly like a leftwinger” for highlighting a question about whether “Israel has a right to exist.” None was added to the opposition list: Cortes is supportive, and Mackey and Abrahms were criticizing the poll wording or Price’s framing, not offering a critique of Vance’s record. Bradley Devlin (@bradleydevlin, 17,076) also quoted the post supportively (“Don’t let bad actors gaslight you, folks”) but is below the 50,000-follower threshold."
+    },
+    {
       "date": "2026-11-18",
       "datetime_pt": "2026-11-18 10:59 AM PT",
       "source": "The New York Times (Tyler Pager), syndicated by The Seattle Times",
@@ -1055,5 +1087,5 @@
       "audience_sample": null
     }
   ],
-  "last_updated_pt": "November 19, 2026, 8:20 AM PT"
+  "last_updated_pt": "November 19, 2026, 6:50 PM PT"
 }
