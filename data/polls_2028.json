@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-20",
   "timezone": "America/Los_Angeles",
-  "methodology": "Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate (6 polls). These polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey; likely voters; self-selected GOP-primary RVs; Emerson closed-ended list of GOP-primary RVs) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used, except that the Echelon Insights result was read from a Polling Desk poll page that cites the NYT/PollResults feed.",
+  "methodology": "Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate (6 polls). These polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey; likely voters; self-selected GOP-primary RVs; Emerson closed-ended list of GOP-primary RVs) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used, except that the Echelon Insights result was read from a Polling Desk poll page that cites the NYT/PollResults feed. Nov 20, 2026: no new national 2028 GOP primary polls were found since the Emerson release (Nov 19). Posts on X reported that the RealClearPolitics 2028 average now shows Rubio 35.4% and Vance 34.0%; the RCP page again returned 403, so that figure is not used here.",
   "simple_unweighted_average": {
     "JD Vance": {
       "pct": 35.0,

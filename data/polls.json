@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-20",
   "timezone": "America/Los_Angeles",
   "averages": {
     "rcp_published": {
@@ -9,7 +9,7 @@
       "window": "Sep 29–Nov 16, 2026",
       "n_polls": 10,
       "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-      "note": "Published RCP average on the page opened Nov 19, 2026 (unchanged since Nov 17; no new Vance favorability polls in the table)."
+      "note": "Published RCP average on the page opened Nov 20, 2026 (unchanged since Nov 17; no new Vance favorability polls in the table)."
     },
     "simple_unweighted_rcp_table": {
       "favorable": 40.2,
@@ -22,19 +22,19 @@
       "favorable": 38.5,
       "unfavorable": 54.0,
       "net": -15.5,
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-      "note": "The Hill / Decision Desk HQ estimate as of Nov 19, 2026 (was 37.5 / 54.3, net -16.8, on Nov 18). Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
+      "note": "The Hill / Decision Desk HQ estimate as of Nov 20, 2026 (unchanged from Nov 19; was 37.5 / 54.3, net -16.8, on Nov 18). Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
     },
     "civiqs_tracker": {
-      "favorable": 36,
-      "unfavorable": 57,
+      "favorable": 35,
+      "unfavorable": 58,
       "unsure": 7,
-      "net": -21,
-      "as_of": "2026-11-11",
+      "net": -23,
+      "as_of": "2026-11-18",
       "sample": null,
       "source_url": "https://civiqs.com/results/favorable_jd_vance?annotations=true&uncertainty=true&zoomIn=true",
-      "note": "Civiqs tracking estimate; sample size was not stated on the page opened."
+      "note": "Civiqs tracking estimate, results through Nov 18, 2026 (was 36 / 57, net -21, through Nov 11). Sample size was not stated on the page opened."
     }
   },
   "comparison_same_poll": {
@@ -79,9 +79,9 @@
       "disapprove": 57.6,
       "net": -16.5,
       "n_polls": 3,
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "source_url": "https://politixplus.com/race/jd-vance-approval",
-      "note": "Politix+ 3-poll approval average on the page opened Nov 19, 2026 (unchanged). Distinct from favorability."
+      "note": "Politix+ 3-poll approval average on the page opened Nov 20, 2026 (unchanged). Distinct from favorability."
     },
     "polls": [
       {
