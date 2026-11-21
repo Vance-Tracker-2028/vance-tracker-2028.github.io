@@ -16,7 +16,7 @@ import extra_pages
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json", "opposition.json")
+SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json", "polls_ticket.json", "opposition.json")
 def _blocked_re():
     # Assembled so this source file does not contain the blocked strings.
     return re.compile("|".join(("".join(("ar", "jun")), "".join(("bu", "xi")), "".join(("sv", "gop")))), re.I)
@@ -243,7 +243,8 @@ def load():
     entries_doc = json.loads((DATA / "entries.json").read_text())
     polls = json.loads((DATA / "polls.json").read_text())
     polls_2028 = json.loads((DATA / "polls_2028.json").read_text())
-    return entries_doc, polls, polls_2028
+    polls_ticket = json.loads((DATA / "polls_ticket.json").read_text())
+    return entries_doc, polls, polls_2028, polls_ticket
 
 
 def css() -> str:
@@ -711,6 +712,97 @@ def primary_section(polls_2028) -> str:
     """
 
 
+def ticket_section(polls_ticket) -> str:
+    polls = polls_ticket.get("polls") or []
+    if not polls:
+        return ""
+    p = polls[0]
+    res = p.get("results") or {}
+    # Display the main options plus not sure; lump the rest.
+    display = [("Rubio", res.get("Marco Rubio")), ("DeSantis", res.get("Ron DeSantis")), ("Haley", res.get("Nikki Haley")), ("Not sure", res.get("Not sure"))]
+    others = 0
+    skip = {"Marco Rubio", "Ron DeSantis", "Nikki Haley", "Not sure"}
+    other_bits = []
+    for k, v in res.items():
+        if k in skip:
+            continue
+        others += v or 0
+        other_bits.append(f"{k} {v}%")
+    if others:
+        display.append(("Others", others))
+    present = [(n, v) for n, v in display if v is not None]
+    mx = max((v for _, v in present), default=1) or 1
+    bars = []
+    for name, pct in present:
+        w = 100.0 * pct / mx
+        bars.append(
+            f"""<div class="bar-row">
+              <div class="bar-name">{esc(name)}</div>
+              <div class="track"><div class="fill" style="width:{w:.2f}%"></div></div>
+              <div class="bar-pct">{pct}%</div>
+            </div>"""
+        )
+    sub = p.get("subgroups") or {}
+    maga = (sub.get("MAGA supporters") or {}).get("Marco Rubio")
+    strict = (sub.get("Strict likely voters (registered and 'definitely will vote')") or {}).get("Marco Rubio")
+    pred = p.get("prediction_question") or {}
+    pred_res = pred.get("results") or {}
+    src = p.get("source_url") or ""
+    src2 = p.get("source_url_writeup") or ""
+    name = esc(p.get("pollster") or "")
+    sponsor = p.get("sponsor") or ""
+    name_label = f"{name}" + (f" / {esc(sponsor)}" if sponsor else "")
+    name_html = f'<a href="{esc(src)}">{name_label}</a>' if src else name_label
+    others_cell = "; ".join(other_bits) if other_bits else "—"
+    pred_line = ""
+    if pred_res:
+        pred_line = (
+            f"A follow-up asked all adults in the same survey who they think Vance will choose: "
+            f"Rubio {pred_res.get('Marco Rubio')}%, DeSantis {pred_res.get('Ron DeSantis')}%, "
+            f"not sure {pred_res.get('Not sure')}% (n={esc((pred.get('universe') or '').split('n=')[-1].rstrip(')') if 'n=' in (pred.get('universe') or '') else '—')})."
+        )
+        # simpler wording without fragile parse
+        pred_line = (
+            f"A follow-up, asked of all adults in the same survey (unweighted n=1,049), was who they think Vance will choose: "
+            f"Rubio {pred_res.get('Marco Rubio')}%, DeSantis {pred_res.get('Ron DeSantis')}%, not sure {pred_res.get('Not sure')}%."
+        )
+    writeup = f' · <a href="{esc(src2)}">Daily Mail write-up</a>' if src2 else ""
+    return f"""
+    <section class="block" id="ticket">
+      <h2>Unity ticket</h2>
+      <p class="lede">{esc(polls_ticket.get('caveat') or '')} Only one opened poll qualifies, so there is no multi-poll average. No poll was found that tested a Rubio–Vance ticket (Rubio for president) or a general-election matchup of a joint ticket against Democrats.</p>
+      <div class="bars">{''.join(bars)}</div>
+      <div class="metrics" style="grid-template-columns:repeat(3,1fr);">
+        {metric_card(f"{res.get('Marco Rubio')}%", "Rubio as Vance’s running mate", "Among Republicans and GOP leaners")}
+        {metric_card(f"{res.get('Not sure')}%", "Not sure", "As many as chose Rubio")}
+        {metric_card(f"{maga}%", "MAGA supporters for Rubio", f"Strict likely voters {strict}%")}
+      </div>
+      <div class="scroll">
+        <table>
+          <thead><tr>
+            <th>Poll</th><th>Dates</th><th>Universe / order tested</th>
+            <th class="num">Rubio</th><th class="num">DeSantis</th><th class="num">Haley</th><th class="num">Not sure</th>
+            <th>Others reported</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>{name_html}</td>
+              <td>{esc(fmt_span(p.get('start_date') or '', p.get('end_date') or ''))}</td>
+              <td>{esc(p.get('universe') or '')}. {esc(p.get('order_tested') or '')}</td>
+              <td class="num">{res.get('Marco Rubio', '—')}%</td>
+              <td class="num">{res.get('Ron DeSantis', '—')}%</td>
+              <td class="num">{res.get('Nikki Haley', '—')}%</td>
+              <td class="num">{res.get('Not sure', '—')}%</td>
+              <td>{esc(others_cell)}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">{esc(p.get('question') or '')} {pred_line} {esc(p.get('moe') or '')} Sources: <a href="{esc(src)}">YouGov tables</a>{writeup}. {esc(polls_ticket.get('methodology') or '')}</p>
+    </section>
+    """
+
+
 def sentiment_section(entries, s) -> str:
     max_v = max(list(s["crit"].values()) + list(s["supp"].values()) + [1])
     rows = []
@@ -821,13 +913,13 @@ def methodology_section() -> str:
       <p>Items are included only when a source page or post was opened for this update. Every item has a source link. Follower counts and engagement figures are as returned by the source; they are left blank when unknown. Summaries are factual descriptions, not endorsements.</p>
       <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
       <p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>
-      <p>Favorability averages cite the published RealClearPolitics average where a page was opened, and a simple unweighted mean of listed polls. The 2028 Republican nomination average is an unweighted mean of each candidate’s share in the national polls opened for this update. Those polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used.</p>
-      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–20, 2026.</p>
+      <p>Favorability averages cite the published RealClearPolitics average where a page was opened, and a simple unweighted mean of listed polls. The 2028 Republican nomination average is an unweighted mean of each candidate’s share in the national polls opened for this update. Those polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. The Unity ticket subsection records only polls that test a joint ticket or a running-mate choice; as of this update that is a single YouGov/Daily Mail poll of who Vance should pick as vice president if he is the nominee (the Vance–Rubio order). No Rubio–Vance-order poll or general-election ticket matchup was found, and there is no multi-poll ticket average.</p>
+      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–21, 2026.</p>
     </section>
     """
 
 
-def build_html(entries_doc, polls, polls_2028) -> str:
+def build_html(entries_doc, polls, polls_2028, polls_ticket) -> str:
     entries = entries_doc.get("entries") or []
     s = sentiment_stats(entries)
     n = len(entries)
@@ -843,7 +935,7 @@ def build_html(entries_doc, polls, polls_2028) -> str:
     title = "JD Vance Tracker"
     desc = (
         "Unofficial supporter site tracking public sentiment and polling on JD Vance, "
-        "including favorability, 2028 Republican nomination polls, and large-account coverage."
+        "including favorability, 2028 Republican nomination polls, unity-ticket polling, and large-account coverage."
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -889,6 +981,7 @@ def build_html(entries_doc, polls, polls_2028) -> str:
     </div>
     {fav_section(polls)}
     {primary_section(polls_2028)}
+    {ticket_section(polls_ticket)}
     {sentiment_section(entries, s)}
     {feed_section(entries)}
     {methodology_section()}
@@ -901,8 +994,8 @@ def build_html(entries_doc, polls, polls_2028) -> str:
 
 
 def main() -> None:
-    entries_doc, polls, polls_2028 = load()
-    html_out = build_html(entries_doc, polls, polls_2028)
+    entries_doc, polls, polls_2028, polls_ticket = load()
+    html_out = build_html(entries_doc, polls, polls_2028, polls_ticket)
     out = ROOT / "index.html"
     out.write_text(html_out, encoding="utf-8")
     updated = (entries_doc.get("last_updated_pt") or fmt_updated(entries_doc.get("last_updated") or polls.get("last_updated") or ""))

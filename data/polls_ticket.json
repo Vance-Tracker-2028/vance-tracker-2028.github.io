@@ -1,0 +1,73 @@
+{
+  "last_updated": "2026-11-21",
+  "timezone": "America/Los_Angeles",
+  "methodology": "This section records polls that test a joint Vance–Rubio ticket or a running-mate choice between them. As of Nov. 21, 2026, only one such poll was found and opened: a YouGov survey conducted for the Daily Mail, Oct. 2–5, 2026. It asked Republicans and Republican-leaning independents who JD Vance should choose as his running mate if he runs for president in 2028 — that is the Vance–Rubio order (Vance at the top of the ticket). A second question, asked of all adults in the survey, asked who they think he will choose. No poll was found that tested the reverse order (Rubio for president, Vance for vice president), and no poll was found that tested a Vance–Rubio or Rubio–Vance ticket in a general-election matchup against Democrats. Prediction-market prices are not polls and are not used here. Because only one poll qualifies, there is no multi-poll average.",
+  "caveat": "These figures are running-mate preferences assuming Vance is the presidential nominee. They are not a poll of a named “unity ticket,” and they do not measure the Rubio–Vance order.",
+  "polls": [
+    {
+      "pollster": "YouGov",
+      "sponsor": "Daily Mail",
+      "start_date": "2026-10-02",
+      "end_date": "2026-10-05",
+      "released": "2026-10-15",
+      "sample": "385 Republicans and Republican-leaning independents, within a YouGov survey of 1,053 U.S. adult citizens",
+      "sample_size": 385,
+      "universe": "Republicans and Republican-leaning independents (Q10, unweighted n=385)",
+      "moe": "±4.2 points on the full sample of 1,053 adult citizens (adjusted for weighting). Subsample margin of error for the 385 Republican/lean-Republican respondents was not stated.",
+      "order_tested": "Vance–Rubio (Vance as presidential nominee; Rubio as a running-mate option)",
+      "question": "If JD Vance runs for president in 2028, who do you think he should choose as his vice presidential running mate?",
+      "results": {
+        "Marco Rubio": 33,
+        "Ron DeSantis": 13,
+        "Nikki Haley": 5,
+        "Vivek Ramaswamy": 3,
+        "Tim Scott": 3,
+        "Tulsi Gabbard": 3,
+        "Sarah Huckabee Sanders": 2,
+        "Glenn Youngkin": 1,
+        "Someone else": 3,
+        "Not sure": 34
+      },
+      "subgroups": {
+        "MAGA supporters": {
+          "Marco Rubio": 45,
+          "Ron DeSantis": 12,
+          "Not sure": 26,
+          "unweighted_n": 219
+        },
+        "Strict likely voters (registered and 'definitely will vote')": {
+          "Marco Rubio": 41,
+          "Ron DeSantis": 14,
+          "Not sure": 23,
+          "unweighted_n": 263
+        },
+        "Republicans (Party ID)": {
+          "Marco Rubio": 34,
+          "Ron DeSantis": 14,
+          "Not sure": 33,
+          "unweighted_n": 316
+        }
+      },
+      "prediction_question": {
+        "universe": "All adults in the same survey (unweighted n=1,049)",
+        "question": "If JD Vance runs for president in 2028, who do you think he will choose as his vice presidential running mate?",
+        "results": {
+          "Marco Rubio": 22,
+          "Ron DeSantis": 8,
+          "Nikki Haley": 3,
+          "Tim Scott": 3,
+          "Vivek Ramaswamy": 3,
+          "Sarah Huckabee Sanders": 3,
+          "Tulsi Gabbard": 2,
+          "Glenn Youngkin": 1,
+          "Someone else": 2,
+          "Not sure": 55
+        }
+      },
+      "note": "YouGov opt-in web panel, weighted to U.S. adult citizens. Daily Mail published the results on Oct. 15, 2026. Crosstabs and question wording were opened in YouGov’s “Politics and the Midterms” tables (questions 10 and 11). No later joint-ticket poll was found through Nov. 21, 2026.",
+      "source_url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/Politics_and_the_Midterms_poll_results.pdf",
+      "source_url_writeup": "https://www.dailymail.co.uk/news/us-politics/article-16203223/MAGA-crowns-dream-2028-ticket-Marco-Rubio-crushes-Ron-DeSantis-race-JD-Vances-running-mate.html",
+      "added_on": "2026-11-21"
+    }
+  ]
+}
