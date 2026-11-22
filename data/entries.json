@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21",
+  "last_updated": "2026-11-22",
   "timezone": "America/Los_Angeles",
   "entries": [
     {
@@ -1858,7 +1858,167 @@
         "evidence": "Heuristic only, not proof. Account created May 2024 (79,440 followers; bio: “Amateur shitposter… CEO of the People’s Poll”). Replies (70) are 63% of likes (112), a contested-post pattern. The 25 replies opened were unique text; one account (@MyNetConsultant, 3,546) posted six replies in sub-threads, a single active user."
       },
       "audience_sample": "Replies opened mostly pushed back (“JD Vance is Temu Tucker Carlson. There is no ‘war’ with Iran”; “Vance - who sides with the Anti-Semite Carlson - is NOT an option”; “Destroying nukes versus appeasing a faction for votes”), with some agreeing and many sub-threads arguing over Iran history. No 50,000+ or major-organization accounts among the replies opened."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 3:00 AM PT",
+      "source": "Newsmax",
+      "handle": "NEWSMAX",
+      "type": "X post",
+      "followers": 3679264,
+      "theme": "2028 / Rubio vs. Vance polls",
+      "summary": "Conservative news network (3,679,264 followers) posted: “RUBIO LEADS EARLY: Secretary of State Marco Rubio holds a substantial lead over Vice President JD Vance in a potential 2028 Republican presidential primary field, according to a new poll.” The post text does not name the pollster; the most recent national GOP primary poll on RealClearPolling is Emerson (Nov 14–16; Rubio 44, Vance 24), already in the tracker. Headline relay by a news outlet, not an editorial.",
+      "engagement": {
+        "likes": 642,
+        "reposts": 74,
+        "replies": 98,
+        "quotes": 9,
+        "bookmarks": 9,
+        "views": 25052,
+        "interactions": 823,
+        "engagement_ex_replies": 725,
+        "followers": 3679264,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 15.3,
+        "engagement_rate_vs_views_pct": 3.29
+      },
+      "url": "https://x.com/NEWSMAX/status/2124457961909256665",
+      "added_on": "2026-11-22",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created February 2009 (business news outlet, 3.68M followers). Interactions (823) are 0.02% of followers and 3.3% of views, normal for an outlet headline. The 25 replies opened were unique text with no repeated phrasing."
+      },
+      "audience_sample": "Replies opened mostly pushed back on Rubio or on the poll rather than on Vance (“Marco ain’t gonna be President”; “He is not fit to be president”; “Wonder what Newsmax polls looked like prior to the midterms”), with a few floating DeSantis–Rubio combinations. Prominent quote post: Derrick Evans (@DerrickEvans4WV, 865,929; bio: former member of the WV House): “I will never vote for Marco Rubio for President.” No other 50,000+ or major-organization accounts among the replies or 9 quotes opened."
+    },
+    {
+      "date": "2026-11-21",
+      "datetime_pt": "2026-11-21 11:37 PM PT",
+      "source": "Trump Daily Posts (unofficial)",
+      "handle": "TrumpDailyPosts",
+      "type": "X post",
+      "followers": 3007480,
+      "theme": "2028 / Rubio vs. Vance polls (straw poll)",
+      "summary": "Unofficial Trump-commentary account (bio: “Unofficial not affiliated with @realDonaldTrump”) posted: “THIS WEEKS NATIONAL GOP PRESIDENTIAL STRAW POLL: Marco Rubio ran away with this week’s 2028 GOP Presidential Straw Poll on StrawPoll.us, with 48.2% of the vote. That’s more than double JD Vance, who finished a distant second at 19.7%. Thomas Massie took third…” with a 41-second video. An online straw poll is self-selected and not a scientific survey, so it is not used in the poll averages.",
+      "engagement": {
+        "likes": 139,
+        "reposts": 49,
+        "replies": 22,
+        "quotes": 2,
+        "bookmarks": 5,
+        "views": 64855,
+        "interactions": 212,
+        "engagement_ex_replies": 190,
+        "followers": 3007480,
+        "engagement_rate_vs_followers_pct": 0.01,
+        "reply_to_like_pct": 15.8,
+        "engagement_rate_vs_views_pct": 0.33
+      },
+      "url": "https://x.com/TrumpDailyPosts/status/2124406778569928909",
+      "added_on": "2026-11-22",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created August 2023 (3,007,480 followers, following 24,921). Interactions (212) are only 0.007% of followers and 0.33% of views, very low for the follower count, which can indicate a follow-back or inflated follower base. The 21 replies opened were unique text, several of them only links or emoji."
+      },
+      "audience_sample": "Replies opened leaned pro-Rubio or skeptical of polls (“@SecRubio is going to be the NEXT PRESIDENT”; “Rubio/ DeSantis”; “We know how accurate polls are”; “Interesting early snapshot, though straw polls can shift quickly”), with one asking “No Tucker? No Hegseth?” No 50,000+ or major-organization accounts among the replies or 2 quotes opened."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 6:30 AM PT",
+      "source": "TMK (themagaking)",
+      "handle": "themagaking",
+      "type": "X post",
+      "followers": 79445,
+      "theme": "2028 / Rubio vs. Vance polls (straw poll)",
+      "summary": "Account whose bio says “CEO of the People’s Poll” posted: “According to the latest People’s Poll, Marco Rubio leads the race to take over the MAGA movement with 57%. Other came in second, Ron DeSantis third, and JD Vance dead last at 7%. The people have spoken.” Eleven minutes later it posted that, per the same poll, “2 out of 3 MAGA Republicans do not trust J.D. Vance” (38 likes). The People’s Poll is the account’s own unscientific online poll and is not used in the averages. The same account posted a supportive Vance item on Nov 20.",
+      "engagement": {
+        "likes": 65,
+        "reposts": 9,
+        "replies": 6,
+        "quotes": 0,
+        "bookmarks": 1,
+        "views": 1149,
+        "interactions": 80,
+        "engagement_ex_replies": 74,
+        "followers": 79445,
+        "engagement_rate_vs_followers_pct": 0.1,
+        "reply_to_like_pct": 9.2,
+        "engagement_rate_vs_views_pct": 6.96
+      },
+      "url": "https://x.com/themagaking/status/2124510934194422252",
+      "added_on": "2026-11-22",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created May 2024 (79,445 followers). Interactions (80) are 0.10% of followers and 7.0% of views; the view count is small (1,149). The 6 replies opened from others were unique text."
+      },
+      "audience_sample": "Replies opened were dismissive of the poll (“Imagine believing this shit lmao”; “It’s still too early”) or disillusioned with MAGA generally (“I jumped ship from maga we were betrayed”). No 50,000+ or major-organization accounts among the replies opened; no quote posts."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 6:54 AM PT",
+      "source": "PoliticsVideoChannel",
+      "handle": "politvidchannel",
+      "type": "X post",
+      "followers": 266923,
+      "theme": "Brazil / Rockbridge probe",
+      "summary": "Posted: “BREAKING: Brazil could freeze the financial assets of JD Vance and Jail him for foreign Election interference. JD Vance could go to jail for a long time.” In a self-reply thread it cites the Washington Post report (Nov 17, 2026) that Brazilian federal police are investigating Rockbridge Network, the donor group Vance co-founded, over alleged illegal foreign intervention in Brazil’s presidential election, and then lays out a hypothetical “full chain that would be required” (House impeachment and Senate removal of Trump and Vance, a new Democratic president, Brazil expanding the probe to name Vance, then extradition). The headline presents a speculative scenario as breaking news; the opened thread says Vance is “currently named only as” (text cut off) in the probe.",
+      "engagement": {
+        "likes": 204,
+        "reposts": 68,
+        "replies": 12,
+        "quotes": 2,
+        "bookmarks": 3,
+        "views": 2922,
+        "interactions": 286,
+        "engagement_ex_replies": 274,
+        "followers": 266923,
+        "engagement_rate_vs_followers_pct": 0.11,
+        "reply_to_like_pct": 5.9,
+        "engagement_rate_vs_views_pct": 9.79
+      },
+      "url": "https://x.com/politvidchannel/status/2124516906405351734",
+      "added_on": "2026-11-22",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created February 2016 (266,923 followers; bio: “FACTS MATTER!”). Likes (204) and reposts (68) are 9.3% of views (2,922), well above the 0.5–3% seen on most tracker posts, which can indicate coordinated or purchased engagement. The 12 replies from others were unique, short text."
+      },
+      "audience_sample": "Replies opened were split: many cheered (“Can’t wait!”; “Just do it”; “Yes to Brazil”), others called it false (“BS”; “Liars”; “You’re so stupid. LOL”). No 50,000+ or major-organization accounts among the replies opened apart from the author’s own thread; 2 quotes not opened."
+    },
+    {
+      "date": "2026-11-21",
+      "datetime_pt": "2026-11-21 8:14 AM PT",
+      "source": "Mossadil",
+      "handle": "MOSSADil",
+      "type": "X post",
+      "followers": 1056943,
+      "theme": "Iran / forever wars",
+      "summary": "Israel- and Middle East-focused news account (1,056,943 followers) posted a 27-second clip: “JD VANCE BACK ON THE TRUMP TRACK ON IRAN. Vice President JD Vance signals support for President Trump’s willingness to launch another round of strikes against Iran. ‘The president is the one who makes the decisions. The president has said that he will do it again.’ ‘My job…’” Frames Vance’s Nov 20 briefing answer as alignment with Trump rather than distance. Posted 8:14 AM PT Nov 21, just before the last update, and not captured then.",
+      "engagement": {
+        "likes": 612,
+        "reposts": 107,
+        "replies": 28,
+        "quotes": 1,
+        "bookmarks": 21,
+        "views": 31709,
+        "interactions": 748,
+        "engagement_ex_replies": 720,
+        "followers": 1056943,
+        "engagement_rate_vs_followers_pct": 0.07,
+        "reply_to_like_pct": 4.6,
+        "engagement_rate_vs_views_pct": 2.36
+      },
+      "url": "https://x.com/MOSSADil/status/2124174695188590877",
+      "added_on": "2026-11-22",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created July 2016 (1,056,943 followers, following 377). Interactions (748) are 0.07% of followers and 2.4% of views. The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened mostly pushed back on Vance’s sincerity (“I don’t believe JD’s lying *ss”; “He has to say that even though I do not believe he means one word”; “Hypocrite”; “I back Marco Rubio for president in 2028”). No 50,000+ or major-organization accounts among the replies or the 1 quote opened."
     }
   ],
-  "last_updated_pt": "November 21, 2026, 9:25 AM PT"
+  "last_updated_pt": "November 22, 2026, 8:11 AM PT"
 }

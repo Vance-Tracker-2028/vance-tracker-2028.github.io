@@ -1,367 +1,367 @@
 {
- "last_updated": "2026-11-21",
- "timezone": "America/Los_Angeles",
- "averages": {
-  "rcp_published": {
-   "favorable": 39.7,
-   "unfavorable": 51.5,
-   "net": -11.8,
-   "window": "Sep 29–Nov 16, 2026",
-   "n_polls": 11,
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "note": "Published RCP average on the page opened Nov 21, 2026 (was 40.2 / 51.3, net -11.1, on Nov 17–20). Change: Pew Research (Nov 9–15, 10,247 adults, 35/54) was added to the table."
+  "last_updated": "2026-11-22",
+  "timezone": "America/Los_Angeles",
+  "averages": {
+    "rcp_published": {
+      "favorable": 39.7,
+      "unfavorable": 51.5,
+      "net": -11.8,
+      "window": "Sep 29–Nov 16, 2026",
+      "n_polls": 11,
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "note": "Published RCP average on the page opened Nov 21, 2026 (was 40.2 / 51.3, net -11.1, on Nov 17–20). Change: Pew Research (Nov 9–15, 10,247 adults, 35/54) was added to the table. Re-opened Nov 22, 2026: unchanged (39.7 / 51.5, 11 polls)."
+    },
+    "simple_unweighted_rcp_table": {
+      "favorable": 39.7,
+      "unfavorable": 51.5,
+      "net": -11.8,
+      "n_polls": 11,
+      "note": "Unweighted mean of the 11 individual polls listed in the RCP Vance favorability table opened Nov 21, 2026. Matches the published RCP average."
+    },
+    "hill_ddhq": {
+      "favorable": 37.9,
+      "unfavorable": 54.0,
+      "net": -16.1,
+      "as_of": "2026-11-22",
+      "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
+      "note": "The Hill / Decision Desk HQ estimate as of Nov 22, 2026 (was 38.5 / 54.0, net -15.5, Nov 19–21; 37.5 / 54.3 on Nov 18). The most recent polls in its table are still the Nov 14–17 Ipsos/Reuters and YouGov/Economist releases. Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
+    },
+    "civiqs_tracker": {
+      "favorable": 35,
+      "unfavorable": 58,
+      "unsure": 7,
+      "net": -23,
+      "as_of": "2026-11-18",
+      "sample": null,
+      "source_url": "https://civiqs.com/results/favorable_jd_vance?annotations=true&uncertainty=true&zoomIn=true",
+      "note": "Civiqs tracking estimate, results through Nov 18, 2026 (page re-opened Nov 21; no newer reading; was 36 / 57, net -21, through Nov 11). Sample size was not stated on the page opened. Re-opened Nov 22: still through Nov 18."
+    }
   },
-  "simple_unweighted_rcp_table": {
-   "favorable": 39.7,
-   "unfavorable": 51.5,
-   "net": -11.8,
-   "n_polls": 11,
-   "note": "Unweighted mean of the 11 individual polls listed in the RCP Vance favorability table opened Nov 21, 2026. Matches the published RCP average."
+  "comparison_same_poll": {
+    "note": "Ipsos/Reuters Nov 14–17, 2026, 1,521 adults, from The Hill/DDHQ pages opened for each candidate. A current national DeSantis favorability series was not confirmed from a page opened this update, so DeSantis is omitted here.",
+    "pollster": "Ipsos / Reuters",
+    "dates": "2026-11-14 to 2026-11-17",
+    "sample": "1,521 Adults",
+    "source_urls": {
+      "vance": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
+      "rubio": "https://elections2026.thehill.com/polls/candidate-favorability/marco-rubio-4/national/lv-rv-adults/"
+    },
+    "results": {
+      "JD Vance": {
+        "favorable": 35,
+        "unfavorable": 53,
+        "net": -18
+      },
+      "Marco Rubio": {
+        "favorable": 33,
+        "unfavorable": 44,
+        "net": -11
+      }
+    },
+    "hill_ddhq_averages_nov_17": {
+      "JD Vance": {
+        "favorable": 37.5,
+        "unfavorable": 54.3,
+        "net": -16.8,
+        "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/"
+      },
+      "Marco Rubio": {
+        "favorable": 36.0,
+        "unfavorable": 43.0,
+        "net": -7.0,
+        "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/marco-rubio-4/national/lv-rv-adults/"
+      }
+    }
   },
-  "hill_ddhq": {
-   "favorable": 38.5,
-   "unfavorable": 54.0,
-   "net": -15.5,
-   "as_of": "2026-11-21",
-   "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-   "note": "The Hill / Decision Desk HQ estimate as of Nov 21, 2026 (unchanged since Nov 19; was 37.5 / 54.3, net -16.8, on Nov 18). Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
-  },
-  "civiqs_tracker": {
-   "favorable": 35,
-   "unfavorable": 58,
-   "unsure": 7,
-   "net": -23,
-   "as_of": "2026-11-18",
-   "sample": null,
-   "source_url": "https://civiqs.com/results/favorable_jd_vance?annotations=true&uncertainty=true&zoomIn=true",
-   "note": "Civiqs tracking estimate, results through Nov 18, 2026 (page re-opened Nov 21; no newer reading; was 36 / 57, net -21, through Nov 11). Sample size was not stated on the page opened."
-  }
- },
- "comparison_same_poll": {
-  "note": "Ipsos/Reuters Nov 14–17, 2026, 1,521 adults, from The Hill/DDHQ pages opened for each candidate. A current national DeSantis favorability series was not confirmed from a page opened this update, so DeSantis is omitted here.",
-  "pollster": "Ipsos / Reuters",
-  "dates": "2026-11-14 to 2026-11-17",
-  "sample": "1,521 Adults",
-  "source_urls": {
-   "vance": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-   "rubio": "https://elections2026.thehill.com/polls/candidate-favorability/marco-rubio-4/national/lv-rv-adults/"
-  },
-  "results": {
-   "JD Vance": {
-    "favorable": 35,
-    "unfavorable": 53,
-    "net": -18
-   },
-   "Marco Rubio": {
-    "favorable": 33,
-    "unfavorable": 44,
-    "net": -11
-   }
-  },
-  "hill_ddhq_averages_nov_17": {
-   "JD Vance": {
-    "favorable": 37.5,
-    "unfavorable": 54.3,
-    "net": -16.8,
-    "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/"
-   },
-   "Marco Rubio": {
-    "favorable": 36.0,
-    "unfavorable": 43.0,
-    "net": -7.0,
-    "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/marco-rubio-4/national/lv-rv-adults/"
-   }
-  }
- },
- "approval": {
-  "politixplus_average": {
-   "approve": 41.1,
-   "disapprove": 57.6,
-   "net": -16.5,
-   "n_polls": 3,
-   "as_of": "2026-11-21",
-   "source_url": "https://politixplus.com/race/jd-vance-approval",
-   "note": "Politix+ 3-poll approval average on the page opened Nov 21, 2026 (unchanged). Distinct from favorability."
+  "approval": {
+    "politixplus_average": {
+      "approve": 41.1,
+      "disapprove": 57.6,
+      "net": -16.5,
+      "n_polls": 3,
+      "as_of": "2026-11-21",
+      "source_url": "https://politixplus.com/race/jd-vance-approval",
+      "note": "Politix+ 3-poll approval average on the page opened Nov 21, 2026 (unchanged). Distinct from favorability."
+    },
+    "polls": [
+      {
+        "pollster": "Ipsos",
+        "start_date": "2026-10-12",
+        "end_date": "2026-10-12",
+        "sample": "2,032",
+        "approve": 41,
+        "disapprove": 57,
+        "net": -16,
+        "source_url": "https://politixplus.com/race/jd-vance-approval",
+        "added_on": "2026-11-17"
+      },
+      {
+        "pollster": "CNN / SSRS",
+        "start_date": "2026-09-16",
+        "end_date": "2026-09-16",
+        "sample": null,
+        "approve": 39,
+        "disapprove": 61,
+        "net": -22,
+        "source_url": "https://politixplus.com/race/jd-vance-approval",
+        "added_on": "2026-11-17"
+      },
+      {
+        "pollster": "Quantus Insights",
+        "start_date": "2026-08-27",
+        "end_date": "2026-08-27",
+        "sample": "1,200",
+        "approve": 42,
+        "disapprove": 57,
+        "net": -15,
+        "source_url": "https://politixplus.com/race/jd-vance-approval",
+        "added_on": "2026-11-17"
+      },
+      {
+        "pollster": "Quinnipiac University",
+        "start_date": "2026-07-27",
+        "end_date": "2026-07-27",
+        "sample": "963",
+        "approve": 38,
+        "disapprove": 55,
+        "net": -17,
+        "source_url": "https://politixplus.com/race/jd-vance-approval",
+        "added_on": "2026-11-17"
+      },
+      {
+        "pollster": "YouGov",
+        "start_date": "2026-07-10",
+        "end_date": "2026-07-10",
+        "sample": "1,081",
+        "approve": 39,
+        "disapprove": 47,
+        "net": -8,
+        "source_url": "https://politixplus.com/race/jd-vance-approval",
+        "added_on": "2026-11-17"
+      },
+      {
+        "pollster": "HarrisX",
+        "start_date": "2026-07-10",
+        "end_date": "2026-07-10",
+        "sample": "787",
+        "approve": 46,
+        "disapprove": 47,
+        "net": -1,
+        "source_url": "https://politixplus.com/race/jd-vance-approval",
+        "added_on": "2026-11-17"
+      },
+      {
+        "pollster": "Zogby Analytics",
+        "start_date": "2026-07-04",
+        "end_date": "2026-07-04",
+        "sample": "1,003",
+        "approve": 43,
+        "disapprove": 50,
+        "net": -7,
+        "source_url": "https://politixplus.com/race/jd-vance-approval",
+        "added_on": "2026-11-17"
+      }
+    ]
   },
   "polls": [
-   {
-    "pollster": "Ipsos",
-    "start_date": "2026-10-12",
-    "end_date": "2026-10-12",
-    "sample": "2,032",
-    "approve": 41,
-    "disapprove": 57,
-    "net": -16,
-    "source_url": "https://politixplus.com/race/jd-vance-approval",
-    "added_on": "2026-11-17"
-   },
-   {
-    "pollster": "CNN / SSRS",
-    "start_date": "2026-09-16",
-    "end_date": "2026-09-16",
-    "sample": null,
-    "approve": 39,
-    "disapprove": 61,
-    "net": -22,
-    "source_url": "https://politixplus.com/race/jd-vance-approval",
-    "added_on": "2026-11-17"
-   },
-   {
-    "pollster": "Quantus Insights",
-    "start_date": "2026-08-27",
-    "end_date": "2026-08-27",
-    "sample": "1,200",
-    "approve": 42,
-    "disapprove": 57,
-    "net": -15,
-    "source_url": "https://politixplus.com/race/jd-vance-approval",
-    "added_on": "2026-11-17"
-   },
-   {
-    "pollster": "Quinnipiac University",
-    "start_date": "2026-07-27",
-    "end_date": "2026-07-27",
-    "sample": "963",
-    "approve": 38,
-    "disapprove": 55,
-    "net": -17,
-    "source_url": "https://politixplus.com/race/jd-vance-approval",
-    "added_on": "2026-11-17"
-   },
-   {
-    "pollster": "YouGov",
-    "start_date": "2026-07-10",
-    "end_date": "2026-07-10",
-    "sample": "1,081",
-    "approve": 39,
-    "disapprove": 47,
-    "net": -8,
-    "source_url": "https://politixplus.com/race/jd-vance-approval",
-    "added_on": "2026-11-17"
-   },
-   {
-    "pollster": "HarrisX",
-    "start_date": "2026-07-10",
-    "end_date": "2026-07-10",
-    "sample": "787",
-    "approve": 46,
-    "disapprove": 47,
-    "net": -1,
-    "source_url": "https://politixplus.com/race/jd-vance-approval",
-    "added_on": "2026-11-17"
-   },
-   {
-    "pollster": "Zogby Analytics",
-    "start_date": "2026-07-04",
-    "end_date": "2026-07-04",
-    "sample": "1,003",
-    "approve": 43,
-    "disapprove": 50,
-    "net": -7,
-    "source_url": "https://politixplus.com/race/jd-vance-approval",
-    "added_on": "2026-11-17"
-   }
+    {
+      "pollster": "Economist/YouGov",
+      "sponsor": "The Economist",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-16",
+      "sample": "1,386 RV",
+      "sample_size": 1386,
+      "universe": "RV",
+      "favorable": 38,
+      "unfavorable": 56,
+      "net": -18,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "Reuters/Ipsos",
+      "sponsor": "Reuters",
+      "start_date": "2026-11-13",
+      "end_date": "2026-11-16",
+      "sample": "1,199 RV",
+      "sample_size": 1199,
+      "universe": "RV",
+      "favorable": 39,
+      "unfavorable": 55,
+      "net": -16,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "Pew Research",
+      "sponsor": null,
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-15",
+      "sample": "10,247 Adults",
+      "sample_size": 10247,
+      "universe": "Adults",
+      "favorable": 35,
+      "unfavorable": 54,
+      "net": -19,
+      "question": "favorability",
+      "source_url": "https://www.pewresearch.org/politics/2026/11/19/how-americans-view-trump-key-administration-officials-and-democratic-congressional-leaders/",
+      "added_on": "2026-11-21",
+      "note": "Published Nov 19, 2026; 8% said they had not heard of Vance. Added to the RCP Vance table by Nov 21 (listed there as 10247 A). Same survey: Rubio 35 favorable / 44 unfavorable, with 19% not having heard of him. Republicans and leaners 71% favorable to Vance."
+    },
+    {
+      "pollster": "Ipsos / Reuters",
+      "sponsor": "Reuters",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-17",
+      "sample": "1,521 Adults",
+      "sample_size": 1521,
+      "universe": "Adults",
+      "favorable": 35,
+      "unfavorable": 53,
+      "net": -18,
+      "question": "favorability",
+      "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
+      "added_on": "2026-11-17",
+      "note": "Adults universe of a Reuters/Ipsos wave; RV figures for a closely dated wave are in the RCP table (39/55)."
+    },
+    {
+      "pollster": "YouGov / The Economist",
+      "sponsor": "The Economist",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-17",
+      "sample": "1,628 Adults",
+      "sample_size": 1628,
+      "universe": "Adults",
+      "favorable": 35,
+      "unfavorable": 52,
+      "net": -17,
+      "question": "favorability",
+      "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
+      "added_on": "2026-11-17",
+      "note": "Adults universe; RCP lists a closely dated RV split at 38/56 (Nov 13-16, n=1,386 RV)."
+    },
+    {
+      "pollster": "Cygnal",
+      "sponsor": null,
+      "start_date": "2026-11-04",
+      "end_date": "2026-11-05",
+      "sample": "3,000 LV",
+      "sample_size": 3000,
+      "universe": "LV",
+      "favorable": 39,
+      "unfavorable": 57,
+      "net": -18,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "Financial Times",
+      "sponsor": "Financial Times",
+      "start_date": "2026-10-30",
+      "end_date": "2026-11-01",
+      "sample": "2,090 LV",
+      "sample_size": 2090,
+      "universe": "LV",
+      "favorable": 40,
+      "unfavorable": 51,
+      "net": -11,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "Morning Consult",
+      "sponsor": null,
+      "start_date": "2026-10-30",
+      "end_date": "2026-11-01",
+      "sample": "2,203 RV",
+      "sample_size": 2203,
+      "universe": "RV",
+      "favorable": 41,
+      "unfavorable": 48,
+      "net": -7,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "Atlas Intel",
+      "sponsor": null,
+      "start_date": "2026-10-28",
+      "end_date": "2026-11-01",
+      "sample": "3,566 Adults",
+      "sample_size": 3566,
+      "universe": "Adults",
+      "favorable": 38,
+      "unfavorable": 58,
+      "net": -20,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "Harvard-Harris",
+      "sponsor": "Harvard CAPS",
+      "start_date": "2026-10-24",
+      "end_date": "2026-10-26",
+      "sample": "2,700 RV",
+      "sample_size": 2700,
+      "universe": "RV",
+      "favorable": 39,
+      "unfavorable": 47,
+      "net": -8,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "NewsNation",
+      "sponsor": "NewsNation",
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-09",
+      "sample": "974 LV",
+      "sample_size": 974,
+      "universe": "LV",
+      "favorable": 44,
+      "unfavorable": 52,
+      "net": -8,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    },
+    {
+      "pollster": "RMG Research",
+      "sponsor": null,
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-06",
+      "sample": "1,000 RV",
+      "sample_size": 1000,
+      "universe": "RV",
+      "favorable": 43,
+      "unfavorable": 48,
+      "net": -5,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17",
+      "note": "Starred on the RCP table."
+    },
+    {
+      "pollster": "I&I/TIPP",
+      "sponsor": null,
+      "start_date": "2026-09-29",
+      "end_date": "2026-10-01",
+      "sample": "1,488 Adults",
+      "sample_size": 1488,
+      "universe": "Adults",
+      "favorable": 41,
+      "unfavorable": 41,
+      "net": 0,
+      "question": "favorability",
+      "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
+      "added_on": "2026-11-17"
+    }
   ]
- },
- "polls": [
-  {
-   "pollster": "Economist/YouGov",
-   "sponsor": "The Economist",
-   "start_date": "2026-11-13",
-   "end_date": "2026-11-16",
-   "sample": "1,386 RV",
-   "sample_size": 1386,
-   "universe": "RV",
-   "favorable": 38,
-   "unfavorable": 56,
-   "net": -18,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "Reuters/Ipsos",
-   "sponsor": "Reuters",
-   "start_date": "2026-11-13",
-   "end_date": "2026-11-16",
-   "sample": "1,199 RV",
-   "sample_size": 1199,
-   "universe": "RV",
-   "favorable": 39,
-   "unfavorable": 55,
-   "net": -16,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "Pew Research",
-   "sponsor": null,
-   "start_date": "2026-11-09",
-   "end_date": "2026-11-15",
-   "sample": "10,247 Adults",
-   "sample_size": 10247,
-   "universe": "Adults",
-   "favorable": 35,
-   "unfavorable": 54,
-   "net": -19,
-   "question": "favorability",
-   "source_url": "https://www.pewresearch.org/politics/2026/11/19/how-americans-view-trump-key-administration-officials-and-democratic-congressional-leaders/",
-   "added_on": "2026-11-21",
-   "note": "Published Nov 19, 2026; 8% said they had not heard of Vance. Added to the RCP Vance table by Nov 21 (listed there as 10247 A). Same survey: Rubio 35 favorable / 44 unfavorable, with 19% not having heard of him. Republicans and leaners 71% favorable to Vance."
-  },
-  {
-   "pollster": "Ipsos / Reuters",
-   "sponsor": "Reuters",
-   "start_date": "2026-11-14",
-   "end_date": "2026-11-17",
-   "sample": "1,521 Adults",
-   "sample_size": 1521,
-   "universe": "Adults",
-   "favorable": 35,
-   "unfavorable": 53,
-   "net": -18,
-   "question": "favorability",
-   "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-   "added_on": "2026-11-17",
-   "note": "Adults universe of a Reuters/Ipsos wave; RV figures for a closely dated wave are in the RCP table (39/55)."
-  },
-  {
-   "pollster": "YouGov / The Economist",
-   "sponsor": "The Economist",
-   "start_date": "2026-11-14",
-   "end_date": "2026-11-17",
-   "sample": "1,628 Adults",
-   "sample_size": 1628,
-   "universe": "Adults",
-   "favorable": 35,
-   "unfavorable": 52,
-   "net": -17,
-   "question": "favorability",
-   "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-   "added_on": "2026-11-17",
-   "note": "Adults universe; RCP lists a closely dated RV split at 38/56 (Nov 13-16, n=1,386 RV)."
-  },
-  {
-   "pollster": "Cygnal",
-   "sponsor": null,
-   "start_date": "2026-11-04",
-   "end_date": "2026-11-05",
-   "sample": "3,000 LV",
-   "sample_size": 3000,
-   "universe": "LV",
-   "favorable": 39,
-   "unfavorable": 57,
-   "net": -18,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "Financial Times",
-   "sponsor": "Financial Times",
-   "start_date": "2026-10-30",
-   "end_date": "2026-11-01",
-   "sample": "2,090 LV",
-   "sample_size": 2090,
-   "universe": "LV",
-   "favorable": 40,
-   "unfavorable": 51,
-   "net": -11,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "Morning Consult",
-   "sponsor": null,
-   "start_date": "2026-10-30",
-   "end_date": "2026-11-01",
-   "sample": "2,203 RV",
-   "sample_size": 2203,
-   "universe": "RV",
-   "favorable": 41,
-   "unfavorable": 48,
-   "net": -7,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "Atlas Intel",
-   "sponsor": null,
-   "start_date": "2026-10-28",
-   "end_date": "2026-11-01",
-   "sample": "3,566 Adults",
-   "sample_size": 3566,
-   "universe": "Adults",
-   "favorable": 38,
-   "unfavorable": 58,
-   "net": -20,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "Harvard-Harris",
-   "sponsor": "Harvard CAPS",
-   "start_date": "2026-10-24",
-   "end_date": "2026-10-26",
-   "sample": "2,700 RV",
-   "sample_size": 2700,
-   "universe": "RV",
-   "favorable": 39,
-   "unfavorable": 47,
-   "net": -8,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "NewsNation",
-   "sponsor": "NewsNation",
-   "start_date": "2026-10-05",
-   "end_date": "2026-10-09",
-   "sample": "974 LV",
-   "sample_size": 974,
-   "universe": "LV",
-   "favorable": 44,
-   "unfavorable": 52,
-   "net": -8,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  },
-  {
-   "pollster": "RMG Research",
-   "sponsor": null,
-   "start_date": "2026-10-05",
-   "end_date": "2026-10-06",
-   "sample": "1,000 RV",
-   "sample_size": 1000,
-   "universe": "RV",
-   "favorable": 43,
-   "unfavorable": 48,
-   "net": -5,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17",
-   "note": "Starred on the RCP table."
-  },
-  {
-   "pollster": "I&I/TIPP",
-   "sponsor": null,
-   "start_date": "2026-09-29",
-   "end_date": "2026-10-01",
-   "sample": "1,488 Adults",
-   "sample_size": 1488,
-   "universe": "Adults",
-   "favorable": 41,
-   "unfavorable": 41,
-   "net": 0,
-   "question": "favorability",
-   "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-   "added_on": "2026-11-17"
-  }
- ]
 }
