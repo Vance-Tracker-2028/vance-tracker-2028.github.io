@@ -3,6 +3,198 @@
   "timezone": "America/Los_Angeles",
   "entries": [
     {
+      "date": "2026-11-20",
+      "datetime_pt": "2026-11-20 7:38 PM PT",
+      "source": "Ann Coulter",
+      "handle": "AnnCoulter",
+      "type": "X post",
+      "followers": 2135066,
+      "theme": "Stephen Miller",
+      "summary": "Conservative author and commentator (2,135,066 followers) quoted a viral clip post of the Nov. 20 White House briefing and wrote: “Instead of the JD/Rubio debate over our next presidential candidate, let’s make it The People’s Choice, Stephen Miller.” The quoted post, by @jenrenee (41,185 followers, below the 50,000 threshold), said “I clapped in my kitchen. Miller is fantastic” and showed President Trump, after Miller spoke at the podium, telling reporters “He was better than these two guys” (Vance and Rubio) and asking Miller, “Do you want to run for president?” On Nov. 22 at 4:03 PM PT, Coulter followed up without naming Vance: “My idea for Trump: golf for two years, meet world leaders, take photo ops, and leave Washington to Stephen Miller. Miller just pulled Mullin off TV after his DACA comments. Forgiven for breaking the law? That’s amnesty. Stop BSing us.” (4,142 likes, 610 reposts, 252 replies, 124,707 views). She also said on The Clay & Buck Show, as reported by The Daily Beast on Nov. 22, that she does not expect “a groundswell of support for Rubio.”",
+      "engagement": {
+        "likes": 4595,
+        "reposts": 421,
+        "replies": 755,
+        "quotes": 50,
+        "bookmarks": 288,
+        "views": 226944,
+        "interactions": 5821,
+        "engagement_ex_replies": 5066,
+        "followers": 2135066,
+        "engagement_rate_vs_followers_pct": 0.27,
+        "reply_to_like_pct": 16.4,
+        "engagement_rate_vs_views_pct": 2.56
+      },
+      "url": "https://x.com/AnnCoulter/status/2123984344725241869",
+      "added_on": "2026-11-23",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created September 2010 (2,135,066 followers, 2,081 following, 93,721 posts, blue verified). Engagement is modest relative to follower count (0.27%) and like-to-view ratio is about 2.0% (4,595 likes on 226,944 views), not an inflated pattern. The 25 replies and 25 quote/related posts opened were unique text, mostly arguing Miller would be unelectable or a “gift to Democrats,” with a minority agreeing; no copy-paste flood."
+      },
+      "audience_sample": "Replies opened leaned against nominating Miller (lifelong Republicans saying they would never vote for him; comments that he “wouldn’t win because he doesn’t have the necessary charm”; “God’s gift to Democrats”). Prominent accounts (50,000+ followers or a major-org tie) who quoted or replied: S.E. Cupp (@secupp, 428,655), CNN and New York Daily News commentator, quoted it: “No, but I love that this sentiment still exists. It’s like the flat earthers and the people who believe Avril Lavigne is a body double and Stevie Wonder can see. It’s so dumb, it’s funny” (878 likes, 33,900 views). Jenna Ellis (@realJennaEllis, 1,132,322), senior policy adviser at the American Family Association and AFR radio host (per bio), a former Trump 2020 campaign legal adviser, quoted it: “Let’s really not. Some people have learned literally nothing during the Trump era and it shows” (70 likes, 9,431 views). Jon Cooper (@joncoopertweets, 1,372,161) posted a separate item, logged below. None of those three was added to the opposition list: they were criticizing Coulter’s Miller pick, not Vance. Calvin Freiburger (4,302 followers) wrote that there “was a long stretch of time in the past in which Ann Coulter wasn’t an absolute moron,” below the threshold."
+    },
+    {
+      "date": "2026-11-20",
+      "datetime_pt": "2026-11-20 10:54 AM PT",
+      "source": "Ed Krassenstein",
+      "handle": "EdKrassen",
+      "type": "X post",
+      "followers": 1098249,
+      "theme": "Stephen Miller",
+      "summary": "Posted a clip of the same Nov. 20 White House briefing and wrote: “Trump just seemingly endorsed Stephen Miller for President over JD Vance and Marco Rubio. This exchange is just crazy.” This is the highest-reach comparison item opened (4,266,117 views). It is commentary on Trump’s “better than these two guys” / “Do you want to run for president?” remarks, not a critique of Vance’s record; Krassenstein is already on the opposition list for a Nov. 19 post, and this item is not added as a further critical appearance there.",
+      "engagement": {
+        "likes": 16313,
+        "reposts": 2008,
+        "replies": 1230,
+        "quotes": 509,
+        "bookmarks": 4403,
+        "views": 4266117,
+        "interactions": 20060,
+        "engagement_ex_replies": 18830,
+        "followers": 1098249,
+        "engagement_rate_vs_followers_pct": 1.83,
+        "reply_to_like_pct": 7.5,
+        "engagement_rate_vs_views_pct": 0.47
+      },
+      "url": "https://x.com/EdKrassen/status/2123852403724439956",
+      "added_on": "2026-11-23",
+      "stance": "mixed",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Established mega-account created April 2010 (1,098,249 followers, 512,364 following, 103,437 posts, blue verified). Engagement is high but consistent with this account’s usual reach on viral clips (1.83% of followers; 16,313 likes on 4.27 million views). No copy-paste pattern was observed in the item opened."
+      },
+      "audience_sample": "Replies were not fully sampled on this update. The post was already noted in the Nov. 23 opposition exclusions as commentary on Trump rather than a critique of Vance."
+    },
+    {
+      "date": "2026-11-20",
+      "datetime_pt": "2026-11-20 9:39 PM PT",
+      "source": "S.E. Cupp",
+      "handle": "secupp",
+      "type": "X post",
+      "followers": 428655,
+      "theme": "Stephen Miller",
+      "summary": "CNN and New York Daily News commentator and author (per bio) quoted Coulter’s “People’s Choice, Stephen Miller” post: “No, but I love that this sentiment still exists. It’s like the flat earthers and the people who believe Avril Lavigne is a body double and Stevie Wonder can see. It’s so dumb, it’s funny.” The mockery is aimed at Coulter’s Miller pitch, not at Vance.",
+      "engagement": {
+        "likes": 878,
+        "reposts": 83,
+        "replies": 57,
+        "quotes": 4,
+        "bookmarks": 17,
+        "views": 33900,
+        "interactions": 1022,
+        "engagement_ex_replies": 965,
+        "followers": 428655,
+        "engagement_rate_vs_followers_pct": 0.24,
+        "reply_to_like_pct": 6.5,
+        "engagement_rate_vs_views_pct": 3.01
+      },
+      "url": "https://x.com/secupp/status/2124014816654397804",
+      "added_on": "2026-11-23",
+      "stance": "mixed",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created January 2009 (428,655 followers, 10,357 following, 55,458 posts, blue verified). Engagement is ordinary for the account (0.24% of followers; 878 likes on 33,900 views). The quote text is original, not a copy-paste meme."
+      },
+      "audience_sample": "Not added to the opposition list: Cupp was ridiculing Coulter’s Miller suggestion, not criticizing Vance. Replies were not fully sampled."
+    },
+    {
+      "date": "2026-11-21",
+      "datetime_pt": "2026-11-21 7:02 PM PT",
+      "source": "Jenna Ellis",
+      "handle": "realJennaEllis",
+      "type": "X post",
+      "followers": 1132322,
+      "theme": "Stephen Miller",
+      "summary": "Senior policy adviser at the American Family Association and AFR radio host (per bio); a former legal adviser to Trump’s 2020 campaign. Quoted Coulter’s Miller post: “Let’s really not. Some people have learned literally nothing during the Trump era and it shows.” Pushback from the right on skipping Vance and Rubio for Miller; not a critique of Vance’s record.",
+      "engagement": {
+        "likes": 70,
+        "reposts": 2,
+        "replies": 14,
+        "quotes": 1,
+        "bookmarks": 0,
+        "views": 9431,
+        "interactions": 87,
+        "engagement_ex_replies": 73,
+        "followers": 1132322,
+        "engagement_rate_vs_followers_pct": 0.01,
+        "reply_to_like_pct": 20.0,
+        "engagement_rate_vs_views_pct": 0.92
+      },
+      "url": "https://x.com/realJennaEllis/status/2124337814531981480",
+      "added_on": "2026-11-23",
+      "stance": "mixed",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created September 2016 (1,132,322 followers, 2,415 following, 123,670 posts, blue verified). Engagement is very modest (0.01% of followers; 70 likes on 9,431 views), not a suspicious spike."
+      },
+      "audience_sample": "Not added to the opposition list: Ellis was rejecting Coulter’s Miller pitch, not attacking Vance. Replies were not fully sampled."
+    },
+    {
+      "date": "2026-11-21",
+      "datetime_pt": "2026-11-21 1:34 PM PT",
+      "source": "Roman Sheremeta",
+      "handle": "rshereme",
+      "type": "X post",
+      "followers": 99840,
+      "theme": "Stephen Miller",
+      "summary": "Behavioral economist and professor (per bio; 99,840 followers) wrote: “I want Stephen Miller to run for president! Trump recently endorsed Stephen Miller for president, saying that he is doing a better job than JD Vance and Marco Rubio,” and described Miller’s podium list of second-term accomplishments. The “endorsed” wording overstates Trump’s joking question at the briefing; the opened clip and news reports treat the remark as a joke, not a formal endorsement.",
+      "engagement": {
+        "likes": 388,
+        "reposts": 50,
+        "replies": 34,
+        "quotes": 5,
+        "bookmarks": 10,
+        "views": 8563,
+        "interactions": 477,
+        "engagement_ex_replies": 443,
+        "followers": 99840,
+        "engagement_rate_vs_followers_pct": 0.48,
+        "reply_to_like_pct": 8.8,
+        "engagement_rate_vs_views_pct": 5.57
+      },
+      "url": "https://x.com/rshereme/status/2124255217055121800",
+      "added_on": "2026-11-23",
+      "stance": "mixed",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created February 2015 (99,840 followers, 707 following, 14,956 posts, blue verified). Engagement is ordinary (0.48% of followers; 388 likes on 8,563 views), not an inflated pattern."
+      },
+      "audience_sample": "Not added to the opposition list: this is a preference for Miller, not a critique of Vance’s record. Replies were not fully sampled."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 4:23 PM PT",
+      "source": "Jon Cooper",
+      "handle": "joncoopertweets",
+      "type": "X post",
+      "followers": 1372161,
+      "theme": "Stephen Miller",
+      "summary": "Democratic strategist and former Suffolk County, N.Y., majority leader (per bio) wrote: “Get this! Ann Coulter’s choice for the 2028 presidential nominee is NOT JD Vance or Marco Rubio. She wants Republicans to nominate STEPHEN MILLER. Just imagine a Republican Party so extreme that Stephen Miller is considered presidential material. Pathetic, but not shocking.” High reply-to-like ratio (35.5%) shows a contested thread. The attack is on Miller and the GOP, not on Vance.",
+      "engagement": {
+        "likes": 2222,
+        "reposts": 693,
+        "replies": 788,
+        "quotes": 119,
+        "bookmarks": 35,
+        "views": 54925,
+        "interactions": 3822,
+        "engagement_ex_replies": 3034,
+        "followers": 1372161,
+        "engagement_rate_vs_followers_pct": 0.28,
+        "reply_to_like_pct": 35.5,
+        "engagement_rate_vs_views_pct": 6.96
+      },
+      "url": "https://x.com/joncoopertweets/status/2124659954577752081",
+      "added_on": "2026-11-23",
+      "stance": "mixed",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created March 2009 (1,372,161 followers, 75,647 following, a high follow-back pattern, 429,238 posts, blue verified). Engagement is modest relative to follower count (0.28%) and the like-to-view ratio is about 4.0% (2,222 likes on 54,925 views). The elevated reply-to-like ratio (35.5%) points to real argument, not quiet amplification."
+      },
+      "audience_sample": "Not added to the opposition list: Cooper was criticizing Miller and Coulter’s pick, not Vance. Replies were not fully sampled."
+    },
+    {
       "date": "2026-11-21",
       "datetime_pt": "2026-11-21 8:56 AM PT",
       "source": "Fox News (Greg Norman)",
@@ -2308,5 +2500,5 @@
       "audience_sample": "Replies opened were split: supporters agreed (“Sick democrats”; “Throw the letters in the trash”; “there was nothing on them before”), while many pushed back (“The corruption is so open that you look like a fool opposing its investigation”; “Investigations are in order”). No 50,000+ or major-organization human accounts among the replies opened (an @grok auto-reply is excluded)."
     }
   ],
-  "last_updated_pt": "November 23, 2026, 8:17 AM PT"
+  "last_updated_pt": "November 23, 2026, 9:45 AM PT"
 }
