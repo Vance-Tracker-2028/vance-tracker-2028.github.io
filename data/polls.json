@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22",
+  "last_updated": "2026-11-23",
   "timezone": "America/Los_Angeles",
   "averages": {
     "rcp_published": {
@@ -9,7 +9,7 @@
       "window": "Sep 29–Nov 16, 2026",
       "n_polls": 11,
       "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-      "note": "Published RCP average on the page opened Nov 21, 2026 (was 40.2 / 51.3, net -11.1, on Nov 17–20). Change: Pew Research (Nov 9–15, 10,247 adults, 35/54) was added to the table. Re-opened Nov 22, 2026: unchanged (39.7 / 51.5, 11 polls)."
+      "note": "Published RCP average on the page opened Nov 21, 2026 (was 40.2 / 51.3, net -11.1, on Nov 17–20). Change: Pew Research (Nov 9–15, 10,247 adults, 35/54) was added to the table. Re-opened Nov 22, 2026: unchanged (39.7 / 51.5, 11 polls). Re-opened Nov 23, 2026: unchanged (39.7 / 51.5, 11 polls)."
     },
     "simple_unweighted_rcp_table": {
       "favorable": 39.7,
@@ -22,9 +22,9 @@
       "favorable": 37.9,
       "unfavorable": 54.0,
       "net": -16.1,
-      "as_of": "2026-11-22",
+      "as_of": "2026-11-23",
       "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-      "note": "The Hill / Decision Desk HQ estimate as of Nov 22, 2026 (was 38.5 / 54.0, net -15.5, Nov 19–21; 37.5 / 54.3 on Nov 18). The most recent polls in its table are still the Nov 14–17 Ipsos/Reuters and YouGov/Economist releases. Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
+      "note": "The Hill / Decision Desk HQ estimate as of Nov 23, 2026: 37.9 / 54.0, net -16.1 (unchanged from Nov 22; was 38.5 / 54.0 Nov 19–21; 37.5 / 54.3 on Nov 18). The most recent polls in its table are still the Nov 14–17 releases. Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
     },
     "civiqs_tracker": {
       "favorable": 35,
@@ -34,7 +34,7 @@
       "as_of": "2026-11-18",
       "sample": null,
       "source_url": "https://civiqs.com/results/favorable_jd_vance?annotations=true&uncertainty=true&zoomIn=true",
-      "note": "Civiqs tracking estimate, results through Nov 18, 2026 (page re-opened Nov 21; no newer reading; was 36 / 57, net -21, through Nov 11). Sample size was not stated on the page opened. Re-opened Nov 22: still through Nov 18."
+      "note": "Civiqs tracking estimate, results through Nov 18, 2026 (page re-opened Nov 21; no newer reading; was 36 / 57, net -21, through Nov 11). Sample size was not stated on the page opened. Re-opened Nov 22: still through Nov 18. Re-opened Nov 23: still through Nov 18."
     }
   },
   "comparison_same_poll": {
@@ -363,5 +363,6 @@
       "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
       "added_on": "2026-11-17"
     }
-  ]
+  ],
+  "last_updated_pt": "November 23, 2026, 8:17 AM PT"
 }

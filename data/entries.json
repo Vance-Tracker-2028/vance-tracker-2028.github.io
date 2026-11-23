@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22",
+  "last_updated": "2026-11-23",
   "timezone": "America/Los_Angeles",
   "entries": [
     {
@@ -2018,7 +2018,295 @@
         "evidence": "Heuristic only, not proof. Account created July 2016 (1,056,943 followers, following 377). Interactions (748) are 0.07% of followers and 2.4% of views. The 25 replies opened were unique text."
       },
       "audience_sample": "Replies opened mostly pushed back on Vance’s sincerity (“I don’t believe JD’s lying *ss”; “He has to say that even though I do not believe he means one word”; “Hypocrite”; “I back Marco Rubio for president in 2028”). No 50,000+ or major-organization accounts among the replies or the 1 quote opened."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 7:05 AM PT",
+      "source": "Byron York (Washington Examiner)",
+      "handle": "ByronYork",
+      "type": "X post",
+      "followers": 580384,
+      "theme": "2028 / Rubio vs. Vance polls (early states)",
+      "summary": "Washington Examiner chief political correspondent and Fox News contributor (580,384 followers) posted: “New poll shows Marco Rubio leading JD Vance in key early states. Big leads among likely Republican primary and caucus voters in Iowa, New Hampshire, South Carolina, and Nevada,” linking his Nov 23 column. The column (opened) reports an OnMessage Inc. survey for the Combat Antisemitism Movement, Nov 7–10, 1,000 likely GOP voters (250 per state): Iowa Rubio 49 / Vance 28; New Hampshire 44 / 25; South Carolina 43 / 28; Nevada 53 / 32. It notes the poll omitted DeSantis, that the same voters rated Vance 80% favorable and Rubio 83% (Trump 75%), and says the midterm loss “seems to have especially hurt Vance.” This is the same OnMessage poll Axios reported Nov 19 (already in the tracker for its Israel and favorability findings); the head-to-head numbers are newly public. Reporting relay, not an op-ed.",
+      "engagement": {
+        "likes": 145,
+        "reposts": 19,
+        "replies": 25,
+        "quotes": 6,
+        "bookmarks": 3,
+        "views": 8656,
+        "interactions": 195,
+        "engagement_ex_replies": 170,
+        "followers": 580384,
+        "engagement_rate_vs_followers_pct": 0.03,
+        "reply_to_like_pct": 17.2,
+        "engagement_rate_vs_views_pct": 2.25
+      },
+      "url": "https://x.com/ByronYork/status/2124881968307257536",
+      "added_on": "2026-11-23",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created June 2009 (580,384 followers, following 1,852). Interactions (195) are 0.03% of followers and 2.3% of views (8,656), normal for a reporter’s link post in its first hour. The 25 replies opened were unique text with no repeated phrasing."
+      },
+      "audience_sample": "Replies opened were mixed: many welcomed Rubio or dismissed Vance (“Marco has my vote”; “JD’s association with Tucker was fatal for his future”; “nominate Marco and dumb JD the bum”), others attacked the poll or its sponsor (“Polls with a pro war, pro amnesty agenda”; “Stop trying soo hard to push neocon Marco”; “Poll didn’t include DeSantis?”). Prominent quote post: Josh Marshall (@joshtpm, 353,270; TPM founder) — logged as its own item. No other 50,000+ or major-organization accounts among the 25 replies and 7 quotes opened; one small quote replied “Imagine taking polls funded by anti-vance groups seriously.”"
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 7:38 AM PT",
+      "source": "Josh Marshall (Talking Points Memo)",
+      "handle": "joshtpm",
+      "type": "X post",
+      "followers": 353270,
+      "theme": "2028 / Rubio vs. Vance polls (early states)",
+      "summary": "Founder of Talking Points Memo (353,270 followers) quoted Byron York’s early-state poll post: “Among other things simply an illustration of the fact that there’s never been any constituency for JD Vance other than as the VP of a still popular Donald Trump who orders the party to nominate him.”",
+      "engagement": {
+        "likes": 14,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "views": 2381,
+        "interactions": 15,
+        "engagement_ex_replies": 14,
+        "followers": 353270,
+        "engagement_rate_vs_followers_pct": 0.0,
+        "reply_to_like_pct": 7.1,
+        "engagement_rate_vs_views_pct": 0.63
+      },
+      "url": "https://x.com/joshtpm/status/2124890392948563970",
+      "added_on": "2026-11-23",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created February 2009 (353,270 followers, following 873). Interactions (15) are 0.004% of followers and 0.6% of views (2,381); low, but it was opened about 35 minutes after posting."
+      },
+      "audience_sample": "One reply at the time opened; not enough to characterize the audience. No prominent accounts among replies."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 8:26 PM PT",
+      "source": "Alex Jones (Infowars)",
+      "handle": "RealAlexJones",
+      "type": "X post",
+      "followers": 4449783,
+      "theme": "2028 / GOP field (America First critics)",
+      "summary": "Infowars host (4,449,783 followers) posted: “Are Our Only Choices Really Rubio, Vance, Or DeSantis For 2028? How About Royce White For President!” followed by a quoted line, “Rubio’s Not Gonna Deport 25 Million Foreign Invaders, Vance Changed His Name- I Don’t Understand That- & DeSantis Couldn’t Be The Guy In A Billion Light Years!”, with a 23-minute video (not watched; the quoted line appears to come from the segment). Critical of all three leading GOP prospects, not only Vance.",
+      "engagement": {
+        "likes": 117,
+        "reposts": 31,
+        "replies": 36,
+        "quotes": 0,
+        "bookmarks": 8,
+        "views": 44148,
+        "interactions": 184,
+        "engagement_ex_replies": 148,
+        "followers": 4449783,
+        "engagement_rate_vs_followers_pct": 0.0,
+        "reply_to_like_pct": 30.8,
+        "engagement_rate_vs_views_pct": 0.42
+      },
+      "url": "https://x.com/RealAlexJones/status/2124721195606061308",
+      "added_on": "2026-11-23",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created January 2010 (4,449,783 followers, following 1,130). Interactions (184) are only 0.004% of followers and 0.4% of views (44,148), very low for the follower count. The 25 replies opened were unique text; one account posted three similar pro–Royce White replies."
+      },
+      "audience_sample": "Replies opened mostly named other candidates (“We want DeSantis”; “Thomas Massie with James Fishback or Joe Kent?”; “@RandPaul / @TulsiGabbard”), a few pushed back on Jones (“Stop fueling the blue wave”; “Your endorsement certainly isn’t going to help him”), and one defended Vance (“Vance’s mother changed his name…he explains the reason… in his book”). No 50,000+ or major-organization accounts among the replies opened; no quote posts."
+    },
+    {
+      "date": "2026-11-20",
+      "datetime_pt": "2026-11-20 8:42 AM PT",
+      "source": "Erick Erickson",
+      "handle": "EWErickson",
+      "type": "X post",
+      "followers": 271950,
+      "theme": "2028 / electability (VP history)",
+      "summary": "Conservative radio host (271,950 followers) posted: “Only 4 times has a VP been directly elevated to the presidency. Since 1933, only 3 of 15 VPs have been elected President at all… If Congress, Supreme Court, TX and GA legislatures, etc. are all on the line, Vance is a risky bet.” Same morning he posted “is Vance really the best bet for the GOP given history?” linking his Substack essay “A Most Important Question.” His radio remarks (“History is against him… this president in particular, who’s rather mercurial, very transactional, who could blow up at him at any moment”) were picked up by RealClearPolitics (Nov 21) and HuffPost (Nov 23, 1:25 AM PT). He raised the same doubt about Rubio and suggested a governor (DeSantis, Kemp, Youngkin, Sanders). Posted 8:42 AM PT Nov 20 and not captured then; added now because of the Nov 23 HuffPost pickup.",
+      "engagement": {
+        "likes": 195,
+        "reposts": 15,
+        "replies": 30,
+        "quotes": 1,
+        "bookmarks": 12,
+        "views": 26494,
+        "interactions": 241,
+        "engagement_ex_replies": 211,
+        "followers": 271950,
+        "engagement_rate_vs_followers_pct": 0.09,
+        "reply_to_like_pct": 15.4,
+        "engagement_rate_vs_views_pct": 0.91
+      },
+      "url": "https://x.com/EWErickson/status/2123819271876657398",
+      "added_on": "2026-11-23",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created January 2007 (271,950 followers, following 3,541). Interactions (241) are 0.09% of followers and 0.9% of views (26,494). The 24 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened mostly agreed Vance is risky or weak (“Vance can’t win”; “I am not seeing enthusiasm for Vance”; “Vance would be Mondale 2.0”), with pushback aimed at Rubio rather than at Erickson (“not nearly as risky as pro-Iran war Rubio”; “watch what happens when you get a pro amnesty, pro war candidate”) and a few disputing the history. No 50,000+ or major-organization accounts among the replies or the 1 quote opened."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 8:12 AM PT",
+      "source": "Priorities USA (super PAC)",
+      "handle": "prioritiesUSA",
+      "type": "X post",
+      "followers": 40860,
+      "theme": "Affordability / Democratic ads (\"Talking Turkey\")",
+      "summary": "Democratic super PAC Priorities USA posted: “It’s the holiday season, and families are paying the price at the checkout, thanks to Republicans’ bad economy. That’s why we’re holding the 2028 GOP field accountable before any of them can run from it. Watch our new holiday ad, ‘Talking Turkey.’” The Daily Beast (Nov 23) reports the one-minute digital/streaming spot puts Vance’s face on an uncooked turkey saying “Prices are going to come down, but it’s going to take a little bit of time” before it is put in the oven, with Trump, Rubio and DeSantis as vegetables; it airs in MI, PA, WI, NC, GA and AZ as part of a reported $30 million effort to define 2028 GOP prospects.",
+      "engagement": {
+        "likes": 0,
+        "reposts": 0,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "views": 27,
+        "interactions": 0,
+        "engagement_ex_replies": 0,
+        "followers": 40860,
+        "engagement_rate_vs_followers_pct": 0.0,
+        "reply_to_like_pct": null,
+        "engagement_rate_vs_views_pct": 0.0
+      },
+      "url": "https://x.com/prioritiesUSA/status/2124898989682381039",
+      "added_on": "2026-11-23",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Organization account created April 2011 (40,860 followers). Opened minutes after posting (27 views, no interactions yet), so engagement is not yet meaningful. Included under the major-organization (PAC) rule."
+      },
+      "audience_sample": "No replies or quotes yet at the time opened."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 4:15 PM PT",
+      "source": "Dr. Joseph Ford Cotto",
+      "handle": "JosephFordCotto",
+      "type": "X post",
+      "followers": 126080,
+      "theme": "2028 / electability",
+      "summary": "Commentator and “News Sight” host (126,080 followers) posted: “JD Vance is unelectable. You agree?” Between 4:15 and 6:15 PM PT Nov 22 he also posted four variants of “If Marco Rubio runs against J.D. Vance in the 2028 GOP primary, then Vance will lose. Bigly. You agree?” and a column, “Who Is This ‘J.D. Vance’ Guy?” (“J.D. Vance keeps changing who he is. Republicans should be alarmed.”), relayed by @JodyField.",
+      "engagement": {
+        "likes": 2,
+        "reposts": 2,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "views": 970,
+        "interactions": 4,
+        "engagement_ex_replies": 4,
+        "followers": 126080,
+        "engagement_rate_vs_followers_pct": 0.0,
+        "reply_to_like_pct": 0.0,
+        "engagement_rate_vs_views_pct": 0.41
+      },
+      "url": "https://x.com/JosephFordCotto/status/2124657933761839385",
+      "added_on": "2026-11-23",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created June 2020 (126,080 followers, following 96,687, 529,699 posts). Interactions (4) are 0.003% of followers and 0.4% of views (970); the very high following count and post volume against near-zero engagement suggest a follow-back network. Repetitive near-identical posts."
+      },
+      "audience_sample": "No replies at the time opened; the four primary variants drew 1–2 replies each (not characterized)."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 10:57 AM PT",
+      "source": "Trump Daily Posts (unofficial)",
+      "handle": "TrumpDailyPosts",
+      "type": "X post",
+      "followers": 3007049,
+      "theme": "2028 / unity ticket",
+      "summary": "Unofficial Trump-commentary account (3,007,049 followers) posted: “JUST IN: Trump says JD Vance and Marco Rubio are ‘doing fantastically’ for 2028 and calls a GOP unity ticket.” A relay of Trump’s Nov 21 Fox News remarks (already in the tracker), recirculating Nov 22 with 90,585 views.",
+      "engagement": {
+        "likes": 476,
+        "reposts": 55,
+        "replies": 33,
+        "quotes": 4,
+        "bookmarks": 6,
+        "views": 90585,
+        "interactions": 568,
+        "engagement_ex_replies": 535,
+        "followers": 3007049,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 6.9,
+        "engagement_rate_vs_views_pct": 0.63
+      },
+      "url": "https://x.com/TrumpDailyPosts/status/2124578007826448704",
+      "added_on": "2026-11-23",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created August 2023 (3,007,049 followers). Interactions (568) are 0.02% of followers and 0.6% of views, low for the follower count, consistent with the Nov 22 tracker item from the same account. The 25 replies opened were unique text, several only images or emoji."
+      },
+      "audience_sample": "Replies opened were mostly negative on the idea or on both men (“Not a good idea”; “They both are tainted rinos”; “Oh please do. You thought the midterms were bad”), with some preferring Rubio over Vance (“Yes to Rubio… no to JD with low foreign policy IQ”) or DeSantis. No 50,000+ or major-organization accounts among the replies or 4 quotes opened."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 8:02 AM PT",
+      "source": "Office of the Vice President (@VP)",
+      "handle": "VP",
+      "type": "X post",
+      "followers": 1342750,
+      "theme": "Trump praise / Nvidia",
+      "summary": "The official Vice President account (1,342,750 followers) posted Trump’s comment on Jensen Huang being reinstated as Nvidia CEO: “I was talking to a lot of people… But I was also dealing with a Vice President, JD Vance who’s great,” with video. Official-account amplification of Trump praise amid weekend talk of friction and Rubio overtaking Vance in polls.",
+      "engagement": {
+        "likes": 327,
+        "reposts": 57,
+        "replies": 41,
+        "quotes": 2,
+        "bookmarks": 15,
+        "views": 12731,
+        "interactions": 427,
+        "engagement_ex_replies": 386,
+        "followers": 1342750,
+        "engagement_rate_vs_followers_pct": 0.03,
+        "reply_to_like_pct": 12.5,
+        "engagement_rate_vs_views_pct": 3.35
+      },
+      "url": "https://x.com/VP/status/2124896252987097291",
+      "added_on": "2026-11-23",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created January 2025 (official office account, following 28). Interactions (427) are 0.03% of followers and 3.4% of views (12,731) in the first ~10 minutes. The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened were largely hostile or mocking (“THIRSTIEST VP IN US HISTORY”; “He’s also blaming this on JD!!”; questions about Nvidia stock trades), with a minority thanking Trump or Vance (“Thank you @POTUS”; “Thanks patriot”). No 50,000+ or major-organization accounts among the replies opened."
+    },
+    {
+      "date": "2026-11-22",
+      "datetime_pt": "2026-11-22 3:16 PM PT",
+      "source": "Gunther Eagleman",
+      "handle": "GuntherEagleman",
+      "type": "X post",
+      "followers": 1768325,
+      "theme": "Oversight investigations (defense)",
+      "summary": "Pro-Trump commentator (1,768,325 followers) posted: “The Democrats haven’t even taken the gavel yet, and they’re ALREADY launching investigations into Trump’s family. Incoming Oversight Chair Robert Garcia just sent 12 document letters to Don Jr., Eric, Jared Kushner and VP JD Vance. He says it’s ‘just the beginning.’” Frames the incoming Democratic Oversight letters, which include Vance, as partisan overreach. The Garcia letters themselves were not opened.",
+      "engagement": {
+        "likes": 821,
+        "reposts": 411,
+        "replies": 166,
+        "quotes": 19,
+        "bookmarks": 23,
+        "views": 25704,
+        "interactions": 1417,
+        "engagement_ex_replies": 1251,
+        "followers": 1768325,
+        "engagement_rate_vs_followers_pct": 0.08,
+        "reply_to_like_pct": 20.2,
+        "engagement_rate_vs_views_pct": 5.51
+      },
+      "url": "https://x.com/GuntherEagleman/status/2124643213566787783",
+      "added_on": "2026-11-23",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created January 2021 (1,768,325 followers, following 102,118). Interactions (1,417) are 0.08% of followers but 5.5% of views (25,704), with reposts at half of likes (411 vs 821), a ratio higher than most tracker posts; this can indicate coordinated reposting. The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened were split: supporters agreed (“Sick democrats”; “Throw the letters in the trash”; “there was nothing on them before”), while many pushed back (“The corruption is so open that you look like a fool opposing its investigation”; “Investigations are in order”). No 50,000+ or major-organization human accounts among the replies opened (an @grok auto-reply is excluded)."
     }
   ],
-  "last_updated_pt": "November 22, 2026, 8:11 AM PT"
+  "last_updated_pt": "November 23, 2026, 8:17 AM PT"
 }
