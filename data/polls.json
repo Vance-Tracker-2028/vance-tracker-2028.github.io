@@ -1,30 +1,30 @@
 {
-  "last_updated": "2026-11-23",
+  "last_updated": "2026-11-24",
   "timezone": "America/Los_Angeles",
   "averages": {
     "rcp_published": {
-      "favorable": 39.7,
-      "unfavorable": 51.5,
-      "net": -11.8,
-      "window": "Sep 29–Nov 16, 2026",
+      "favorable": 39.5,
+      "unfavorable": 51.7,
+      "net": -12.2,
+      "window": "Sep 29–Nov 17, 2026",
       "n_polls": 11,
       "source_url": "https://www1.realclearpolitics.com/epolls/other/other/FavorabilityRatingsPoliticalLeaders.html",
-      "note": "Published RCP average on the page opened Nov 21, 2026 (was 40.2 / 51.3, net -11.1, on Nov 17–20). Change: Pew Research (Nov 9–15, 10,247 adults, 35/54) was added to the table. Re-opened Nov 22, 2026: unchanged (39.7 / 51.5, 11 polls). Re-opened Nov 23, 2026: unchanged (39.7 / 51.5, 11 polls)."
+      "note": "Published RCP average on the page opened Nov 21, 2026 (was 40.2 / 51.3, net -11.1, on Nov 17–20). Change: Pew Research (Nov 9–15, 10,247 adults, 35/54) was added to the table. Re-opened Nov 22, 2026: unchanged (39.7 / 51.5, 11 polls). Re-opened Nov 23, 2026: unchanged (39.7 / 51.5, 11 polls). Re-opened Nov 24, 2026: 39.5 / 51.7, net -12.2 (was 39.7 / 51.5, net -11.8). Change: RMG Research/Napolitan (Nov 16–17, 1,000 RV, 40/50) was added; the window now runs Sep 29–Nov 17 with 11 polls."
     },
     "simple_unweighted_rcp_table": {
-      "favorable": 39.7,
-      "unfavorable": 51.5,
-      "net": -11.8,
+      "favorable": 39.5,
+      "unfavorable": 51.7,
+      "net": -12.2,
       "n_polls": 11,
-      "note": "Unweighted mean of the 11 individual polls listed in the RCP Vance favorability table opened Nov 21, 2026. Matches the published RCP average."
+      "note": "Unweighted mean of the 11 individual polls listed in the RCP Vance favorability table opened Nov 24, 2026 (RMG 40/50, Economist/YouGov 38/56, Reuters/Ipsos 39/55, Pew 35/54, Cygnal 39/57, FT 40/51, Morning Consult 41/48, Atlas Intel 38/58, Harvard-Harris 39/47, NewsNation 44/52, I&I/TIPP 41/41). Matches the published RCP average."
     },
     "hill_ddhq": {
-      "favorable": 37.9,
-      "unfavorable": 54.0,
-      "net": -16.1,
-      "as_of": "2026-11-23",
+      "favorable": 38.0,
+      "unfavorable": 53.8,
+      "net": -15.8,
+      "as_of": "2026-11-24",
       "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/jd-vance-19151/national/lv-rv-adults/",
-      "note": "The Hill / Decision Desk HQ estimate as of Nov 23, 2026: 37.9 / 54.0, net -16.1 (unchanged from Nov 22; was 38.5 / 54.0 Nov 19–21; 37.5 / 54.3 on Nov 18). The most recent polls in its table are still the Nov 14–17 releases. Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
+      "note": "The Hill / Decision Desk HQ estimate as of Nov 24, 2026: 38.0 / 53.8, net -15.8 (was 37.9 / 54.0, net -16.1, Nov 22–23; 38.5 / 54.0 Nov 19–21; 37.5 / 54.3 on Nov 18). Newest poll in its table is now RMG Research/Napolitan (Nov 17, 1,000 RV, 40/50). Includes adult-universe polls; not directly comparable to the RCP RV/LV mix."
     },
     "civiqs_tracker": {
       "favorable": 35,
@@ -34,7 +34,7 @@
       "as_of": "2026-11-18",
       "sample": null,
       "source_url": "https://civiqs.com/results/favorable_jd_vance?annotations=true&uncertainty=true&zoomIn=true",
-      "note": "Civiqs tracking estimate, results through Nov 18, 2026 (page re-opened Nov 21; no newer reading; was 36 / 57, net -21, through Nov 11). Sample size was not stated on the page opened. Re-opened Nov 22: still through Nov 18. Re-opened Nov 23: still through Nov 18."
+      "note": "Civiqs tracking estimate, results through Nov 18, 2026 (page re-opened Nov 21; no newer reading; was 36 / 57, net -21, through Nov 11). Sample size was not stated on the page opened. Re-opened Nov 22: still through Nov 18. Re-opened Nov 23: still through Nov 18. Re-opened Nov 24: still through Nov 18."
     }
   },
   "comparison_same_poll": {
@@ -164,6 +164,23 @@
     ]
   },
   "polls": [
+    {
+      "pollster": "RMG Research",
+      "sponsor": "Napolitan News Service",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "sample": "1,000 RV",
+      "sample_size": 1000,
+      "universe": "RV",
+      "favorable": 40,
+      "unfavorable": 50,
+      "net": -10,
+      "question": "favorability",
+      "note": "Conducted online by Scott Rasmussen Nov 16, 2026 (RCP and The Hill list Nov 16–17); MoE ±3.1. Very favorable 20, somewhat favorable 20, somewhat unfavorable 14, very unfavorable 36. Down from 43 / 48 (Oct 5–6). Napolitan: 78% of Republicans favorable, 80% of Democrats unfavorable. Published Nov 23, 2026.",
+      "source_url": "https://data.ddhq.io/polls/2026/11/23/RMG-Research/Napolitan-News-Service-National-2026-11-16-2026-11-16",
+      "source_url_writeup": "https://napolitannews.org/posts/first-favorables-for-congressional-leaders-after-the-midterms",
+      "added_on": "2026-11-24"
+    },
     {
       "pollster": "Economist/YouGov",
       "sponsor": "The Economist",
@@ -364,5 +381,5 @@
       "added_on": "2026-11-17"
     }
   ],
-  "last_updated_pt": "November 23, 2026, 8:17 AM PT"
+  "last_updated_pt": "November 24, 2026, 8:16 AM PT"
 }

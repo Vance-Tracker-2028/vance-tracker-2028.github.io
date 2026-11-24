@@ -16,7 +16,7 @@ import extra_pages
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json", "polls_ticket.json", "opposition.json")
+SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json", "polls_ticket.json", "opposition.json", "rivals.json")
 def _blocked_re():
     # Assembled so this source file does not contain the blocked strings.
     return re.compile("|".join(("".join(("ar", "jun")), "".join(("bu", "xi")), "".join(("sv", "gop")))), re.I)
@@ -247,6 +247,11 @@ def load():
     return entries_doc, polls, polls_2028, polls_ticket
 
 
+def load_rivals():
+    fp = DATA / "rivals.json"
+    return json.loads(fp.read_text()) if fp.exists() else {}
+
+
 def css() -> str:
     return """
 :root {
@@ -448,6 +453,10 @@ tr.avg { background: var(--soft); font-weight: 600; }
 .badge.critical { color: var(--crit); }
 .badge.supportive { color: var(--supp); }
 .badge.originating { color: var(--orig); }
+.badge.news { color: var(--muted); }
+.rival { margin: 26px 0 0; }
+.rival h3 { margin: 0 0 4px; }
+.rival .momentum { margin: 0 0 10px; color: #333; max-width: 48rem; }
 .card h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 650; }
 .card h3 a { color: var(--ink); text-decoration: none; }
 .card h3 a:hover { color: var(--accent); text-decoration: underline; }
@@ -803,6 +812,91 @@ def ticket_section(polls_ticket) -> str:
     """
 
 
+def rival_section(rivals) -> str:
+    if not rivals:
+        return ""
+    rank_rows = []
+    for r in rivals.get("ranking") or []:
+        prev = r.get("previous_average")
+        delta = "—" if prev is None else f"{r['poll_average'] - prev:+.1f}"
+        rank_rows.append(
+            f"""<tr>
+              <td class="num">{r['rank']}</td>
+              <td>{esc(r['candidate'])}</td>
+              <td class="num">{r['poll_average']}%</td>
+              <td class="num">{r['n_polls']}</td>
+              <td class="num">{esc(delta)}</td>
+            </tr>"""
+        )
+    blocks = []
+    for rv in rivals.get("rivals") or []:
+        short = rv["candidate"] if "Jr." in rv["candidate"] else rv["candidate"].split()[-1]
+        cards = []
+        for it in rv.get("items") or []:
+            stance = it.get("stance") or ""
+            handle = it.get("handle")
+            handle_html = f' <span class="handle">@{esc(handle)}</span>' if handle else ""
+            url = it.get("url") or ""
+            src = esc(it.get("source") or "Source")
+            title = f'<a href="{esc(url)}">{src}</a>{handle_html}' if url else src + handle_html
+            fol = it.get("followers")
+            fol_html = f"<span>{esc(fmt_followers(fol))} followers</span>" if fol else ""
+            eng = it.get("engagement") or {}
+            bits = []
+            if eng.get("likes") is not None:
+                bits.append(f"{fmt_num(eng.get('likes'))} likes")
+                bits.append(f"{fmt_num(eng.get('reposts'))} reposts")
+                bits.append(f"{fmt_num(eng.get('replies'))} replies")
+            if eng.get("views"):
+                bits.append(f"{fmt_views(eng.get('views'))} views")
+            eng_html = f'<div class="eng">{esc(" · ".join(bits))}</div>' if bits else ""
+            badge = "News" if stance == "news" else f"{stance.title()} of {short}"
+            cards.append(
+                f"""<article class="card {esc(stance)}">
+                  <div class="card-meta">
+                    <time>{esc(fmt_md(it.get('date') or ''))}</time>
+                    {fol_html}
+                    <span class="badge {esc(stance)}">{esc(badge)}</span>
+                  </div>
+                  <h3>{title}</h3>
+                  <p class="summary">{esc(clean_text(it.get('summary') or ''))}</p>
+                  {eng_html}
+                </article>"""
+            )
+        fav = rv.get("favorability") or {}
+        fav_html = ""
+        if fav.get("favorable") is not None:
+            h = fav.get("hill_ddhq_average_nov_17") or {}
+            fav_html = (f'<p class="fine">Favorability: {esc(fav.get("pollster"))} ({esc(fav.get("dates"))}) '
+                        f'{fav["favorable"]} / {fav["unfavorable"]}; '
+                        f'<a href="{esc(fav.get("source_url") or "")}">The Hill / DDHQ average</a> (Nov 17) '
+                        f'{h.get("favorable")} / {h.get("unfavorable")}.</p>')
+        none_html = "" if cards else '<p class="fine">No qualifying large-account items were opened this update.</p>'
+        blocks.append(
+            f"""<div class="rival">
+              <h3>{rv['rank']}. {esc(rv['candidate'])} <span class="handle">· {rv['poll_average']}% avg ({rv['n_polls']} polls) · {esc(rv.get('role') or '')}</span></h3>
+              <p class="momentum"><strong>Momentum:</strong> {esc(rv.get('momentum') or '')}</p>
+              {fav_html}
+              <div class="cards">{''.join(cards)}</div>
+              {none_html}
+            </div>"""
+        )
+    return f"""
+    <section class="block" id="rivals">
+      <h2>Rival watch</h2>
+      <p class="lede">The top five Republican 2028 contenders by this tracker’s national primary polling average, re-ranked each update, with notable news and large-account posts about each rival. Stance is toward the rival, not toward Vance.</p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th class="num">Rank</th><th>Candidate</th><th class="num">Poll avg</th><th class="num">Polls</th><th class="num">Change</th></tr></thead>
+          <tbody>{''.join(rank_rows)}</tbody>
+        </table>
+      </div>
+      <p class="fine">{esc(rivals.get('ranking_note') or '')} {esc(rivals.get('method') or '')}</p>
+      {''.join(blocks)}
+    </section>
+    """
+
+
 def sentiment_section(entries, s) -> str:
     max_v = max(list(s["crit"].values()) + list(s["supp"].values()) + [1])
     rows = []
@@ -914,7 +1008,7 @@ def methodology_section() -> str:
       <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
       <p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>
       <p>Favorability averages cite the published RealClearPolitics average where a page was opened, and a simple unweighted mean of listed polls. The 2028 Republican nomination average is an unweighted mean of each candidate’s share in the national polls opened for this update. Those polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. The Unity ticket subsection records only polls that test a joint ticket or a running-mate choice; as of this update that is a single YouGov/Daily Mail poll of who Vance should pick as vice president if he is the nominee (the Vance–Rubio order). No Rubio–Vance-order poll or general-election ticket matchup was found, and there is no multi-poll ticket average.</p>
-      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–21, 2026.</p>
+      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–24, 2026.</p>
     </section>
     """
 
@@ -959,6 +1053,7 @@ def build_html(entries_doc, polls, polls_2028, polls_ticket) -> str:
         <a class="btn solid" href="#favorability">See the polls</a>
         <a class="btn" href="bio.html">Read the biography</a>
         <a class="btn" href="opposition.html">Top opposition</a>
+        <a class="btn" href="#rivals">Rival watch</a>
         <a class="btn" href="myths.html">Myths vs. facts</a>
       </div>
     </div>
@@ -982,6 +1077,7 @@ def build_html(entries_doc, polls, polls_2028, polls_ticket) -> str:
     {fav_section(polls)}
     {primary_section(polls_2028)}
     {ticket_section(polls_ticket)}
+    {rival_section(load_rivals())}
     {sentiment_section(entries, s)}
     {feed_section(entries)}
     {methodology_section()}

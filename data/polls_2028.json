@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-11-23",
+  "last_updated": "2026-11-24",
   "timezone": "America/Los_Angeles",
-  "methodology": "Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate (7 polls). These polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey; likely voters; self-selected GOP-primary RVs; Emerson closed-ended list of GOP-primary RVs; Verasight list question among Republican adults) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used, except that the Echelon Insights result was read from a Polling Desk poll page that cites the NYT/PollResults feed. Nov 20, 2026: no new national 2028 GOP primary polls were found since the Emerson release (Nov 19). Posts on X reported that the RealClearPolitics 2028 average now shows Rubio 35.4% and Vance 34.0%; the RCP page again returned 403, so that figure is not used here. Nov 21, 2026: added the Strength In Numbers/Verasight poll (Nov 11–13; released Nov 19), which had been missed. Average moved from Vance 35.0 / Rubio 31.3 / DeSantis 12.3 (6 polls) to Vance 33.9 / Rubio 31.6 / DeSantis 13.3 (7 polls). A First Tuesday Strategies South Carolina poll (Nov 19, 2,062 RV: Rubio 38.5, Vance 16.8, DeSantis 13.4, as relayed on X) is a single-state poll and is not part of this national average. The RCP 2028 page again returned 403 and was not used. Nov 22, 2026: no new national 2028 GOP primary polls; the RealClearPolling latest-polls page (opened this time) still lists Emerson (Nov 19) as the newest. Online straw polls relayed on X (StrawPoll.us: Rubio 48.2, Vance 19.7; the “People’s Poll”: Rubio 57, Vance 7) are self-selected and not used. Averages unchanged. Nov 23, 2026: no new national 2028 GOP primary poll. The Washington Examiner (Byron York, Nov 23) published early-state head-to-head results from the OnMessage Inc. poll for the Combat Antisemitism Movement (Nov 7–10; 1,000 likely GOP voters, 250 each in IA, NH, SC, NV; MoE ±3.1): Iowa Rubio 49 / Vance 28; New Hampshire 44 / 25; South Carolina 43 / 28; Nevada 53 / 32. Poll relays on X give four-state combined figures of Rubio 47 / Vance 28 (multi-candidate) and Rubio 52 / Vance 31 (head-to-head), not confirmed in the column. DeSantis was not included. As a set of single-state samples for an advocacy sponsor, it is not part of this national average. Averages unchanged.",
+  "methodology": "Unweighted simple average of the candidate’s share in each opened national 2028 GOP primary poll that reported that candidate (8 polls). These polls use different universes (open-ended intended primary voters; likely Republican primary voters; GOP side of a midterm-voter survey; likely voters; self-selected GOP-primary RVs; Emerson closed-ended list of GOP-primary RVs; Verasight list question among Republican adults) and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Aggregator tables that were not opened as primary sources were not used, except that the Echelon Insights result was read from a Polling Desk poll page that cites the NYT/PollResults feed. Nov 20, 2026: no new national 2028 GOP primary polls were found since the Emerson release (Nov 19). Posts on X reported that the RealClearPolitics 2028 average now shows Rubio 35.4% and Vance 34.0%; the RCP page again returned 403, so that figure is not used here. Nov 21, 2026: added the Strength In Numbers/Verasight poll (Nov 11–13; released Nov 19), which had been missed. Average moved from Vance 35.0 / Rubio 31.3 / DeSantis 12.3 (6 polls) to Vance 33.9 / Rubio 31.6 / DeSantis 13.3 (8 polls). A First Tuesday Strategies South Carolina poll (Nov 19, 2,062 RV: Rubio 38.5, Vance 16.8, DeSantis 13.4, as relayed on X) is a single-state poll and is not part of this national average. The RCP 2028 page again returned 403 and was not used. Nov 22, 2026: no new national 2028 GOP primary polls; the RealClearPolling latest-polls page (opened this time) still lists Emerson (Nov 19) as the newest. Online straw polls relayed on X (StrawPoll.us: Rubio 48.2, Vance 19.7; the “People’s Poll”: Rubio 57, Vance 7) are self-selected and not used. Averages unchanged. Nov 23, 2026: no new national 2028 GOP primary poll. The Washington Examiner (Byron York, Nov 23) published early-state head-to-head results from the OnMessage Inc. poll for the Combat Antisemitism Movement (Nov 7–10; 1,000 likely GOP voters, 250 each in IA, NH, SC, NV; MoE ±3.1): Iowa Rubio 49 / Vance 28; New Hampshire 44 / 25; South Carolina 43 / 28; Nevada 53 / 32. Poll relays on X give four-state combined figures of Rubio 47 / Vance 28 (multi-candidate) and Rubio 52 / Vance 31 (head-to-head), not confirmed in the column. DeSantis was not included. As a set of single-state samples for an advocacy sponsor, it is not part of this national average. Averages unchanged. Nov 24, 2026: added the Rainey Center poll (Bedrock Polling, Nov 8–12, 406 LV: Vance 36, Rubio 24, DeSantis 10, Trump Jr. 7, Cruz 4, Kennedy 4), read from the Polling Forecast poll page. Average moved from Vance 33.9 / Rubio 31.6 / DeSantis 13.3 (7 polls) to Vance 34.1 / Rubio 30.6 / DeSantis 12.9 (8 polls). No new national 2028 GOP primary poll was released Nov 23–24. CNN’s Harry Enten (Nov 22 segment, widely relayed Nov 23–24) summarized national polling as Rubio 34, Vance 30; that is an analyst’s summary, not a poll, and is not used. A HispanicsVote/Newsweek poll of Florida Hispanic Republicans (Oct 14–18: Rubio 57, DeSantis 25, Vance 10), relayed on X Nov 23, is a single-state subgroup and is not used. Stephen Miller has not been listed in any opened 2028 primary poll.",
   "simple_unweighted_average": {
     "JD Vance": {
-      "pct": 33.9,
-      "n_polls": 7
+      "pct": 34.1,
+      "n_polls": 8
     },
     "Marco Rubio": {
-      "pct": 31.6,
-      "n_polls": 7
+      "pct": 30.6,
+      "n_polls": 8
     },
     "Ron DeSantis": {
-      "pct": 13.3,
-      "n_polls": 7
+      "pct": 12.9,
+      "n_polls": 8
     }
   },
   "polls": [
@@ -42,41 +42,6 @@
       "note": "Released Nov 19, 2026. The closed-ended list question (44 / 24 / 9) is used in the average because the other polls here mostly read from candidate lists; the open-ended question had Rubio 36, Vance 20, DeSantis 7, Trump 7, Massie 7. USA Today notes the same pollster had Vance ahead of Rubio 54%–6% a year earlier. Subsample size (418) from USA Today.",
       "source_url": "https://emersoncollegepolling.com/national-poll-rubio-leads-2028-gop-nomination-contest-ossoff-rises-among-democrats/",
       "added_on": "2026-11-19"
-    },
-    {
-      "pollster": "Verasight",
-      "sponsor": "Strength In Numbers (G. Elliott Morris)",
-      "start_date": "2026-11-11",
-      "end_date": "2026-11-13",
-      "sample": "632 Republicans (listed as 632 A by PollResults) within a national survey of about 1,400 adults from both parties",
-      "sample_size": 632,
-      "universe": "Republicans (adults); list question",
-      "moe": "±2.6 points on the full survey (Political Wire); about ±3.9 on the 632-person GOP sample (Polling Desk).",
-      "results": {
-        "Marco Rubio": 33,
-        "JD Vance": 27,
-        "Ron DeSantis": 19,
-        "Donald Trump Jr.": 3,
-        "Ted Cruz": 3,
-        "Glenn Youngkin": 1
-      },
-      "results_other_reported": {
-        "Marco Rubio": 26,
-        "JD Vance": 19,
-        "Ron DeSantis": 9,
-        "Donald Trump": 2,
-        "Vivek Ramaswamy": 1,
-        "Thomas Massie": 1,
-        "Nikki Haley": 1
-      },
-      "note": "Released Nov 19, 2026 (missed in the Nov 20 update). The poll asked an open text-box question and then a candidate-list question. The 33 / 27 / 19 figures (Don't know 8, None 5) are reported by Political Wire, PollResults and the New York Daily News and are used in the average, consistent with using closed-ended list questions elsewhere. Polling Desk (NYT/PollResults feed) lists 26 / 19 / 9 for the same field dates and sample; which question that reflects was not confirmed on a page opened, so it is shown separately and not averaged. G. Elliott Morris: 'Rubio’s lead comes almost entirely from the hawks'; Vance leads among Republicans who want to end the Iran war and among white blue-collar workers. Verasight’s previous reading (ended Apr 23) had Vance +21, per Polling Desk.",
-      "source_url": "https://www.gelliottmorris.com/p/2026-11-19-strength-in-numbers-verasight-poll-2028-primaries-two-ways",
-      "source_urls_other": [
-        "https://politicalwire.com/2026/11/19/no-clear-leaders-in-2028-field/",
-        "https://www.newstribune.com/news/2026/nov/20/rubio-edges-ahead-of-vance-in-gop-2028/",
-        "https://polling-desk.com/poll/nyt-96e643148e13"
-      ],
-      "added_on": "2026-11-21"
     },
     {
       "pollster": "Echelon Insights",
@@ -121,6 +86,67 @@
       "note": "Online via Cint, weighted with an MRP frame. Without Vance: Rubio 42, DeSantis 18, Cruz 8, Carlson 7. Same poll: Ossoff and Newsom each lead Vance by 13 in general-election matchups. A newer, small pollster whose questions were crowdsourced from X followers; treat with caution.",
       "source_url": "https://onpointpolitics.substack.com/p/you-wrote-this-poll-here-is-what",
       "added_on": "2026-11-18"
+    },
+    {
+      "pollster": "Verasight",
+      "sponsor": "Strength In Numbers (G. Elliott Morris)",
+      "start_date": "2026-11-11",
+      "end_date": "2026-11-13",
+      "sample": "632 Republicans (listed as 632 A by PollResults) within a national survey of about 1,400 adults from both parties",
+      "sample_size": 632,
+      "universe": "Republicans (adults); list question",
+      "moe": "±2.6 points on the full survey (Political Wire); about ±3.9 on the 632-person GOP sample (Polling Desk).",
+      "results": {
+        "Marco Rubio": 33,
+        "JD Vance": 27,
+        "Ron DeSantis": 19,
+        "Donald Trump Jr.": 3,
+        "Ted Cruz": 3,
+        "Glenn Youngkin": 1
+      },
+      "results_other_reported": {
+        "Marco Rubio": 26,
+        "JD Vance": 19,
+        "Ron DeSantis": 9,
+        "Donald Trump": 2,
+        "Vivek Ramaswamy": 1,
+        "Thomas Massie": 1,
+        "Nikki Haley": 1
+      },
+      "note": "Released Nov 19, 2026 (missed in the Nov 20 update). The poll asked an open text-box question and then a candidate-list question. The 33 / 27 / 19 figures (Don't know 8, None 5) are reported by Political Wire, PollResults and the New York Daily News and are used in the average, consistent with using closed-ended list questions elsewhere. Polling Desk (NYT/PollResults feed) lists 26 / 19 / 9 for the same field dates and sample; which question that reflects was not confirmed on a page opened, so it is shown separately and not averaged. G. Elliott Morris: 'Rubio’s lead comes almost entirely from the hawks'; Vance leads among Republicans who want to end the Iran war and among white blue-collar workers. Verasight’s previous reading (ended Apr 23) had Vance +21, per Polling Desk.",
+      "source_url": "https://www.gelliottmorris.com/p/2026-11-19-strength-in-numbers-verasight-poll-2028-primaries-two-ways",
+      "source_urls_other": [
+        "https://politicalwire.com/2026/11/19/no-clear-leaders-in-2028-field/",
+        "https://www.newstribune.com/news/2026/nov/20/rubio-edges-ahead-of-vance-in-gop-2028/",
+        "https://polling-desk.com/poll/nyt-96e643148e13"
+      ],
+      "added_on": "2026-11-21"
+    },
+    {
+      "pollster": "Bedrock Polling",
+      "sponsor": "The Rainey Center",
+      "start_date": "2026-11-08",
+      "end_date": "2026-11-12",
+      "sample": "406 likely voters (GOP primary question)",
+      "sample_size": 406,
+      "universe": "Likely GOP primary voters (candidate list)",
+      "moe": "Not stated on the page opened.",
+      "results": {
+        "JD Vance": 36,
+        "Marco Rubio": 24,
+        "Ron DeSantis": 10,
+        "Donald Trump Jr.": 7,
+        "Ted Cruz": 4,
+        "Robert F. Kennedy Jr.": 4,
+        "Nikki Haley": 1
+      },
+      "note": "Read from the Polling Forecast poll page (fieldwork Nov 8–12, 406 LV; Other 9, Undecided 6). A Polling Desk listing (seen in search results, page not opened) labels it “Bedrock Polling for Rainey Center.” The Rainey Center release itself was not opened. Surfaced in aggregator feeds Nov 24, 2026; missed in earlier updates.",
+      "source_url": "https://www.pollingforecast.com/us/polls/1001535",
+      "source_urls_other": [
+        "https://polling-desk.com/polls/2028-republican/presidential-primary",
+        "https://www.pollcheck.com/primaries/republican/"
+      ],
+      "added_on": "2026-11-24"
     },
     {
       "pollster": "Economist/YouGov",
@@ -181,5 +207,69 @@
       "added_on": "2026-11-17"
     }
   ],
-  "last_updated_pt": "November 23, 2026, 8:17 AM PT"
+  "last_updated_pt": "November 24, 2026, 8:16 AM PT",
+  "other_candidates_average": {
+    "Donald Trump Jr.": {
+      "pct": 5.3,
+      "n_polls": 3
+    },
+    "Robert F. Kennedy Jr.": {
+      "pct": 4.0,
+      "n_polls": 2
+    },
+    "Ted Cruz": {
+      "pct": 2.7,
+      "n_polls": 3
+    },
+    "Sarah Huckabee Sanders": {
+      "pct": 2.0,
+      "n_polls": 1
+    },
+    "Glenn Youngkin": {
+      "pct": 1.0,
+      "n_polls": 2
+    },
+    "Nikki Haley": {
+      "pct": 1.0,
+      "n_polls": 2
+    },
+    "Rand Paul": {
+      "pct": 1.0,
+      "n_polls": 1
+    },
+    "John Kennedy": {
+      "pct": 1.0,
+      "n_polls": 1
+    },
+    "Tucker Carlson": {
+      "pct": 1.0,
+      "n_polls": 1
+    },
+    "Marjorie Taylor Greene": {
+      "pct": 1.0,
+      "n_polls": 1
+    },
+    "Thomas Massie": {
+      "pct": 1.0,
+      "n_polls": 1
+    }
+  },
+  "other_candidates_note": "Mean share among only the opened polls that reported each candidate (n_polls shown); not comparable to the three-candidate average, which every poll reports. Donald Trump (constitutionally barred) is excluded. Stephen Miller has not been listed in any opened 2028 primary poll.",
+  "previous_average": {
+    "as_of": "2026-11-23",
+    "values": {
+      "JD Vance": {
+        "pct": 33.9,
+        "n_polls": 7
+      },
+      "Marco Rubio": {
+        "pct": 31.6,
+        "n_polls": 7
+      },
+      "Ron DeSantis": {
+        "pct": 13.3,
+        "n_polls": 7
+      }
+    }
+  }
 }

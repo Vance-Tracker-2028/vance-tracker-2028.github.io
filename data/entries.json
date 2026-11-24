@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23",
+  "last_updated": "2026-11-24",
   "timezone": "America/Los_Angeles",
   "entries": [
     {
@@ -2498,7 +2498,295 @@
         "evidence": "Heuristic only, not proof. Account created January 2021 (1,768,325 followers, following 102,118). Interactions (1,417) are 0.08% of followers but 5.5% of views (25,704), with reposts at half of likes (411 vs 821), a ratio higher than most tracker posts; this can indicate coordinated reposting. The 25 replies opened were unique text."
       },
       "audience_sample": "Replies opened were split: supporters agreed (“Sick democrats”; “Throw the letters in the trash”; “there was nothing on them before”), while many pushed back (“The corruption is so open that you look like a fool opposing its investigation”; “Investigations are in order”). No 50,000+ or major-organization human accounts among the replies opened (an @grok auto-reply is excluded)."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 12:39 PM PT",
+      "source": "Reuters",
+      "handle": "Reuters",
+      "type": "X post",
+      "followers": 26446999,
+      "theme": "Venezuela oil / Vitol probe",
+      "summary": "Reuters (26,446,999 followers) posted: “A US Senate committee is investigating whether Vice President JD Vance played a role in the awarding of a lucrative Venezuelan oil deal to commodities giant Vitol, according to a letter reviewed by Reuters.” The Reuters story (opened via Investing.com, Nov 23) says Sen. Maggie Hassan (D-N.H.), incoming chair of Senate Homeland Security and Governmental Affairs, asked Vance’s office for records by Dec. 14, citing a reported December 2025 meeting at Montana’s Yellowstone Club with Vitol trader and early Vance donor John Addison a week before the January Venezuela operation; flight records put both planes at the same airport. Vance and Addison deny the meeting; press secretary Luke Schroeder: “The alleged airport meeting never happened.” The Energy Department says Vance and Secretary Wright never discussed Venezuelan oil sales. Bloomberg (@business, 10.5M) posted a parallel report. News report; the probe is an allegation, not a finding.",
+      "engagement": {
+        "likes": 643,
+        "reposts": 311,
+        "replies": 28,
+        "quotes": 24,
+        "bookmarks": 59,
+        "views": 58028,
+        "interactions": 1006,
+        "engagement_ex_replies": 978,
+        "followers": 26446999,
+        "engagement_rate_vs_followers_pct": 0.0,
+        "reply_to_like_pct": 4.4,
+        "engagement_rate_vs_views_pct": 1.73
+      },
+      "url": "https://x.com/Reuters/status/2124965995089404183",
+      "added_on": "2026-11-24",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Wire-service account created March 2007 (26,446,999 followers). Interactions (1,006) are 0.004% of followers and 1.7% of views (58,028), normal for a wire headline. Quote posts include Spanish- and Chinese-language relays; several near-identical retweets of one Venezuelan account’s quote. The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened mostly treated the story as more administration corruption (“More corruption from this admin!”; “This is a Reuters investigation, not merely a social-media allegation”; “#GOPCorruptAF”), with a few defending Vance (“Sounds like a hit job by the Zionist wing… JD hates the Iran War”; “An investigation is not a finding”). Prominent: Brattani (@Bratt_world, 66,057; Canadian commentary account, no stated organization) — critical: “One thing after another. My goodness.” No other 50,000+ or major-organization accounts among the 25 replies and 25 quotes opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 4:44 AM PT",
+      "source": "Laura Loomer",
+      "handle": "LauraLoomer",
+      "type": "X post",
+      "followers": 1933711,
+      "theme": "Israel / Amjad Masad meeting",
+      "summary": "Loomer (1,933,711 followers) quoted a Dan Burmawi post about Replit CEO Amjad Masad, who had posted about a Nov 20 meeting with Vance on AI: “Amjad Masad is who just met with Vice President Vance… Clearly nobody who works for the Vice President is doing any vetting… maybe there was in fact vetting and this is all on purpose,” calling Masad a “Jew hater and Hamas sympathizer” and linking him to Tucker Carlson. An earlier Loomer post (Nov 23, 8:45 PM PT; 804 likes, 43,850 views) attacked the same meeting over Masad’s appearance at a Tech for Palestine event. Masad replied to Loomer, “Most Americans agree with me on Israel. You should move there you disgusting ghoul” (2,110 likes). Loomer’s characterizations of Masad are her claims, not verified here.",
+      "engagement": {
+        "likes": 1666,
+        "reposts": 592,
+        "replies": 107,
+        "quotes": 32,
+        "bookmarks": 58,
+        "views": 78089,
+        "interactions": 2397,
+        "engagement_ex_replies": 2290,
+        "followers": 1933711,
+        "engagement_rate_vs_followers_pct": 0.12,
+        "reply_to_like_pct": 6.4,
+        "engagement_rate_vs_views_pct": 3.07
+      },
+      "url": "https://x.com/LauraLoomer/status/2125208866723901459",
+      "added_on": "2026-11-24",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created March 2012 (1,933,711 followers, following 7,933). Interactions (2,397) are 0.12% of followers and 3.1% of views (78,089), consistent with her other tracker items. The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened were split: many agreed and turned on Vance (“That is one more reason that JD Vance is out and Marco Rubio is in”; “JD Vance will never have a chance at President if he’s doing this”; “I promise I will NEVER vote for @JDVance”), while others attacked Loomer (“israeli foreign agent detected”; “Trump approves of all of it”). Prominent quote: Mark Levin (@marklevinshow, 5,039,278; host of The Mark Levin Show) — critical: “What in the world is going on here? This is stunning.” (289 likes, 29,150 views). The quoted post is by Dan Burmawi (@DanBurmawy, 141,926; CEO of IDI Center), whose criticism is aimed at Masad. No other 50,000+ or major-organization accounts among the 25 replies and 24 quotes opened."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 11:53 AM PT",
+      "source": "David M. Friedman (former U.S. ambassador to Israel)",
+      "handle": "DavidM_Friedman",
+      "type": "X post",
+      "followers": 94184,
+      "theme": "Tucker Carlson / Rubio vs. Vance",
+      "summary": "Former U.S. Ambassador to Israel (2017–2021) (94,184 followers) quoted the CNN/Harry Enten ranking relay (Rubio 34%, Vance 30%): “Vance made a foolish bet, reflective of even poorer judgment, that the energy and influence within the Republican Party was in the Tucker crowd. But that energy was all coming from foreign bots and nut jobs, not real Republicans. Rubio, in contrast, represents true Republican conservative values.”",
+      "engagement": {
+        "likes": 2541,
+        "reposts": 380,
+        "replies": 330,
+        "quotes": 25,
+        "bookmarks": 89,
+        "views": 94350,
+        "interactions": 3276,
+        "engagement_ex_replies": 2946,
+        "followers": 94184,
+        "engagement_rate_vs_followers_pct": 3.48,
+        "reply_to_like_pct": 13.0,
+        "engagement_rate_vs_views_pct": 3.47
+      },
+      "url": "https://x.com/DavidM_Friedman/status/2124954418445488266",
+      "added_on": "2026-11-24",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created January 2021 (94,184 followers, following 521). Interactions (3,276) are 3.5% of followers and 3.5% of views (94,350), very high for the follower count, driven by reposts and quote-amplification (including Marc Thiessen); no repeated-text pattern in the 25 replies opened."
+      },
+      "audience_sample": "Replies opened were split: some agreed (“Certainly represents my current leaning”; “Vance is falling and Rubio is rising!”), many pushed back on Friedman or Rubio (“Rubio represents the Israel First crowd. And he is a warmonger”; “Push poll for the amnesty candidate”; “You morons are still on the same ship after you got torpedoed in the midterms”). Prominent quote: Marc Thiessen (@marcthiessen, 105,901; AEI, Fox News, Washington Post) — critical: “Amen!” (301 likes). No other 50,000+ or major-organization accounts among the 25 replies and 24 quotes opened."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 7:40 PM PT",
+      "source": "Chris Cuomo (NewsNation)",
+      "handle": "ChrisCuomo",
+      "type": "X post",
+      "followers": 1891276,
+      "theme": "Nvidia / Huang reinstatement",
+      "summary": "NewsNation anchor (1,891,276 followers) quoted Vance’s “Welcome back Jensen” post: “Remember this moment. Vance owns nvidia.” Part of a wave of critical quote posts after Vance welcomed Jensen Huang’s reinstatement as Nvidia CEO (reported by Semafor and the WSJ as pushed by Trump and Vance), including Stephen Hayes of The Dispatch (“The swamp, only swampier.”), WSJ editor-at-large Gerard Baker (“Rarely seen such an unerring, moth-to-a-flame capacity for political self-immolation in an ambitious politician.”), and Jesse Singal.",
+      "engagement": {
+        "likes": 907,
+        "reposts": 88,
+        "replies": 83,
+        "quotes": 0,
+        "bookmarks": 30,
+        "views": 34044,
+        "interactions": 1078,
+        "engagement_ex_replies": 995,
+        "followers": 1891276,
+        "engagement_rate_vs_followers_pct": 0.06,
+        "reply_to_like_pct": 9.2,
+        "engagement_rate_vs_views_pct": 3.17
+      },
+      "url": "https://x.com/ChrisCuomo/status/2125072102336397356",
+      "added_on": "2026-11-24",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created March 2009 (1,891,276 followers, following 315). Interactions (1,078) are 0.06% of followers and 3.2% of views (34,044). The 20 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened mostly pushed back on Cuomo (“everyone owns nvidia… if you have money in vanguard you own nvidia”; “Cuomo and his little pathetic made up gotcha moments”; “It’s hauntingly familiar to the Russia collusion hoax”), with a few agreeing (“He is owned”). No 50,000+ or major-organization accounts among the 20 replies opened; no quote posts."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 6:32 AM PT",
+      "source": "OSZ (OpenSourceZone)",
+      "handle": "OpenSourceZone",
+      "type": "X post",
+      "followers": 60953,
+      "theme": "2028 / Rubio vs. Vance polls (CNN Enten ranking)",
+      "summary": "Poll-tracking account (60,953 followers) posted: “CNN: Marco Rubio has surged and is now the front runner to be the 2028 Republican nominee. Last Year: JD Vance: 44% / Marco Rubio: 6%. Now: Marco Rubio: 34% (+28) / JD Vance: 30% (-14).” The figures come from CNN data analyst Harry Enten’s Nov 22 “top 2028 GOP candidates, ranked” segment (as described by the Tampa Free Press, Nov 23), which ranked Rubio first, Vance second and DeSantis third (13%), while noting Kalshi still gave Vance the best nomination odds (32%). The 34/30 figures are Enten’s summary of national polling, not a new poll. The same account’s Nov 22 version (311K views) was quoted by David M. Friedman.",
+      "engagement": {
+        "likes": 117,
+        "reposts": 13,
+        "replies": 4,
+        "quotes": 2,
+        "bookmarks": 6,
+        "views": 4935,
+        "interactions": 136,
+        "engagement_ex_replies": 132,
+        "followers": 60953,
+        "engagement_rate_vs_followers_pct": 0.22,
+        "reply_to_like_pct": 3.4,
+        "engagement_rate_vs_views_pct": 2.76
+      },
+      "url": "https://x.com/OpenSourceZone/status/2125236216341975322",
+      "added_on": "2026-11-24",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created August 2021 (60,953 followers, following 1,045). Interactions (136) are 0.22% of followers and 2.8% of views (4,935). Account bio is a news/poll aggregator with partisan emoji labels; few replies (4) to judge."
+      },
+      "audience_sample": "Only 8 replies opened: pro-Rubio replies (“Imagine thinking the Florida delegation would prefer Vance over Rubio”; “Rubio is an excellent candidate”) and anti-Rubio replies (“Rubio is a warmonger… No deal”; “Marco will lose Florida as well”). No 50,000+ or major-organization accounts among the replies opened."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 7:13 PM PT",
+      "source": "JD Vance",
+      "handle": "JDVance",
+      "type": "X post",
+      "followers": 5570900,
+      "theme": "Nvidia / Huang reinstatement",
+      "summary": "Vance’s personal account (5,570,900 followers) quoted the White House Rapid Response post on Jensen Huang’s return: “Welcome back Jensen.” His most-viewed post in the tracker this week (879,165 views). Semafor and the WSJ reported that Vance helped Trump persuade Nvidia’s board to reinstate Huang; the post drew heavy critical quote reaction (see the Chris Cuomo item).",
+      "engagement": {
+        "likes": 18619,
+        "reposts": 1114,
+        "replies": 1934,
+        "quotes": 174,
+        "bookmarks": 480,
+        "views": 879165,
+        "interactions": 21841,
+        "engagement_ex_replies": 19907,
+        "followers": 5570900,
+        "engagement_rate_vs_followers_pct": 0.39,
+        "reply_to_like_pct": 10.4,
+        "engagement_rate_vs_views_pct": 2.48
+      },
+      "url": "https://x.com/JDVance/status/2125065305504272838",
+      "added_on": "2026-11-24",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created June 2013 (5,570,900 followers, following 1,139). Interactions (21,841) are 0.39% of followers and 2.5% of views (879,165); reply-to-like ratio 10.4%, high for his account, reflecting pushback. The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened were overwhelmingly negative (“Way to undermine every workplace rule there is… You have no political future”; “This was a very bad call by President Trump & you as well! I’m MAGA”; “No longer a Vance 2028 supporter”; “Those commandments aren’t that important after all, eh JD?”). Prominent quote posts (all critical): Chris Cuomo (@ChrisCuomo, 1,891,276; NewsNation) “Remember this moment. Vance owns nvidia.”; Stephen Hayes (@stephenfhayes, 266,674; Editor/CEO of The Dispatch, NBC News analyst) “The swamp, only swampier.” (1,258 likes); Jesse Singal (@jessesingal, 190,236; co-host of Blocked and Reported) mocking a Hillbilly Elegy line about moral principles and “shareholder value” (359 likes); Gerard Baker (@gerardtbaker, 41,795; WSJ editor-at-large, The Times columnist) “Rarely seen such an unerring, moth-to-a-flame capacity for political self-immolation in an ambitious politician. It will be studied for years.” (1,814 likes). An @grok auto-reply is excluded."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 4:21 PM PT",
+      "source": "S.ocks (America First clips)",
+      "handle": "whitesocksAF",
+      "type": "X post",
+      "followers": 62345,
+      "theme": "Tucker Carlson / Rubio vs. Vance",
+      "summary": "America First clip account (62,345 followers) posted a Tucker Carlson clip, captioned “Tucker Carlson is definitely not pushing JD Vance for President 💀”, with Carlson quoted: “I’m not an advisor of his... But if you think Marco Rubio is better for this country than JD Vance, then you my friend, are a neocon.” Carlson’s pro-Vance framing was relayed by other clip accounts (@wsteaks, 20,840) and attacked by @1stclassclips (42,674; “anyone who doesn’t support JD in 28 is a ‘neocon’”). The clip itself was not watched; the quote is from the caption.",
+      "engagement": {
+        "likes": 391,
+        "reposts": 37,
+        "replies": 22,
+        "quotes": 3,
+        "bookmarks": 56,
+        "views": 14764,
+        "interactions": 453,
+        "engagement_ex_replies": 431,
+        "followers": 62345,
+        "engagement_rate_vs_followers_pct": 0.73,
+        "reply_to_like_pct": 5.6,
+        "engagement_rate_vs_views_pct": 3.07
+      },
+      "url": "https://x.com/whitesocksAF/status/2125021903215837449",
+      "added_on": "2026-11-24",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created January 2025 (62,345 followers, following 587). Interactions (453) are 0.73% of followers and 3.1% of views (14,764). Young clip account; the 24 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened were mostly skeptical of Carlson or of both men (“i love tucker but lets be real.... jd vance will never be president”; “Tucker is such a bad liar”; “call us neo cons. Marco over JD any day”; “Neither are acceptable”), with a few agreeing. Prominent: America First (@ImperiumFirst, 86,967; anonymous America First account) — mocking Carlson rather than Vance: “Bro literally said he’s not shilling JD Vance for president and then made the case for JD Vance for President.” (181 likes). No major-organization accounts among the replies or 3 quotes opened."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 9:42 AM PT",
+      "source": "Mario Nawfal",
+      "handle": "MarioNawfal",
+      "type": "X post",
+      "followers": 3992595,
+      "theme": "Nvidia / Huang reinstatement",
+      "summary": "Commentator and X show host (3,992,595 followers) posted: “Semafor just reported JD Vance played a role in reinstating Jensen Huang. JD Vance: 1 Rubio: 0.” Frames the Nvidia episode as a win for Vance over Rubio. Posted 9:42 AM PT Nov 23, just before the previous update, and not captured then.",
+      "engagement": {
+        "likes": 753,
+        "reposts": 66,
+        "replies": 45,
+        "quotes": 2,
+        "bookmarks": 17,
+        "views": 184883,
+        "interactions": 866,
+        "engagement_ex_replies": 821,
+        "followers": 3992595,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 6.0,
+        "engagement_rate_vs_views_pct": 0.47
+      },
+      "url": "https://x.com/MarioNawfal/status/2124921599908511975",
+      "added_on": "2026-11-24",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created October 2020 (3,992,595 followers, following 51,756). Interactions (866) are 0.02% of followers and 0.5% of views (184,883), low for the follower count, as in his earlier tracker items. The 24 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened were mixed and often off-topic: some cheered (“Much needed W for JD”; “WE LOVE U @JDVance”), others favored Rubio (“Huge win for Rubio in his run in 28....the decoupling has begun”; “Rubio leads, hard to imagine Vance catching up”) or attacked the decision (“Just another way of manipulating the market”). No 50,000+ or major-organization accounts among the replies opened (largest 31,216)."
+    },
+    {
+      "date": "2026-11-23",
+      "datetime_pt": "2026-11-23 3:29 PM PT",
+      "source": "Amjad Masad (Replit CEO)",
+      "handle": "amasad",
+      "type": "X post",
+      "followers": 509832,
+      "theme": "AI / Amjad Masad meeting",
+      "summary": "Replit CEO (509,832 followers) posted: “Great meeting with VP @JDVance on Friday to discuss American AI leadership, cybersecurity, and modernizing our nation’s software infrastructure. We also discussed an issue close to my heart: American leadership in open-weight AI… Very happy to see Jensen back at Nvidia.” The post that set off the Laura Loomer criticism; Masad later told Loomer, “Most Americans agree with me on Israel. You should move there you disgusting ghoul.” Logged as a supportive counter to the Loomer item.",
+      "engagement": {
+        "likes": 2588,
+        "reposts": 154,
+        "replies": 194,
+        "quotes": 45,
+        "bookmarks": 229,
+        "views": 326222,
+        "interactions": 2981,
+        "engagement_ex_replies": 2787,
+        "followers": 509832,
+        "engagement_rate_vs_followers_pct": 0.58,
+        "reply_to_like_pct": 7.5,
+        "engagement_rate_vs_views_pct": 0.91
+      },
+      "url": "https://x.com/amasad/status/2125008810041610359",
+      "added_on": "2026-11-24",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created July 2010 (509,832 followers, following 1,586). Interactions (2,981) are 0.58% of followers and 0.9% of views (326,222); 229 bookmarks suggest a tech audience. Replies were not sampled for this item."
+      },
+      "audience_sample": "Replies not sampled; the reaction is covered under the Laura Loomer item (which quotes the Dan Burmawi post about Masad) and Mark Levin’s quote of it."
     }
   ],
-  "last_updated_pt": "November 23, 2026, 9:45 AM PT"
+  "last_updated_pt": "November 24, 2026, 8:16 AM PT"
 }

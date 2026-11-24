@@ -1,0 +1,242 @@
+{
+  "title": "Rival watch",
+  "last_updated": "2026-11-24",
+  "last_updated_pt": "November 24, 2026, 8:16 AM PT",
+  "timezone": "America/Los_Angeles",
+  "method": "The top five Republican 2028 contenders by the tracker’s national primary polling average (polls_2028.json), re-ranked each update. Vance, Rubio and DeSantis are ranked by the simple average across all opened polls (every poll reports them). Places 4–5 are ranked by each candidate’s mean share among only the opened polls that reported him (n shown), because most polls do not report minor candidates; Donald Trump (constitutionally barred) is excluded. Stance on each item is toward that rival, not toward Vance. Only items actually opened are listed; favorability is shown only where a poll was opened.",
+  "ranking": [
+    {
+      "rank": 1,
+      "candidate": "JD Vance",
+      "poll_average": 34.1,
+      "n_polls": 8,
+      "previous_rank": 1,
+      "previous_average": 33.9
+    },
+    {
+      "rank": 2,
+      "candidate": "Marco Rubio",
+      "poll_average": 30.6,
+      "n_polls": 8,
+      "previous_rank": 2,
+      "previous_average": 31.6
+    },
+    {
+      "rank": 3,
+      "candidate": "Ron DeSantis",
+      "poll_average": 12.9,
+      "n_polls": 8,
+      "previous_rank": 3,
+      "previous_average": 13.3
+    },
+    {
+      "rank": 4,
+      "candidate": "Donald Trump Jr.",
+      "poll_average": 5.3,
+      "n_polls": 3,
+      "previous_rank": null,
+      "previous_average": null
+    },
+    {
+      "rank": 5,
+      "candidate": "Robert F. Kennedy Jr.",
+      "poll_average": 4.0,
+      "n_polls": 2,
+      "previous_rank": null,
+      "previous_average": null
+    }
+  ],
+  "rivals": [
+    {
+      "candidate": "Marco Rubio",
+      "rank": 2,
+      "poll_average": 30.6,
+      "n_polls": 8,
+      "role": "Secretary of State",
+      "momentum": "Rising in commentary: ranked No. 1 by CNN’s Harry Enten (national summary 34 vs. Vance 30) and leads the OnMessage early-state poll; his tracker average slipped to 30.6 when the Vance-leading Rainey Center poll was added. Met Qatar’s prime minister Nov 23 as Vance did separately.",
+      "favorability": {
+        "pollster": "Ipsos / Reuters",
+        "dates": "2026-11-14 to 2026-11-17",
+        "favorable": 33,
+        "unfavorable": 44,
+        "hill_ddhq_average_nov_17": {
+          "favorable": 36.0,
+          "unfavorable": 43.0
+        },
+        "source_url": "https://elections2026.thehill.com/polls/candidate-favorability/marco-rubio-4/national/lv-rv-adults/",
+        "note": "From polls.json (same-poll comparison with Vance: 35 / 53). Not refreshed this update."
+      },
+      "items": [
+        {
+          "date": "2026-11-23",
+          "source": "Secretary Marco Rubio",
+          "handle": "SecRubio",
+          "followers": 2192310,
+          "stance": "news",
+          "summary": "Rubio posted that he met Qatari Prime Minister and Foreign Minister Mohammed bin Abdulrahman Al Thani “to launch the eighth U.S.-Qatar Strategic Dialogue,” working “to advance shared economic and security priorities.” Vance met the prime minister separately the same day amid uncertainty over Iran (Washington Post, as relayed). The post drew 1,172 replies, a high reply-to-like ratio.",
+          "engagement": {
+            "likes": 2992,
+            "reposts": 479,
+            "replies": 1172,
+            "quotes": 80,
+            "views": 142294,
+            "engagement_rate_vs_followers_pct": 0.22
+          },
+          "url": "https://x.com/SecRubio/status/2124999294566662468",
+          "added_on": "2026-11-24"
+        },
+        {
+          "date": "2026-11-24",
+          "source": "OSZ",
+          "handle": "OpenSourceZone",
+          "followers": 60953,
+          "stance": "supportive",
+          "summary": "Poll relay: “CNN: Marco Rubio has surged and is now the front runner to be the 2028 Republican nominee,” Rubio 34% (+28 from a year ago), Vance 30% (−14). Source is Harry Enten’s Nov 22 ranking segment (Rubio 1st, Vance 2nd, DeSantis 3rd); an analyst’s summary, not a poll.",
+          "engagement": {
+            "likes": 117,
+            "reposts": 13,
+            "replies": 4,
+            "quotes": 2,
+            "views": 4935,
+            "engagement_rate_vs_followers_pct": 0.22
+          },
+          "url": "https://x.com/OpenSourceZone/status/2125236216341975322",
+          "added_on": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "source": "David M. Friedman",
+          "handle": "DavidM_Friedman",
+          "followers": 94184,
+          "stance": "supportive",
+          "summary": "Former ambassador to Israel: Vance “made a foolish bet… in the Tucker crowd… Rubio, in contrast, represents true Republican conservative values.” Endorsed by Marc Thiessen (“Amen!”). Also a tracker item.",
+          "engagement": {
+            "likes": 2541,
+            "reposts": 380,
+            "replies": 330,
+            "quotes": 25,
+            "views": 94350,
+            "engagement_rate_vs_followers_pct": 3.48
+          },
+          "url": "https://x.com/DavidM_Friedman/status/2124954418445488266",
+          "added_on": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "source": "S.ocks",
+          "handle": "whitesocksAF",
+          "followers": 62345,
+          "stance": "critical",
+          "summary": "Tucker Carlson clip: “if you think Marco Rubio is better for this country than JD Vance, then you my friend, are a neocon.” Also a tracker item.",
+          "engagement": {
+            "likes": 391,
+            "reposts": 37,
+            "replies": 22,
+            "quotes": 3,
+            "views": 14764,
+            "engagement_rate_vs_followers_pct": 0.73
+          },
+          "url": "https://x.com/whitesocksAF/status/2125021903215837449",
+          "added_on": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "source": "OSZ",
+          "handle": "OpenSourceZone",
+          "followers": 60953,
+          "stance": "supportive",
+          "summary": "Relayed a HispanicsVote/Newsweek poll of Florida Hispanic Republican primary voters (Oct 14–18): Rubio 57, DeSantis 25, Vance 10 (73,320 views). Single-state subgroup; not in the national average.",
+          "engagement": {
+            "likes": 680,
+            "reposts": 58,
+            "replies": 20,
+            "quotes": 18,
+            "views": 73320,
+            "engagement_rate_vs_followers_pct": 1.27
+          },
+          "url": "https://x.com/OpenSourceZone/status/2124965202630197662",
+          "added_on": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "candidate": "Ron DeSantis",
+      "rank": 3,
+      "poll_average": 12.9,
+      "n_polls": 8,
+      "role": "Governor of Florida (term-limited; leaves office January 2027)",
+      "momentum": "Positioning: Axios (Nov 22) reports a secret book project, and NBC reported a planned conservative think tank; Florida was a GOP bright spot in the midterms. Average 12.9 (13.3); third in every opened national poll.",
+      "favorability": null,
+      "items": [
+        {
+          "date": "2026-11-22",
+          "source": "Axios (Alex Isenstadt)",
+          "handle": null,
+          "followers": null,
+          "stance": "news",
+          "summary": "Scoop: DeSantis is quietly working on a book, two sources say, “a project likely to fuel speculation about his making another run for the White House.” Notes his AI-skeptic positions (an “AI Bill of Rights”) put him at odds with the Trump administration, a planned think tank (per NBC), and allies who doubt he will run again; he has not ruled out 2028.",
+          "engagement": null,
+          "url": "https://www.axios.com/2026/11/22/scoop-desantis-secret-book-project-fuels-2028-speculation",
+          "added_on": "2026-11-24"
+        },
+        {
+          "date": "2026-11-24",
+          "source": "Gunther Eagleman",
+          "handle": "GuntherEagleman",
+          "followers": 1768154,
+          "stance": "supportive",
+          "summary": "Pro-Trump commentator relayed the Axios book report (“you know exactly what that means”) and said the GOP bench is “STACKED,” praising DeSantis, Rubio and Vance alike. Cites an Ipsos “excellent candidate” reading (Vance 34, Rubio 36, DeSantis 28) that was not opened.",
+          "engagement": {
+            "likes": 129,
+            "reposts": 33,
+            "replies": 22,
+            "quotes": 4,
+            "views": 13120,
+            "engagement_rate_vs_followers_pct": 0.01
+          },
+          "url": "https://x.com/GuntherEagleman/status/2125198821810430267",
+          "added_on": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "source": "SaveUSAKitty",
+          "handle": "SaveUSAKitty",
+          "followers": 99091,
+          "stance": "supportive",
+          "summary": "Relayed commentator Shawn Farash urging Republicans not to discount DeSantis for 2028 over his 2024 run against Trump. Low engagement for the follower count.",
+          "engagement": {
+            "likes": 32,
+            "reposts": 11,
+            "replies": 8,
+            "quotes": 0,
+            "views": 2807,
+            "engagement_rate_vs_followers_pct": 0.05
+          },
+          "url": "https://x.com/SaveUSAKitty/status/2124948355805594052",
+          "added_on": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "candidate": "Donald Trump Jr.",
+      "rank": 4,
+      "poll_average": 5.3,
+      "n_polls": 3,
+      "role": "Businessman; podcast host",
+      "momentum": "Flat: 7% in the Rainey Center poll, 6% Emerson, 3% Verasight, 4% in the OnMessage early-state poll. No notable 2028 coverage from large accounts opened this update.",
+      "favorability": null,
+      "items": []
+    },
+    {
+      "candidate": "Robert F. Kennedy Jr.",
+      "rank": 5,
+      "poll_average": 4.0,
+      "n_polls": 2,
+      "role": "Secretary of Health and Human Services",
+      "momentum": "Flat: 4% in Echelon and Rainey Center, 3% in the OnMessage early-state poll. Coverage in the past day was about HHS policy (measles-elimination status), not 2028; no qualifying large-account 2028 items opened.",
+      "favorability": null,
+      "items": []
+    }
+  ],
+  "ranking_note": "Nov 24, 2026: first ranking. Order unchanged at the top (Vance, Rubio, DeSantis). Adding the Rainey Center poll moved the averages to Vance 34.1 (33.9), Rubio 30.6 (31.6), DeSantis 12.9 (13.3). Trump Jr. (5.3%, 3 polls) and RFK Jr. (4.0%, 2 polls) fill places 4–5; Ted Cruz is next (2.7%, 3 polls). Stephen Miller is not listed in any opened poll."
+}
