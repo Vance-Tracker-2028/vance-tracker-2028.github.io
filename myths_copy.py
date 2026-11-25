@@ -1,6 +1,6 @@
 """Shared copy for compact myth cards and full-story pages. Do not invent facts."""
 
-from extra_pages import esc, page_shell
+from extra_pages import esc, page_shell, read_more
 
 
 def myths():
@@ -215,13 +215,21 @@ def myths_page(updated: str) -> str:
             )
         )
 
+    intro_more = read_more(
+        "<p>Each card has two columns: <strong>What they said</strong> and <strong>What is true</strong>. Open <strong>Read more</strong> for the full story, the timeline, and the primary evidence. We cite at least two independent fact-checkers or a fact-checker plus a major news organization for every item, and we link the primary evidence those checks used — the book, the interview, or the official record — whenever we opened it.</p>"
+        '<p class="fine">Last updated %s. This page includes only claims that fact-checkers examined as stories about Vance, not fact-checks of statements he made about policy or other people. Snopes appears only where it debunks a smear against him, never as the sole source and never as the referee of a criticism of his record.</p>'
+        % esc(updated)
+    )
+    claim_more = read_more(
+        "<p>It also does not use fact-checks of <em>Vance’s own claims</em> — for example, statements he made about the 2024 campaign, or claims he repeated about Springfield, Ohio — as “myths about him.” Those are a different question, and they belong in political reporting, not on a list of fabrications about his life.</p>"
+    )
     body = """
   <article class="wrap">
     <header class="page-hero">
       <p class="kicker">Setting the record straight</p>
       <h1>Myths, Meet Facts</h1>
-      <p>Viral smears about JD Vance, set out as they were told and as the record stands. Each card has two columns: <strong>What they said</strong> and <strong>What is true</strong>. Open <strong>Read more</strong> for the full story, the timeline, and the primary evidence. We cite at least two independent fact-checkers or a fact-checker plus a major news organization for every item, and we link the primary evidence those checks used — the book, the interview, or the official record — whenever we opened it.</p>
-      <p class="fine">Last updated %s. This page includes only claims that fact-checkers examined as stories about Vance, not fact-checks of statements he made about policy or other people. Snopes appears only where it debunks a smear against him, never as the sole source and never as the referee of a criticism of his record.</p>
+      <p>Viral smears about JD Vance, set out as they were told and as the record stands.</p>
+      %s
     </header>
 
     <section class="block">
@@ -230,10 +238,11 @@ def myths_page(updated: str) -> str:
 
     <section class="block">
       <h2>What We Don’t Claim</h2>
-      <p>It does not collect every harsh joke, policy dispute, or campaign attack. It also does not use fact-checks of <em>Vance’s own claims</em> — for example, statements he made about the 2024 campaign, or claims he repeated about Springfield, Ohio — as “myths about him.” Those are a different question, and they belong in political reporting, not on a list of fabrications about his life.</p>
+      <p>It does not collect every harsh joke, policy dispute, or campaign attack.</p>
+      %s
     </section>
   </article>
-""" % (esc(updated), "".join(cards))
+""" % (intro_more, "".join(cards), claim_more)
     return page_shell(
         "Myths, Meet Facts — JD Vance Tracker",
         "Side-by-side fact-checks of viral claims about JD Vance, including the fabricated couch rumor, claims about his name, and the rent-a-dog hoax, with links to Snopes, PolitiFact, the Associated Press, and FactCheck.org.",
@@ -247,6 +256,7 @@ def myth_detail_page(updated: str, m: dict) -> str:
         '<div class="tl"><p class="when">%s</p><p>%s</p></div>' % (when, what)
         for when, what in m["timeline"]
     )
+    evidence_html = read_more("<p>%s</p>" % m["evidence"])
     body = """
   <article class="wrap">
     <header class="page-hero">
@@ -254,7 +264,7 @@ def myth_detail_page(updated: str, m: dict) -> str:
       <p class="kicker">Myth %s · The whole story</p>
       <h1>%s</h1>
       <p class="verdict">%s</p>
-      <p class="fine">Last updated %s. This page keeps the full record behind the short card on the Myths, Meet Facts page: what was claimed, what the fact-checks found, a timeline, and the primary evidence.</p>
+      <p class="fine">Last updated %s.</p>
     </header>
 
     <section class="block">
@@ -279,7 +289,8 @@ def myth_detail_page(updated: str, m: dict) -> str:
 
     <section class="block">
       <h2>The Paper Trail</h2>
-      <p>%s</p>
+      <p>The primary record behind this fact-check is cited below.</p>
+      %s
     </section>
 
     <section class="block">
@@ -296,7 +307,7 @@ def myth_detail_page(updated: str, m: dict) -> str:
         m["said_full"],
         m["true_full"],
         steps,
-        m["evidence"],
+        evidence_html,
         m["sources_html"],
     )
     return page_shell(

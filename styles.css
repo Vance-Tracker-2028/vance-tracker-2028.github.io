@@ -778,3 +778,90 @@ footer.site .photo-credits li {
 @media (max-width: 760px) {
   footer.site .photo-credits ul { grid-template-columns: 1fr; }
 }
+
+details.read-more {
+  margin: 8px 0 4px;
+}
+details.read-more > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 44px;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 2px solid var(--red);
+  padding: 8px 0 4px;
+  user-select: none;
+}
+details.read-more > summary::-webkit-details-marker,
+details.read-more > summary::marker { display: none; content: ""; }
+details.read-more > summary::after {
+  content: "";
+  width: 0.45em;
+  height: 0.45em;
+  border-right: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+  transform: rotate(45deg) translateY(-2px);
+  flex: 0 0 auto;
+}
+details.read-more[open] > summary::after {
+  transform: rotate(-135deg) translateY(-1px);
+}
+details.read-more > summary:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+details.read-more .rm-less { display: none; }
+details.read-more[open] .rm-more { display: none; }
+details.read-more[open] .rm-less { display: inline; }
+details.read-more .read-more-body {
+  margin-top: 10px;
+  padding: 12px 0 2px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 48rem;
+}
+details.read-more .read-more-body > :first-child { margin-top: 0; }
+details.read-more .read-more-body > :last-child { margin-bottom: 0; }
+.card details.read-more { margin: 6px 0 0; }
+.card details.read-more > summary {
+  min-height: 36px;
+  font-size: 0.75rem;
+  letter-spacing: 0.07em;
+  padding: 4px 0 2px;
+}
+.card details.read-more .read-more-body { font-size: inherit; color: inherit; max-width: none; }
+
+footer.site details.read-more > summary {
+  color: #fff;
+  border-bottom-color: rgba(255,255,255,0.7);
+}
+footer.site details.read-more > summary::after {
+  border-color: #fff;
+}
+footer.site details.read-more > summary:focus-visible {
+  outline-color: #fff;
+}
+footer.site details.read-more .read-more-body {
+  border-top-color: rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.88);
+  max-width: none;
+}
+
+@media (max-width: 760px) {
+  details.read-more > summary {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

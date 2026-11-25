@@ -614,7 +614,7 @@ def fav_section(polls) -> str:
     return f"""
     <section class="block" id="favorability">
       <h2>How America Sees the VP</h2>
-      <p class="lede">National favorable / unfavorable. Only polls from pages opened for this update are listed. A simple unweighted average of the 10 polls in the RCP table matches RCP’s published average: {avg['favorable']}% favorable, {avg['unfavorable']}% unfavorable (net {net_label(avg['net'])}). The Hill/DDHQ estimate ({hill['favorable']} / {hill['unfavorable']}, net {net_label(hill['net'])}, as of {fmt_md(hill['as_of'])}) is more unfavorable because it folds in adult-universe splits.</p>
+      <p class="lede">National favorable / unfavorable. Only polls from pages opened for this update are listed.</p>
       <div class="scroll">
         <table>
           <thead><tr>
@@ -626,7 +626,12 @@ def fav_section(polls) -> str:
           </tbody>
         </table>
       </div>
-      <p class="fine">Approval is a different question. Politix+ (page opened) shows a 3-poll average as of {fmt_md(approval['as_of'])} of {approval['approve']}% approve and {approval['disapprove']}% disapprove (net {net_label(approval['net'])}). The latest individual approval poll on that page is Ipsos on Oct 12 (41/57, n=2,032). <a href="{esc(politix)}">Politix+</a></p>
+      {extra_pages.read_more(
+        "<p>A simple unweighted average of the 10 polls in the RCP table matches RCP’s published average: "
+        + f"{avg['favorable']}% favorable, {avg['unfavorable']}% unfavorable (net {net_label(avg['net'])}). "
+        + f"The Hill/DDHQ estimate ({hill['favorable']} / {hill['unfavorable']}, net {net_label(hill['net'])}, as of {fmt_md(hill['as_of'])}) is more unfavorable because it folds in adult-universe splits.</p>"
+        + f'<p>Approval is a different question. Politix+ (page opened) shows a 3-poll average as of {fmt_md(approval["as_of"])} of {approval["approve"]}% approve and {approval["disapprove"]}% disapprove (net {net_label(approval["net"])}). The latest individual approval poll on that page is Ipsos on Oct 12 (41/57, n=2,032). <a href="{esc(politix)}">Politix+</a></p>'
+      )}
       <h3 style="font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px;">Vance vs. Rubio favorability</h3>
       <p class="lede">{esc(cmp_['note'])}</p>
       <div class="cmp">
@@ -704,7 +709,7 @@ def primary_section(polls_2028) -> str:
     return f"""
     <section class="block" id="primary">
       <h2>The 2028 Race</h2>
-      <p class="lede">National Republican nomination polls opened for this update. The simple average is an unweighted mean of each candidate’s reported share. These {_n2028_word} polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Other candidates are shown only where a poll reported them; they are not averaged.</p>
+      <p class="lede">National Republican nomination polls opened for this update. The simple average is an unweighted mean of each candidate’s reported share in these {_n2028_word} polls.</p>
       <div class="bars">{''.join(bars)}</div>
       <div class="metrics" style="grid-template-columns:repeat(3,1fr);">
         {metric_card(f"{v}%", "Vance", f"{_n2028} polls")}
@@ -721,7 +726,7 @@ def primary_section(polls_2028) -> str:
           <tbody>{''.join(rows)}</tbody>
         </table>
       </div>
-      <p class="fine">{esc(polls_2028.get('methodology') or '')}</p>
+      {extra_pages.read_more(f'<p class="fine">{esc(polls_2028.get("methodology") or "")}</p>') if polls_2028.get("methodology") else ""}
     </section>
     """
 
@@ -784,7 +789,7 @@ def ticket_section(polls_ticket) -> str:
     return f"""
     <section class="block" id="ticket">
       <h2>The Unity Ticket Watch</h2>
-      <p class="lede">{esc(polls_ticket.get('caveat') or '')} Only one opened poll qualifies, so there is no multi-poll average. No poll was found that tested a Rubio–Vance ticket (Rubio for president) or a general-election matchup of a joint ticket against Democrats.</p>
+      <p class="lede">{esc(polls_ticket.get('caveat') or '')} Only one opened poll qualifies, so there is no multi-poll average.</p>
       <div class="bars">{''.join(bars)}</div>
       <div class="metrics" style="grid-template-columns:repeat(3,1fr);">
         {metric_card(f"{res.get('Marco Rubio')}%", "Rubio as Vance’s running mate", "Among Republicans and GOP leaners")}
@@ -812,7 +817,11 @@ def ticket_section(polls_ticket) -> str:
           </tbody>
         </table>
       </div>
-      <p class="fine">{esc(p.get('question') or '')} {pred_line} {esc(p.get('moe') or '')} Sources: <a href="{esc(src)}">YouGov tables</a>{writeup}. {esc(polls_ticket.get('methodology') or '')}</p>
+      {extra_pages.read_more(
+        "<p>No poll was found that tested a Rubio–Vance ticket (Rubio for president) or a general-election matchup of a joint ticket against Democrats.</p>"
+        + f'<p class="fine">{esc(p.get("question") or "")} {esc(pred_line)} {esc(p.get("moe") or "")} Sources: <a href="{esc(src)}">YouGov tables</a>{writeup}.</p>'
+        + (f'<p class="fine">{esc(polls_ticket.get("methodology") or "")}</p>' if polls_ticket.get("methodology") else "")
+      )}
     </section>
     """
 
@@ -864,7 +873,7 @@ def rival_section(rivals) -> str:
                     <span class="badge {esc(stance)}">{esc(badge)}</span>
                   </div>
                   <h3>{title}</h3>
-                  <p class="summary">{esc(clean_text(it.get('summary') or ''))}</p>
+                  {extra_pages.collapse_plain(clean_text(it.get("summary") or ""), limit=260, tag="p", cls="summary")}
                   {eng_html}
                 </article>"""
             )
@@ -880,7 +889,8 @@ def rival_section(rivals) -> str:
         blocks.append(
             f"""<div class="rival">
               <h3>{rv['rank']}. {esc(rv['candidate'])} <span class="handle">· {rv['poll_average']}% avg ({rv['n_polls']} polls) · {esc(rv.get('role') or '')}</span></h3>
-              <p class="momentum"><strong>Momentum:</strong> {esc(rv.get('momentum') or '')}</p>
+              <p class="momentum"><strong>Momentum:</strong> {esc((extra_pages.first_sentences(rv.get("momentum") or "", 1)[0]))}</p>
+              {extra_pages.read_more(f'<p class="momentum">{esc(extra_pages.first_sentences(rv.get("momentum") or "", 1)[1])}</p>') if extra_pages.first_sentences(rv.get("momentum") or "", 1)[1] else ""}
               {fav_html}
               <div class="cards">{''.join(cards)}</div>
               {none_html}
@@ -896,7 +906,10 @@ def rival_section(rivals) -> str:
           <tbody>{''.join(rank_rows)}</tbody>
         </table>
       </div>
-      <p class="fine">{esc(rivals.get('ranking_note') or '')} {esc(rivals.get('method') or '')}</p>
+      {extra_pages.read_more(
+            (f'<p class="fine">{esc(rivals.get("ranking_note") or "")}</p>' if rivals.get("ranking_note") else "")
+            + (f'<p class="fine">{esc(rivals.get("method") or "")}</p>' if rivals.get("method") else "")
+        )}
       {''.join(blocks)}
     </section>
     """
@@ -930,9 +943,11 @@ def sentiment_section(entries, s) -> str:
         <div>{''.join(rows)}</div>
         <div>
           <p>Without Trump Jr.’s endorsement, critical posts lead {fmt_num(s['crit_int'])} to {fmt_num(s['supp_int_ex'])} in likes+reposts+quotes, and {fmt_views(s['crit_views'])} to {fmt_views(s['supp_views_ex'])} in views. With it, supportive views rise to {fmt_views(s['supp_views'])} — mostly one 16.1M-follower account.</p>
-          <p>The Israel fight is the closest: Hammer’s post (255K views, 2,432 likes, 28% reply-to-like) is roughly matched by Auron MacIntyre (3,615 likes). High reply ratios on Hammer, Thiessen, and Fine coverage show debate, not a one-sided pile-on.</p>
-          <p>Nov 18–19: the New York Times report that Trump is frustrated with Vance over his Iran-war critique drove a new wave of critical relays (ThePatrioticBlonde 1,689 likes; MeidasTouch 1,385 likes, 271K views; Ryan Fournier 554 likes). Mollie Hemingway (1.5M followers) pushed back, calling a viral caption about Trump’s MOU remarks “a lie,” and many replies under the relays defended Vance.</p>
-          <p class="note">Authenticity ratings are heuristics, not proof. Almost all large-account posts look likely organic. The one “Mixed” rating is Hammer’s scapegoat post. No specific person is labeled a bot.</p>
+          {extra_pages.read_more(
+            "<p>The Israel fight is the closest: Hammer’s post (255K views, 2,432 likes, 28% reply-to-like) is roughly matched by Auron MacIntyre (3,615 likes). High reply ratios on Hammer, Thiessen, and Fine coverage show debate, not a one-sided pile-on.</p>"
+            "<p>Nov 18–19: the New York Times report that Trump is frustrated with Vance over his Iran-war critique drove a new wave of critical relays (ThePatrioticBlonde 1,689 likes; MeidasTouch 1,385 likes, 271K views; Ryan Fournier 554 likes). Mollie Hemingway (1.5M followers) pushed back, calling a viral caption about Trump’s MOU remarks “a lie,” and many replies under the relays defended Vance.</p>"
+            '<p class="note">Authenticity ratings are heuristics, not proof. Almost all large-account posts look likely organic. The one “Mixed” rating is Hammer’s scapegoat post. No specific person is labeled a bot.</p>'
+          )}
         </div>
       </div>
     </section>
@@ -977,7 +992,7 @@ def feed_section(entries) -> str:
                 <span class="badge {esc(stance)}">{esc(stance.title())}</span>
               </div>
               <h3>{title}</h3>
-              <p class="summary">{esc(clean_text(e.get('summary') or ''))}</p>
+              {extra_pages.collapse_plain(clean_text(e.get("summary") or ""), limit=280, tag="p", cls="summary")}
               <div class="eng">{esc(format_engagement(e))}</div>
               {rating_html}
             </article>"""
@@ -1072,15 +1087,18 @@ def index_meme_section() -> str:
 
 
 def methodology_section() -> str:
-    return """
+    more = extra_pages.read_more(
+        "<p>It was independently created by supporters of JD Vance, and it is not a scientific sample of all public opinion. Items are included only when a source page or post was opened for this update. Every item has a source link. Follower counts and engagement figures are as returned by the source; they are left blank when unknown. Summaries are factual descriptions, not endorsements.</p>"
+        "<p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>"
+        "<p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>"
+        "<p>Favorability averages cite the published RealClearPolitics average where a page was opened, and a simple unweighted mean of listed polls. The 2028 Republican nomination average is an unweighted mean of each candidate’s share in the national polls opened for this update. Those polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. The Unity ticket subsection records only polls that test a joint ticket or a running-mate choice; as of this update that is a single YouGov/Daily Mail poll of who Vance should pick as vice president if he is the nominee (the Vance–Rubio order). No Rubio–Vance-order poll or general-election ticket matchup was found, and there is no multi-poll ticket average.</p>"
+        "<p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–24, 2026.</p>"
+    )
+    return f"""
     <section class="block" id="methodology">
       <h2>How We Track It</h2>
-      <p>This is an unofficial supporter site that tracks public polling and large-account posts and outlet coverage concerning Vice President JD Vance. It was independently created by supporters of JD Vance. It is not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House, and it is not a scientific sample of all public opinion. No funds are solicited or accepted.</p>
-      <p>Items are included only when a source page or post was opened for this update. Every item has a source link. Follower counts and engagement figures are as returned by the source; they are left blank when unknown. Summaries are factual descriptions, not endorsements.</p>
-      <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
-      <p>Sentiment totals use likes, reposts, and quotes on X posts only. Replies are omitted because they mix support and pushback. Vice President Vance’s own originating post is excluded from those totals. Donald Trump Jr.’s endorsement is shown both included and excluded because it accounts for most supportive reach in this set.</p>
-      <p>Favorability averages cite the published RealClearPolitics average where a page was opened, and a simple unweighted mean of listed polls. The 2028 Republican nomination average is an unweighted mean of each candidate’s share in the national polls opened for this update. Those polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. The Unity ticket subsection records only polls that test a joint ticket or a running-mate choice; as of this update that is a single YouGov/Daily Mail poll of who Vance should pick as vice president if he is the nominee (the Vance–Rubio order). No Rubio–Vance-order poll or general-election ticket matchup was found, and there is no multi-poll ticket average.</p>
-      <p>Dates and the “last updated” stamp are in America/Los_Angeles (Pacific Time). Search window for this edition: about November 3–24, 2026.</p>
+      <p>This is an unofficial supporter site that tracks public polling and large-account posts and outlet coverage concerning Vice President JD Vance. It is not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted.</p>
+      {more}
     </section>
     """
 

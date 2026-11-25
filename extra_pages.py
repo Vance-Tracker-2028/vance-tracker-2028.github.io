@@ -12,6 +12,73 @@ def esc(s) -> str:
     return html.escape("" if s is None else str(s), quote=True)
 
 
+
+def read_more(body_html: str, more: str = "Click to read more", less: str = "Show less") -> str:
+    """Native <details> toggle. body_html must already be escaped or marked-up HTML."""
+    if not (body_html or "").strip():
+        return ""
+    return (
+        '<details class="read-more">'
+        f'<summary><span class="rm-more">{esc(more)}</span>'
+        f'<span class="rm-less">{esc(less)}</span></summary>'
+        f'<div class="read-more-body">{body_html}</div>'
+        "</details>"
+    )
+
+
+def first_sentences(text: str, n: int = 2) -> tuple[str, str]:
+    """Split plain text into the first n sentences and the remainder."""
+    import re
+    text = (text or "").strip()
+    if not text:
+        return "", ""
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    if len(parts) <= n:
+        return text, ""
+    return " ".join(parts[:n]), " ".join(parts[n:])
+
+
+def split_dated_log(text: str) -> tuple[str, str]:
+    """Split a method intro from a dated running log such as 'Nov 20, 2026:'."""
+    import re
+    text = (text or "").strip()
+    if not text:
+        return "", ""
+    m = re.search(
+        r"(?:(?<=\.)\s+)?(?=(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?) \d{1,2}, 20\d{2}:)",
+        text,
+    )
+    if m and m.start() > 40:
+        return text[: m.start()].strip(), text[m.start() :].strip()
+    intro, rest = first_sentences(text, 2)
+    return intro, rest
+
+
+def collapse_plain(text: str, limit: int = 280, tag: str = "p", cls: str = "summary") -> str:
+    """Show a short preview of plain text; put the remainder behind read-more."""
+    text = (text or "").strip()
+    attr = f' class="{cls}"' if cls else ""
+    if not text:
+        return ""
+    if len(text) <= limit:
+        return f"<{tag}{attr}>{esc(text)}</{tag}>"
+    window = text[:limit]
+    cut = -1
+    for i, ch in enumerate(window):
+        if ch in ".!?" and i >= int(limit * 0.45):
+            if i + 1 < len(window) and window[i + 1] in " \n\"" + "'" + "”’":
+                cut = i + 1
+    if cut < 40:
+        sp = window.rfind(" ")
+        cut = sp if sp > 80 else limit
+    preview = text[:cut].rstrip()
+    rest = text[cut:].lstrip()
+    if not rest:
+        return f"<{tag}{attr}>{esc(text)}</{tag}>"
+    ellip = "" if preview.endswith((".", "!", "?", "…", '"', "”")) else "…"
+    return f"<{tag}{attr}>{esc(preview)}{ellip}</{tag}>" + read_more(f"<{tag}{attr}>{esc(rest)}</{tag}>")
+
+
 def fonts(root: str = "") -> str:
     return f"""<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,21 +162,21 @@ def bio_page(updated: str) -> str:
       <div>
         <h2>Where It All Started</h2>
         <p>Vice President JD Vance “was born and raised in Middletown, Ohio,” a manufacturing town whose good jobs, the official White House biography says, disappeared over time, with his family among those who “suffered the effects.” He has described a childhood marked by financial strain, his mother’s struggle with addiction, and his father’s absence. His grandparents — “Mamaw” and “Papaw” — “filled [that void] with unwavering support and guidance.” <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a></p>
-        <p>His family’s roots, and the summers he spent with them, run through Jackson, in eastern Kentucky’s Appalachia, a setting he later placed at the center of his memoir <cite>Hillbilly Elegy</cite>. In 2016 he told NPR that the book recalled “a childhood where poverty was ‘the family tradition.’” <a href="https://www.npr.org/2016/08/17/490328484/hillbilly-elegy-recalls-a-childhood-where-poverty-was-the-family-tradition">NPR, Aug. 17, 2016</a></p>
-        <p>After graduating from Middletown High School, he enlisted in the United States Marine Corps, “serving for four years with a tour in Iraq,” then used the G.I. Bill to attend Ohio State University and later Yale Law School. <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a></p>
+{read_more('''        <p>His family’s roots, and the summers he spent with them, run through Jackson, in eastern Kentucky’s Appalachia, a setting he later placed at the center of his memoir <cite>Hillbilly Elegy</cite>. In 2016 he told NPR that the book recalled “a childhood where poverty was ‘the family tradition.’” <a href="https://www.npr.org/2016/08/17/490328484/hillbilly-elegy-recalls-a-childhood-where-poverty-was-the-family-tradition">NPR, Aug. 17, 2016</a></p>
+        <p>After graduating from Middletown High School, he enlisted in the United States Marine Corps, “serving for four years with a tour in Iraq,” then used the G.I. Bill to attend Ohio State University and later Yale Law School. <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a></p>''')}
       </div>
     </div>
 
     <section class="block" id="career">
       <h2>The Road to the Vice Presidency</h2>
       <p>In 2016 Vance published <cite>Hillbilly Elegy: A Memoir of a Family and Culture in Crisis</cite>, which became a New York Times bestseller and, in 2020, a feature-film adaptation. <a href="https://www.theguardian.com/us-news/2021/jul/06/hillbilly-elegy-jd-vance-trump-republicans">The Guardian, July 6, 2021</a> (noting the prior year’s film adaptation). The official White House biography describes him after law school as “an investor in startups across the Midwest, and as the author of the bestselling memoir.” <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a></p>
-      <p>In 2022 he was elected to the U.S. Senate from Ohio. In 2024, the White House biography says, “President Donald J. Trump extended JD the incredible honor of asking him to serve as the Vice-Presidential Nominee.” He took office as vice president in January 2025.</p>
+{read_more('''      <p>In 2022 he was elected to the U.S. Senate from Ohio. In 2024, the White House biography says, “President Donald J. Trump extended JD the incredible honor of asking him to serve as the Vice-Presidential Nominee.” He took office as vice president in January 2025.</p>''')}
     </section>
 
     <section class="block" id="family">
       <h2>Usha and the Kids</h2>
       <p>Vance met his wife, Usha Chilukuri Vance, at Yale Law School. A Voice of America profile reports that she is “the daughter of Indian immigrants”; her parents, Krish and Lakshmi Chilukuri, are from Andhra Pradesh and later settled in San Diego, where she was born. She earned a bachelor’s degree from Yale, a master’s degree from the University of Cambridge, and a law degree from Yale Law, where the two met; they married about a year after graduating in 2013. After law school she clerked for Judge Brett Kavanaugh on the U.S. Court of Appeals for the D.C. Circuit and later for Chief Justice John Roberts. VOA, citing the memoir, notes that Vance called her his “Yale spirit guide” and wrote that he “fell hard” for her. She is, like her parents, a practicing Hindu. <a href="https://www.voanews.com/a/wife-of-trump-s-vp-pick-is-yale-law-graduate-daughter-of-indian-immigrants-/7702255.html">VOA, July 17, 2024</a> Clerkships are also recorded in a U.S. State Department biography. <a href="https://me.usembassy.gov/meet-second-lady-usha-vance/">U.S. Mission Montenegro, Jan. 24, 2025</a></p>
-      <p>That January 2025 State Department biography named three children: sons Ewan and Vivek and daughter Mirabel. The current White House biography says the couple are “proud parents to four beautiful children.” <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a> In a statement reported on July 19, 2026, the Vances announced that a son, Alec Neel Vance, “was born this morning” at Walter Reed National Military Medical Center, and that “Usha and the baby are happy and healthy, and our kids are overjoyed to meet their little brother.” Reporting on the statement also gave the earlier children’s years of birth as Ewan, 2017; Vivek, 2020; and Mirabel, 2021. <a href="https://www.aljazeera.com/news/2026/7/19/us-vice-president-jd-vance-and-his-wife-announce-birth-of-fourth-child">Al Jazeera, July 19, 2026, citing AP and Reuters</a></p>
+{read_more('''      <p>That January 2025 State Department biography named three children: sons Ewan and Vivek and daughter Mirabel. The current White House biography says the couple are “proud parents to four beautiful children.” <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a> In a statement reported on July 19, 2026, the Vances announced that a son, Alec Neel Vance, “was born this morning” at Walter Reed National Military Medical Center, and that “Usha and the baby are happy and healthy, and our kids are overjoyed to meet their little brother.” Reporting on the statement also gave the earlier children’s years of birth as Ewan, 2017; Vivek, 2020; and Mirabel, 2021. <a href="https://www.aljazeera.com/news/2026/7/19/us-vice-president-jd-vance-and-his-wife-announce-birth-of-fourth-child">Al Jazeera, July 19, 2026, citing AP and Reuters</a></p>''')}
     </section>
 
     <section class="block" id="faith">
@@ -126,18 +193,18 @@ def bio_page(updated: str) -> str:
       <blockquote class="pull">“Trump is cultural heroin. He makes some feel better for a bit. But he cannot fix what ails them, and one day they’ll realize it.”
         <cite>Vance, The Atlantic, July 4, 2016</cite>
       </blockquote>
-      <p>In an October 2016 interview with Charlie Rose, Vance said he was “a Never Trump guy” and that he “never liked him.” <a href="https://www.axios.com/2024/07/16/jd-vance-trump-statements">Axios, July 16, 2024</a> <a href="https://www.politico.com/news/magazine/2024/07/15/jd-vance-55-things-trump-vp-00167882">Politico, July 15, 2024</a></p>
+{read_more('''      <p>In an October 2016 interview with Charlie Rose, Vance said he was “a Never Trump guy” and that he “never liked him.” <a href="https://www.axios.com/2024/07/16/jd-vance-trump-statements">Axios, July 16, 2024</a> <a href="https://www.politico.com/news/magazine/2024/07/15/jd-vance-55-things-trump-vp-00167882">Politico, July 15, 2024</a></p>
       <p>In February 2016, in a private message to his former Yale roommate Josh McLaurin — later published by McLaurin and widely quoted — Vance wrote that he went “back and forth between thinking Trump is a cynical asshole like Nixon who wouldn’t be that bad (and might even prove useful) or that he’s America’s Hitler.” <a href="https://www.washingtonpost.com/elections/2024/07/15/jd-vance-trump-criticism/">The Washington Post, July 15, 2024</a> <a href="https://www.politico.com/news/magazine/2024/07/15/jd-vance-55-things-trump-vp-00167882">Politico, July 15, 2024</a></p>
-      <p>Deleted 2016 posts later reported by CNN included one calling Trump’s rhetoric toward immigrants and Muslims “reprehensible,” and another saying Vance would vote for the independent candidate Evan McMullin. <a href="https://www.axios.com/2024/07/16/jd-vance-trump-statements">Axios, July 16, 2024, citing CNN</a></p>
+      <p>Deleted 2016 posts later reported by CNN included one calling Trump’s rhetoric toward immigrants and Muslims “reprehensible,” and another saying Vance would vote for the independent candidate Evan McMullin. <a href="https://www.axios.com/2024/07/16/jd-vance-trump-statements">Axios, July 16, 2024, citing CNN</a></p>''')}
 
       <h3>How he explained the change</h3>
       <p>By the time he entered the 2022 Senate race, Vance said his view of Trump had changed after watching him in office. In a July 2, 2021 interview with TIME, over breakfast in Cincinnati, he said: “I sort of got Trump’s issues from the beginning. I just thought that this guy was not serious and was not going to be able to really make progress on the issues I cared about.” He added that Trump is “the leader of this movement,” and “if I actually care about these people and the things I say I care about, I need to just suck it up and support him.” <a href="https://time.com/6078483/j-d-vance-interview-trump/">Molly Ball, TIME, July 7, 2021</a> (the diner conversation was on July 2).</p>
       <blockquote class="pull">“I just thought that this guy was not serious and was not going to be able to really make progress on the issues I cared about.”
         <cite>Vance, interview with TIME, July 2, 2021</cite>
       </blockquote>
-      <p>To WCPO, he put the same point in terms of results: “I think he delivered on his promises to make the country a better place. So, I think I saw this guy, he was an outsider. I didn’t really believe he was serious. And then I saw the guy in action. And I thought he was a successful president. That’s why I supported him enthusiastically in 2020. … So I changed because he did a good job.” <a href="https://www.wcpo.com/news/government/local-politics/hillbilly-elegy-author-j-d-vance-tells-tanya-orourke-why-he-decided-to-run-for-senate">WCPO</a></p>
+{read_more('''      <p>To WCPO, he put the same point in terms of results: “I think he delivered on his promises to make the country a better place. So, I think I saw this guy, he was an outsider. I didn’t really believe he was serious. And then I saw the guy in action. And I thought he was a successful president. That’s why I supported him enthusiastically in 2020. … So I changed because he did a good job.” <a href="https://www.wcpo.com/news/government/local-politics/hillbilly-elegy-author-j-d-vance-tells-tanya-orourke-why-he-decided-to-run-for-senate">WCPO</a></p>
       <p>On Fox News in July 2021, after old tweets resurfaced, he said: “Like a lot of people, I criticised Trump back in 2016. And I ask folks not to judge me based on what I said in 2016, because I’ve been very open that I did say those critical things and I regret them, and I regret being wrong about the guy.” He also said Trump was “a good president. I think he made a lot of good decisions for people, and I think he took a lot of flak.” <a href="https://www.theguardian.com/us-news/2021/jul/06/hillbilly-elegy-jd-vance-trump-republicans">The Guardian, July 6, 2021, quoting Fox News</a></p>
-      <p>In his first interview as the 2024 vice-presidential nominee, Axios reported, Vance said he had been “certainly skeptical” of Trump but that the former president “changed my mind,” and: “I actually think it’s a good thing, when you see somebody, you were wrong about them, you ought to admit the mistake and admit that you were wrong.” <a href="https://www.axios.com/2024/07/16/jd-vance-trump-statements">Axios, July 16, 2024</a></p>
+      <p>In his first interview as the 2024 vice-presidential nominee, Axios reported, Vance said he had been “certainly skeptical” of Trump but that the former president “changed my mind,” and: “I actually think it’s a good thing, when you see somebody, you were wrong about them, you ought to admit the mistake and admit that you were wrong.” <a href="https://www.axios.com/2024/07/16/jd-vance-trump-statements">Axios, July 16, 2024</a></p>''')}
     </section>
 
     <section class="block" id="vp-selection">
@@ -149,7 +216,7 @@ def bio_page(updated: str) -> str:
         </figure>
         <div>
           <p>On July 15, 2024, the first day of the Republican National Convention in Milwaukee — and two days after an assassination attempt on Trump at a rally in Butler, Pennsylvania — Trump named Vance as his running mate. On Truth Social he wrote: “After lengthy deliberation and thought, and considering the tremendous talents of many others, I have decided that the person best suited to assume the position of Vice President of the United States is Senator J.D. Vance of the Great State of Ohio.” <a href="https://www.cnn.com/2024/07/15/politics/trump-vp-pick-jd-vance">CNN, July 15, 2024</a> <a href="https://www.reuters.com/world/us/trump-picks-onetime-critic-jd-vance-now-fierce-defender-his-running-mate-2024-07-15/">Reuters, July 15, 2024</a></p>
-          <p>CNN, citing sources familiar with the process, reported that the finalists also included Sen. Marco Rubio of Florida and Gov. Doug Burgum of North Dakota; that Trump formally offered Vance the job by phone about 20 minutes before the Truth Social post; and that the two had met at Mar-a-Lago on Saturday, before the Butler rally. The same report said Vance’s supporters, “including Trump’s son Donald Trump Jr. and conservative media figure Tucker Carlson, had argued that Vance has the strongest relationship with Trump” among the finalists “and would be the most loyal selection.” <a href="https://www.cnn.com/2024/07/15/politics/trump-vp-pick-jd-vance">CNN, July 15, 2024</a></p>
+{read_more('''          <p>CNN, citing sources familiar with the process, reported that the finalists also included Sen. Marco Rubio of Florida and Gov. Doug Burgum of North Dakota; that Trump formally offered Vance the job by phone about 20 minutes before the Truth Social post; and that the two had met at Mar-a-Lago on Saturday, before the Butler rally. The same report said Vance’s supporters, “including Trump’s son Donald Trump Jr. and conservative media figure Tucker Carlson, had argued that Vance has the strongest relationship with Trump” among the finalists “and would be the most loyal selection.” <a href="https://www.cnn.com/2024/07/15/politics/trump-vp-pick-jd-vance">CNN, July 15, 2024</a></p>''')}
         </div>
       </div>
     </section>
@@ -240,9 +307,23 @@ def opposition_page(updated: str) -> str:
                 'Parent account: <a href="https://x.com/%s">@%s</a> (%s followers)'
                 % (esc(related["handle"]), esc(related["handle"]), esc(_fmt_followers(related.get("followers"))))
             )
-        notes = esc(o.get("source_notes") or "")
+        notes_plain = o.get("source_notes") or ""
+        if len(notes_plain) > 220:
+            notes_html = collapse_plain(notes_plain, limit=220, tag="p", cls="auth")
+        elif notes_plain:
+            notes_html = '<p class="auth">%s</p>' % esc(notes_plain)
+        else:
+            notes_html = ""
         if related_html:
-            notes = (notes + " " + related_html).strip()
+            notes_html += '<p class="auth">%s</p>' % related_html
+        if len(criticisms) > 2 or sum(len(c) for c in criticisms) > 360:
+            first_lis = "".join("<li>%s</li>" % esc(c) for c in criticisms[:1])
+            rest_lis = "".join("<li>%s</li>" % esc(c) for c in criticisms[1:])
+            critiques_html = '<ul class="critiques">%s</ul>' % first_lis
+            if rest_lis:
+                critiques_html += read_more('<ul class="critiques">%s</ul>' % rest_lis)
+        else:
+            critiques_html = '<ul class="critiques">%s</ul>' % lis
         last = esc(o.get("last_seen_pt") or o.get("last_seen") or "")
         rank = esc(o.get("rank"))
         cards.append(
@@ -258,14 +339,14 @@ def opposition_page(updated: str) -> str:
             '</p>'
             '<h3>%s</h3>'
             '<p class="summary">%s</p>'
-            '<ul class="critiques">%s</ul>'
+            '%s'
             '<p class="opp-links">%s</p>'
-            '<p class="auth">%s</p>'
+            '%s'
             '</div></div></article>'
             % (
                 esc(side), esc(side), rank, rank, esc(side), _side_label(side),
                 esc(fol), esc(item_label), last, title, esc(o.get("affiliation") or ""),
-                lis, link_html, notes,
+                critiques_html, link_html, notes_html,
             )
         )
 
@@ -276,6 +357,16 @@ def opposition_page(updated: str) -> str:
     n_uns = counts.get("unspecified", 0)
     uns_det = (" · %s unspecified" % n_uns) if n_uns else ""
     snap = esc(doc.get("follower_snapshot_pt") or updated)
+    intro_more = read_more(
+        "<p>The list is drawn from the tracker, from prominent replies and quote-posts under those items (including the Matt Walsh poll thread), and from a fresh search on the right and the left.</p>"
+        '<p class="fine">Last updated %s. Follower counts are X public metrics from %s. Only accounts and items that were actually opened are listed. Affiliations are taken from bios, official pages, or the reporting cited below; none are invented.</p>'
+        % (esc(updated), snap)
+    )
+    rank_more = read_more(
+        "<p>The list is assembled from three sources: (a) authors of critical items already in the tracker; (b) prominent accounts in the replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026; and (c) a fresh X and web search for high-reach critics on the right and the left. Ranking score equals rank reach times (1 + 0.25 × (critical items − 1)). For CUFI Action Fund, rank reach is the parent @CUFI follower count, which is disclosed on that card, because the Action Fund account itself is small.</p>"
+        "<p>“Right” and “left” describe public office, stated affiliation, or an outlet’s obvious editorial identity. “Institutional” is used for organizations that are not primarily a U.S. party office — here, the Anti-Defamation League and The Jerusalem Post. “Unspecified” is used only when the bio and opened posts do not state a partisan identity.</p>"
+        "<p>This is not a complete census. A missing name is not a finding that someone is not a critic. Matt Walsh is not listed; his talent poll included Vance and did not attack him. Tomi Lahren commented in that thread with a preference for Ron DeSantis, which is not treated as a critique of Vance. Sen. Tom Cotton was described in Jewish Insider as taking a “veiled swipe” without naming Vance, so he is not listed. News outlets that only reported criticism are not listed as critics; signed editorials, signed columns, and organizational statements are. Michael Doran’s Hudson Institute essay is listed; a later X post in which he said it is “simply false” that he is “against JD Vance” is noted on his card.</p>"
+    )
     script = """
   <script>
     (function () {
@@ -308,8 +399,8 @@ def opposition_page(updated: str) -> str:
     <header class="page-hero">
       <p class="kicker">The other side of the aisle — and of the party</p>
       <h1>The Critics’ Board</h1>
-      <p>A running list of high-reach critics — accounts with 50,000 or more X followers, or people and groups tied to a major organization or elected office — drawn from the tracker, from prominent replies and quote-posts under those items (including the Matt Walsh poll thread), and from a fresh search on the right and the left.</p>
-      <p class="fine">Last updated %s. Follower counts are X public metrics from %s. Only accounts and items that were actually opened are listed. Affiliations are taken from bios, official pages, or the reporting cited below; none are invented.</p>
+      <p>A running list of high-reach critics — accounts with 50,000 or more X followers, or people and groups tied to a major organization or elected office.</p>
+      %s
     </header>
 
     <div class="metrics">
@@ -338,13 +429,11 @@ def opposition_page(updated: str) -> str:
     <section class="block">
       <h2>How We Rank Them</h2>
       <p>A critic is listed only if we opened a post, interview, editorial, or official statement, and if the account has at least 50,000 X followers or is tied to a major media outlet, think tank, campaign, PAC, party body, elected office, or advocacy organization.</p>
-      <p>The list is assembled from three sources: (a) authors of critical items already in the tracker; (b) prominent accounts in the replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026; and (c) a fresh X and web search for high-reach critics on the right and the left. Ranking score equals rank reach times (1 + 0.25 × (critical items − 1)). For CUFI Action Fund, rank reach is the parent @CUFI follower count, which is disclosed on that card, because the Action Fund account itself is small.</p>
-      <p>“Right” and “left” describe public office, stated affiliation, or an outlet’s obvious editorial identity. “Institutional” is used for organizations that are not primarily a U.S. party office — here, the Anti-Defamation League and The Jerusalem Post. “Unspecified” is used only when the bio and opened posts do not state a partisan identity.</p>
-      <p>This is not a complete census. A missing name is not a finding that someone is not a critic. Matt Walsh is not listed; his talent poll included Vance and did not attack him. Tomi Lahren commented in that thread with a preference for Ron DeSantis, which is not treated as a critique of Vance. Sen. Tom Cotton was described in Jewish Insider as taking a “veiled swipe” without naming Vance, so he is not listed. News outlets that only reported criticism are not listed as critics; signed editorials, signed columns, and organizational statements are. Michael Doran’s Hudson Institute essay is listed; a later X post in which he said it is “simply false” that he is “against JD Vance” is noted on his card.</p>
+      %s
     </section>
   </article>
 %s
-""" % (esc(updated), snap, n, n_right, n_left, n_inst, uns_det, "".join(cards), script)
+""" % (intro_more, n, n_right, n_left, n_inst, uns_det, "".join(cards), rank_more, script)
     return page_shell(
         "The Critics’ Board — JD Vance Tracker",
         "High-reach critics of JD Vance, including officials and commentators on the right and the left, with follower counts, affiliations, and links to opened posts and articles.",
@@ -530,12 +619,14 @@ def media_page(updated: str) -> str:
       <div class="photo-credits" id="photo-credits">
         <h2>Photo credits</h2>
         <p class="credits-note">Eleven photographs are U.S. federal government works in the public domain (17 U.S.C. § 105). Four are used under Creative Commons licenses, with the author’s name and a link to the license as required. Videos and social posts on this page are official embeds, not copies of news-outlet media.</p>
-        <ul>
-          %s
-        </ul>
-        <p class="credits-note"><a href="images/CREDITS.md">Full credits file</a></p>
+        %s
       </div>
-""" % ("\n          ".join(credit_items))
+""" % read_more(
+        "<ul>\n          "
+        + "\n          ".join(credit_items)
+        + "\n        </ul>"
+        + '<p class="credits-note"><a href="images/CREDITS.md">Full credits file</a></p>'
+    )
 
     videos = [
         {
