@@ -613,7 +613,7 @@ def fav_section(polls) -> str:
 
     return f"""
     <section class="block" id="favorability">
-      <h2>Favorability</h2>
+      <h2>How America Sees the VP</h2>
       <p class="lede">National favorable / unfavorable. Only polls from pages opened for this update are listed. A simple unweighted average of the 10 polls in the RCP table matches RCP’s published average: {avg['favorable']}% favorable, {avg['unfavorable']}% unfavorable (net {net_label(avg['net'])}). The Hill/DDHQ estimate ({hill['favorable']} / {hill['unfavorable']}, net {net_label(hill['net'])}, as of {fmt_md(hill['as_of'])}) is more unfavorable because it folds in adult-universe splits.</p>
       <div class="scroll">
         <table>
@@ -703,7 +703,7 @@ def primary_section(polls_2028) -> str:
     )
     return f"""
     <section class="block" id="primary">
-      <h2>2028 GOP primary</h2>
+      <h2>The 2028 Race</h2>
       <p class="lede">National Republican nomination polls opened for this update. The simple average is an unweighted mean of each candidate’s reported share. These {_n2028_word} polls use different universes and are not strictly comparable. A RealClearPolitics 2028 nomination page was blocked (403) and was not used. Other candidates are shown only where a poll reported them; they are not averaged.</p>
       <div class="bars">{''.join(bars)}</div>
       <div class="metrics" style="grid-template-columns:repeat(3,1fr);">
@@ -783,7 +783,7 @@ def ticket_section(polls_ticket) -> str:
     writeup = f' · <a href="{esc(src2)}">Daily Mail write-up</a>' if src2 else ""
     return f"""
     <section class="block" id="ticket">
-      <h2>Unity ticket</h2>
+      <h2>The Unity Ticket Watch</h2>
       <p class="lede">{esc(polls_ticket.get('caveat') or '')} Only one opened poll qualifies, so there is no multi-poll average. No poll was found that tested a Rubio–Vance ticket (Rubio for president) or a general-election matchup of a joint ticket against Democrats.</p>
       <div class="bars">{''.join(bars)}</div>
       <div class="metrics" style="grid-template-columns:repeat(3,1fr);">
@@ -888,7 +888,7 @@ def rival_section(rivals) -> str:
         )
     return f"""
     <section class="block" id="rivals">
-      <h2>Rival watch</h2>
+      <h2>Keeping Tabs on the Field</h2>
       <p class="lede">The top five Republican 2028 contenders by this tracker’s national primary polling average, re-ranked each update, with notable news and large-account posts about each rival. Stance is toward the rival, not toward Vance.</p>
       <div class="scroll">
         <table>
@@ -923,7 +923,7 @@ def sentiment_section(entries, s) -> str:
     don_likes = fmt_num((don.get("engagement") or {}).get("likes")) if don else "—"
     return f"""
     <section class="block" id="sentiment">
-      <h2>Sentiment overview</h2>
+      <h2>The Mood on X</h2>
       <p class="lede">Donald Trump Jr.’s endorsement of Vance’s midterm postmortem ({don_views} views, {don_likes} likes) outweighs every critical item combined. The chart below therefore uses likes + reposts + quotes and excludes both Vance’s own post and that endorsement, so the theme-by-theme debate is visible. Replies are omitted because they mix support and pushback.</p>
       <div class="legend"><span><span class="swatch crit"></span> Critical</span><span><span class="swatch supp"></span> Supportive (ex-Trump Jr. postmortem)</span><span>Units: likes + reposts + quotes</span></div>
       <div class="two">
@@ -984,7 +984,7 @@ def feed_section(entries) -> str:
         )
     return f"""
     <section class="block" id="feed">
-      <h2>Latest posts &amp; articles</h2>
+      <h2>What’s Being Said</h2>
       <p class="lede">Items actually opened or returned by tools this update. Every source name is a live link. Followers and engagement are as returned; blank where unknown. Summaries are factual, not editorial endorsements. ER is (likes + reposts + replies + quotes) / followers. <span id="feed-count"></span></p>
       <div class="filters" role="group" aria-label="Filter by stance">
         <button class="filter active" type="button" data-filter-stance="all" aria-pressed="true">All</button>
@@ -1042,8 +1042,8 @@ def top3_section(top3) -> str:
         )
     return f"""
     <section class="block" id="top3">
-      <h2>Top 3 this week</h2>
-      <p class="lede">The three biggest JD Vance headlines and official posts over the past few days ({esc(window)}). Each links directly to the verified report or post.</p>
+      <h2>JD’s Top 3 This Week</h2>
+      <p class="lede">The three biggest JD Vance headlines and official posts of the past few days ({esc(window)}). Each one links straight to the verified report or post.</p>
       <div class="top3-grid">
         {''.join(cards)}
       </div>
@@ -1054,13 +1054,13 @@ def top3_section(top3) -> str:
 def index_meme_section() -> str:
     return """
     <section class="block" id="lighter">
-      <h2>Media &amp; official meme</h2>
+      <h2>A Lighter Moment from the VP</h2>
       <div class="meme-spot">
         <div class="meme-spot-grid">
           <div>
             <h3>Official X post from JD Vance</h3>
             <p>A lighter moment from Vice President Vance’s own feed on Nov. 23, 2026 (8,280 likes, 839K views). Only memes posted directly by JD Vance or official accounts are embedded here, with full credit and original links.</p>
-            <p class="fine">Credit: JD Vance (<code>@JDVance</code>) · Nov. 23, 2026 · <a href="https://x.com/JDVance/status/2125007337433838065">Original X post</a> · <a href="media.html">Open full Media gallery &amp; memes</a></p>
+            <p class="fine">Credit: JD Vance (<code>@JDVance</code>) · Nov. 23, 2026 · <a href="https://x.com/JDVance/status/2125007337433838065">Original X post</a> · <a href="media.html">Open VP’s Media Highlights</a></p>
           </div>
           <div>
             <blockquote class="twitter-tweet" data-dnt="true"><p lang="zxx" dir="ltr"><a href="https://t.co/dHqnOzNGrG">pic.twitter.com/dHqnOzNGrG</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/2125007337433838065?ref_src=twsrc%5Etfw">November 23, 2026</a></blockquote>
@@ -1074,7 +1074,7 @@ def index_meme_section() -> str:
 def methodology_section() -> str:
     return """
     <section class="block" id="methodology">
-      <h2>Methodology</h2>
+      <h2>How We Track It</h2>
       <p>This is an unofficial supporter site that tracks public polling and large-account posts and outlet coverage concerning Vice President JD Vance. It was independently created by supporters of JD Vance. It is not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House, and it is not a scientific sample of all public opinion. No funds are solicited or accepted.</p>
       <p>Items are included only when a source page or post was opened for this update. Every item has a source link. Follower counts and engagement figures are as returned by the source; they are left blank when unknown. Summaries are factual descriptions, not endorsements.</p>
       <p>X posts are generally from accounts with 50,000 or more followers, or from a notable official or outlet. Authenticity ratings (Likely organic, Mixed, or Signs of inauthentic amplification) are heuristics based on visible signals such as account age, follower and following mix, default avatars, digit handles, posting volume, duplicate wording, and engagement that is out of line with the account. They are not proof, and no specific person is labeled a bot.</p>
@@ -1117,17 +1117,17 @@ def build_html(entries_doc, polls, polls_2028, polls_ticket) -> str:
 {extra_pages.nav("tracker")}
   <section class="hero" aria-label="Introduction">
     <div class="hero-copy">
-      <p class="kicker">Unofficial polling &amp; coverage tracker</p>
+      <p class="kicker">The unofficial JD watch</p>
       <h1>JD Vance Tracker</h1>
       <p class="dek">Polls, large-account posts, and a sourced biography — after the Nov. 3, 2026 midterms.</p>
       <p class="updated">Last updated {esc(updated)}</p>
       <div class="hero-actions">
-        <a class="btn solid" href="#favorability">See the polls</a>
-        <a class="btn" href="bio.html">Read the biography</a>
-        <a class="btn" href="opposition.html">Top opposition</a>
-        <a class="btn" href="#rivals">Rival watch</a>
-        <a class="btn" href="myths.html">Myths vs. facts</a>
-        <a class="btn" href="media.html">Media &amp; memes</a>
+        <a class="btn solid" href="#favorability">See the scoreboard</a>
+        <a class="btn" href="bio.html">Read his story</a>
+        <a class="btn" href="opposition.html">The Critics</a>
+        <a class="btn" href="#rivals">The Field</a>
+        <a class="btn" href="myths.html">Myths, Meet Facts</a>
+        <a class="btn" href="media.html">VP’s Media Highlights</a>
       </div>
     </div>
     <div class="hero-photo">

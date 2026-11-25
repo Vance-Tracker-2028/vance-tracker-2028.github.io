@@ -25,12 +25,12 @@ FONTS = fonts()
 def nav(current: str, root: str = "") -> str:
     links = [
         ("index.html", "tracker", "Tracker"),
-        ("bio.html", "bio", "Biography"),
-        ("bio.html#critic-to-ally", "critic", "Critic to ally"),
-        ("myths.html", "myths", "Myths vs. facts"),
-        ("media.html", "media", "Media"),
-        ("opposition.html", "opposition", "Top opposition"),
-        ("index.html#favorability", "polls", "Polls"),
+        ("bio.html", "bio", "The Story"),
+        ("bio.html#critic-to-ally", "critic", "The Turn"),
+        ("myths.html", "myths", "Myths, Meet Facts"),
+        ("media.html", "media", "Highlights"),
+        ("opposition.html", "opposition", "The Critics"),
+        ("index.html#favorability", "polls", "The Scoreboard"),
     ]
     items = []
     for href, key, label in links:
@@ -45,18 +45,19 @@ def nav(current: str, root: str = "") -> str:
   </header>"""
 
 
-def footer(root: str = "") -> str:
+def footer(root: str = "", extra: str = "") -> str:
     return f"""
   <footer class="site">
     <div class="wrap">
-      <p class="disclaimer">Unofficial supporter site. Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted. Local photos are public-domain U.S. government works or Creative Commons–licensed with attribution.</p>
+      <p class="disclaimer">Unofficial supporter site. Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted.</p>
       <p>Polling and sentiment figures are recorded as published; authenticity ratings are heuristics, not proof.</p>
-      <p><a href="{root}index.html">Tracker</a> · <a href="{root}bio.html">Biography</a> · <a href="{root}myths.html">Myths vs. facts</a> · <a href="{root}media.html">Media</a> · <a href="{root}opposition.html">Top opposition</a> · <a href="{root}images/CREDITS.md">Photo credits</a></p>
+      {extra}
+      <p><a href="{root}index.html">Tracker</a> · <a href="{root}bio.html">The Story</a> · <a href="{root}myths.html">Myths, Meet Facts</a> · <a href="{root}media.html">Highlights</a> · <a href="{root}opposition.html">The Critics</a> · <a href="{root}media.html#photo-credits">Photo credits</a></p>
     </div>
   </footer>"""
 
 
-def page_shell(title: str, desc: str, current: str, body: str, root: str = "") -> str:
+def page_shell(title: str, desc: str, current: str, body: str, root: str = "", footer_extra: str = "") -> str:
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +71,7 @@ def page_shell(title: str, desc: str, current: str, body: str, root: str = "") -
 <body>
 {nav(current, root)}
 {body}
-{footer(root)}
+{footer(root, footer_extra)}
 </body>
 </html>
 """
@@ -80,8 +81,8 @@ def bio_page(updated: str) -> str:
     body = f"""
   <article class="wrap">
     <header class="page-hero">
-      <p class="kicker">Biography</p>
-      <h1>The arc of JD Vance</h1>
+      <p class="kicker">The story so far</p>
+      <h1>The Making of JD Vance</h1>
       <p>From Middletown and Jackson to the Marine Corps, Yale Law, a bestselling memoir, the Senate, and the vice presidency — and the public record of how he changed his mind about Donald Trump.</p>
       <p class="fine">Last updated {esc(updated)}. Personal details below are drawn from official biographies and contemporaneous reporting. Every factual claim is linked to a source.</p>
     </header>
@@ -92,7 +93,7 @@ def bio_page(updated: str) -> str:
         <figcaption class="caption">Official vice-presidential portrait, January 15, 2025. Photograph by Daniel Torok, The White House. Public domain. <a href="images/CREDITS.md">Credits</a></figcaption>
       </figure>
       <div>
-        <h2>Early life</h2>
+        <h2>Where It All Started</h2>
         <p>Vice President JD Vance “was born and raised in Middletown, Ohio,” a manufacturing town whose good jobs, the official White House biography says, disappeared over time, with his family among those who “suffered the effects.” He has described a childhood marked by financial strain, his mother’s struggle with addiction, and his father’s absence. His grandparents — “Mamaw” and “Papaw” — “filled [that void] with unwavering support and guidance.” <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a></p>
         <p>His family’s roots, and the summers he spent with them, run through Jackson, in eastern Kentucky’s Appalachia, a setting he later placed at the center of his memoir <cite>Hillbilly Elegy</cite>. In 2016 he told NPR that the book recalled “a childhood where poverty was ‘the family tradition.’” <a href="https://www.npr.org/2016/08/17/490328484/hillbilly-elegy-recalls-a-childhood-where-poverty-was-the-family-tradition">NPR, Aug. 17, 2016</a></p>
         <p>After graduating from Middletown High School, he enlisted in the United States Marine Corps, “serving for four years with a tour in Iraq,” then used the G.I. Bill to attend Ohio State University and later Yale Law School. <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a></p>
@@ -100,24 +101,24 @@ def bio_page(updated: str) -> str:
     </div>
 
     <section class="block" id="career">
-      <h2>Writer, investor, senator, vice president</h2>
+      <h2>The Road to the Vice Presidency</h2>
       <p>In 2016 Vance published <cite>Hillbilly Elegy: A Memoir of a Family and Culture in Crisis</cite>, which became a New York Times bestseller and, in 2020, a feature-film adaptation. <a href="https://www.theguardian.com/us-news/2021/jul/06/hillbilly-elegy-jd-vance-trump-republicans">The Guardian, July 6, 2021</a> (noting the prior year’s film adaptation). The official White House biography describes him after law school as “an investor in startups across the Midwest, and as the author of the bestselling memoir.” <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a></p>
       <p>In 2022 he was elected to the U.S. Senate from Ohio. In 2024, the White House biography says, “President Donald J. Trump extended JD the incredible honor of asking him to serve as the Vice-Presidential Nominee.” He took office as vice president in January 2025.</p>
     </section>
 
     <section class="block" id="family">
-      <h2>Usha Vance and their children</h2>
+      <h2>Usha and the Kids</h2>
       <p>Vance met his wife, Usha Chilukuri Vance, at Yale Law School. A Voice of America profile reports that she is “the daughter of Indian immigrants”; her parents, Krish and Lakshmi Chilukuri, are from Andhra Pradesh and later settled in San Diego, where she was born. She earned a bachelor’s degree from Yale, a master’s degree from the University of Cambridge, and a law degree from Yale Law, where the two met; they married about a year after graduating in 2013. After law school she clerked for Judge Brett Kavanaugh on the U.S. Court of Appeals for the D.C. Circuit and later for Chief Justice John Roberts. VOA, citing the memoir, notes that Vance called her his “Yale spirit guide” and wrote that he “fell hard” for her. She is, like her parents, a practicing Hindu. <a href="https://www.voanews.com/a/wife-of-trump-s-vp-pick-is-yale-law-graduate-daughter-of-indian-immigrants-/7702255.html">VOA, July 17, 2024</a> Clerkships are also recorded in a U.S. State Department biography. <a href="https://me.usembassy.gov/meet-second-lady-usha-vance/">U.S. Mission Montenegro, Jan. 24, 2025</a></p>
       <p>That January 2025 State Department biography named three children: sons Ewan and Vivek and daughter Mirabel. The current White House biography says the couple are “proud parents to four beautiful children.” <a href="https://www.whitehouse.gov/administration/jd-vance/">White House biography</a> In a statement reported on July 19, 2026, the Vances announced that a son, Alec Neel Vance, “was born this morning” at Walter Reed National Military Medical Center, and that “Usha and the baby are happy and healthy, and our kids are overjoyed to meet their little brother.” Reporting on the statement also gave the earlier children’s years of birth as Ewan, 2017; Vivek, 2020; and Mirabel, 2021. <a href="https://www.aljazeera.com/news/2026/7/19/us-vice-president-jd-vance-and-his-wife-announce-birth-of-fourth-child">Al Jazeera, July 19, 2026, citing AP and Reuters</a></p>
     </section>
 
     <section class="block" id="faith">
-      <h2>Catholic conversion</h2>
+      <h2>A Faith Journey</h2>
       <p>Vance was baptized and received into the Catholic Church on August 11, 2019, by the Dominican priest Father Henry Stephan at St. Gertrude Priory in Cincinnati. In an interview published the same day he said: “I became persuaded over time that Catholicism was true.” He added that he “was raised Christian, but never had a super-strong attachment to any denomination, and was never baptized,” and that when he became more interested in faith he “started out with a clean slate, and looked at the church that appealed most to me intellectually.” He chose St. Augustine as his patron saint. <a href="https://www.theamericanconservative.com/j-d-vance-becomes-catholic/">Rod Dreher, The American Conservative, Aug. 11, 2019</a></p>
     </section>
 
     <section class="block" id="critic-to-ally">
-      <h2>From critic to ally</h2>
+      <h2>From Critic to Running Mate</h2>
       <p class="lede">Vance’s opposition to Donald Trump in 2016 is a matter of public record — including a widely quoted magazine essay, a television interview, and a private message later published by a former roommate. So are his later explanations, in his own words, of when and why he changed his mind. The quotations below are his, as reported by the cited outlets. They are not paraphrases dressed as quotations.</p>
 
       <h3>What he said in 2016</h3>
@@ -140,7 +141,7 @@ def bio_page(updated: str) -> str:
     </section>
 
     <section class="block" id="vp-selection">
-      <h2>How he was chosen as vice president</h2>
+      <h2>The Pick</h2>
       <div class="split">
         <figure>
           <img src="images/vance-senate-portrait.jpg" alt="Official U.S. Senate portrait of JD Vance, 118th Congress, 2023" width="960" height="1200">
@@ -154,11 +155,11 @@ def bio_page(updated: str) -> str:
     </section>
 
     <section class="block" id="lighter-moment">
-      <h2>Online humor &amp; memes</h2>
+      <h2>In on the Joke</h2>
       <div class="meme-spot">
         <div class="meme-spot-grid">
           <div>
-            <h3>In on the joke</h3>
+            <h3>The pointing meme</h3>
             <p>Vance has occasionally leaned into viral internet edits of himself on his personal X account. On March 8, 2025, he posted a face-edited version of the Leonardo DiCaprio pointing meme — a post that drew over 502,000 likes and 154 million views.</p>
             <p class="fine">Posted by JD Vance (<code>@JDVance</code>) on March 8, 2025. Embedded via official X embed. <a href="https://x.com/JDVance/status/1898372454235451694">Original X post</a> · <a href="media.html#memes">See more official memes</a></p>
           </div>
@@ -172,7 +173,7 @@ def bio_page(updated: str) -> str:
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 """
     return page_shell(
-        "Biography — JD Vance Tracker",
+        "The Making of JD Vance — JD Vance Tracker",
         "A sourced biography of JD Vance: early life, Usha Vance and their children, his Catholic conversion, his 2016 criticism of Donald Trump and later explanations, and the 2024 vice-presidential selection.",
         "bio",
         body,
@@ -305,8 +306,8 @@ def opposition_page(updated: str) -> str:
     body = """
   <article class="wrap">
     <header class="page-hero">
-      <p class="kicker">Top opposition</p>
-      <h1>Who is criticizing JD Vance</h1>
+      <p class="kicker">The other side of the aisle — and of the party</p>
+      <h1>The Critics’ Board</h1>
       <p>A running list of high-reach critics — accounts with 50,000 or more X followers, or people and groups tied to a major organization or elected office — drawn from the tracker, from prominent replies and quote-posts under those items (including the Matt Walsh poll thread), and from a fresh search on the right and the left.</p>
       <p class="fine">Last updated %s. Follower counts are X public metrics from %s. Only accounts and items that were actually opened are listed. Affiliations are taken from bios, official pages, or the reporting cited below; none are invented.</p>
     </header>
@@ -319,7 +320,7 @@ def opposition_page(updated: str) -> str:
     </div>
 
     <section class="block">
-      <h2>Ranked list</h2>
+      <h2>Ranked by Reach</h2>
       <p>Ranked by reach and frequency: follower count times a modest bump for repeat critical items. The formula and exceptions are in the methodology below.</p>
       <div class="filters" role="group" aria-label="Filter by side">
         <button class="filter active" type="button" data-side="all" aria-pressed="true">All</button>
@@ -335,7 +336,7 @@ def opposition_page(updated: str) -> str:
     </section>
 
     <section class="block">
-      <h2>Methodology</h2>
+      <h2>How We Rank Them</h2>
       <p>A critic is listed only if we opened a post, interview, editorial, or official statement, and if the account has at least 50,000 X followers or is tied to a major media outlet, think tank, campaign, PAC, party body, elected office, or advocacy organization.</p>
       <p>The list is assembled from three sources: (a) authors of critical items already in the tracker; (b) prominent accounts in the replies and quote-posts under those items, including the Matt Walsh poll thread of November 17–18, 2026; and (c) a fresh X and web search for high-reach critics on the right and the left. Ranking score equals rank reach times (1 + 0.25 × (critical items − 1)). For CUFI Action Fund, rank reach is the parent @CUFI follower count, which is disclosed on that card, because the Action Fund account itself is small.</p>
       <p>“Right” and “left” describe public office, stated affiliation, or an outlet’s obvious editorial identity. “Institutional” is used for organizations that are not primarily a U.S. party office — here, the Anti-Defamation League and The Jerusalem Post. “Unspecified” is used only when the bio and opened posts do not state a partisan identity.</p>
@@ -345,7 +346,7 @@ def opposition_page(updated: str) -> str:
 %s
 """ % (esc(updated), snap, n, n_right, n_left, n_inst, uns_det, "".join(cards), script)
     return page_shell(
-        "Top opposition — JD Vance Tracker",
+        "The Critics’ Board — JD Vance Tracker",
         "High-reach critics of JD Vance, including officials and commentators on the right and the left, with follower counts, affiliations, and links to opened posts and articles.",
         "opposition",
         body,
@@ -508,30 +509,33 @@ def media_page(updated: str) -> str:
         },
     ]
     photo_cards = []
+    credit_items = []
     for p in photos:
-        if p["license_url"]:
-            lic_html = '<a href="%s">%s</a>' % (esc(p["license_url"]), esc(p["license"]))
-        else:
-            lic_html = esc(p["license"])
+        hover = "%s — %s · %s" % (p["title"], p["author"], p["license"])
         photo_cards.append(
-            """<figure class="media-card">
-              <div class="media-frame"><img src="images/%s" alt="%s" loading="lazy"></div>
-              <figcaption class="media-cap">
-                <p class="media-title">%s</p>
-                <p class="media-meta">%s · %s</p>
-                <p class="media-lic">License: %s · <a href="%s">Source &amp; file page</a></p>
-              </figcaption>
+            """<figure class="media-card" title="%s">
+              <div class="media-frame"><img src="images/%s" alt="%s" title="%s" loading="lazy"></div>
             </figure>"""
-            % (
-                esc(p["file"]),
-                esc(p["alt"]),
-                esc(p["title"]),
-                esc(p["date"]),
-                esc(p["author"]),
-                lic_html,
-                esc(p["source_url"]),
-            )
+            % (esc(hover), esc(p["file"]), esc(p["alt"]), esc(hover))
         )
+        if p["license_url"]:
+            lic_note = '<a href="%s">%s</a>' % (esc(p["license_url"]), esc(p["license"]))
+        else:
+            lic_note = "U.S. government work, public domain"
+        credit_items.append(
+            "<li><strong>%s</strong> (%s) — %s · %s · <a href=\"%s\">Source</a></li>"
+            % (esc(p["title"]), esc(p["date"]), esc(p["author"]), lic_note, esc(p["source_url"]))
+        )
+    credits_html = """
+      <div class="photo-credits" id="photo-credits">
+        <h2>Photo credits</h2>
+        <p class="credits-note">Eleven photographs are U.S. federal government works in the public domain (17 U.S.C. § 105). Four are used under Creative Commons licenses, with the author’s name and a link to the license as required. Videos and social posts on this page are official embeds, not copies of news-outlet media.</p>
+        <ul>
+          %s
+        </ul>
+        <p class="credits-note"><a href="images/CREDITS.md">Full credits file</a></p>
+      </div>
+""" % ("\n          ".join(credit_items))
 
     videos = [
         {
@@ -579,30 +583,30 @@ def media_page(updated: str) -> str:
         )
 
     body = """
-  <div class="hero-disclaimer">
+  <div class="hero-disclaimer compact">
     <div class="wrap">
       <p>Unofficial supporter site. Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted.</p>
     </div>
   </div>
   <article class="wrap">
     <header class="page-hero">
-      <p class="kicker">Media gallery</p>
-      <h1>Photos, official videos &amp; memes</h1>
-      <p>A curated gallery of JD Vance from his Senate and Marine Corps service through the vice presidency, paired with official White House YouTube speeches and embeds from his official X accounts.</p>
-      <p class="fine">Last updated __UPDATED__. <strong>Reuse &amp; licensing note:</strong> Images on this page are used under their stated licenses — U.S. federal government public-domain works (17 U.S.C. § 105) or Creative Commons–licensed works on Wikimedia Commons with attribution. Videos and social posts are embedded directly from official White House and JD Vance channels, never reposted from copyrighted news outlets. <a href="images/CREDITS.md">Full credits list</a></p>
+      <p class="kicker">The unofficial gallery</p>
+      <h1>JD, On Camera</h1>
+      <p>JD Vance from the Marine Corps and the Senate through the vice presidency — official photos, White House speeches, and the memes he posted himself.</p>
+      <p class="fine">Last updated __UPDATED__. Photos are U.S. government public-domain works or Creative Commons images, credited in the footer. Videos and posts are official White House and JD Vance embeds.</p>
     </header>
 
     <section class="block" id="photos">
-      <h2>Permitted photographs (15)</h2>
-      <p class="lede">Every photograph below is stored in the repository with its author, date, license, and source link. Eleven are public-domain U.S. government works and four carry Creative Commons attribution licenses.</p>
+      <h2>VP’s Media Highlights</h2>
+      <p class="lede">Fifteen photographs, from official portraits to the trail and the vice presidency. Hover a picture for its title; full credits are in the footer.</p>
       <div class="media-grid">
         __PHOTOS__
       </div>
     </section>
 
     <section class="block" id="videos">
-      <h2>Official White House videos &amp; X clips</h2>
-      <p class="lede">Speeches, press briefings, and official trip video embedded from The White House YouTube channel and Vice President Vance’s official X accounts.</p>
+      <h2>The Official Reel</h2>
+      <p class="lede">Speeches, press briefings, and official trip video from The White House YouTube channel and Vice President Vance’s official X accounts.</p>
       <div class="video-grid">
         __VIDEOS__
       </div>
@@ -621,7 +625,7 @@ def media_page(updated: str) -> str:
     </section>
 
     <section class="block" id="memes">
-      <h2>Official memes &amp; lighter moments</h2>
+      <h2>When the VP Memes</h2>
       <p class="lede">Only memes posted directly by JD Vance on his official <code>@JDVance</code> account, embedded via X’s official embed and linked back to each original post.</p>
       <div class="embed-grid">
         <div class="embed-card">
@@ -650,10 +654,11 @@ def media_page(updated: str) -> str:
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 """.replace("__UPDATED__", esc(updated)).replace("__PHOTOS__", "".join(photo_cards)).replace("__VIDEOS__", "".join(video_cards))
     return page_shell(
-        "Media — JD Vance Tracker",
-        "Permitted public-domain and Creative Commons photographs of JD Vance, official White House videos, and official X memes with full credits.",
+        "VP’s Media Highlights — JD Vance Tracker",
+        "Official and Creative Commons photographs of JD Vance, White House videos, and official X memes, with photo credits in the footer.",
         "media",
         body,
+        footer_extra=credits_html,
     )
 
 
