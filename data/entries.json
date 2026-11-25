@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24",
+  "last_updated": "2026-11-25",
   "timezone": "America/Los_Angeles",
   "entries": [
     {
@@ -2786,7 +2786,378 @@
         "evidence": "Heuristic only, not proof. Account created July 2010 (509,832 followers, following 1,586). Interactions (2,981) are 0.58% of followers and 0.9% of views (326,222); 229 bookmarks suggest a tech audience. Replies were not sampled for this item."
       },
       "audience_sample": "Replies not sampled; the reaction is covered under the Laura Loomer item (which quotes the Dan Burmawi post about Masad) and Mark Levin’s quote of it."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 12:56 PM PT",
+      "source": "Laura Loomer",
+      "handle": "LauraLoomer",
+      "type": "X post",
+      "followers": 1932802,
+      "theme": "Israel / Amjad Masad meeting",
+      "summary": "Loomer (1,932,802 followers) quoted Drop Site News’ report on her campaign against Replit CEO Amjad Masad: “Why is the Vice President meeting with a Jordanian born Muslim who traffics in Jew hatred and works with Tech for Palestine…? …@VP should be leading the charge to mass deport Muslims like Amjad Masad from our country… Between this, the meeting with Muslim Brotherhood operative Abdul El Sayed and the refusal to condemn Tucker Qatarlson, I’m wondering how much worse things can get.” She followed up Nov 25 with posts urging Rubio to “DEPORT” Masad (5,213 likes) and asking the Secretary of War about a $50,000 Replit contract. Her characterizations of Masad and El-Sayed are her claims, not verified here. Per The Hill and USA Today (Nov 19–20), Vance’s office has reached out to set up a meeting with Sen.-elect El-Sayed; no date had been reported.",
+      "engagement": {
+        "likes": 1157,
+        "reposts": 340,
+        "replies": 70,
+        "quotes": 15,
+        "bookmarks": 54,
+        "views": 48369,
+        "interactions": 1582,
+        "engagement_ex_replies": 1512,
+        "followers": 1932802,
+        "engagement_rate_vs_followers_pct": 0.08,
+        "reply_to_like_pct": 6.1,
+        "engagement_rate_vs_views_pct": 3.27
+      },
+      "url": "https://x.com/LauraLoomer/status/2125332815055032732",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created March 2012 (1,932,802 followers, following 7,934). Interactions (1,582) are 0.08% of followers and 3.27% of views (48,369). Consistent with her earlier tracker items. Quote posts include many reposts of one quote by Ava Armstrong and of one by Ramin Parsa (repeated text from reposts, not distinct accounts writing the same words). The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened mostly agreed and turned on Vance (“VP Vance has become an enemy to the Americans and especially Jews and Israel”; “JD is a very weak ‘leader’ I stand with Marco Rubio”; “Vp Vance is a Muslim bootlicker… A Peter thiel creation”), a few defended him (“Because President Trump asked him to”) or attacked Loomer. Prominent quote: Ava Armstrong (@MsAvaArmstrong, 277,845; MAGA author account, no stated organization) — critical: “I’m having serious misgivings about Vance and his ‘friendship’ with Tucker Carlson and Islam ☪️ WTF is going on?” No other 50,000+ or major-organization accounts among the 25 replies and 25 quotes opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 12:08 PM PT",
+      "source": "Drop Site News",
+      "handle": "DropSiteNews",
+      "type": "X post",
+      "followers": 499172,
+      "theme": "Israel / Amjad Masad meeting",
+      "summary": "Independent news outlet (499,172 followers) reported: “Far-right activist Laura Loomer, a Trump ally whose online campaigns have preceded the firing of administration officials, is demanding Secretary of State Marco Rubio deport Palestinian-American Replit CEO Amjad Masad… Masad… met with Vice President JD Vance on Friday to discuss AI and cybersecurity.” News framing critical of Loomer’s campaign; it does not comment on Vance directly. Logged as a counter to the Loomer items.",
+      "engagement": {
+        "likes": 429,
+        "reposts": 81,
+        "replies": 25,
+        "quotes": 6,
+        "bookmarks": 56,
+        "views": 103607,
+        "interactions": 541,
+        "engagement_ex_replies": 516,
+        "followers": 499172,
+        "engagement_rate_vs_followers_pct": 0.11,
+        "reply_to_like_pct": 5.8,
+        "engagement_rate_vs_views_pct": 0.52
+      },
+      "url": "https://x.com/DropSiteNews/status/2125320617272422911",
+      "added_on": "2026-11-25",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created April 2024 (499,172 followers, following 121). Interactions (541) are 0.11% of followers and 0.52% of views (103,607). Outlet account; 81 reposts and 6 quotes. Replies opened were few and mostly an off-topic argument."
+      },
+      "audience_sample": "Replies opened (a handful) were an argument between pro-Israel and pro-Palestinian accounts, including antisemitic abuse from a 3-follower account created August 2026. No 50,000+ or major-organization accounts among the replies opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 1:51 PM PT",
+      "source": "Cynthia Holt",
+      "handle": "Ghostofcynthia",
+      "type": "X post",
+      "followers": 136817,
+      "theme": "El-Sayed meeting / Tucker Carlson",
+      "summary": "Pro-Trump commentator (136,817 followers; bio “Lesbian. Mom. Trump supporter.”) asked “why is @JDVance meeting with” Sen.-elect Abdul El-Sayed (using a slur), adding: “Unless President Trump demanded he go meet [him], there’s no excuse. I’m getting a bit tired of JD’s optics and his messaging. Hanging around that spineless snake @TuckerCarlson is clearly rubbing off on him… This is just my perception.” Vance’s office arranged the El-Sayed meeting (The Hill, Nov 20); Trump said Nov 24 he would also meet El-Sayed (New York Post).",
+      "engagement": {
+        "likes": 1027,
+        "reposts": 226,
+        "replies": 110,
+        "quotes": 7,
+        "bookmarks": 6,
+        "views": 8807,
+        "interactions": 1370,
+        "engagement_ex_replies": 1260,
+        "followers": 136817,
+        "engagement_rate_vs_followers_pct": 1.0,
+        "reply_to_like_pct": 10.7,
+        "engagement_rate_vs_views_pct": 15.56
+      },
+      "url": "https://x.com/Ghostofcynthia/status/2125346493749952682",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created June 2024 (136,817 followers, following 32,039). Interactions (1,370) are 1.0% of followers and 15.56% of views (8,807). Young account (2024) following 32,039 accounts, a follow-back pattern; 226 reposts on 1,027 likes. The 25 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened mostly agreed (“As Vance continues to curry favor with people who hate the United States, Jews and Israel… The snake should resign”; “I can’t vote for him if he supports Tucker”; “Pence Part Deux”), with some pushback (“Actually, Trump stated he would meet with the incoming senator, so… that’s on Trump”; “I’m so f—ing over you… attacking jd”). Quote posts (7) were also mostly critical. No 50,000+ or major-organization accounts among the 25 replies and 7 quotes opened."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 4:33 AM PT",
+      "source": "C14 News English (Sid Rosenberg interview)",
+      "handle": "c14english",
+      "type": "X post",
+      "followers": 267180,
+      "theme": "Israel / Tucker Carlson",
+      "summary": "Israel’s Channel 14 English account (267,180 followers) posted a clip of WABC radio host Sid Rosenberg: “Marco Rubio is a better guy… J.D. Vance once again took a shot at Israel. He didn’t have to… and showed that he’s disloyal to the president of the United States.” Rosenberg says Vance ignored invitations onto his show and that “Anybody that can call Tucker Carlson a friend is not a friend of the Jews, is not a friend of Israel.”",
+      "engagement": {
+        "likes": 30,
+        "reposts": 10,
+        "replies": 5,
+        "quotes": 2,
+        "bookmarks": 2,
+        "views": 2018,
+        "interactions": 47,
+        "engagement_ex_replies": 42,
+        "followers": 267180,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 16.7,
+        "engagement_rate_vs_views_pct": 2.33
+      },
+      "url": "https://x.com/c14english/status/2125568433349898419",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created July 2016 (267,180 followers, following 85). Interactions (47) are 0.02% of followers and 2.33% of views (2,018). Low absolute engagement (47 interactions) for an outlet account; nothing suggesting coordination."
+      },
+      "audience_sample": "Only 5 replies; those opened were off-topic (Iran). No 50,000+ or major-organization accounts among replies opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 8:57 AM PT",
+      "source": "Sam Stein (The Bulwark)",
+      "handle": "samstein",
+      "type": "X post",
+      "followers": 505847,
+      "theme": "2028 / electability (focus group)",
+      "summary": "Bulwark/MSNBC journalist (505,847 followers) quoted a Biden-to-Trump voter from a July 2026 focus group — “It definitely seems like something’s off with him… And I can’t, like, pinpoint exactly what that is.” — and wrote: “A Focus Group of swing voters weigh in on JD Vance and it’s not great.” The linked piece was not opened.",
+      "engagement": {
+        "likes": 540,
+        "reposts": 74,
+        "replies": 20,
+        "quotes": 9,
+        "bookmarks": 62,
+        "views": 42035,
+        "interactions": 643,
+        "engagement_ex_replies": 623,
+        "followers": 505847,
+        "engagement_rate_vs_followers_pct": 0.13,
+        "reply_to_like_pct": 3.7,
+        "engagement_rate_vs_views_pct": 1.53
+      },
+      "url": "https://x.com/samstein/status/2125272633239355415",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created July 2008 (505,847 followers, following 1,261). Interactions (643) are 0.13% of followers and 1.53% of views (42,035). Long-standing journalist account (2008); 62 bookmarks. The 25 replies opened were mostly unique, but one account (@OnGodNoCaPpp, 552 followers) posted 11 abusive replies."
+      },
+      "audience_sample": "Replies opened mostly agreed (“He’s a lying chameleon”; “He is extremely odd and socially awkward”; “He never looks comfortable in his own skin”), with some defense (“Just wait until he actually starts campaigning. His policies are pro worker”) and one account repeatedly attacking other repliers. Prominent: Pedro Gonzalez (@emeriticus, 174,929; Contra newsletter, writes for The Nation, Spectator) replied “😂” (stance unclear). Quote posts (11) were critical, e.g., “Vance getting his ass handed to him against Shapiro would be how the GOP might learn.” No other 50,000+ or major-organization accounts."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 11:46 AM PT",
+      "source": "Richard Hanania",
+      "handle": "RichardHanania",
+      "type": "X post",
+      "followers": 230527,
+      "theme": "Stephen Miller",
+      "summary": "Writer (230,527 followers; columns at UnHerd, Boston Globe) quoted The Bulwark’s Jonathan V. Last (“Stephen Miller 2028”): “When Trump looks at Vance and Rubio, he sees vultures salivating over his carcass.... When Trump looks at Stephen Miller, he sees a guy who would volunteer to be buried in the tomb with the pharaoh.” The Bulwark (@BulwarkOnline, 248,911) promoted the same piece: “Trump watched JD Vance and Marco Rubio and decided he needs a fallback option. The Plan C is Stephen Miller.” Follows Ann Coulter’s endorsement of Miller over Vance and Rubio.",
+      "engagement": {
+        "likes": 356,
+        "reposts": 18,
+        "replies": 17,
+        "quotes": 1,
+        "bookmarks": 25,
+        "views": 11077,
+        "interactions": 392,
+        "engagement_ex_replies": 375,
+        "followers": 230527,
+        "engagement_rate_vs_followers_pct": 0.17,
+        "reply_to_like_pct": 4.8,
+        "engagement_rate_vs_views_pct": 3.54
+      },
+      "url": "https://x.com/RichardHanania/status/2125315194532618542",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created September 2018 (230,527 followers, following 759). Interactions (392) are 0.17% of followers and 3.54% of views (11,077). Modest engagement for the follower count; 20 replies opened were unique text."
+      },
+      "audience_sample": "Replies opened were split and often joking: some backed Miller (“Stephen Miller for President!”; “Let them run Miller”), others dismissed him (“Stephen Miller has no independent base of support. W/o Trump he’s a nobody”) or the Bulwark. No 50,000+ or major-organization accounts among the 20 replies opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 1:36 PM PT",
+      "source": "Laura Loomer",
+      "handle": "LauraLoomer",
+      "type": "X post",
+      "followers": 1932802,
+      "theme": "Tucker Carlson / third-party report",
+      "summary": "After the Washington Examiner (Rob Crilly, Nov 24) reported that Tucker Carlson is preparing a third-party run if Rubio wins the 2028 nomination but would not run if Vance is the nominee, Loomer (1,932,802 followers) quoted her July 2025 post (“there is an active plan to run @TuckerCarlson for President in 2028 against @JDVance and or @marcorubio”): “Called it again. I told you this would happen all the way back in 2025.” Aimed at Carlson, the Vance ally who called Rubio backers “neocons”; logged as mixed because it is about Vance’s camp, not a direct Vance criticism.",
+      "engagement": {
+        "likes": 5833,
+        "reposts": 1507,
+        "replies": 656,
+        "quotes": 73,
+        "bookmarks": 173,
+        "views": 124544,
+        "interactions": 8069,
+        "engagement_ex_replies": 7413,
+        "followers": 1932802,
+        "engagement_rate_vs_followers_pct": 0.42,
+        "reply_to_like_pct": 11.2,
+        "engagement_rate_vs_views_pct": 6.48
+      },
+      "url": "https://x.com/LauraLoomer/status/2125342899944706231",
+      "added_on": "2026-11-25",
+      "stance": "mixed",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created March 2012 (1,932,802 followers, following 7,934). Interactions (8,069) are 0.42% of followers and 6.48% of views (124,544). Highest-engagement post on the report. Quote posts include many reposts of one quote (“Tucker tried this in 2008…”)."
+      },
+      "audience_sample": "Replies opened were mostly anti-Carlson (“Would never vote for Tucker!! Rubio all the way”; “I no longer trust Tucker Carlson”), with some pro-Carlson (“Tucker 2028!!!!”; “Paid ad by Netanyahu”). No 50,000+ or major-organization accounts among the 25 replies and 24 quotes opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 1:46 PM PT",
+      "source": "Paul A. Szypula (@Bubblebathgirl)",
+      "handle": "Bubblebathgirl",
+      "type": "X post",
+      "followers": 382768,
+      "theme": "Tucker Carlson / third-party report",
+      "summary": "Pro-Trump commentator (382,768 followers) called a Carlson third-party bid “the classic spoiler play” that “would hand Democrats the White House,” citing the Washington Examiner report, and added: “Rubio’s been the hardcore MAGA Secretary of State that America needed… Vance’s been fine, but I simply don’t get excited to see him talk. He’s a smart guy but just doesn’t have the fire of Rubio.”",
+      "engagement": {
+        "likes": 220,
+        "reposts": 71,
+        "replies": 90,
+        "quotes": 9,
+        "bookmarks": 12,
+        "views": 13713,
+        "interactions": 390,
+        "engagement_ex_replies": 300,
+        "followers": 382768,
+        "engagement_rate_vs_followers_pct": 0.1,
+        "reply_to_like_pct": 40.9,
+        "engagement_rate_vs_views_pct": 2.84
+      },
+      "url": "https://x.com/Bubblebathgirl/status/2125345345718661354",
+      "added_on": "2026-11-25",
+      "stance": "mixed",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created April 2009 (382,768 followers, following 58,655). Interactions (390) are 0.1% of followers and 2.84% of views (13,713). Follows 58,655 accounts (follow-back pattern); bio now describes an AI-video creator account. Reply-to-like ratio 40.9%, high."
+      },
+      "audience_sample": "Replies opened were mostly dismissive of Carlson (“Would anyone actually vote for Tucker Carlson?”; “You mean all five votes he may get?”), with some Rubio support (“Rubio 2028”; “Vance not good, and friends with Tucker… Rubio is best”) and a few backing Carlson (“then I am #TeamTucker”). No 50,000+ or major-organization accounts among the replies opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 7:20 PM PT",
+      "source": "Mario Nawfal",
+      "handle": "MarioNawfal",
+      "type": "X post",
+      "followers": 3992718,
+      "theme": "Venezuela oil / Vitol probe",
+      "summary": "Commentator (3,992,718 followers) relayed the Senate inquiry: “Vance is already under a Senate probe over a donor’s Venezuelan oil deal... and Democrats don’t even take power until January. Senator Maggie Hassan wants records on an alleged ski resort meeting between the vice president and an oil trader whose firm later won the right…” Follows the Reuters item (Nov 23). Vance’s office denies the meeting took place. News relay; an inquiry is not a finding.",
+      "engagement": {
+        "likes": 243,
+        "reposts": 32,
+        "replies": 15,
+        "quotes": 1,
+        "bookmarks": 26,
+        "views": 189575,
+        "interactions": 291,
+        "engagement_ex_replies": 276,
+        "followers": 3992718,
+        "engagement_rate_vs_followers_pct": 0.01,
+        "reply_to_like_pct": 6.2,
+        "engagement_rate_vs_views_pct": 0.15
+      },
+      "url": "https://x.com/MarioNawfal/status/2125429275989844278",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created October 2020 (3,992,718 followers, following 51,749). Interactions (291) are 0.01% of followers and 0.15% of views (189,575). As with his earlier tracker items, interactions are very low relative to followers (0.01%); the post was also reposted by his own account."
+      },
+      "audience_sample": "Only 15 replies; one opened: “A Senate probe before the new Congress even starts. The timeline of that donor deal is the detail to watch.” No 50,000+ or major-organization accounts among replies opened."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 12:05 PM PT",
+      "source": "Erick Erickson",
+      "handle": "EWErickson",
+      "type": "X post",
+      "followers": 271965,
+      "theme": "Nvidia / Huang reinstatement",
+      "summary": "Conservative radio host (271,965 followers): “No, the NVIDIA scandal will not take out Donald Trump. But it could hurt Vance and it means our economy really is profoundly weak.” (links to his newsletter; not opened).",
+      "engagement": {
+        "likes": 34,
+        "reposts": 3,
+        "replies": 8,
+        "quotes": 1,
+        "bookmarks": 2,
+        "views": 4225,
+        "interactions": 46,
+        "engagement_ex_replies": 38,
+        "followers": 271965,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 23.5,
+        "engagement_rate_vs_views_pct": 1.09
+      },
+      "url": "https://x.com/EWErickson/status/2125319794824212506",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created January 2007 (271,965 followers, following 3,539). Interactions (46) are 0.02% of followers and 1.09% of views (4,225). Low engagement (46 interactions); nothing suggesting coordination."
+      },
+      "audience_sample": "Only 8 replies; one opened pushed back on Erickson’s economics. No 50,000+ or major-organization accounts."
+    },
+    {
+      "date": "2026-11-24",
+      "datetime_pt": "2026-11-24 3:04 PM PT",
+      "source": "JD Vance (@VP)",
+      "handle": "VP",
+      "type": "X post",
+      "followers": 1344104,
+      "theme": "Immigration / deportations",
+      "summary": "Originating post from the official vice-presidential account (1,344,104 followers): “Deportations are good for the economy, plain and simple.” (video). Logged for reaction context.",
+      "engagement": {
+        "likes": 5395,
+        "reposts": 777,
+        "replies": 1473,
+        "quotes": 132,
+        "bookmarks": 196,
+        "views": 262064,
+        "interactions": 7777,
+        "engagement_ex_replies": 6304,
+        "followers": 1344104,
+        "engagement_rate_vs_followers_pct": 0.58,
+        "reply_to_like_pct": 27.3,
+        "engagement_rate_vs_views_pct": 2.97
+      },
+      "url": "https://x.com/VP/status/2125364971081011671",
+      "added_on": "2026-11-25",
+      "stance": "originating",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created January 2025 (1,344,104 followers, following 28). Interactions (7,777) are 0.58% of followers and 2.97% of views (262,064). Official account. Reply-to-like ratio 27.3%, high, consistent with pushback. Quote posts were dominated by reposts of two supportive quotes (“Mass deportations are lowering costs and saving American lives”; “Sane Americans want all illegals deported…”), so they look more uniform than they are."
+      },
+      "audience_sample": "Replies opened were mostly negative from two directions: restrictionists saying deportations are too slow (“You haven’t deported anybody… you only deported 64K last year”; “Stop all legal migration from the third world, including India!”) and critics of the economics (“Bro failed to study basic economics”), with some support (“Absolutely! Get rid of 30 to 50 million illegals and prices drop”). Prominent: @mil_vet17 (90,826; retired-Army account) reposted a supportive quote. No other 50,000+ or major-organization accounts among the 25 replies and 24 quotes opened."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 3:00 AM PT",
+      "source": "Fox News Digital (Elizabeth Elkind, Peter D’Abrosca)",
+      "handle": null,
+      "type": "article",
+      "followers": null,
+      "theme": "2028 / Rubio vs. Vance (House GOP)",
+      "summary": "“Marco Rubio’s 2028 stock surges among House Republicans as Trump insiders split on Vance.” Reps. Nicole Malliotakis (“He’s the whole package”), Marlin Stutzman (“I am all in for Marco”), Carlos Gimenez (“a pretty good number” of colleagues would back him) and Mike Haridopolos say House Republicans are pushing Rubio to run. A source said administration staffers were “about 50/50” on Vance vs. Rubio; an official: “I don’t think the president really knows. I think if you asked him today, he’d say Rubio.” Rubio has publicly dismissed talk of his plans.",
+      "engagement": null,
+      "url": "https://www.foxnews.com/politics/marco-rubios-2028-stock-surges-among-house-republicans-trump-insiders-split-vance",
+      "added_on": "2026-11-25",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "News article; page opened."
+      },
+      "audience_sample": null
     }
   ],
-  "last_updated_pt": "November 24, 2026, 8:16 AM PT"
+  "last_updated_pt": "November 25, 2026, 8:15 AM PT"
 }

@@ -1,7 +1,7 @@
 {
   "title": "Rival watch",
-  "last_updated": "2026-11-24",
-  "last_updated_pt": "November 24, 2026, 8:16 AM PT",
+  "last_updated": "2026-11-25",
+  "last_updated_pt": "November 25, 2026, 8:15 AM PT",
   "timezone": "America/Los_Angeles",
   "method": "The top five Republican 2028 contenders by the tracker’s national primary polling average (polls_2028.json), re-ranked each update. Vance, Rubio and DeSantis are ranked by the simple average across all opened polls (every poll reports them). Places 4–5 are ranked by each candidate’s mean share among only the opened polls that reported him (n shown), because most polls do not report minor candidates; Donald Trump (constitutionally barred) is excluded. Stance on each item is toward that rival, not toward Vance. Only items actually opened are listed; favorability is shown only where a poll was opened.",
   "ranking": [
@@ -11,7 +11,7 @@
       "poll_average": 34.1,
       "n_polls": 8,
       "previous_rank": 1,
-      "previous_average": 33.9
+      "previous_average": 34.1
     },
     {
       "rank": 2,
@@ -19,7 +19,7 @@
       "poll_average": 30.6,
       "n_polls": 8,
       "previous_rank": 2,
-      "previous_average": 31.6
+      "previous_average": 30.6
     },
     {
       "rank": 3,
@@ -27,23 +27,23 @@
       "poll_average": 12.9,
       "n_polls": 8,
       "previous_rank": 3,
-      "previous_average": 13.3
+      "previous_average": 12.9
     },
     {
       "rank": 4,
       "candidate": "Donald Trump Jr.",
       "poll_average": 5.3,
       "n_polls": 3,
-      "previous_rank": null,
-      "previous_average": null
+      "previous_rank": 4,
+      "previous_average": 5.3
     },
     {
       "rank": 5,
       "candidate": "Robert F. Kennedy Jr.",
       "poll_average": 4.0,
       "n_polls": 2,
-      "previous_rank": null,
-      "previous_average": null
+      "previous_rank": 5,
+      "previous_average": 4.0
     }
   ],
   "rivals": [
@@ -53,7 +53,7 @@
       "poll_average": 30.6,
       "n_polls": 8,
       "role": "Secretary of State",
-      "momentum": "Rising in commentary: ranked No. 1 by CNN’s Harry Enten (national summary 34 vs. Vance 30) and leads the OnMessage early-state poll; his tracker average slipped to 30.6 when the Vance-leading Rainey Center poll was added. Met Qatar’s prime minister Nov 23 as Vance did separately.",
+      "momentum": "Rising in elite support: Fox News Digital (Nov 25) reports multiple House Republicans (Malliotakis, Stutzman, Gimenez, Haridopolos) pushing him to run and administration staff “about 50/50” between him and Vance; leads a new Arizona GOP poll 48.8–24.9 (Riparian Research, Nov 20–24) and the OnMessage early-state poll. Tucker Carlson is reported (Washington Examiner, Nov 24) to be preparing a third-party run only if Rubio is the nominee. National tracker average unchanged at 30.6 (Vance 34.1). Rubio has publicly dismissed 2028 talk.",
       "favorability": {
         "pollster": "Ipsos / Reuters",
         "dates": "2026-11-14 to 2026-11-17",
@@ -67,6 +67,64 @@
         "note": "From polls.json (same-poll comparison with Vance: 35 / 53). Not refreshed this update."
       },
       "items": [
+        {
+          "date": "2026-11-25",
+          "source": "Fox News Digital (Elizabeth Elkind, Peter D’Abrosca)",
+          "handle": null,
+          "followers": null,
+          "stance": "supportive",
+          "summary": "“Marco Rubio’s 2028 stock surges among House Republicans as Trump insiders split on Vance.” Rep. Malliotakis: “He’s the whole package”; Rep. Stutzman: “I am all in for Marco. He can be a unifier”; Rep. Gimenez says “a pretty good number” of colleagues would back him. An administration official: “if you asked him today, he’d say Rubio.” Also a tracker item.",
+          "engagement": null,
+          "url": "https://www.foxnews.com/politics/marco-rubios-2028-stock-surges-among-house-republicans-trump-insiders-split-vance",
+          "added_on": "2026-11-25"
+        },
+        {
+          "date": "2026-11-24",
+          "source": "Mario Nawfal",
+          "handle": "MarioNawfal",
+          "followers": 3992718,
+          "stance": "critical",
+          "summary": "Relayed the Washington Examiner report: “Tucker Carlson could enter the 2028 presidential race specifically to stop Marco Rubio from reaching the White House… preparing a potential third-party campaign if Rubio secures the Republican nomination.” Carlson called Rubio backers “neocons”; the threat is aimed at Rubio (critical toward him).",
+          "engagement": {
+            "likes": 1112,
+            "reposts": 185,
+            "replies": 148,
+            "quotes": 21,
+            "views": 111084,
+            "engagement_rate_vs_followers_pct": 0.04
+          },
+          "url": "https://x.com/MarioNawfal/status/2125333646894919823",
+          "added_on": "2026-11-25"
+        },
+        {
+          "date": "2026-11-24",
+          "source": "Paul A. Szypula (@Bubblebathgirl)",
+          "handle": "Bubblebathgirl",
+          "followers": 382768,
+          "stance": "supportive",
+          "summary": "“Rubio’s been the hardcore MAGA Secretary of State that America needed and a bright point in the Trump administration… [he has] the fire” Vance lacks; calls a Carlson third-party bid a spoiler. Also a tracker item (mixed toward Vance).",
+          "engagement": {
+            "likes": 220,
+            "reposts": 71,
+            "replies": 90,
+            "quotes": 9,
+            "views": 13713,
+            "engagement_rate_vs_followers_pct": 0.1
+          },
+          "url": "https://x.com/Bubblebathgirl/status/2125345345718661354",
+          "added_on": "2026-11-25"
+        },
+        {
+          "date": "2026-11-24",
+          "source": "Arizona Insiders (Riparian Research poll)",
+          "handle": null,
+          "followers": null,
+          "stance": "supportive",
+          "summary": "Riparian Research survey of 1,045 Arizona registered Republicans (Nov 20–24, SMS text-to-web, MoE ±3.0, sponsor not stated): Rubio 48.8, Vance 24.9, DeSantis 14.2. Among Vance voters, 63.1% name Rubio as second choice. State poll; not in the national average. Relayed on X by Bill Postmus (@billpostmus, 153,323).",
+          "engagement": null,
+          "url": "https://arizonainsiders.com/2026/11/24/rubio-opens-24-point-lead-over-vance-in-new-arizona-gop-primary-survey/",
+          "added_on": "2026-11-25"
+        },
         {
           "date": "2026-11-23",
           "source": "Secretary Marco Rubio",
@@ -165,9 +223,27 @@
       "poll_average": 12.9,
       "n_polls": 8,
       "role": "Governor of Florida (term-limited; leaves office January 2027)",
-      "momentum": "Positioning: Axios (Nov 22) reports a secret book project, and NBC reported a planned conservative think tank; Florida was a GOP bright spot in the midterms. Average 12.9 (13.3); third in every opened national poll.",
+      "momentum": "Steady: 14.2% in the new Arizona GOP poll (third; 26.8% as a second choice), tracker average unchanged at 12.9. Kalshi traders (Nov 24 relay) put his odds of running at 89%, highest in the field (a market price, not a poll). Axios book-project report (Nov 22) still the main positioning news.",
       "favorability": null,
       "items": [
+        {
+          "date": "2026-11-24",
+          "source": "Kalshi Politics",
+          "handle": "KalshiPolitics",
+          "followers": 78843,
+          "stance": "news",
+          "summary": "Market relay: “ODDS TO RUN FOR 2028 REPUBLICAN PRESIDENTIAL NOMINATION: Ron DeSantis: 89%, Ted Cruz: 84%, Glenn Youngkin: 73%, J.D. Vance: 72%… Marco Rubio: 63%… Stephen Miller: 20%… Donald Trump Jr.: 17%.” Prediction-market prices, not polls.",
+          "engagement": {
+            "likes": 62,
+            "reposts": 7,
+            "replies": 28,
+            "quotes": 2,
+            "views": 6771,
+            "engagement_rate_vs_followers_pct": 0.13
+          },
+          "url": "https://x.com/KalshiPolitics/status/2125332017504047292",
+          "added_on": "2026-11-25"
+        },
         {
           "date": "2026-11-22",
           "source": "Axios (Alex Isenstadt)",
@@ -223,7 +299,7 @@
       "poll_average": 5.3,
       "n_polls": 3,
       "role": "Businessman; podcast host",
-      "momentum": "Flat: 7% in the Rainey Center poll, 6% Emerson, 3% Verasight, 4% in the OnMessage early-state poll. No notable 2028 coverage from large accounts opened this update.",
+      "momentum": "Flat: average 5.3 (3 polls); not listed in the Arizona Riparian poll; Kalshi odds of running 17% (Nov 24 relay). No notable large-account 2028 items opened this update.",
       "favorability": null,
       "items": []
     },
@@ -233,10 +309,10 @@
       "poll_average": 4.0,
       "n_polls": 2,
       "role": "Secretary of Health and Human Services",
-      "momentum": "Flat: 4% in Echelon and Rainey Center, 3% in the OnMessage early-state poll. Coverage in the past day was about HHS policy (measles-elimination status), not 2028; no qualifying large-account 2028 items opened.",
+      "momentum": "Flat: average 4.0 (2 polls); Kalshi odds of running 22% (Nov 24 relay). No qualifying large-account 2028 items opened this update.",
       "favorability": null,
       "items": []
     }
   ],
-  "ranking_note": "Nov 24, 2026: first ranking. Order unchanged at the top (Vance, Rubio, DeSantis). Adding the Rainey Center poll moved the averages to Vance 34.1 (33.9), Rubio 30.6 (31.6), DeSantis 12.9 (13.3). Trump Jr. (5.3%, 3 polls) and RFK Jr. (4.0%, 2 polls) fill places 4–5; Ted Cruz is next (2.7%, 3 polls). Stephen Miller is not listed in any opened poll."
+  "ranking_note": "Nov 25, 2026: unchanged — no new national 2028 GOP primary poll. Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). A new Arizona-only Riparian Research poll (Rubio 48.8, Vance 24.9, DeSantis 14.2) is not part of the national average. Stephen Miller is not listed in any opened poll. Nov 24, 2026: first ranking. Order unchanged at the top (Vance, Rubio, DeSantis). Adding the Rainey Center poll moved the averages to Vance 34.1 (33.9), Rubio 30.6 (31.6), DeSantis 12.9 (13.3). Trump Jr. (5.3%, 3 polls) and RFK Jr. (4.0%, 2 polls) fill places 4–5; Ted Cruz is next (2.7%, 3 polls). Stephen Miller is not listed in any opened poll."
 }
