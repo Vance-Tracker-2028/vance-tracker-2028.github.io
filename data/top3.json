@@ -1,0 +1,47 @@
+{
+  "title": "Top 3 this week",
+  "last_updated": "2026-11-25",
+  "last_updated_pt": "November 25, 2026, 12:15 PM PT",
+  "window": "Nov 23–25, 2026",
+  "items": [
+    {
+      "rank": 1,
+      "date": "2026-11-23",
+      "date_label": "Nov 23, 7:13 PM PT · follow-up Nov 25",
+      "kind": "X post & coverage",
+      "source": "@JDVance · The Hill · Reuters · CBS News",
+      "headline": "Nvidia reinstates CEO Jensen Huang after Trump & Vance push; Vance says no pardon needed",
+      "summary": "Trump led the effort and praised Vance on CNBC (“dealing with a Vice President, JD Vance who’s great”); Reuters, The Hill, and CBS News reported Vance also pressed Nvidia board members before Huang’s Nov. 23 return, and Vance told reporters Nov. 25 Huang isn’t under investigation and doesn’t need a pardon.",
+      "engagement": "23,774 likes · 1,413 RTs · 2,469 replies · 223 quotes · 1.15M views",
+      "url": "https://x.com/JDVance/status/2125065305504272838",
+      "secondary_url": "https://www.cbsnews.com/news/vance-says-jensen-huang-doesnt-need-pardon/",
+      "secondary_label": "CBS News (Nov 25)"
+    },
+    {
+      "rank": 2,
+      "date": "2026-11-25",
+      "date_label": "Nov 25, 2026",
+      "kind": "Headline & X video",
+      "source": "AP News · @VP",
+      "headline": "Vance serves Thanksgiving meal to Air Force troops at Wright-Patterson in Ohio",
+      "summary": "Joined by Second Lady Usha Vance and their children in his home state, Vance served Thanksgiving lunch to service members, held off-the-record talks with troops, and fielded press questions afterward.",
+      "engagement": "2,728 likes · 299 RTs · 175 replies · 16 quotes · 49.8K views (@VP video)",
+      "url": "https://apnews.com/article/vance-trump-thanksgiving-ohio-space-academy-b15211aafa25c8f5610bd5f39580ace0",
+      "secondary_url": "https://x.com/VP/status/2125644133377441813",
+      "secondary_label": "Watch @VP clip"
+    },
+    {
+      "rank": 3,
+      "date": "2026-11-23",
+      "date_label": "Nov 23, 12:39 PM PT",
+      "kind": "Headline",
+      "source": "Reuters (@Reuters)",
+      "headline": "Senate panel opens inquiry into Vance’s ties to Vitol Venezuelan oil contract",
+      "summary": "Incoming Senate Homeland Security chair Maggie Hassan requested Vance’s records by Dec. 14 over a reported Dec. 2025 Montana meeting with donor John Addison before Vitol’s Venezuelan crude license; Vance’s office denied the meeting.",
+      "engagement": "643 likes · 160 RTs · 161 replies · 32 quotes · 58.0K views",
+      "url": "https://x.com/Reuters/status/2124965995089404183",
+      "secondary_url": null,
+      "secondary_label": null
+    }
+  ]
+}

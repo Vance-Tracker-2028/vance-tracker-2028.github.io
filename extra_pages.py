@@ -28,6 +28,7 @@ def nav(current: str, root: str = "") -> str:
         ("bio.html", "bio", "Biography"),
         ("bio.html#critic-to-ally", "critic", "Critic to ally"),
         ("myths.html", "myths", "Myths vs. facts"),
+        ("media.html", "media", "Media"),
         ("opposition.html", "opposition", "Top opposition"),
         ("index.html#favorability", "polls", "Polls"),
     ]
@@ -48,9 +49,9 @@ def footer(root: str = "") -> str:
     return f"""
   <footer class="site">
     <div class="wrap">
-      <p class="disclaimer">Unofficial supporter site. Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted. Photos are public-domain U.S. government works.</p>
+      <p class="disclaimer">Unofficial supporter site. Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted. Local photos are public-domain U.S. government works or Creative Commons–licensed with attribution.</p>
       <p>Polling and sentiment figures are recorded as published; authenticity ratings are heuristics, not proof.</p>
-      <p><a href="{root}index.html">Tracker</a> · <a href="{root}bio.html">Biography</a> · <a href="{root}myths.html">Myths vs. facts</a> · <a href="{root}opposition.html">Top opposition</a> · <a href="{root}images/CREDITS.md">Photo credits</a></p>
+      <p><a href="{root}index.html">Tracker</a> · <a href="{root}bio.html">Biography</a> · <a href="{root}myths.html">Myths vs. facts</a> · <a href="{root}media.html">Media</a> · <a href="{root}opposition.html">Top opposition</a> · <a href="{root}images/CREDITS.md">Photo credits</a></p>
     </div>
   </footer>"""
 
@@ -151,7 +152,24 @@ def bio_page(updated: str) -> str:
         </div>
       </div>
     </section>
+
+    <section class="block" id="lighter-moment">
+      <h2>Online humor &amp; memes</h2>
+      <div class="meme-spot">
+        <div class="meme-spot-grid">
+          <div>
+            <h3>In on the joke</h3>
+            <p>Vance has occasionally leaned into viral internet edits of himself on his personal X account. On March 8, 2025, he posted a face-edited version of the Leonardo DiCaprio pointing meme — a post that drew over 502,000 likes and 154 million views.</p>
+            <p class="fine">Posted by JD Vance (<code>@JDVance</code>) on March 8, 2025. Embedded via official X embed. <a href="https://x.com/JDVance/status/1898372454235451694">Original X post</a> · <a href="media.html#memes">See more official memes</a></p>
+          </div>
+          <div>
+            <blockquote class="twitter-tweet" data-dnt="true"><p lang="zxx" dir="ltr"><a href="https://t.co/rPloNGHLej">pic.twitter.com/rPloNGHLej</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/1898372454235451694?ref_src=twsrc%5Etfw">March 8, 2025</a></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
   </article>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 """
     return page_shell(
         "Biography — JD Vance Tracker",
@@ -334,12 +352,318 @@ def opposition_page(updated: str) -> str:
     )
 
 
+
+
+def media_page(updated: str) -> str:
+    photos = [
+        {
+            "file": "vance-vp-portrait.jpg",
+            "title": "Official vice-presidential portrait",
+            "date": "January 15, 2025",
+            "author": "Daniel Torok / The White House",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:VancePortrait.jpg",
+            "alt": "Official 2025 vice-presidential portrait of JD Vance",
+        },
+        {
+            "file": "vance-swearing-in-2025.jpg",
+            "title": "Swearing-in as the 50th Vice President",
+            "date": "January 20, 2025",
+            "author": "Office of the Vice President (@VP)",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Vice_President_JD_Vance_is_sworn_in_(01).jpg",
+            "alt": "JD Vance taking the oath of office alongside Usha Vance and their children on January 20, 2025",
+        },
+        {
+            "file": "vance-day1-signing.jpg",
+            "title": "Day One executive order signing",
+            "date": "January 20, 2025",
+            "author": "Office of the Vice President (@VP)",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Trump_Day_1_Executive_Order_Signing.jpg",
+            "alt": "President Donald Trump signing executive orders on Day One with Vice President JD Vance",
+        },
+        {
+            "file": "vance-capitol-signing-2025.jpg",
+            "title": "Post-inaugural document signing at the U.S. Capitol",
+            "date": "January 20, 2025",
+            "author": "Office of Speaker Mike Johnson",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:President_Trump_signs_post-inaugural_documents_(January_20,_2025).jpg",
+            "alt": "Post-inaugural signing ceremony at the Capitol with Vice President Vance and congressional leaders",
+        },
+        {
+            "file": "vance-duffy-swearing-in.jpg",
+            "title": "Swearing in Transportation Secretary Sean Duffy",
+            "date": "January 29, 2025",
+            "author": "U.S. Department of Transportation",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Vice_President_JD_Vance_swears_in_Sean_Duffy_as_Secretary_of_Transportation.jpg",
+            "alt": "Vice President Vance swearing in Transportation Secretary Sean Duffy",
+        },
+        {
+            "file": "vance-paris-ai-summit-2025.jpg",
+            "title": "AI Action Summit meeting with Ursula von der Leyen in Paris",
+            "date": "February 11, 2025",
+            "author": "Dati Bendo / European Union (EC – Audiovisual Service)",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Meeting_between_Ursula_von_der_Leyen_%26_J._D._Vance_-_AI_Action_Summit,_Paris,_France,_2025.jpg",
+            "alt": "Vice President JD Vance meeting European Commission President Ursula von der Leyen in Paris",
+        },
+        {
+            "file": "vance-munich-2025.jpg",
+            "title": "Remarks at the 61st Munich Security Conference",
+            "date": "February 14, 2025",
+            "author": "MSC / Preis",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:JD_Vance%27s_Speech_at_the_61st_Munich_Security_Conference_(20250214-MSC2025-mc2931).jpg",
+            "alt": "Vice President JD Vance speaking at the 61st Munich Security Conference in Germany",
+        },
+        {
+            "file": "vance-driscoll-swearing-in.jpg",
+            "title": "Swearing in Army Secretary Dan Driscoll",
+            "date": "February 25, 2025",
+            "author": "Office of the Vice President (@VP)",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Dan_Driscoll_Swearing-In.jpg",
+            "alt": "Vice President Vance swearing in Army Secretary Dan Driscoll",
+        },
+        {
+            "file": "vance-pituffik-allcall.jpg",
+            "title": "All-call with troops at Pituffik Space Base, Greenland",
+            "date": "March 28, 2025",
+            "author": "DVIDS / U.S. Department of Defense",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Vice_President_visits_Pituffik_Space_Base_(Image_3_of_6).jpg",
+            "alt": "Vice President JD Vance addressing Space Force Guardians and Airmen at Pituffik Space Base",
+        },
+        {
+            "file": "vance-pituffik-arrival.jpg",
+            "title": "Arrival with Second Lady Usha Vance at Pituffik Space Base",
+            "date": "March 28, 2025",
+            "author": "DVIDS / U.S. Department of Defense",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Vice_President_visits_Pituffik_Space_Base_(Image_4_of_6).jpg",
+            "alt": "Col. Susan Meyers greeting Vice President JD Vance and Usha Vance at Pituffik Space Base, Greenland",
+        },
+        {
+            "file": "vance-oval-office-2025.jpg",
+            "title": "Oval Office bilateral meeting with South African President Ramaphosa",
+            "date": "May 21, 2025",
+            "author": "Daniel Torok / The White House",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_meets_with_President_of_South_Africa_Cyril_Ramaphosa_(54537774949).jpg",
+            "alt": "President Trump and Vice President Vance in an Oval Office bilateral meeting on May 21, 2025",
+        },
+        {
+            "file": "vance-maha-summit-2025.jpg",
+            "title": "Remarks at the MAHA Summit in Washington, D.C.",
+            "date": "November 12, 2025",
+            "author": "Steve Jurvetson",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:JD_Vance_at_the_MAHA_Summit_(54920086170).jpg",
+            "alt": "Vice President JD Vance speaking at the MAHA Summit in Washington, D.C.",
+        },
+        {
+            "file": "vance-americafest-2025.jpg",
+            "title": "Speaking at AmericaFest 2025 in Phoenix",
+            "date": "December 21, 2025",
+            "author": "Gage Skidmore",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:J._D._Vance_(55023973013).jpg",
+            "alt": "Vice President JD Vance speaking at AmericaFest 2025 in Phoenix, Arizona",
+        },
+        {
+            "file": "vance-senate-portrait.jpg",
+            "title": "Official U.S. Senate portrait (118th Congress)",
+            "date": "January 3, 2023",
+            "author": "United States Congress / U.S. Senate",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Senator_Vance_official_portrait._118th_Congress.jpg",
+            "alt": "Official U.S. Senate portrait of Sen. JD Vance",
+        },
+        {
+            "file": "vance-usmc-birthday-2023.jpg",
+            "title": "Marine Corps 248th birthday celebration",
+            "date": "November 2023",
+            "author": "U.S. Marine Corps",
+            "license": "Public domain",
+            "license_url": "",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Lt._Gen._David_G._Bellon_and_Senator_JD_Vance_celebrating_the_Marine_Corps_248th_birthday.jpg",
+            "alt": "Lt. Gen. David G. Bellon and Sen. JD Vance celebrating the 248th Marine Corps birthday",
+        },
+    ]
+    photo_cards = []
+    for p in photos:
+        if p["license_url"]:
+            lic_html = '<a href="%s">%s</a>' % (esc(p["license_url"]), esc(p["license"]))
+        else:
+            lic_html = esc(p["license"])
+        photo_cards.append(
+            """<figure class="media-card">
+              <div class="media-frame"><img src="images/%s" alt="%s" loading="lazy"></div>
+              <figcaption class="media-cap">
+                <p class="media-title">%s</p>
+                <p class="media-meta">%s · %s</p>
+                <p class="media-lic">License: %s · <a href="%s">Source &amp; file page</a></p>
+              </figcaption>
+            </figure>"""
+            % (
+                esc(p["file"]),
+                esc(p["alt"]),
+                esc(p["title"]),
+                esc(p["date"]),
+                esc(p["author"]),
+                lic_html,
+                esc(p["source_url"]),
+            )
+        )
+
+    videos = [
+        {
+            "yt": "pCOsgfINdKg",
+            "title": "Remarks at the 61st Munich Security Conference",
+            "date": "February 14, 2025",
+            "channel": "The White House (@WhiteHouse)",
+            "url": "https://www.youtube.com/watch?v=pCOsgfINdKg",
+        },
+        {
+            "yt": "FTh-FX25Eps",
+            "title": "Commencement Address to the U.S. Air Force Academy",
+            "date": "May 2026",
+            "channel": "The White House (@WhiteHouse)",
+            "url": "https://www.youtube.com/watch?v=FTh-FX25Eps",
+        },
+        {
+            "yt": "y3du2GiOoJg",
+            "title": "Fraud Task Force Press Conference",
+            "date": "October 21, 2026",
+            "channel": "The White House (@WhiteHouse)",
+            "url": "https://www.youtube.com/watch?v=y3du2GiOoJg",
+        },
+        {
+            "yt": "R_BILWX5md0",
+            "title": "Press Briefing with Karoline Leavitt and the Vice President",
+            "date": "January 8, 2026",
+            "channel": "The White House (@WhiteHouse)",
+            "url": "https://www.youtube.com/watch?v=R_BILWX5md0",
+        },
+    ]
+    video_cards = []
+    for v in videos:
+        video_cards.append(
+            """<div class="video-card">
+              <div class="video-wrap">
+                <iframe src="https://www.youtube-nocookie.com/embed/%s" title="%s" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video-cap">
+                <h3>%s</h3>
+                <p>%s · Official channel: <a href="%s">%s</a></p>
+              </div>
+            </div>"""
+            % (esc(v["yt"]), esc(v["title"]), esc(v["title"]), esc(v["date"]), esc(v["url"]), esc(v["channel"]))
+        )
+
+    body = """
+  <div class="hero-disclaimer">
+    <div class="wrap">
+      <p>Unofficial supporter site. Independently created by supporters of JD Vance. Not affiliated with, authorized, or endorsed by JD Vance, his office, any campaign, committee, or the White House. No funds are solicited or accepted.</p>
+    </div>
+  </div>
+  <article class="wrap">
+    <header class="page-hero">
+      <p class="kicker">Media gallery</p>
+      <h1>Photos, official videos &amp; memes</h1>
+      <p>A curated gallery of JD Vance from his Senate and Marine Corps service through the vice presidency, paired with official White House YouTube speeches and embeds from his official X accounts.</p>
+      <p class="fine">Last updated __UPDATED__. <strong>Reuse &amp; licensing note:</strong> Images on this page are used under their stated licenses — U.S. federal government public-domain works (17 U.S.C. § 105) or Creative Commons–licensed works on Wikimedia Commons with attribution. Videos and social posts are embedded directly from official White House and JD Vance channels, never reposted from copyrighted news outlets. <a href="images/CREDITS.md">Full credits list</a></p>
+    </header>
+
+    <section class="block" id="photos">
+      <h2>Permitted photographs (15)</h2>
+      <p class="lede">Every photograph below is stored in the repository with its author, date, license, and source link. Eleven are public-domain U.S. government works and four carry Creative Commons attribution licenses.</p>
+      <div class="media-grid">
+        __PHOTOS__
+      </div>
+    </section>
+
+    <section class="block" id="videos">
+      <h2>Official White House videos &amp; X clips</h2>
+      <p class="lede">Speeches, press briefings, and official trip video embedded from The White House YouTube channel and Vice President Vance’s official X accounts.</p>
+      <div class="video-grid">
+        __VIDEOS__
+      </div>
+      <div class="embed-grid">
+        <div class="embed-card">
+          <h3>Thanksgiving meal with troops at Wright-Patterson AFB</h3>
+          <p class="embed-credit">Posted by Vice President JD Vance (<code>@VP</code>) · Nov. 25, 2026 · <a href="https://x.com/VP/status/2125644133377441813">Original X post</a></p>
+          <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Vice President JD Vance and the Second Family serve food to our troops at Wright Patterson Air Force Base ahead of Thanksgiving. <a href="https://t.co/XMCp81mgio">pic.twitter.com/XMCp81mgio</a></p>&mdash; Vice President JD Vance (@VP) <a href="https://x.com/VP/status/2125644133377441813?ref_src=twsrc%5Etfw">November 25, 2026</a></blockquote>
+        </div>
+        <div class="embed-card">
+          <h3>Nvidia CEO reinstatement (“Welcome back Jensen”)</h3>
+          <p class="embed-credit">Posted by JD Vance (<code>@JDVance</code>) · Nov. 23, 2026 PT · <a href="https://x.com/JDVance/status/2125065305504272838">Original X post</a></p>
+          <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Welcome back Jensen <a href="https://t.co/HqpDeIz0dz">https://t.co/HqpDeIz0dz</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/2125065305504272838?ref_src=twsrc%5Etfw">November 24, 2026</a></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="memes">
+      <h2>Official memes &amp; lighter moments</h2>
+      <p class="lede">Only memes posted directly by JD Vance on his official <code>@JDVance</code> account, embedded via X’s official embed and linked back to each original post.</p>
+      <div class="embed-grid">
+        <div class="embed-card">
+          <h3>Kenny Powers lookalike pose</h3>
+          <p class="embed-credit">Credit: JD Vance (<code>@JDVance</code>) · Nov. 23, 2026 · 8,280 likes, 839K views · <a href="https://x.com/JDVance/status/2125007337433838065">Original X post</a></p>
+          <blockquote class="twitter-tweet" data-dnt="true"><p lang="zxx" dir="ltr"><a href="https://t.co/dHqnOzNGrG">pic.twitter.com/dHqnOzNGrG</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/2125007337433838065?ref_src=twsrc%5Etfw">November 23, 2026</a></blockquote>
+        </div>
+        <div class="embed-card">
+          <h3>Halloween costume with baby Yoda hat</h3>
+          <p class="embed-credit">Credit: JD Vance (<code>@JDVance</code>) · Oct. 31, 2026 · 85.6K likes, 7.3M views · <a href="https://x.com/JDVance/status/2116654367952519597">Original X post</a></p>
+          <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Happy Halloween everyone! <a href="https://t.co/RkEgQiT9xM">pic.twitter.com/RkEgQiT9xM</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/2116654367952519597?ref_src=twsrc%5Etfw">October 31, 2026</a></blockquote>
+        </div>
+        <div class="embed-card">
+          <h3>Self-parody Halloween wig meme</h3>
+          <p class="embed-credit">Credit: JD Vance (<code>@JDVance</code>) · Oct. 31, 2025 · 300.6K likes, 25.1M views · <a href="https://x.com/JDVance/status/1984339141694493023">Original X post</a></p>
+          <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Happy Halloween! <a href="https://t.co/0JOOwlCn8J">pic.twitter.com/0JOOwlCn8J</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/1984339141694493023?ref_src=twsrc%5Etfw">October 31, 2025</a></blockquote>
+        </div>
+        <div class="embed-card">
+          <h3>Pointing meme face edit</h3>
+          <p class="embed-credit">Credit: JD Vance (<code>@JDVance</code>) · Mar. 8, 2025 · 502.5K likes, 154M views · <a href="https://x.com/JDVance/status/1898372454235451694">Original X post</a></p>
+          <blockquote class="twitter-tweet" data-dnt="true"><p lang="zxx" dir="ltr"><a href="https://t.co/rPloNGHLej">pic.twitter.com/rPloNGHLej</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/1898372454235451694?ref_src=twsrc%5Etfw">March 8, 2025</a></blockquote>
+        </div>
+      </div>
+    </section>
+  </article>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+""".replace("__UPDATED__", esc(updated)).replace("__PHOTOS__", "".join(photo_cards)).replace("__VIDEOS__", "".join(video_cards))
+    return page_shell(
+        "Media — JD Vance Tracker",
+        "Permitted public-domain and Creative Commons photographs of JD Vance, official White House videos, and official X memes with full credits.",
+        "media",
+        body,
+    )
+
+
 def write_pages(updated: str) -> None:
     (ROOT / "bio.html").write_text(bio_page(updated), encoding="utf-8")
     (ROOT / "myths.html").write_text(myths_page(updated), encoding="utf-8")
+    (ROOT / "media.html").write_text(media_page(updated), encoding="utf-8")
     (ROOT / "opposition.html").write_text(opposition_page(updated), encoding="utf-8")
     myths_dir = ROOT / "myths"
     myths_dir.mkdir(exist_ok=True)
     for m in _myths():
         (myths_dir / f"{m['slug']}.html").write_text(myth_detail_page(updated, m), encoding="utf-8")
-    print("Wrote bio.html, myths.html, opposition.html, and myths detail pages")
+    print("Wrote bio.html, myths.html, media.html, opposition.html, and myths detail pages")

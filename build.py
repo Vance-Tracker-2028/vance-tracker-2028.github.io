@@ -16,7 +16,7 @@ import extra_pages
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json", "polls_ticket.json", "opposition.json", "rivals.json")
+SOURCE_JSON = ("entries.json", "polls.json", "polls_2028.json", "polls_ticket.json", "opposition.json", "rivals.json", "top3.json")
 def _blocked_re():
     # Assembled so this source file does not contain the blocked strings.
     return re.compile("|".join(("".join(("ar", "jun")), "".join(("bu", "xi")), "".join(("sv", "gop")))), re.I)
@@ -249,6 +249,11 @@ def load():
 
 def load_rivals():
     fp = DATA / "rivals.json"
+    return json.loads(fp.read_text()) if fp.exists() else {}
+
+
+def load_top3():
+    fp = DATA / "top3.json"
     return json.loads(fp.read_text()) if fp.exists() else {}
 
 
@@ -999,6 +1004,73 @@ def feed_section(entries) -> str:
     """
 
 
+
+
+def top3_section(top3) -> str:
+    items = top3.get("items") or []
+    if not items:
+        return ""
+    window = top3.get("window") or "Past 3 days"
+    cards = []
+    for it in items[:3]:
+        kind = it.get("kind") or "Update"
+        dlabel = it.get("date_label") or it.get("date") or ""
+        head = it.get("headline") or ""
+        url = it.get("url") or ""
+        title_html = f'<a href="{esc(url)}">{esc(head)}</a>' if url else esc(head)
+        src = it.get("source") or ""
+        summary = it.get("summary") or ""
+        eng = it.get("engagement") or ""
+        sec_url = it.get("secondary_url") or ""
+        sec_lbl = it.get("secondary_label") or "Related link"
+        links = []
+        if url:
+            links.append(f'<a href="{esc(url)}">Primary source</a>')
+        if sec_url:
+            links.append(f'<a href="{esc(sec_url)}">{esc(sec_lbl)}</a>')
+        eng_html = f'<p class="top3-eng">{esc(eng)}</p>' if eng else ""
+        links_html = f'<div class="top3-links">{" · ".join(links)}</div>' if links else ""
+        cards.append(
+            f"""<article class="top3-card">
+              <div class="top3-meta"><span class="top3-kind">{esc(kind)}</span><span>{esc(dlabel)}</span></div>
+              <h3>{title_html}</h3>
+              <p class="top3-src">{esc(src)}</p>
+              <p class="top3-sum">{esc(clean_text(summary))}</p>
+              {eng_html}
+              {links_html}
+            </article>"""
+        )
+    return f"""
+    <section class="block" id="top3">
+      <h2>Top 3 this week</h2>
+      <p class="lede">The three biggest JD Vance headlines and official posts over the past few days ({esc(window)}). Each links directly to the verified report or post.</p>
+      <div class="top3-grid">
+        {''.join(cards)}
+      </div>
+    </section>
+    """
+
+
+def index_meme_section() -> str:
+    return """
+    <section class="block" id="lighter">
+      <h2>Media &amp; official meme</h2>
+      <div class="meme-spot">
+        <div class="meme-spot-grid">
+          <div>
+            <h3>Official X post from JD Vance</h3>
+            <p>A lighter moment from Vice President Vance’s own feed on Nov. 23, 2026 (8,280 likes, 839K views). Only memes posted directly by JD Vance or official accounts are embedded here, with full credit and original links.</p>
+            <p class="fine">Credit: JD Vance (<code>@JDVance</code>) · Nov. 23, 2026 · <a href="https://x.com/JDVance/status/2125007337433838065">Original X post</a> · <a href="media.html">Open full Media gallery &amp; memes</a></p>
+          </div>
+          <div>
+            <blockquote class="twitter-tweet" data-dnt="true"><p lang="zxx" dir="ltr"><a href="https://t.co/dHqnOzNGrG">pic.twitter.com/dHqnOzNGrG</a></p>&mdash; JD Vance (@JDVance) <a href="https://x.com/JDVance/status/2125007337433838065?ref_src=twsrc%5Etfw">November 23, 2026</a></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    """
+
+
 def methodology_section() -> str:
     return """
     <section class="block" id="methodology">
@@ -1055,6 +1127,7 @@ def build_html(entries_doc, polls, polls_2028, polls_ticket) -> str:
         <a class="btn" href="opposition.html">Top opposition</a>
         <a class="btn" href="#rivals">Rival watch</a>
         <a class="btn" href="myths.html">Myths vs. facts</a>
+        <a class="btn" href="media.html">Media &amp; memes</a>
       </div>
     </div>
     <div class="hero-photo">
@@ -1074,15 +1147,18 @@ def build_html(entries_doc, polls, polls_2028, polls_ticket) -> str:
       {metric_card(str(n), "Tracker items", f"{n_crit} critical · {n_supp} supportive · {n_orig} originating · {n_mixed} mixed")}
       {metric_card(don_views, "Biggest supportive reach", "Donald Trump Jr. endorsing the postmortem")}
     </div>
+    {top3_section(load_top3())}
     {fav_section(polls)}
     {primary_section(polls_2028)}
     {ticket_section(polls_ticket)}
     {rival_section(load_rivals())}
     {sentiment_section(entries, s)}
     {feed_section(entries)}
+    {index_meme_section()}
     {methodology_section()}
   </div>
 {extra_pages.footer()}
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script>{js()}</script>
 </body>
 </html>
@@ -1100,6 +1176,7 @@ def main() -> None:
         out,
         ROOT / "bio.html",
         ROOT / "myths.html",
+        ROOT / "media.html",
         ROOT / "opposition.html",
         ROOT / "README.md",
         ROOT / "styles.css",
