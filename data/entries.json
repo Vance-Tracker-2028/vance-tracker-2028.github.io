@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25",
+  "last_updated": "2026-11-26",
   "timezone": "America/Los_Angeles",
   "entries": [
     {
@@ -3157,7 +3157,301 @@
         "evidence": "News article; page opened."
       },
       "audience_sample": null
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 10:49 AM PT",
+      "source": "Aaron Rupar",
+      "handle": "atrupar",
+      "type": "X post",
+      "followers": 1176747,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "Journalist (1,176,747 followers) posted the clip of Vance answering reporters at Wright-Patterson AFB on Nov 25: “When I say ‘we,’ I mean the Obama administration — JD Vance blames Obama for the Iowa Army detonation.” In the clip Vance says the lead azide was stored in 2009 “with no real plan for how to move it… or neutralize it” and that the administration learned about six months ago there was no good option. A second Rupar clip (“Why did it take until November?” — “a problem that the Obama administration had kicked to us”) drew 4,485 likes, 1,351 replies and 1.59M views; @Acyn (798,547) posted a similar clip (1,234 likes, 288K views). Critics note Trump held office for four years after Obama; the Army says the degradation was found in a March 2026 inspection.",
+      "engagement": {
+        "likes": 5672,
+        "reposts": 626,
+        "replies": 518,
+        "quotes": 293,
+        "bookmarks": 743,
+        "views": 2179176,
+        "interactions": 7109,
+        "engagement_ex_replies": 6591,
+        "followers": 1176747,
+        "engagement_rate_vs_followers_pct": 0.6,
+        "reply_to_like_pct": 9.1,
+        "engagement_rate_vs_views_pct": 0.33
+      },
+      "url": "https://x.com/atrupar/status/2125663195239002148",
+      "added_on": "2026-11-26",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created April 2011 (1,176,747 followers, following 5,817). Interactions (7,109) are 0.6% of followers and 0.33% of views (2,179,176). Clip account from an established journalist; very high views (2.18M) relative to likes is typical of video autoplay. Replies opened were unique text."
+      },
+      "audience_sample": "Replies opened mostly pushed back on Vance (“JD could sneeze and he’d blame Obama”; “so they waited 6 months up until the day before thanks giving??”; “This guy will be blaming Obama right until the day his boss is impeached”), with a few defending the decision via Grok fact-check replies noting the 2009 storage date. Prominent quotes: Alex Cole (@acnewsitics, 328,048; “progressive news” account) — critical: “What administration came after Obama, @JDVance? You f***ing idiot.” (1,788 likes); Decoding Fox News (@DecodingFoxNews, 189,035; media-criticism account) — critical: “Trump was president for FOUR YEARS after Obama.” (813 likes); Joyce Carol Oates (@JoyceCarolOates, 286,955; author) quoted the second clip — critical: “they’re skipping back a generation to blame now, not Biden, but Obama.” The most-liked quote opened was by Public Notice writer Stephen Robinson (@SER1897, 10,986): “like November 2010 Obama blaming 2000 Bill Clinton” (8,422 likes; below 50K)."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 12:00 PM PT",
+      "source": "JD Vance (official personal account)",
+      "handle": "JDVance",
+      "type": "X post",
+      "followers": 5568190,
+      "theme": "Stephen Miller",
+      "summary": "Vance quoted Chief of Staff Stephen Miller’s long post congratulating the agencies on the Iowa controlled demolition: “Credit to our great Chief of Staff Stephen Miller whose leadership was instrumental in making tough decisions and averting potential disaster. Where other administrations failed to act, President Trump’s confronted the task at hand. No one passed the buck. This team stepped up and protected the great people of Iowa.” Miller’s post (1.75M views, 35,718 likes) blamed the 2009 storage decision on the Obama administration. Relevant to Vance–Miller comparisons: Vance publicly credits Miller rather than competing with him.",
+      "engagement": {
+        "likes": 16295,
+        "reposts": 1369,
+        "replies": 1494,
+        "quotes": 87,
+        "bookmarks": 377,
+        "views": 962191,
+        "interactions": 19245,
+        "engagement_ex_replies": 17751,
+        "followers": 5568190,
+        "engagement_rate_vs_followers_pct": 0.35,
+        "reply_to_like_pct": 9.2,
+        "engagement_rate_vs_views_pct": 2.0
+      },
+      "url": "https://x.com/JDVance/status/2125681132742033872",
+      "added_on": "2026-11-26",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created June 2013 (5,568,190 followers, following 1,139). Interactions (19,245) are 0.35% of followers and 2.0% of views (962,191). Official account of the Vice President; engagement in line with his other posts (1.7% of views)."
+      },
+      "audience_sample": "Replies opened were overwhelmingly hostile (“JD here acknowledges that Stephen Miller is acting President & that JD is a lame duck”; “I see you are now openly sucking up to @StephenM… because you believe he’ll support your bid in 2028”; “This problem existed in 2016-2020. Who was President?”). Quote posts opened were mostly small accounts (“Licking Miller’s boots is the new strategy”; “The need these people have for ritual public praise is the most overtly totalitarian aspect of Trumpism”). No 50,000+ or major-organization accounts among the 25 replies and 25 quotes opened."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 11:07 AM PT",
+      "source": "Vice President JD Vance (@VP)",
+      "handle": "VP",
+      "type": "X post",
+      "followers": 1344298,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "Official clip of Vance defending the controlled detonation: “Option one was to do a controlled detonation… or two, to just let it sit there. And every scientist, every expert that we talked to said that if you let it sit there… with the cold weather, this stuff is going to detonate on its own… I think the president, and Pete Hegseth, made the right decision.”",
+      "engagement": {
+        "likes": 1677,
+        "reposts": 255,
+        "replies": 274,
+        "quotes": 13,
+        "bookmarks": 55,
+        "views": 80720,
+        "interactions": 2219,
+        "engagement_ex_replies": 1945,
+        "followers": 1344298,
+        "engagement_rate_vs_followers_pct": 0.17,
+        "reply_to_like_pct": 16.3,
+        "engagement_rate_vs_views_pct": 2.75
+      },
+      "url": "https://x.com/VP/status/2125667630111670327",
+      "added_on": "2026-11-26",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created January 2025 (1,344,298 followers, following 28). Interactions (2,219) are 0.17% of followers and 2.75% of views (80,720). Official government account; reply-to-like ratio 16.3%, higher than its Thanksgiving posts, indicating pushback."
+      },
+      "audience_sample": "Replies opened mostly pushed back (“So unstable it set through trumps first term then Biden now 2 years in Trump 2?”; “Pretty weak how you tried to blame President Obama”; “In March, the Army hired a company to neutralize it chemically…”), with a few supportive (“Absolutely right”). Prominent reply: Dede Watson (@Dede_Watson, 105,617; no stated affiliation) — critical: “If the dirty bomb that the military inflicted on Iowans proves to be what most Americans fear, you should all rot in jail.”"
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 5:26 AM PT",
+      "source": "Eric Daugherty",
+      "handle": "EricLDaugh",
+      "type": "X post",
+      "followers": 1249113,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "Conservative commentator (1,249,113 followers; Chief Content Officer, RightLine News / Florida Voice) countered the criticism: “IT’S OFFICIAL: The panic failed, ZERO AIRBORNE LEAD DETECTED and the ALL CLEAR HAS BEEN GIVEN by FEMA after the Iowa lead azide ‘perfect detonation,’” quoting Vance on the 2009 storage and saying EPA had 300 people on the ground and took 1,200 samples. The FEMA/EPA claims are his; not independently verified here.",
+      "engagement": {
+        "likes": 1083,
+        "reposts": 223,
+        "replies": 66,
+        "quotes": 12,
+        "bookmarks": 38,
+        "views": 30168,
+        "interactions": 1384,
+        "engagement_ex_replies": 1318,
+        "followers": 1249113,
+        "engagement_rate_vs_followers_pct": 0.11,
+        "reply_to_like_pct": 6.1,
+        "engagement_rate_vs_views_pct": 4.59
+      },
+      "url": "https://x.com/EricLDaugh/status/2125944256833495442",
+      "added_on": "2026-11-26",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created August 2016 (1,249,113 followers, following 2,743). Interactions (1,384) are 0.11% of followers and 4.59% of views (30,168). Consistent with his prior tracker items; posted early morning, engagement still accruing."
+      },
+      "audience_sample": "Replies opened were split and mostly skeptical (“No one believes this, Eric. Stop lying to people for the government”; “You do realize [Trump] was in office for 4 years after Obama”), with some thanks to EPA Administrator Zeldin (“Excellent…Well Done”). No 50,000+ or major-organization accounts among replies opened other than automated Grok replies."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 3:06 PM PT",
+      "source": "Ed Krassenstein",
+      "handle": "EdKrassen",
+      "type": "X post",
+      "followers": 1097772,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "Commentator (1,097,772 followers) on Vance’s and Trump’s Obama remarks: “They always have to blame Obama and Biden for everything. It’s as if they can’t ever take responsibility for anything.” The Daily Beast (Nov 26) cited this post alongside David Axelrod (“There’ve been three admins since Barack Obama left office, and two of them were led by Donald Trump”) and Chuck Todd.",
+      "engagement": {
+        "likes": 2376,
+        "reposts": 340,
+        "replies": 307,
+        "quotes": 14,
+        "bookmarks": 18,
+        "views": 32374,
+        "interactions": 3037,
+        "engagement_ex_replies": 2730,
+        "followers": 1097772,
+        "engagement_rate_vs_followers_pct": 0.28,
+        "reply_to_like_pct": 12.9,
+        "engagement_rate_vs_views_pct": 9.38
+      },
+      "url": "https://x.com/EdKrassen/status/2125727817036107945",
+      "added_on": "2026-11-26",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created April 2010 (1,097,772 followers, following 512,290). Interactions (3,037) are 0.28% of followers and 9.38% of views (32,374). Follows 512,290 accounts (follow-back pattern), so reach may overstate influence; reply-to-like ratio 12.9%."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 11:25 AM PT",
+      "source": "LanaQuest (Lana)",
+      "handle": "LqLana",
+      "type": "X post",
+      "followers": 93149,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "Host of The Quest Show and #DemsUnited co-founder (93,149 followers): “JD Vance today blamed the Obama administration for the Army’s detonation of lead azide in Iowa. Why can’t the white men in Trump’s administration take ownership?… Concerns about the plant’s lead azide actually go back to 2004, under Bush.”",
+      "engagement": {
+        "likes": 366,
+        "reposts": 171,
+        "replies": 96,
+        "quotes": 9,
+        "bookmarks": 7,
+        "views": 3872,
+        "interactions": 642,
+        "engagement_ex_replies": 546,
+        "followers": 93149,
+        "engagement_rate_vs_followers_pct": 0.69,
+        "reply_to_like_pct": 26.2,
+        "engagement_rate_vs_views_pct": 16.58
+      },
+      "url": "https://x.com/LqLana/status/2125672358090625419",
+      "added_on": "2026-11-26",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created June 2013 (93,149 followers, following 52,368). Interactions (642) are 0.69% of followers and 16.58% of views (3,872). Follows 52,368 accounts (follow-back network); reposts (171) are high relative to views (3,868)."
+      },
+      "audience_sample": "Replies opened were nearly all agreeing (“Gee, if only the 45th president had done something about the lead azide 9 years ago”; “This is why JD will NEVER be president”). One reply noted the munitions were moved there in 2009. No 50,000+ or major-organization accounts among the 25 replies opened."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 12:39 PM PT",
+      "source": "MAHA Action",
+      "handle": "MAHA_Action",
+      "type": "X post",
+      "followers": 103822,
+      "theme": "Stephen Miller",
+      "summary": "MAHA advocacy account (103,822 followers) posted Zach Lahn’s comments on Benny Johnson’s show crediting Stephen Miller, HHS Secretary Kennedy and Vance for the Iowa detonation: “Stephen Miller’s response to it, Bobby Kennedy’s response to it, J.D. Vance’s response to it has helped this become what is likely going to be looked back at as the success that it was.” Lahn called Miller “the unsung hero.”",
+      "engagement": {
+        "likes": 122,
+        "reposts": 27,
+        "replies": 3,
+        "quotes": 1,
+        "bookmarks": 9,
+        "views": 4250,
+        "interactions": 153,
+        "engagement_ex_replies": 150,
+        "followers": 103822,
+        "engagement_rate_vs_followers_pct": 0.15,
+        "reply_to_like_pct": 2.5,
+        "engagement_rate_vs_views_pct": 3.6
+      },
+      "url": "https://x.com/MAHA_Action/status/2125690791146238270",
+      "added_on": "2026-11-26",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. Account created August 2024 (103,822 followers, following 211). Interactions (153) are 0.15% of followers and 3.6% of views (4,250). Low volume (122 likes) but no signs of coordinated amplification; 3 replies."
+      },
+      "audience_sample": "Only 3 replies; no prominent accounts."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 3:41 PM PT",
+      "source": "Asuka Groyper",
+      "handle": "asukagrypr",
+      "type": "X post",
+      "followers": 69413,
+      "theme": "Tucker Carlson / Thiel",
+      "summary": "Groyper-aligned video account (69,413 followers) amplifying Nick Fuentes’s Nov 25 attack on Carlson’s ties to Vance and Peter Thiel: “Tucker Carlson plays the idiot when he’s asked about his connections with Peter Thiel and JD Vance. Back in May Nick exposed Tucker’s relationship with Thiel and Vance… Tucker Carlson is a brazen liar.” X News summarized the wider thread as Fuentes suggesting “coordinated efforts to promote Vance as a 2028 contender.” Fuentes’s own post was not returned by search and was not opened.",
+      "engagement": {
+        "likes": 135,
+        "reposts": 9,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 8,
+        "views": 4394,
+        "interactions": 144,
+        "engagement_ex_replies": 144,
+        "followers": 69413,
+        "engagement_rate_vs_followers_pct": 0.21,
+        "reply_to_like_pct": 0.0,
+        "engagement_rate_vs_views_pct": 3.28
+      },
+      "url": "https://x.com/asukagrypr/status/2125736775918522782",
+      "added_on": "2026-11-26",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created February 2024 (69,413 followers, following 602). Interactions (144) are 0.21% of followers and 3.28% of views (4,394). Account created February 2024; interactions (144) are low for 69K followers; zero replies."
+      },
+      "audience_sample": "No replies."
+    },
+    {
+      "date": "2026-11-25",
+      "datetime_pt": "2026-11-25 4:41 PM PT",
+      "source": "The Hill (Julia Manchester)",
+      "handle": "thehill",
+      "type": "article",
+      "followers": 4189845,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "“JD Vance blames Obama administration for Iowa munitions toxic lead threat.” Quotes Vance in Ohio: “The can had been kicked down the road. If you go back to 2009 under the Obama administration, we stored this highly unstable stuff with no real plan…” and that the administration became aware “about six months ago.” Notes local and public-health concerns about lead exposure. The Hill’s X post of the story (Nov 25) had 33 likes and 18.5K views.",
+      "engagement": null,
+      "url": "https://thehill.com/homenews/administration/6243397-vance-obama-iowa-munitions-lead-azide/",
+      "added_on": "2026-11-26",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "News article; page opened (published 7:41 PM ET Nov 25, updated 9:35 PM ET). Headline framing is critical; body is straight reporting."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 6:03 AM PT",
+      "source": "The Daily Beast (Ewan Palmer)",
+      "handle": "thedailybeast",
+      "type": "article",
+      "followers": 1267682,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "“JD Vance Savaged Over Wild Attempt to Pass the Buck Over Iowa Detonation onto Obama.” Says Vance was “widely mocked” and cites posts by David Axelrod, Chuck Todd (“Trump… was president for… 6 of the last 10 years”), Joyce Carol Oates and Ed Krassenstein; also quotes Trump’s Truth Social post (“0.000% of Obama caused carcinogens were released…”).",
+      "engagement": null,
+      "url": "https://www.thedailybeast.com/jd-vance-savaged-over-wild-attempt-to-pass-the-buck-over-iowa-detonation-onto-obama",
+      "added_on": "2026-11-26",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "Opinionated news article; page opened."
+      },
+      "audience_sample": null
     }
   ],
-  "last_updated_pt": "November 25, 2026, 8:15 AM PT"
+  "last_updated_pt": "November 26, 2026, 8:12 AM PT"
 }

@@ -1,7 +1,7 @@
 {
   "title": "Rival watch",
-  "last_updated": "2026-11-25",
-  "last_updated_pt": "November 25, 2026, 8:15 AM PT",
+  "last_updated": "2026-11-26",
+  "last_updated_pt": "November 26, 2026, 8:12 AM PT",
   "timezone": "America/Los_Angeles",
   "method": "The top five Republican 2028 contenders by the tracker’s national primary polling average (polls_2028.json), re-ranked each update. Vance, Rubio and DeSantis are ranked by the simple average across all opened polls (every poll reports them). Places 4–5 are ranked by each candidate’s mean share among only the opened polls that reported him (n shown), because most polls do not report minor candidates; Donald Trump (constitutionally barred) is excluded. Stance on each item is toward that rival, not toward Vance. Only items actually opened are listed; favorability is shown only where a poll was opened.",
   "ranking": [
@@ -53,7 +53,7 @@
       "poll_average": 30.6,
       "n_polls": 8,
       "role": "Secretary of State",
-      "momentum": "Rising in elite support: Fox News Digital (Nov 25) reports multiple House Republicans (Malliotakis, Stutzman, Gimenez, Haridopolos) pushing him to run and administration staff “about 50/50” between him and Vance; leads a new Arizona GOP poll 48.8–24.9 (Riparian Research, Nov 20–24) and the OnMessage early-state poll. Tucker Carlson is reported (Washington Examiner, Nov 24) to be preparing a third-party run only if Rubio is the nominee. National tracker average unchanged at 30.6 (Vance 34.1). Rubio has publicly dismissed 2028 talk.",
+      "momentum": "Holding: no new 2028 poll or major new report in the past day; the Fox News Digital (Nov 25) House-Republican push and early-state/Arizona leads remain the latest. Kalshi odds of running 64% (Nov 25 relay, up from 63%). National tracker average 30.6 (Vance 34.1). Rubio continues to decline to discuss 2028.",
       "favorability": {
         "pollster": "Ipsos / Reuters",
         "dates": "2026-11-14 to 2026-11-17",
@@ -67,6 +67,24 @@
         "note": "From polls.json (same-poll comparison with Vance: 35 / 53). Not refreshed this update."
       },
       "items": [
+        {
+          "date": "2026-11-25",
+          "source": "Kalshi Politics",
+          "handle": "KalshiPolitics",
+          "followers": 78886,
+          "stance": "news",
+          "summary": "Market relay (Nov 25): “ODDS TO RUN FOR 2028 REPUBLICAN PRESIDENTIAL NOMINATION: Ron DeSantis: 87%, Ted Cruz: 84%, Glenn Youngkin: 73%, J.D. Vance: 72%… Marco Rubio: 64%… Stephen Miller: 22%… Robert F. Kennedy Jr.: 21%… Donald Trump Jr.: 17%.” Rubio at 64% (63% in the Nov 24 relay). Prediction-market prices, not polls.",
+          "engagement": {
+            "likes": 37,
+            "reposts": 7,
+            "replies": 7,
+            "quotes": 4,
+            "views": 4564,
+            "engagement_rate_vs_followers_pct": 0.07
+          },
+          "url": "https://x.com/KalshiPolitics/status/2125722449048162523",
+          "added_on": "2026-11-26"
+        },
         {
           "date": "2026-11-25",
           "source": "Fox News Digital (Elizabeth Elkind, Peter D’Abrosca)",
@@ -223,9 +241,27 @@
       "poll_average": 12.9,
       "n_polls": 8,
       "role": "Governor of Florida (term-limited; leaves office January 2027)",
-      "momentum": "Steady: 14.2% in the new Arizona GOP poll (third; 26.8% as a second choice), tracker average unchanged at 12.9. Kalshi traders (Nov 24 relay) put his odds of running at 89%, highest in the field (a market price, not a poll). Axios book-project report (Nov 22) still the main positioning news.",
+      "momentum": "Steady: tracker average 12.9; Kalshi odds of running 87% (Nov 25 relay, down from 89%), still highest in the field. No new large-account 2028 items opened this update.",
       "favorability": null,
       "items": [
+        {
+          "date": "2026-11-25",
+          "source": "Kalshi Politics",
+          "handle": "KalshiPolitics",
+          "followers": 78886,
+          "stance": "news",
+          "summary": "Market relay (Nov 25): “ODDS TO RUN FOR 2028 REPUBLICAN PRESIDENTIAL NOMINATION: Ron DeSantis: 87%, Ted Cruz: 84%, Glenn Youngkin: 73%, J.D. Vance: 72%… Marco Rubio: 64%… Stephen Miller: 22%… Robert F. Kennedy Jr.: 21%… Donald Trump Jr.: 17%.” DeSantis at 87% (89% in the Nov 24 relay). Prediction-market prices, not polls.",
+          "engagement": {
+            "likes": 37,
+            "reposts": 7,
+            "replies": 7,
+            "quotes": 4,
+            "views": 4564,
+            "engagement_rate_vs_followers_pct": 0.07
+          },
+          "url": "https://x.com/KalshiPolitics/status/2125722449048162523",
+          "added_on": "2026-11-26"
+        },
         {
           "date": "2026-11-24",
           "source": "Kalshi Politics",
@@ -299,9 +335,28 @@
       "poll_average": 5.3,
       "n_polls": 3,
       "role": "Businessman; podcast host",
-      "momentum": "Flat: average 5.3 (3 polls); not listed in the Arizona Riparian poll; Kalshi odds of running 17% (Nov 24 relay). No notable large-account 2028 items opened this update.",
+      "momentum": "Flat: average 5.3 (3 polls); Kalshi odds of running 17% (Nov 25 relay, unchanged). No notable large-account 2028 items opened this update.",
       "favorability": null,
-      "items": []
+      "items": [
+        {
+          "date": "2026-11-25",
+          "source": "Kalshi Politics",
+          "handle": "KalshiPolitics",
+          "followers": 78886,
+          "stance": "news",
+          "summary": "Market relay (Nov 25): “ODDS TO RUN FOR 2028 REPUBLICAN PRESIDENTIAL NOMINATION: Ron DeSantis: 87%, Ted Cruz: 84%, Glenn Youngkin: 73%, J.D. Vance: 72%… Marco Rubio: 64%… Stephen Miller: 22%… Robert F. Kennedy Jr.: 21%… Donald Trump Jr.: 17%.” Trump Jr. at 17% (unchanged). Prediction-market prices, not polls.",
+          "engagement": {
+            "likes": 37,
+            "reposts": 7,
+            "replies": 7,
+            "quotes": 4,
+            "views": 4564,
+            "engagement_rate_vs_followers_pct": 0.07
+          },
+          "url": "https://x.com/KalshiPolitics/status/2125722449048162523",
+          "added_on": "2026-11-26"
+        }
+      ]
     },
     {
       "candidate": "Robert F. Kennedy Jr.",
@@ -309,10 +364,47 @@
       "poll_average": 4.0,
       "n_polls": 2,
       "role": "Secretary of Health and Human Services",
-      "momentum": "Flat: average 4.0 (2 polls); Kalshi odds of running 22% (Nov 24 relay). No qualifying large-account 2028 items opened this update.",
+      "momentum": "Flat in polls: average 4.0 (2 polls); Kalshi odds of running 21% (Nov 25 relay, 22% on Nov 24). Got public credit from MAHA allies, alongside Stephen Miller and Vance, for the Nov 25 Iowa lead-azide detonation response.",
       "favorability": null,
-      "items": []
+      "items": [
+        {
+          "date": "2026-11-25",
+          "source": "MAHA Action",
+          "handle": "MAHA_Action",
+          "followers": 103822,
+          "stance": "supportive",
+          "summary": "Posted Zach Lahn (on Benny Johnson’s show) crediting “Stephen Miller’s response to it, Bobby Kennedy’s response to it, J.D. Vance’s response to it” for the Iowa detonation’s success. Also a tracker item (theme: Stephen Miller).",
+          "engagement": {
+            "likes": 122,
+            "reposts": 27,
+            "replies": 3,
+            "quotes": 1,
+            "views": 4250,
+            "engagement_rate_vs_followers_pct": 0.15
+          },
+          "url": "https://x.com/MAHA_Action/status/2125690791146238270",
+          "added_on": "2026-11-26"
+        },
+        {
+          "date": "2026-11-25",
+          "source": "Kalshi Politics",
+          "handle": "KalshiPolitics",
+          "followers": 78886,
+          "stance": "news",
+          "summary": "Market relay (Nov 25): “ODDS TO RUN FOR 2028 REPUBLICAN PRESIDENTIAL NOMINATION: Ron DeSantis: 87%, Ted Cruz: 84%, Glenn Youngkin: 73%, J.D. Vance: 72%… Marco Rubio: 64%… Stephen Miller: 22%… Robert F. Kennedy Jr.: 21%… Donald Trump Jr.: 17%.” RFK Jr. at 21% (22% on Nov 24). Prediction-market prices, not polls.",
+          "engagement": {
+            "likes": 37,
+            "reposts": 7,
+            "replies": 7,
+            "quotes": 4,
+            "views": 4564,
+            "engagement_rate_vs_followers_pct": 0.07
+          },
+          "url": "https://x.com/KalshiPolitics/status/2125722449048162523",
+          "added_on": "2026-11-26"
+        }
+      ]
     }
   ],
-  "ranking_note": "Nov 25, 2026: unchanged — no new national 2028 GOP primary poll. Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). A new Arizona-only Riparian Research poll (Rubio 48.8, Vance 24.9, DeSantis 14.2) is not part of the national average. Stephen Miller is not listed in any opened poll. Nov 24, 2026: first ranking. Order unchanged at the top (Vance, Rubio, DeSantis). Adding the Rainey Center poll moved the averages to Vance 34.1 (33.9), Rubio 30.6 (31.6), DeSantis 12.9 (13.3). Trump Jr. (5.3%, 3 polls) and RFK Jr. (4.0%, 2 polls) fill places 4–5; Ted Cruz is next (2.7%, 3 polls). Stephen Miller is not listed in any opened poll."
+  "ranking_note": "Nov 26, 2026: unchanged — no new national 2028 GOP primary poll found (RCP favorability and Hill/DDHQ pages re-opened; web search for new primary polls returned only polls already logged). Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). Stephen Miller is not listed in any opened poll. Nov 25, 2026: unchanged — no new national 2028 GOP primary poll. Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). A new Arizona-only Riparian Research poll (Rubio 48.8, Vance 24.9, DeSantis 14.2) is not part of the national average. Stephen Miller is not listed in any opened poll. Nov 24, 2026: first ranking. Order unchanged at the top (Vance, Rubio, DeSantis). Adding the Rainey Center poll moved the averages to Vance 34.1 (33.9), Rubio 30.6 (31.6), DeSantis 12.9 (13.3). Trump Jr. (5.3%, 3 polls) and RFK Jr. (4.0%, 2 polls) fill places 4–5; Ted Cruz is next (2.7%, 3 polls). Stephen Miller is not listed in any opened poll."
 }
