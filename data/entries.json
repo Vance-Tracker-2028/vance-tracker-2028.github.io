@@ -3485,15 +3485,21 @@
         "reposts": 13,
         "replies": 9,
         "quotes": 3,
+        "bookmarks": 32,
         "views": 28089,
-        "note": "Axios X post of the story (https://x.com/axios/status/2126287437311730046)"
+        "interactions": 133,
+        "engagement_ex_replies": 124,
+        "followers": 868293,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 8.3,
+        "engagement_rate_vs_views_pct": 0.47
       },
       "url": "https://www.axios.com/2026/11/27/vance-rubio-trump-downside-2028",
       "added_on": "2026-11-27",
       "stance": "critical",
       "authenticity": {
         "rating": "n/a",
-        "evidence": "News analysis; page opened. Framing is about political downsides for both men; not an opinion column."
+        "evidence": "News analysis; page opened. Framing is about political downsides for both men; not an opinion column. Engagement figures are for Axios’s X post of the story (https://x.com/axios/status/2126287437311730046)."
       },
       "audience_sample": "Only 9 replies to Axios’s X post; none opened were from prominent accounts."
     },
