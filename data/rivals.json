@@ -1,7 +1,7 @@
 {
   "title": "Rival watch",
-  "last_updated": "2026-11-26",
-  "last_updated_pt": "November 26, 2026, 8:12 AM PT",
+  "last_updated": "2026-11-27",
+  "last_updated_pt": "November 27, 2026, 8:16 AM PT",
   "timezone": "America/Los_Angeles",
   "method": "The top five Republican 2028 contenders by the tracker’s national primary polling average (polls_2028.json), re-ranked each update. Vance, Rubio and DeSantis are ranked by the simple average across all opened polls (every poll reports them). Places 4–5 are ranked by each candidate’s mean share among only the opened polls that reported him (n shown), because most polls do not report minor candidates; Donald Trump (constitutionally barred) is excluded. Stance on each item is toward that rival, not toward Vance. Only items actually opened are listed; favorability is shown only where a poll was opened.",
   "ranking": [
@@ -53,7 +53,7 @@
       "poll_average": 30.6,
       "n_polls": 8,
       "role": "Secretary of State",
-      "momentum": "Holding: no new 2028 poll or major new report in the past day; the Fox News Digital (Nov 25) House-Republican push and early-state/Arizona leads remain the latest. Kalshi odds of running 64% (Nov 25 relay, up from 63%). National tracker average 30.6 (Vance 34.1). Rubio continues to decline to discuss 2028.",
+      "momentum": "Holding at 30.6 (Vance 34.1). Nov 26–27: Axios (Nov 27) paired him with Vance as paying “the price of loyalty to Trump” — noting he warned Trump about Huang yet must front the reinstatement, and that he “has indicated he won’t run if Vance does”; Roseanne Barr predicted “Rubio will win” (Mediaite/Newsweek, Nov 26); Bill Mitchell (507K) floated a Rubio–DeSantis ticket (6,360 likes). His Thanksgiving post drew 41K likes. No new national poll.",
       "favorability": {
         "pollster": "Ipsos / Reuters",
         "dates": "2026-11-14 to 2026-11-17",
@@ -67,6 +67,71 @@
         "note": "From polls.json (same-poll comparison with Vance: 35 / 53). Not refreshed this update."
       },
       "items": [
+        {
+          "date": "2026-11-27",
+          "source": "Axios (Mike Zapler)",
+          "handle": "axios",
+          "followers": 868293,
+          "stance": "news",
+          "summary": "“Vance and Rubio learn the price of loyalty to Trump”: Rubio, a China hawk, warned Trump in May about Huang’s ties to a suspected Chinese spy, then walked away from a shouted question on the reinstatement; WSJ’s Gerry Baker urged him to leave the administration. “Rubio has indicated he won’t run if Vance does.”",
+          "engagement": {
+            "likes": 108,
+            "reposts": 13,
+            "replies": 9,
+            "quotes": 3,
+            "views": 28089,
+            "engagement_rate_vs_followers_pct": 0.02
+          },
+          "url": "https://www.axios.com/2026/11/27/vance-rubio-trump-downside-2028",
+          "added_on": "2026-11-27"
+        },
+        {
+          "date": "2026-11-26",
+          "source": "Bill Mitchell",
+          "handle": "mitchellvii",
+          "followers": 507192,
+          "stance": "supportive",
+          "summary": "Pro-Trump host (YourVoice America): “A Rubio-DeSantis ticket would be so strong because Rubio could be the front man and handling international relations and DeSantis could be the operations guy running the country behind the scenes.” Replies and quotes opened were split; some pushed back that DeSantis is “not a ‘running mate’” or favored Stephen Miller as VP. Also logged under DeSantis.",
+          "engagement": {
+            "likes": 6360,
+            "reposts": 451,
+            "replies": 1262,
+            "quotes": 73,
+            "views": 136006,
+            "engagement_rate_vs_followers_pct": 1.61
+          },
+          "url": "https://x.com/mitchellvii/status/2125976892020830642",
+          "added_on": "2026-11-27"
+        },
+        {
+          "date": "2026-11-26",
+          "source": "Secretary Marco Rubio",
+          "handle": "SecRubio",
+          "followers": 2192001,
+          "stance": "news",
+          "summary": "Thanksgiving post: “Being an American is a gift unlike any ever afforded to any other peoples throughout human history — we have so much to be thankful for.” Among the highest-engagement posts by any 2028 contender this week.",
+          "engagement": {
+            "likes": 41273,
+            "reposts": 5950,
+            "replies": 1826,
+            "quotes": 255,
+            "views": 522495,
+            "engagement_rate_vs_followers_pct": 2.25
+          },
+          "url": "https://x.com/SecRubio/status/2125976081035342019",
+          "added_on": "2026-11-27"
+        },
+        {
+          "date": "2026-11-26",
+          "source": "Mediaite / Newsweek (Roseanne Barr)",
+          "handle": "Mediaite",
+          "followers": 163115,
+          "stance": "supportive",
+          "summary": "Roseanne Barr on an Israeli podcast: “Rubio will win and JD Vance doesn’t even have a chance.” Also a tracker item (critical of Vance).",
+          "engagement": null,
+          "url": "https://www.mediaite.com/politics/just-resign-now-roseanne-barr-torches-jd-vance-in-stunning-rant/",
+          "added_on": "2026-11-27"
+        },
         {
           "date": "2026-11-25",
           "source": "Kalshi Politics",
@@ -241,9 +306,27 @@
       "poll_average": 12.9,
       "n_polls": 8,
       "role": "Governor of Florida (term-limited; leaves office January 2027)",
-      "momentum": "Steady: tracker average 12.9; Kalshi odds of running 87% (Nov 25 relay, down from 89%), still highest in the field. No new large-account 2028 items opened this update.",
+      "momentum": "Steady at 12.9 (8 polls). Bill Mitchell’s (507K) Nov 26 Rubio–DeSantis ticket post (6,360 likes, 1,262 replies) cast him as the “operations guy”; some replies insisted he is presidential, not a running mate. No new poll or major news opened.",
       "favorability": null,
       "items": [
+        {
+          "date": "2026-11-26",
+          "source": "Bill Mitchell",
+          "handle": "mitchellvii",
+          "followers": 507192,
+          "stance": "supportive",
+          "summary": "“A Rubio-DeSantis ticket would be so strong… DeSantis could be the operations guy running the country behind the scenes.” A quote post (@MikeKelleyPHD, 6,994) replied: “DeSantis is not a ‘running mate.’ He’s a Captain not a crew member!” Also logged under Rubio.",
+          "engagement": {
+            "likes": 6360,
+            "reposts": 451,
+            "replies": 1262,
+            "quotes": 73,
+            "views": 136006,
+            "engagement_rate_vs_followers_pct": 1.61
+          },
+          "url": "https://x.com/mitchellvii/status/2125976892020830642",
+          "added_on": "2026-11-27"
+        },
         {
           "date": "2026-11-25",
           "source": "Kalshi Politics",
@@ -335,7 +418,7 @@
       "poll_average": 5.3,
       "n_polls": 3,
       "role": "Businessman; podcast host",
-      "momentum": "Flat: average 5.3 (3 polls); Kalshi odds of running 17% (Nov 25 relay, unchanged). No notable large-account 2028 items opened this update.",
+      "momentum": "Flat: average 5.3 (3 polls). No notable large-account 2028 items opened this update.",
       "favorability": null,
       "items": [
         {
@@ -364,7 +447,7 @@
       "poll_average": 4.0,
       "n_polls": 2,
       "role": "Secretary of Health and Human Services",
-      "momentum": "Flat in polls: average 4.0 (2 polls); Kalshi odds of running 21% (Nov 25 relay, 22% on Nov 24). Got public credit from MAHA allies, alongside Stephen Miller and Vance, for the Nov 25 Iowa lead-azide detonation response.",
+      "momentum": "Flat: average 4.0 (2 polls). No new 2028 items opened this update.",
       "favorability": null,
       "items": [
         {
@@ -406,5 +489,5 @@
       ]
     }
   ],
-  "ranking_note": "Nov 26, 2026: unchanged — no new national 2028 GOP primary poll found (RCP favorability and Hill/DDHQ pages re-opened; web search for new primary polls returned only polls already logged). Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). Stephen Miller is not listed in any opened poll. Nov 25, 2026: unchanged — no new national 2028 GOP primary poll. Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). A new Arizona-only Riparian Research poll (Rubio 48.8, Vance 24.9, DeSantis 14.2) is not part of the national average. Stephen Miller is not listed in any opened poll. Nov 24, 2026: first ranking. Order unchanged at the top (Vance, Rubio, DeSantis). Adding the Rainey Center poll moved the averages to Vance 34.1 (33.9), Rubio 30.6 (31.6), DeSantis 12.9 (13.3). Trump Jr. (5.3%, 3 polls) and RFK Jr. (4.0%, 2 polls) fill places 4–5; Ted Cruz is next (2.7%, 3 polls). Stephen Miller is not listed in any opened poll."
+  "ranking_note": "Nov 27, 2026: unchanged — no new national 2028 GOP primary poll found. Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). A pre-midterm AtlasIntel poll (Oct 28–Nov 1; Rubio 45.6, Vance 32.9) recirculated on X as “new” and is not added; the Notre Dame College Republicans straw poll (McEntee 43, Vance 12) is not a scientific poll. Stephen Miller is not listed in any opened poll. Nov 26, 2026: unchanged — no new national 2028 GOP primary poll found (RCP favorability and Hill/DDHQ pages re-opened; web search for new primary polls returned only polls already logged). Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). Stephen Miller is not listed in any opened poll. Nov 25, 2026: unchanged — no new national 2028 GOP primary poll. Vance 34.1, Rubio 30.6, DeSantis 12.9 (8 polls); Trump Jr. 5.3 (3 polls), RFK Jr. 4.0 (2 polls); Ted Cruz next (2.7, 3 polls). A new Arizona-only Riparian Research poll (Rubio 48.8, Vance 24.9, DeSantis 14.2) is not part of the national average. Stephen Miller is not listed in any opened poll. Nov 24, 2026: first ranking. Order unchanged at the top (Vance, Rubio, DeSantis). Adding the Rainey Center poll moved the averages to Vance 34.1 (33.9), Rubio 30.6 (31.6), DeSantis 12.9 (13.3). Trump Jr. (5.3%, 3 polls) and RFK Jr. (4.0%, 2 polls) fill places 4–5; Ted Cruz is next (2.7%, 3 polls). Stephen Miller is not listed in any opened poll."
 }

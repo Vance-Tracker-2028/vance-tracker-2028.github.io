@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-27",
   "timezone": "America/Los_Angeles",
   "entries": [
     {
@@ -3451,7 +3451,276 @@
         "evidence": "Opinionated news article; page opened."
       },
       "audience_sample": null
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 8:28 AM PT",
+      "source": "Mediaite (Charlie Nash)",
+      "handle": "Mediaite",
+      "type": "article",
+      "followers": 163115,
+      "theme": "Israel / midterm blame",
+      "summary": "“‘Just Resign Now!’ Roseanne Barr Torches JD Vance in Stunning Rant.” On the Israeli podcast The Western Spirit with Ariel Whitman (Nov 26), Barr (1,529,930 X followers) responded to Vance’s Nov 4 midterm post blaming the Iran war and the Israel relationship: “He is really stupid… he’s not an American patriot, he’s a globalist, and that he won’t win… Rubio will win and JD Vance doesn’t even have a chance, and in fact, he should just resign now… Nobody likes him.” She called Peter Thiel and his circle “self-appointed little Hitlers” and said Vance is Thiel’s “spokesman and slave.” Newsweek (Nov 26, 7:08 PM ET), TV Insider and OK! Magazine also covered it. Barr made the remarks on the podcast; no Barr X post on Vance was found for Nov 20–27.",
+      "engagement": null,
+      "url": "https://www.mediaite.com/politics/just-resign-now-roseanne-barr-torches-jd-vance-in-stunning-rant/",
+      "added_on": "2026-11-27",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "News article; page opened (Nov 26, 2026, 11:28 am ET). Mediaite’s X post of the story had 5 likes and 4,175 views when opened; Newsweek article also opened."
+      },
+      "audience_sample": null
+    },
+    {
+      "date": "2026-11-27",
+      "datetime_pt": "2026-11-27 4:10 AM PT",
+      "source": "Axios (Mike Zapler)",
+      "handle": "axios",
+      "type": "article",
+      "followers": 868293,
+      "theme": "2028 / loyalty",
+      "summary": "“Vance and Rubio learn the price of loyalty to Trump.” Argues the Iran war and the Jensen Huang reinstatement show how hard it would be for either to run on his own terms: Vance opposed the war, blamed it for the midterm losses (which “reportedly frustrated Trump”), and last week declined to say whether it was worth the losses; on Nvidia, “Vance helped Trump engineer Huang’s reinstatement despite reports that Rubio had warned Trump.” Notes Vance may decide after the new year, “perhaps even until late spring,” and “Rubio has indicated he won’t run if Vance does.”",
+      "engagement": {
+        "likes": 108,
+        "reposts": 13,
+        "replies": 9,
+        "quotes": 3,
+        "views": 28089,
+        "note": "Axios X post of the story (https://x.com/axios/status/2126287437311730046)"
+      },
+      "url": "https://www.axios.com/2026/11/27/vance-rubio-trump-downside-2028",
+      "added_on": "2026-11-27",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "n/a",
+        "evidence": "News analysis; page opened. Framing is about political downsides for both men; not an opinion column."
+      },
+      "audience_sample": "Only 9 replies to Axios’s X post; none opened were from prominent accounts."
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 8:41 AM PT",
+      "source": "JD Vance (official personal account)",
+      "handle": "JDVance",
+      "type": "X post",
+      "followers": 5567597,
+      "theme": "Iowa detonation / Obama blame",
+      "summary": "Vance quoted EPA Administrator Lee Zeldin’s Nov 26 update on the Iowa detonation (300+ EPA staff and contractors collecting 1,000+ new air, land and water samples; “EPA’s 4 Xact air monitors have all reported a ZERO DETECT of airborne lead”): “Amazing job to Lee and the team at EPA. Proud of our team.” Counters the Nov 25–26 criticism of the detonation and of Vance’s Obama remark. EPA’s figures are its own; not independently verified here.",
+      "engagement": {
+        "likes": 7531,
+        "reposts": 561,
+        "replies": 469,
+        "quotes": 19,
+        "bookmarks": 124,
+        "views": 359057,
+        "interactions": 8580,
+        "engagement_ex_replies": 8111,
+        "followers": 5567597,
+        "engagement_rate_vs_followers_pct": 0.15,
+        "reply_to_like_pct": 6.2,
+        "engagement_rate_vs_views_pct": 2.39
+      },
+      "url": "https://x.com/JDVance/status/2125993251895427342",
+      "added_on": "2026-11-27",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. (5,567,597 followers, following 1,139). Interactions (8,580) are 0.15% of followers and 2.39% of views (359,057). Official account of the Vice President; engagement consistent with his other posts."
+      },
+      "audience_sample": "Replies opened were mostly hostile or skeptical (“OBAMA HASNT BEEN IN OFFICE IN 10 YEARS”; “Are you going to pay the medical bills for the people who are poisoned by the water?”; “It’s East Palestine all over again”), plus off-topic Israel/India-themed abuse; a few defended the operation (“let us remember who put it there… Obama”). Quote posts opened were split (“NOBODY BELIEVES THIS” vs. “Thousands of samples… no contamination escaped”). No 50,000+ or major-organization accounts among the 25 replies and 16 quotes opened."
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 1:08 PM PT",
+      "source": "Vice President JD Vance (@VP)",
+      "handle": "VP",
+      "type": "X post",
+      "followers": 1344389,
+      "theme": "Thanksgiving / troops",
+      "summary": "Thanksgiving Day post with video from the Nov 25 Wright-Patterson AFB visit: “Thankful for those who answered the call and serve our great nation.” Fox News (29.4M followers) separately posted that Vance and his sons served meals and talked Ohio State–Michigan with service members (1,432 likes, 181K views).",
+      "engagement": {
+        "likes": 8292,
+        "reposts": 665,
+        "replies": 334,
+        "quotes": 28,
+        "bookmarks": 117,
+        "views": 132769,
+        "interactions": 9319,
+        "engagement_ex_replies": 8985,
+        "followers": 1344389,
+        "engagement_rate_vs_followers_pct": 0.69,
+        "reply_to_like_pct": 4.0,
+        "engagement_rate_vs_views_pct": 7.02
+      },
+      "url": "https://x.com/VP/status/2126060558491283677",
+      "added_on": "2026-11-27",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Likely organic",
+        "evidence": "Heuristic only, not proof. (1,344,389 followers, following 28). Interactions (9,319) are 0.69% of followers and 7.02% of views (132,769). Official government account (follows 28); like-to-view ratio typical of its holiday posts."
+      },
+      "audience_sample": "Replies opened were mixed: hostile (“Just go away You lying spineless sycophant”; “They hate you and all your cohorts”) alongside holiday wishes (“Beautiful family! May God always bless you!!”; “Happy Thanksgiving to you, your family, and all Americans”). Several zero-follower or newly created accounts. No 50,000+ or major-organization accounts among the 25 replies opened."
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 12:57 PM PT",
+      "source": "Liza Rosen",
+      "handle": "LizaRosen0000",
+      "type": "X post",
+      "followers": 236184,
+      "theme": "Israel / Lebanon talks",
+      "summary": "Pro-Israel commentator in Israel (236,184 followers), quoting Kan 11 Arab-affairs correspondent Roi Kais on IDF strikes in Lebanon’s western Beqaa Valley: “Despite pressure from Qatar and U.S. Vice President JD Vance to restrain Israeli operations against Hezbollah, Israel continues striking… On a day when five Israelis were killed, Vance continued his campaign to isolate Israel… He avoided acknowledging responsibility for the catastrophic surrender deal he forced on Israel.” Her characterization of a “Qatari memorandum” and of Vance’s role is her own claim; not independently verified here.",
+      "engagement": {
+        "likes": 152,
+        "reposts": 63,
+        "replies": 45,
+        "quotes": 3,
+        "bookmarks": 8,
+        "views": 3567,
+        "interactions": 263,
+        "engagement_ex_replies": 218,
+        "followers": 236184,
+        "engagement_rate_vs_followers_pct": 0.11,
+        "reply_to_like_pct": 29.6,
+        "engagement_rate_vs_views_pct": 7.37
+      },
+      "url": "https://x.com/LizaRosen0000/status/2126057723498525173",
+      "added_on": "2026-11-27",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created May 2019 (236,184 followers, following 118,771). Interactions (263) are 0.11% of followers and 7.37% of views (3,567). Follows 118,771 accounts (follow-back pattern), so reach may overstate influence; reposts (63) high relative to views (3,567)."
+      },
+      "audience_sample": "Replies opened overwhelmingly agreed with her (“Vance is one of the reasons the Iranian quagmire is in front of us”; “He’s the voice of Tucker Carlson. I hope Trump doesn’t endorse him”; “Vance is clearly biased and compromised”), with one defense (“JD VANCE IS FORMIDABLE!”). No 50,000+ or major-organization accounts among the 25 replies opened other than the author’s own follow-ups."
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 10:17 AM PT",
+      "source": "Rachel Alexander",
+      "handle": "Rach_IC",
+      "type": "X post",
+      "followers": 143122,
+      "theme": "2028 / Rubio vs. Vance polls (state)",
+      "summary": "Townhall and Arizona Insiders journalist (143,122 followers) on the Riparian Research Arizona poll (Rubio 48.8, Vance 24.9): “Interesting new poll shows Rubio way ahead of Vance among Republicans in Arizona. Why do you think that is?… Vance made a statement after the election blaming Republicans and ducking any mention of election wrongdoing, which may have turned people off.” She also criticized Rubio’s past immigration record.",
+      "engagement": {
+        "likes": 60,
+        "reposts": 7,
+        "replies": 41,
+        "quotes": 2,
+        "bookmarks": 5,
+        "views": 3772,
+        "interactions": 110,
+        "engagement_ex_replies": 69,
+        "followers": 143122,
+        "engagement_rate_vs_followers_pct": 0.08,
+        "reply_to_like_pct": 68.3,
+        "engagement_rate_vs_views_pct": 2.92
+      },
+      "url": "https://x.com/Rach_IC/status/2126017541365780630",
+      "added_on": "2026-11-27",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created August 2008 (143,122 followers, following 29,957). Interactions (110) are 0.08% of followers and 2.92% of views (3,772). Follows 29,957; low engagement (60 likes, 3,772 views) for her follower count."
+      },
+      "audience_sample": "Replies opened were split: pro-Rubio (“Rubio has demonstrated more capability as a statesman and as a candidate”), anti-Vance (“Exactly what has Vance done???”), pro-DeSantis, and anti-Rubio (“Rubio is a Neocon”). Prominent reply: @B_Smallberries (86,644; self-described MAGA meme maker, no organization) — “People sadly can NOT recognize RINOs… Perhaps another ‘Trump’ will come along” (stance toward Vance unclear). An automated @grok reply confirmed the poll figures."
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 9:15 PM PT",
+      "source": "Dr. Joseph Ford Cotto",
+      "handle": "JosephFordCotto",
+      "type": "X post",
+      "followers": 126046,
+      "theme": "2028 / electability",
+      "summary": "News Sight host/producer (126,046 followers): “Marco Rubio would be WAY better for Republicans than J.D. Vance in 2028. Do you agree?” A second post (Nov 27, 5:15 AM PT) said “J.D. Vance should be a man and denounce Tucker Carlson.” Continues his recurring Rubio-over-Vance posts already in the tracker.",
+      "engagement": {
+        "likes": 16,
+        "reposts": 0,
+        "replies": 6,
+        "quotes": 0,
+        "bookmarks": 0,
+        "views": 992,
+        "interactions": 22,
+        "engagement_ex_replies": 16,
+        "followers": 126046,
+        "engagement_rate_vs_followers_pct": 0.02,
+        "reply_to_like_pct": 37.5,
+        "engagement_rate_vs_views_pct": 2.22
+      },
+      "url": "https://x.com/JosephFordCotto/status/2126182982478078338",
+      "added_on": "2026-11-27",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created June 2020 (126,046 followers, following 98,113). Interactions (22) are 0.02% of followers and 2.22% of views (992). Follows 98,113 (follow-back pattern); scheduled-style posts on the quarter hour with very low engagement (16 likes, 992 views)."
+      },
+      "audience_sample": "Only 6 replies, mostly one-word answers (“Rubio”; “Marco Rubio, strong man… he’s my vote, for now”). No prominent accounts."
+    },
+    {
+      "date": "2026-11-27",
+      "datetime_pt": "2026-11-27 5:02 AM PT",
+      "source": "Furkan Gözükara",
+      "handle": "FurkanGozukara",
+      "type": "X post",
+      "followers": 277581,
+      "theme": "2028 / Rubio vs. Vance polls (straw poll)",
+      "summary": "News-clip curation account (277,581 followers) quoting its own clip of The Bulwark’s Tim Miller joking about campus “walking-around money”: “JD Vance got 12% in the Notre Dame GOP 2028 straw poll, fourth behind DeSantis, Rubio, and John McEntee at 43%. Even in a campus poll you can buy… 12% is brutal.” The Notre Dame College Republicans straw poll (dated Nov 22) is self-selected and is not a scientific poll.",
+      "engagement": {
+        "likes": 1,
+        "reposts": 1,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "views": 915,
+        "interactions": 3,
+        "engagement_ex_replies": 2,
+        "followers": 277581,
+        "engagement_rate_vs_followers_pct": 0.0,
+        "reply_to_like_pct": 100.0,
+        "engagement_rate_vs_views_pct": 0.33
+      },
+      "url": "https://x.com/FurkanGozukara/status/2126300594046427476",
+      "added_on": "2026-11-27",
+      "stance": "critical",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created January 2015 (277,581 followers, following 1,283). Interactions (3) are 0.0% of followers and 0.33% of views (915). Very low engagement (1 like, 915 views) relative to 277,581 followers suggests a largely inactive or non-political audience."
+      },
+      "audience_sample": "One reply; no prominent accounts."
+    },
+    {
+      "date": "2026-11-26",
+      "datetime_pt": "2026-11-26 9:39 AM PT",
+      "source": "Blondelady2024",
+      "handle": "arva61138",
+      "type": "X post",
+      "followers": 105041,
+      "theme": "2028 / loyalty",
+      "summary": "Pro-Trump singer/songwriter account (105,041 followers): “Who else is still proudly supporting President Trump and Vice President Vance in 2026? Drop a ✋ below!” A show of support amid the Roseanne Barr and Rubio-preference posts.",
+      "engagement": {
+        "likes": 421,
+        "reposts": 51,
+        "replies": 99,
+        "quotes": 4,
+        "bookmarks": 3,
+        "views": 3014,
+        "interactions": 575,
+        "engagement_ex_replies": 476,
+        "followers": 105041,
+        "engagement_rate_vs_followers_pct": 0.55,
+        "reply_to_like_pct": 23.5,
+        "engagement_rate_vs_views_pct": 19.08
+      },
+      "url": "https://x.com/arva61138/status/2126008052008751519",
+      "added_on": "2026-11-27",
+      "stance": "supportive",
+      "authenticity": {
+        "rating": "Uncertain",
+        "evidence": "Heuristic only, not proof. Account created January 2024 (105,041 followers, following 45,974). Interactions (575) are 0.55% of followers and 19.08% of views (3,014). Account created January 2024 and follows 45,974 (follow-back pattern); engagement-bait format; likes (421) high relative to views (3,014)."
+      },
+      "audience_sample": "Replies opened were mostly raised-hand emojis in support (several repeated identical emoji replies), with a few dissenting (“Trump YES disappointed in Vance for a long time”; “Never really cared for JD”). No prominent accounts."
     }
   ],
-  "last_updated_pt": "November 26, 2026, 8:12 AM PT"
+  "last_updated_pt": "November 27, 2026, 8:16 AM PT"
 }
